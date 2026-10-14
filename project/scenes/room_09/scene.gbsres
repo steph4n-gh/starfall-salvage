@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "ac3a7f6a-749c-5d68-923d-5caf1162bd0a",
+  "_index": 9,
+  "type": "ADVENTURE",
+  "name": "09 Outer Array",
+  "symbol": "scene_room_09",
+  "x": 0,
+  "y": 440,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "276017f6-6ce6-5e34-8e89-2583070f00b8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "de5f2f7b-c2b9-509e-bfdb-465851b4e761",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "de5f2f7b-c2b9-509e-bfdb-465851b4e761",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+004+0f2+00c+0f2+004+0f2+00c+0f2+0012+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

@@ -1,0 +1,487 @@
+{
+  "mission": 17,
+  "name": "STARFALL HEART",
+  "zone": 5,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Authored native geometry and existing salvage/relay/repair/escort/core mechanics only; staged assets, not native gameplay verification.",
+  "rooms": [
+    {
+      "name": "EVENT SPINE",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "salvage",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        23,
+        23,
+        8,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          7,
+          7,
+          12,
+          3
+        ],
+        [
+          25,
+          7,
+          14,
+          3
+        ],
+        [
+          16,
+          15,
+          5,
+          11
+        ],
+        [
+          31,
+          17,
+          5,
+          7
+        ],
+        [
+          5,
+          28,
+          12,
+          3
+        ],
+        [
+          24,
+          31,
+          15,
+          3
+        ],
+        [
+          40,
+          13,
+          3,
+          14
+        ]
+      ],
+      "cells": [
+        [
+          80,
+          40
+        ],
+        [
+          280,
+          120
+        ],
+        [
+          328,
+          288
+        ]
+      ],
+      "drone": [
+        280,
+        208
+      ],
+      "art_kind": "event_spine",
+      "brief1": "RECOVER THREE KEYS",
+      "brief2": "HUNTER USES THE GAPS",
+      "warning_frames": 50,
+      "dash_frames": 20,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "A broad center route branches into three salvage pockets. The hunter follows around baffle corners during recovery, so staying behind one cover is insufficient.",
+      "room": 0,
+      "scene_symbol": "scene_mission_18_room_00"
+    },
+    {
+      "name": "ENGINE BALANCE",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "repair",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        20,
+        16,
+        2,
+        2
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          12,
+          5,
+          4,
+          14
+        ],
+        [
+          26,
+          10,
+          3,
+          16
+        ],
+        [
+          34,
+          27,
+          8,
+          3
+        ],
+        [
+          8,
+          27,
+          14,
+          3
+        ],
+        [
+          34,
+          5,
+          6,
+          4
+        ],
+        [
+          5,
+          14,
+          3,
+          8
+        ],
+        [
+          17,
+          21,
+          5,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          80,
+          64
+        ],
+        [
+          304,
+          168
+        ],
+        [
+          184,
+          272
+        ]
+      ],
+      "drone": [
+        248,
+        128
+      ],
+      "art_kind": "engine_balance",
+      "brief1": "BALANCE THREE COILS",
+      "brief2": "REPAIR IN YOUR ORDER",
+      "warning_frames": 54,
+      "dash_frames": 22,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": [
+        344,
+        72
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Three coil banks provide separate turning refuges. Repairing in any order makes the central vent an optional shortcut rather than a compulsory damage gate.",
+      "room": 1,
+      "scene_symbol": "scene_mission_18_room_01"
+    },
+    {
+      "name": "CROWN NETWORK",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "relay",
+      "enemy": "sweeper",
+      "hazard": "laser",
+      "hazard_rect": [
+        15,
+        18,
+        9,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          9,
+          8,
+          5,
+          12
+        ],
+        [
+          20,
+          5,
+          17,
+          3
+        ],
+        [
+          24,
+          14,
+          4,
+          13
+        ],
+        [
+          7,
+          25,
+          13,
+          3
+        ],
+        [
+          33,
+          21,
+          9,
+          3
+        ],
+        [
+          20,
+          32,
+          15,
+          3
+        ],
+        [
+          39,
+          9,
+          4,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          48
+        ],
+        [
+          312,
+          136
+        ],
+        [
+          168,
+          240
+        ]
+      ],
+      "drone": [
+        312,
+        208
+      ],
+      "art_kind": "crown_network",
+      "brief1": "LINK THE CROWN NODES",
+      "brief2": "USE THE AXIS SHELTER",
+      "warning_frames": 52,
+      "dash_frames": 24,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Ordered links sweep from the top-left service bay through the east gallery into a low center pocket. The beam crosses one direct route, with a wide bypass below.",
+      "room": 2,
+      "scene_symbol": "scene_mission_18_room_02"
+    },
+    {
+      "name": "STAR ENGINE HEART",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "core",
+      "enemy": "charger",
+      "hazard": "laser",
+      "hazard_rect": [
+        19,
+        28,
+        14,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          15,
+          8,
+          4,
+          8
+        ],
+        [
+          30,
+          8,
+          4,
+          8
+        ],
+        [
+          22,
+          19,
+          5,
+          7
+        ],
+        [
+          6,
+          24,
+          9,
+          3
+        ],
+        [
+          34,
+          25,
+          8,
+          3
+        ],
+        [
+          18,
+          32,
+          13,
+          3
+        ],
+        [
+          4,
+          10,
+          4,
+          8
+        ],
+        [
+          39,
+          11,
+          4,
+          8
+        ]
+      ],
+      "cells": [
+        [
+          240,
+          48
+        ],
+        [
+          104,
+          176
+        ],
+        [
+          320,
+          280
+        ]
+      ],
+      "drone": [
+        232,
+        144
+      ],
+      "art_kind": "star_engine_heart",
+      "brief1": "PULSE THREE OPENINGS",
+      "brief2": "BRING THE HEART HOME",
+      "warning_frames": 56,
+      "dash_frames": 24,
+      "recover_frames": 120,
+      "speed": 64,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "The final guardian sits between a split crown and a central keel. Wide outer loops leave room to drift, evade its committed line, and brake for one precise opening hit.",
+      "room": 3,
+      "scene_symbol": "scene_mission_18_room_03"
+    }
+  ]
+}

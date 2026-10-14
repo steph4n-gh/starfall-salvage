@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "fa5018c9-8526-59cb-95b3-79746fa60b89",
+  "_index": 112,
+  "type": "ADVENTURE",
+  "name": "Rescue Concourse",
+  "symbol": "scene_mission_01_room_02",
+  "x": 2080,
+  "y": 420,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "eff333a7-97fa-5301-bbcd-6a37f21ab680",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "4a53b20b-a096-5f1f-aa6f-63010217e92c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+004+0f3+008+0f10+00f+0f2+004+0f3+008+0f10+00f+0f2+004+0f3+008+0f10+00f+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+007+0f3+0024+0f2+007+0f3+0018+0f3+009+0f2+007+0f3+0018+0f3+009+0f2+007+0f3+008+0fc+004+0f3+009+0f2+007+0f3+008+0fc+004+0f3+009+0f2+007+0f3+008+0fc+004+0f3+009+0f2+007+0f3+008+0fc+004+0f3+009+0f2+007+0f3+008+0fc+004+0f3+009+0f2+007+0f3+008+0fc+004+0f3+009+0f2+007+0f3+0018+0f3+009+0f2+007+0f3+0018+0f3+009+0f2+007+0f3+0018+0f3+009+0f2+007+0f3+0024+0f2+002e+0f2+002e+0f2+003+0f7+0024+0f2+003+0f7+0013+0f3+00e+0f2+003+0f7+004+0fc+003+0f3+00e+0f2+00e+0fc+003+0f3+00e+0f2+00e+0fc+003+0f3+00e+0f2+001d+0f3+00e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

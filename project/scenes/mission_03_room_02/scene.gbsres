@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "61694401-8d9f-55dc-be13-17b082d223c9",
+  "_index": 120,
+  "type": "ADVENTURE",
+  "name": "Pod Causeway",
+  "symbol": "scene_mission_03_room_02",
+  "x": 2080,
+  "y": 1300,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "f2ea659c-b6f2-5776-bfc1-eaa8e46935d5",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "66041d40-65a9-50eb-914b-08e3719b2451",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+004+0f5+0012+0f5+00e+0f2+004+0f5+0012+0f5+00e+0f2+004+0f5+0012+0f5+00e+0f2+004+0f5+004+0f5+009+0f5+00e+0f2+00d+0f5+009+0f5+00e+0f2+00d+0f5+009+0f5+00e+0f2+00d+0f5+009+0f5+00e+0f2+00d+0f5+009+0f5+006+0f4+004+0f2+00d+0f5+009+0f5+006+0f4+004+0f2+00d+0f5+009+0f5+006+0f4+004+0f2+00d+0f5+009+0f5+006+0f4+004+0f2+00d+0f5+009+0f5+006+0f4+004+0f2+00d+0f5+0014+0f4+004+0f2+00d+0f5+0014+0f4+004+0f2+00d+0f5+0014+0f4+004+0f2+00d+0f5+001c+0f2+005+0f7+00!0f5+001c+0f2+005+0f7+00!0f5+001c+0f2+005+0f7+00!0f5+001c+0f2+00d+0f5+001c+0f2+001d+0f7+00a+0f2+001d+0f7+00a+0f2+001d+0f7+00a+0f2+0014+0fb+00f+0f2+0014+0fb+00f+0f2+0014+0fb+00f+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

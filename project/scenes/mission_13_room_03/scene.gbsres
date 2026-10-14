@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "be36d6bd-d58b-553e-b925-f976d9b74571",
+  "_index": 161,
+  "type": "ADVENTURE",
+  "name": "Array Guardian",
+  "symbol": "scene_mission_13_room_03",
+  "x": 2520,
+  "y": 5700,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "db3840fc-38da-5b98-8c4c-515d34d0c643",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d3bc4bb6-e97b-5379-93fe-a4a7ba836484",
+    "7ec22f77-6291-576b-88a7-d76abd3151c8",
+    "ebe28edf-290e-57a8-b30e-ea610f9a5be6",
+    "eb0b9f88-1cce-52d7-a6c8-d5a1930a5475",
+    "4994d885-0092-50df-adce-5644e2e9c188",
+    "ef533cf6-1f7e-5d1f-8629-6e50f0bf238e",
+    "d26124d5-7c44-5e40-844c-016e570d4d8d",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+009+0f4+0021+0f2+009+0f4+003+0f3+00a+0f3+00e+0f2+009+0f4+003+0f3+00a+0f3+00e+0f2+0010+0f3+00a+0f3+00e+0f2+0010+0f3+00a+0f3+00e+0f2+0010+0f3+00a+0f3+00e+0f2+0010+0f3+00a+0f3+00e+0f2+0010+0f3+00a+0f3+00e+0f2+0010+0f3+00a+0f3+003+0f6+005+0f2+0010+0f3+00a+0f3+003+0f6+005+0f2+0010+0f3+00a+0f3+003+0f6+005+0f2+0010+0f3+00a+0f3+00e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+006+0fc+001c+0f2+006+0fc+001c+0f2+006+0fc+001c+0f2+002e+0f2+0026+0f3+005+0f2+0026+0f3+005+0f2+0026+0f3+005+0f2+007+0f5+009+0fb+006+0f3+005+0f2+007+0f5+009+0fb+006+0f3+005+0f2+007+0f5+009+0fb+006+0f3+005+0f2+0026+0f3+005+0f2+0026+0f3+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

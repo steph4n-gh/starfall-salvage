@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-1",
+  "name": "Moon Dust",
+  "colors": [
+    "C0DBEF",
+    "6485A7",
+    "314566",
+    "101B35"
+  ],
+  "defaultName": "Default BG 1",
+  "defaultColors": [
+    "F8E8C8",
+    "D89048",
+    "A82820",
+    "301850"
+  ]
+}

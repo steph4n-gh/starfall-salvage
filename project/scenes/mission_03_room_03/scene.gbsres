@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "0c28eea4-35d0-5a56-a0a5-478ceb180687",
+  "_index": 121,
+  "type": "ADVENTURE",
+  "name": "Pod Warden",
+  "symbol": "scene_mission_03_room_03",
+  "x": 2520,
+  "y": 1300,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "72c14db1-f40e-5521-b3db-f1b660336a0e",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "66041d40-65a9-50eb-914b-08e3719b2451",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+005+0f6+0023+0f2+005+0f6+0012+0f4+00d+0f2+005+0f6+0012+0f4+00d+0f2+001d+0f4+00d+0f2+00e+0fc+003+0f4+00d+0f2+00e+0fc+003+0f4+00d+0f2+00e+0fc+003+0f4+00d+0f2+001d+0f4+00d+0f2+001d+0f4+00d+0f2+002e+0f2+002e+0f2+009+0f5+0020+0f2+009+0f5+0020+0f2+009+0f5+0020+0f2+009+0f5+0012+0fa+004+0f2+009+0f5+0012+0fa+004+0f2+009+0f5+0012+0fa+004+0f2+009+0f5+0020+0f2+009+0f5+0020+0f2+009+0f5+0020+0f2+009+0f5+0020+0f2+002e+0f2+003+0f9+0022+0f2+003+0f9+009+0f8+006+0f5+006+0f2+003+0f9+009+0f8+006+0f5+006+0f2+0015+0f8+006+0f5+006+0f2+0023+0f5+006+0f2+0023+0f5+006+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "39bb713a-ec7a-5ff6-8845-dfe7de4f80b5",
+  "_index": 117,
+  "type": "ADVENTURE",
+  "name": "Circuit Sentinel",
+  "symbol": "scene_mission_02_room_03",
+  "x": 2520,
+  "y": 860,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "242edf5e-6706-505a-9f5c-75d4a2c183a4",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "66041d40-65a9-50eb-914b-08e3719b2451",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+006+0fa+00!0f4+00c+0f4+009+0f2+006+0fa+00!0f4+00c+0f4+009+0f2+006+0fa+001e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+0011+0f4+00c+0f4+009+0f2+005+0f9+003+0f4+00c+0f4+009+0f2+005+0f9+003+0f4+00c+0f4+009+0f2+005+0f9+003+0f4+00c+0f4+009+0f2+0019+0f6+00f+0f2+0019+0f6+00f+0f2+0019+0f6+00f+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

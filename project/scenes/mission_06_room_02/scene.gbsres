@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "c6a94a72-1b47-5066-8c1b-fe45c146c054",
+  "_index": 132,
+  "type": "ADVENTURE",
+  "name": "Manifold Patch",
+  "symbol": "scene_mission_06_room_02",
+  "x": 2080,
+  "y": 2620,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "b31a8509-ae3d-5411-843b-3d703186e429",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+003+0fd+004+0f4+0016+0f2+003+0fd+004+0f4+0016+0f2+003+0fd+004+0f4+0016+0f2+0014+0f4+0016+0f2+0014+0f4+0016+0f2+0014+0f4+006+0f4+00c+0f2+0014+0f4+006+0f4+00c+0f2+0014+0f4+006+0f4+00c+0f2+0014+0f4+006+0f4+00c+0f2+001e+0f4+00c+0f2+001e+0f4+00c+0f2+007+0fc+00b+0f4+00c+0f2+007+0fc+00b+0f4+00c+0f2+007+0fc+00b+0f4+00c+0f2+001e+0f4+00c+0f2+001e+0f4+00c+0f2+001e+0f4+00c+0f2+001e+0f4+00c+0f2+001e+0f4+00c+0f2+001e+0f4+00c+0f2+0013+0f10+00b+0f2+0013+0f10+00b+0f2+0013+0f10+00b+0f2+002e+0f2+007+0f9+0015+0f5+004+0f2+007+0f9+0015+0f5+004+0f2+007+0f9+0015+0f5+004+0f2+0025+0f5+004+0f2+0025+0f5+004+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "caf1642d-0492-55b3-b1c4-79fd4ac05c57",
+  "_index": 159,
+  "type": "ADVENTURE",
+  "name": "Beacon Repair",
+  "symbol": "scene_mission_13_room_01",
+  "x": 1640,
+  "y": 5700,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "52215783-a136-53d8-a1a8-46831e80b0c8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d3bc4bb6-e97b-5379-93fe-a4a7ba836484",
+    "7ec22f77-6291-576b-88a7-d76abd3151c8",
+    "ebe28edf-290e-57a8-b30e-ea610f9a5be6",
+    "eb0b9f88-1cce-52d7-a6c8-d5a1930a5475",
+    "4994d885-0092-50df-adce-5644e2e9c188",
+    "ef533cf6-1f7e-5d1f-8629-6e50f0bf238e",
+    "d26124d5-7c44-5e40-844c-016e570d4d8d",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0019+0fb+00a+0f2+00b+0f3+00b+0fb+00a+0f2+00b+0f3+00b+0fb+00a+0f2+00b+0f3+0020+0f2+00b+0f3+0020+0f2+00b+0f3+0020+0f2+00b+0f3+0020+0f2+00b+0f3+0020+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+00b+0f3+0011+0f3+00c+0f2+001f+0f3+00c+0f2+0013+0f7+005+0f3+00c+0f2+0013+0f7+005+0f3+00c+0f2+004+0fb+004+0f7+005+0f3+00c+0f2+004+0fb+001f+0f2+004+0fb+001f+0f2+0024+0f5+005+0f2+0024+0f5+005+0f2+0024+0f5+005+0f2+0024+0f5+005+0f2+0011+0f9+00a+0f5+005+0f2+0011+0f9+00a+0f5+005+0f2+0011+0f9+00a+0f5+005+0f2+0024+0f5+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

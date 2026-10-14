@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "e35777b1-9674-592f-a48c-e9e8a1254368",
+  "_index": 141,
+  "type": "ADVENTURE",
+  "name": "Shift Guardian",
+  "symbol": "scene_mission_08_room_03",
+  "x": 2520,
+  "y": 3500,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "bc811c4d-2652-563d-b883-92e79aab9286",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0013+0fa+0011+0f2+0013+0fa+00!0f4+00c+0f2+0013+0fa+00!0f4+00c+0f2+00c+0f4+00e+0f4+00c+0f2+00c+0f4+00e+0f4+00c+0f2+00c+0f4+00e+0f4+00c+0f2+00c+0f4+00e+0f4+00c+0f2+00c+0f4+00e+0f4+00c+0f2+00c+0f4+00e+0f4+00c+0f2+00c+0f4+00e+0f4+004+0f5+003+0f2+00c+0f4+00e+0f4+004+0f5+003+0f2+00c+0f4+0016+0f5+003+0f2+00c+0f4+001e+0f2+00c+0f4+001e+0f2+00c+0f4+001e+0f2+00c+0f4+001e+0f2+00c+0f4+001e+0f2+00c+0f4+0012+0f4+008+0f2+0022+0f4+008+0f2+0022+0f4+008+0f2+0022+0f4+008+0f2+0012+0fd+003+0f4+008+0f2+0012+0fd+003+0f4+008+0f2+0012+0fd+003+0f4+008+0f2+004+0f9+0015+0f4+008+0f2+004+0f9+0015+0f4+008+0f2+004+0f9+0015+0f4+008+0f2+0022+0f4+008+0f2+0022+0f4+008+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

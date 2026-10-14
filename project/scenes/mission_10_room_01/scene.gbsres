@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "b4f9b9c6-a6d2-57f2-a159-f2f01488e93f",
+  "_index": 147,
+  "type": "ADVENTURE",
+  "name": "Decoder Stack",
+  "symbol": "scene_mission_10_room_01",
+  "x": 1640,
+  "y": 4380,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "df947107-3173-55e4-8d75-d9cd122da347",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "6fcb2545-30db-5f04-81c6-92890ed14e71",
+    "0535e510-437f-59dc-90f7-f823f1bb852f",
+    "0e00d2ab-fc70-54ba-977a-88fed0219f6b",
+    "4826a3b5-7c73-590e-b218-a4578eb3612c",
+    "735ade14-66cd-50ad-af1c-4438f99d97f9",
+    "708167db-7f48-5edf-904f-9f1cb924d413",
+    "33bdb695-2fda-5111-bba4-b5d4c068dc29",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+0014+0f3+0017+0f2+005+0fa+005+0f3+0017+0f2+005+0fa+005+0f3+0017+0f2+005+0fa+005+0f3+00a+0f8+005+0f2+0014+0f3+00a+0f8+005+0f2+0014+0f3+00a+0f8+005+0f2+0014+0f3+0017+0f2+0014+0f3+0017+0f2+0014+0f3+0017+0f2+0014+0f3+0017+0f2+0014+0f3+0017+0f2+001b+0fb+008+0f2+001b+0fb+008+0f2+001b+0fb+008+0f2+002e+0f2+002e+0f2+007+0f3+0024+0f2+007+0f3+0024+0f2+007+0f3+0024+0f2+007+0f3+0017+0f3+00a+0f2+007+0f3+007+0fc+004+0f3+00a+0f2+007+0f3+007+0fc+004+0f3+00a+0f2+007+0f3+007+0fc+004+0f3+00a+0f2+007+0f3+0017+0f3+00a+0f2+007+0f3+0017+0f3+00a+0f2+007+0f3+0017+0f3+00a+0f2+007+0f3+0017+0f3+00a+0f2+0021+0f3+00a+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

@@ -1,0 +1,197 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Starfall Salvage - Full Campaign Flight Manual</title>
+<style>body{font:16px/1.6 system-ui;color:#152d42;background:#faf9f2;max-width:820px;margin:32px auto;padding:24px}h1,h2{color:#08787d}section{break-after:page;border-top:2px solid #c79135;padding-top:24px;margin-top:32px}table{border-collapse:collapse;width:100%;font-size:14px}th{background:#08787d;color:white}td,th{padding:9px;border-bottom:1px solid #c8d2d3;text-align:left}aside{padding:16px;background:#e9f3ef}img{max-width:100%;image-rendering:pixelated}figcaption{font-size:12px;color:#556779}.cover{image-rendering:auto;max-width:360px}</style>
+<h1>Starfall Salvage 1.1</h1><p><b>Full Campaign Flight Manual</b><br>By Stephan Arrington<br>Documentation revised 2026-10-14</p>
+<img class="cover" src="assets/box-art.png" alt="Original illustrated box art"><p>Illustrated box art, not a gameplay frame.</p>
+<section><h2>Welcome aboard</h2>
+<p>An original Game Boy Color adventure by <b>Stephan Arrington</b>. Pilot a salvage astronaut through a damaged station: thrust, drift, brake, restore its systems and bring the recovered cargo home.</p>
+<aside><b>Explore the full campaign:</b> 18 missions across six zones, with 72 large scrolling rooms, plus a separate repeating 12-room Arcade route. Choose your jobs, build a route and bring the salvage home.</aside>
+<h3>Your first flight</h3>
+<p><b>1. Choose Story.</b> At the title use Up/Down to highlight Story or Continue, then A to confirm. Select Arcade the same way. B goes back or cancels where a previous screen exists; it has no action at the title.</p>
+<p><b>2. Choose a job and rig.</b> Up/Down selects a mission; Left/Right selects an unlocked pulse rig. Press A to launch.</p>
+<p><b>3. Read the room briefing.</b> It names the objective and threat. Press A when ready. B goes back; leaving an unfinished Arcade run asks for confirmation.</p>
+<p><b>4. Fly the objective.</b> Tap a direction to gain momentum. Release to drift; hold B to brake. Press A for a ready close-range pulse.</p>
+<p><b>5. Deliver.</b> After completing the objective, return beside the real dock terminal. Delivery is automatic. In large rooms the dock is a specific safe area, not the entire bottom edge.</p>
+<figure><img width="320" src="assets/screenshots/title-1.1.png" alt="Native 1.1 emulator capture: choose a mode with Up/Down, then press A. The title footer identifies the game version."><figcaption>Native 1.1 emulator capture: choose a mode with Up/Down, then press A. The title footer identifies the game version.</figcaption></figure>
+</section>
+<section><h2>Controls and drift</h2>
+<table><thead><tr><th>Handheld</th><th>Browser default</th><th>Action</th></tr></thead><tbody>
+<tr><td>D-pad</td><td>Arrow keys</td><td>Thrust in play; Up/Down chooses in menus</td></tr>
+<tr><td>A</td><td>Z</td><td>Pulse in play; confirm selection in menus</td></tr>
+<tr><td>B</td><td>X</td><td>Brake/interact in play; back/cancel in menus</td></tr>
+<tr><td>Start</td><td>Enter</td><td>Pause and resume</td></tr>
+<tr><td>Select</td><td>P / Shift</td><td>Open exit options during play</td></tr>
+</tbody></table>
+<p>Browser keys match the supplied game export. Click the game area to focus it, or use the on-screen controller. Follow the displayed controls if you choose a different emulator or remap its keys.</p>
+<h3>Make momentum work for you</h3>
+<p>Thrust builds speed rather than moving your astronaut instantly. Releasing the D-pad leaves a drift. Start braking <b>before</b> a corner, then steer out of it. B also permits slower, more precise movement while held.</p>
+<p>A pulse checks nearby enemies when you press A. Watch <b>A READY / A WAIT</b>; holding A does not repeatedly fire. Keep enough space to evade before spending a pulse.</p>
+<h3>Read the HUD</h3>
+<p><b>H</b> is your hull, initially three points. The objective counter tracks cargo or nodes; in escort rooms <b>R</b> shows crew hull. M is the mission and BAY is the room within that mission. Direction hints point toward the next target, crew route or dock.</p>
+<aside>A card appears after launch, docking or failure. Give it a moment to settle, then release and press the intended button. A held brake is not a queued menu choice.</aside>
+</section>
+<section><h2>Salvage, relays and repair</h2>
+<h3>Salvage: approach all three</h3>
+<p>Cells, shards and beacons collect automatically when your astronaut drifts within their close range. Recover all three, then return beside the dock terminal. Merely approaching the dock before the objective is complete does not clear the room.</p>
+<h3>Ordered relays: the flashing node</h3>
+<p>Find the currently flashing node and hold <b>B continuously for 30 eligible gameplay updates</b> while within 12 pixels. Activate the three nodes in their indicated order. The HUD shows NODE and the current hold count.</p>
+<p>Releasing B or leaving the active node resets its partial hold. Another node cannot be activated early. Once all three are online, return to the dock.</p>
+<h3>Repair: any unfinished station</h3>
+<p>Hold <b>B continuously for 45 eligible gameplay updates</b> within 12 pixels of an unfinished station. Repair all three in any order, then dock. You can choose the station order that gives the safest route around the enemy.</p>
+<p>Release B, move away, or switch to another station and the partial hold resets. Completed stations remain completed within that attempt. Paused time does not advance these counters.</p>
+<table><thead><tr><th>Interaction</th><th>Required hold</th><th>Order</th></tr></thead><tbody>
+<tr><td>Relay</td><td>30 eligible updates</td><td>Flashing node only</td></tr>
+<tr><td>Repair</td><td>45 eligible updates</td><td>Any unfinished station</td></tr>
+<tr><td>Optional gold cache</td><td>20 eligible updates</td><td>One mission badge</td></tr>
+</tbody></table>
+<aside>These counts are gameplay updates, not a promise about wall-clock time on every emulator or device. Brake beside the station and read the live HUD.</aside>
+</section>
+<section><h2>Crew and guardian encounters</h2>
+<h3>Escort: stay close, then bring both home</h3>
+<p>The crew is a physical actor with <b>two hull points</b>. It follows its authored route only while you remain within <b>24 pixels</b>. Moving farther away stops it. Stay nearby to guide it through all three real route markers.</p>
+<p>Enemy charges and active floor hazards can hurt the crew. Defend it with a ready pulse and use cover. To wait before a dangerous crossing, move out of follow range while the crew is still on safe floor, then regroup when the route clears.</p>
+<p>The third marker alone is insufficient. The crew must finish its full route at the dock, and <b>your astronaut must also return beside the terminal</b> to deliver. Losing the crew ends the attempt; retry restores it.</p>
+<h3>Guardian: three separate openings</h3>
+<p>Every mission ends with a guardian that has <b>three shield points</b>. Evade its committed dash, then close in while the HUD says <b>CORE OPEN</b>. A pulse within your rig radius removes one point, at most once per opening.</p>
+<p>Pulsing outside OPEN can stun the guardian but does not damage its shield. After the third successful hit it releases three collectible cores: recover them and dock to finish the mission.</p>
+<div style="display:flex;gap:24px;flex-wrap:wrap">
+<figure style="flex:1;min-width:200px;margin:0"><img width="320" src="assets/screenshots/escort-flight.png" alt="Native 1.1 emulator capture: the crew follows your astronaut through the room."><figcaption>Native 1.1 emulator capture: the crew follows your astronaut through the room.</figcaption></figure>
+<figure style="flex:1;min-width:200px;margin:0"><img width="320" src="assets/screenshots/guardian-core-open.png" alt="Native 1.1 emulator capture: CORE OPEN - A PULSE marks the guardian damage window."><figcaption>Native 1.1 emulator capture: CORE OPEN - A PULSE marks the guardian damage window.</figcaption></figure>
+</div>
+</section>
+<section><h2>Enemies, hazards and safe docks</h2>
+<table><thead><tr><th>Threat</th><th>Read it</th><th>Your response</th></tr></thead><tbody>
+<tr><td>Charger</td><td>Amber locks a straight dash</td><td>Leave the aimed line; return during recovery</td></tr>
+<tr><td>Sweeper</td><td>Locks one horizontal or vertical axis</td><td>Cross its locked axis; use solid cover</td></tr>
+<tr><td>Hunter</td><td>Moves between dashes; targets crew in escort</td><td>Keep space and protect the crew route</td></tr>
+</tbody></table>
+<p>A drone damages actors during its <b>red charge</b>. Amber warning, ordinary recovery and cyan stun are approach windows. A charge can stop against solid cover. In a guardian room, use the explicit CORE OPEN status for damage opportunities.</p>
+<h3>Floor colors are a clock</h3>
+<p>Dim vent or beam markings are safe. <b>Amber warns; red is active and damaging.</b> Floor cycles begin after the first completed objective marker, or at launch for a guardian. Wait on safe floor rather than drifting into a red lane.</p>
+<p>Your pulse affects the enemy. It does not turn off floor hazards. The mission power-route perk can disable the second middle room's hazard before you enter it.</p>
+<h3>The dock protects; the room still matters</h3>
+<p>In Story, only the area beside the actual terminal is the safe dock. The classic small Arcade maps use their bottom dock strip. Stay near the terminal when delivering; the lower edge of a scrolling room is not a universal safe lane.</p>
+<p>Your astronaut and the crew briefly resist repeat damage after a hit. At zero astronaut hull, or zero crew hull in escort, the room attempt fails.</p>
+<aside>Story repairs your astronaut to three hull points on room entry, retry and successful delivery. Completed earlier rooms and the current mission route remain at their checkpoint.</aside>
+</section>
+<section><h2>Pulse rigs and route choices</h2>
+<table><thead><tr><th>Rig</th><th>Radius</th><th>Reload</th><th>Stun</th><th>Tradeoff</th></tr></thead><tbody>
+<tr><td>Standard</td><td>24 px</td><td>120</td><td>60</td><td>Balanced default</td></tr>
+<tr><td>Fast Capacitor</td><td>20 px</td><td>72</td><td>30</td><td>More shots; closer range and shorter stun</td></tr>
+<tr><td>Wide Coil</td><td>36 px</td><td>180</td><td>60</td><td>Reach farther; wait longer</td></tr>
+<tr><td>Overcharge</td><td>24 px</td><td>180</td><td>90</td><td>Longer stun; wait longer</td></tr>
+</tbody></table>
+<p>Reload and stun are eligible gameplay updates. At an ideal 60 updates per second, 120 is about two seconds. Rigs <b>replace</b> one another; they do not stack. A guardian still allows only one shield hit per opening.</p>
+<table><thead><tr><th>Unlock</th><th>First mission clear</th></tr></thead><tbody>
+<tr><td>Wide Coil</td><td>01 - Salvage Signal</td></tr>
+<tr><td>Fast Capacitor</td><td>02 - Bulkhead Circuit</td></tr>
+<tr><td>Overcharge</td><td>09 - Heat Grid</td></tr>
+</tbody></table>
+<h3>Choose which middle room comes first</h3>
+<p>After the arrival room, use <b>Up/Down to choose a route, then A to confirm</b>. Taking the power route first disables the supply route's hazard. The power route may itself be a repair or relay room; read its briefing.</p>
+<p>Taking the <b>supply route first</b> shortens pulse reload in the power route to at most 72 updates. The selected rig's radius and stun remain unchanged. You must complete both routes before the guardian. B returns to the title with the checkpoint retained.</p>
+<p>Mission-board Left/Right selects unlocked rigs. The Arcade workbench uses Up/Down and A; B returns to the dock.</p>
+<figure><img width="320" src="assets/screenshots/route-choice.png" alt="Native 1.1 emulator capture: the highlighted route explains the benefit of taking it first."><figcaption>Native 1.1 emulator capture: the highlighted route explains the benefit of taking it first.</figcaption></figure>
+</section>
+<section><h2>Six zones, eighteen jobs</h2>
+<p>In each zone, its <b>two regular jobs may be chosen in either order</b>. Clear both to unlock its final job. Clearing that third job opens the next zone. Each job has four large rooms: arrival, both middle routes, then guardian and extraction.</p>
+<table><thead><tr><th>Job</th><th>Zone</th><th>Mission</th><th>Access</th></tr></thead><tbody>
+<tr><td>01</td><td>Wreck Hull</td><td>Salvage Signal</td><td>Regular job</td></tr>
+<tr><td>02</td><td>Wreck Hull</td><td>Bulkhead Circuit</td><td>Regular job</td></tr>
+<tr><td>03</td><td>Wreck Hull</td><td>Rescue Passage</td><td>Final job</td></tr>
+<tr><td>04</td><td>Coolant Works</td><td>Pressure Network</td><td>Regular job</td></tr>
+<tr><td>05</td><td>Coolant Works</td><td>Crew Transfer</td><td>Regular job</td></tr>
+<tr><td>06</td><td>Coolant Works</td><td>Coolant Restart</td><td>Final job</td></tr>
+<tr><td>07</td><td>Solar Foundry</td><td>Foundry Access</td><td>Regular job</td></tr>
+<tr><td>08</td><td>Solar Foundry</td><td>Shift Evacuation</td><td>Regular job</td></tr>
+<tr><td>09</td><td>Solar Foundry</td><td>Heat Grid</td><td>Final job</td></tr>
+<tr><td>10</td><td>Signal Archive</td><td>Archive Uplink</td><td>Regular job</td></tr>
+<tr><td>11</td><td>Signal Archive</td><td>Signal Rescue</td><td>Regular job</td></tr>
+<tr><td>12</td><td>Signal Archive</td><td>Lens Alignment</td><td>Final job</td></tr>
+<tr><td>13</td><td>Outer Array</td><td>Beacon Array</td><td>Regular job</td></tr>
+<tr><td>14</td><td>Outer Array</td><td>Navigation Rescue</td><td>Regular job</td></tr>
+<tr><td>15</td><td>Outer Array</td><td>Ground The Jammer</td><td>Final job</td></tr>
+<tr><td>16</td><td>Star Engine</td><td>Ignition Trail</td><td>Regular job</td></tr>
+<tr><td>17</td><td>Star Engine</td><td>Last Signal</td><td>Regular job</td></tr>
+<tr><td>18</td><td>Star Engine</td><td>Starfall Heart</td><td>Final job</td></tr>
+</tbody></table>
+<h3>Mission salvage score and caches</h3>
+<p>The flight deck labels the mission score <b>SALVAGE</b>. First-clearing a mission awards 300; replaying it awards no extra credit. This score is not spent in a shop. Cleared jobs can be replayed from the flight deck.</p>
+<p>Gold cache pads award one optional badge per mission after B is held nearby for 20 updates. The badge is committed at the next confirmed checkpoint. Caches are bonus challenges, not prerequisites for access.</p>
+</section>
+<section><h2>Pause, retry and checkpoints</h2>
+<h3>Pause and retry</h3>
+<p><b>Start:</b> pause or resume. In Pause, Up/Down chooses Resume, Retry Checkpoint or Exit; A confirms. B resumes without resetting the attempt. Retry restores full hull and crew, keeping earlier rooms and the rig. A at failure retries; B goes back to the title.</p>
+<p><b>Select during play:</b> open abandon confirmation. A exits to the title; B cancels into Pause. In Arcade, selecting Fresh Sortie and confirming A loses the unbanked haul. B never selects Retry or Fresh Sortie.</p>
+<figure><img width="320" src="assets/screenshots/pause-menu.png" alt="Native 1.1 emulator capture: Up/Down selects a pause option. A confirms it; B resumes the current attempt."><figcaption>Native 1.1 emulator capture: Up/Down selects a pause option. A confirms it; B resumes the current attempt.</figcaption></figure>
+<h3>Story saves to cartridge SRAM</h3>
+<p>Story writes a checkpoint on accepted room entry and after completed rooms, branch choices and mission results. The saved card stage, rig, route progress, mission clears, score and campaign statistics can be restored by <b>selecting Continue and pressing A</b> at the title.</p>
+<p>A checkpoint restarts the current room from its entry or restores its completed-room card. It does not save an astronaut's position or partial station hold in the middle of play. Look for <b>CHECKPOINT SAVED</b>. A <b>SAVE WRITE FAILED</b> card means the write was not confirmed; do not assume that progress persisted.</p>
+<h3>New Story and global achievements</h3>
+<p>With a Story checkpoint present, <b>select New Story at the title and press A</b>. A confirms the reset; B cancels. New Story resets campaign progress, mission salvage score, clear-time counters and current rig. Global optional badges, unlocked rigs and best banked Arcade score are retained.</p>
+</section>
+<section><h2>Arcade: risk another sector or bank</h2>
+<p>Arcade is a separate repeating route through the <b>12 classic small maps</b>, including its Warden. Start with three hull and Standard. Hull carries between sectors; each successful dock repairs one point, up to three.</p>
+<table><thead><tr><th>At the dock</th><th>Choice</th></tr></thead><tbody>
+<tr><td>Continue</td><td>Select with Up/Down, confirm A, then choose a rig</td></tr>
+<tr><td>Bank and Go Home</td><td>Select with Up/Down and A to secure the haul</td></tr>
+<tr><td>Workbench</td><td>Up/Down chooses Keep or a replacement; A confirms</td></tr>
+<tr><td>B - Back</td><td>Workbench returns to dock; leaving the run asks for confirmation</td></tr>
+</tbody></table>
+<p>Workbench options rotate among Standard, Fast Capacitor, Wide Coil, Overcharge and <b>Hull Patch</b>. Hull Patch fully repairs the hull and resets the pulse to Standard. Sidegrades do not stack.</p>
+<div style="display:flex;gap:24px;flex-wrap:wrap">
+<figure style="flex:1;min-width:200px;margin:0"><img width="320" src="assets/screenshots/arcade-bank-choice.png" alt="Native 1.1 emulator capture: choose Continue or Bank and Go Home, then press A."><figcaption>Native 1.1 emulator capture: choose Continue or Bank and Go Home, then press A.</figcaption></figure>
+<figure style="flex:1;min-width:200px;margin:0"><img width="320" src="assets/screenshots/workbench.png" alt="Native 1.1 emulator capture: choose Keep Current Rig or a replacement. B returns to the dock."><figcaption>Native 1.1 emulator capture: choose Keep Current Rig or a replacement. B returns to the dock.</figcaption></figure>
+</div>
+</section>
+<section><h2>Complete, bank and return</h2>
+<h3>Earn, bank, lose</h3>
+<p>Completed dock deliveries award 300 in sector 1, 600 in sector 2, and so on up to 3,000 per sector from sector 10. The haul caps at 60,000. Pickups without delivery do not award score.</p>
+<p>At zero hull the <b>entire unbanked haul is lost</b>. Returning to the title or restarting also abandons that haul. Later loops increase enemy pressure and later sectors shorten safe floor windows. Sector numbers stop increasing at 99 while the route continues.</p>
+<p><b>BEST BANKED</b> is saved to cartridge SRAM when you bank. Banking updates Arcade statistics while retaining the committed Story checkpoint. An unfinished sortie has no persistent resume point.</p>
+<h3>Story: bring the station home</h3>
+<p>Clear all 18 missions and 72 rooms to reach STARFALL SAVED. The ending shows your CLEAR TIME and rank. A or B returns to the title; Continue restores the completed campaign.</p>
+<div style="display:flex;gap:24px;flex-wrap:wrap">
+<figure style="flex:1;min-width:200px;margin:0"><img width="320" src="assets/screenshots/arcade-bank-result.png" alt="Native 1.1 Arcade result: a completed test sortie banked 25,500."><figcaption>Native 1.1 Arcade result: a completed test sortie banked 25,500.</figcaption></figure>
+<figure style="flex:1;min-width:200px;margin:0"><img width="320" src="assets/screenshots/story-ending-1.1.png" alt="Native 1.1 Story ending: 00:35:27, Rank B, after all 18 missions and 72 rooms. Guided functional playthrough."><figcaption>Native 1.1 Story ending: 00:35:27, Rank B, after all 18 missions and 72 rooms. Guided functional playthrough.</figcaption></figure>
+</div>
+<aside>Banking early is a successful choice. A large haul that never reaches a bank is still unbanked cargo.</aside>
+</section>
+<section><h2>Choose how to play</h2>
+<p>Use <b>Starfall-Salvage-1.1.gbc</b> from the full-game package. This is a <b>Game Boy Color-only</b> game. Original Game Boy and Game Boy Pocket are unsupported. Keep the .gbc extension; this is not a .gba game.</p>
+<h3>1. Play the supplied browser edition</h3>
+<p>Extract the browser edition and serve its folder with a local or hosted web server, then open its index.html through that server. Click the game area to focus it. Use the keyboard controls on page 3 or the on-screen controls. Opening the file directly may not work. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.</p>
+<h3>2. Open the ROM in a GBC emulator</h3>
+<p>Open the .gbc file in an emulator that supports Game Boy Color and battery saves. Select CGB or automatic color detection, and allow it to save your progress. <a href="https://sameboy.github.io/" color="#08787D">SameBoy</a> is one example; its <a href="https://sameboy.github.io/features/" color="#08787D">documented features</a> include both. This release has not yet been tested in SameBoy.</p>
+<h3>3. Use a compatible SD flash cartridge</h3>
+<p>Use a compatible GB/GBC SD flash cartridge in a color-capable handheld such as a Chromatic or Game Boy Color. The EverDrive GB X7 is one example. Power off the handheld, remove the card and connect it to a computer using an ordinary SD-card reader. Copy the .gbc file into a games folder outside the cartridge system folder. Eject the card, reinsert it, power on and choose the game from the cartridge menu. Follow that cartridge's manual for saving.</p>
+<h3>4. Program a writable homebrew cartridge</h3>
+<p>Advanced users can program a compatible writable cartridge using its matching writer and software. Confirm the requirements below, follow the cartridge and writer instructions, and verify the written ROM before use. Different cartridge designs need different writers and settings; a blank cartridge alone is not enough. See this <a href="https://github.com/MouseBiteLabs/Game-Boy-MBC5-Cartridge" color="#08787D">MBC5 cartridge design and writer documentation</a> for an example, not a tested hardware recommendation.</p>
+<aside><b>Advanced cartridge requirements:</b> MBC5; at least 1 MiB of ROM storage; 32 KiB of persistent save RAM. The supplied ROM header is 0x1E (MBC5 + rumble + RAM + battery). Confirm the exact cartridge/writer combination supports this image. SD copying uses a card reader; Chromatic USB is not an SD-card passthrough.</aside>
+</section>
+<section><h2>Saves, clear time and tested scope</h2>
+<h3>Keep the matching save data</h3>
+<p>Keep the game file with its matching battery-save data when moving between an emulator and a cartridge. Use the emulator or cartridge's documented save import/export process. Checkpoint behavior is described on page 9; mid-room position is not saved.</p>
+<p>Browser persistence depends on the export and its storage handling. A cartridge SRAM checkpoint does not prove that a browser run will survive reloading the page. Before depending on a long-term save, confirm that your chosen setup can close, reopen and Continue.</p>
+<h3>Clear time and rank</h3>
+<p>CLEAR TIME counts successful room attempts; it excludes pauses, menus and failed room attempts. It is not a measure of first-time human campaign duration. Rank counts damage to your astronaut, including failed attempts: <b>S</b> for no hits, <b>A</b> for one or two, and <b>B</b> for three or more.</p>
+<aside><b>Measured 1.1 clear:</b> a fresh guided native emulator playthrough completed all 18 Story missions and 72 rooms in <b>00:35:27</b> on the in-game timer, with <b>Rank B</b>. This is a functional test result, not elapsed session time or a first-time human estimate.</aside>
+<p><b>Tested in PyBoy 2.7.0:</b> the complete Story campaign, all guardians and crew rescues, all four rigs, both route orders, pause and Title/Continue passed using the exact released 1.1 native ROM. The separate 12-map Arcade cycle plus sector 13 also passed. These results qualify the native emulator run. Physical hardware, the complete browser campaign, heard audio and cold-start save persistence remain unverified.</p>
+</section>
+<section><h2>Credits and flight checklist</h2>
+<h3>Original homebrew by Stephan Arrington</h3>
+<p>Game design, campaign and Arcade implementation, native project development and this booklet: <b>Stephan Arrington with OpenAI Codex assistance</b>.</p>
+<p>Astronaut, cells, drone, pulse, native room and interface pixel artwork: original artwork authored for Starfall Salvage. Music and sound effects: original chiptune composition, zone arrangements, wave data and gameplay sound-effect code authored for this game.</p>
+<p>Illustrated box art: AI-generated with the built-in image generation tool. The original illustration and prompt provenance are retained in the project's artwork folder. The nine gameplay screenshots in this booklet are unaltered 160 x 144 captures from the version 1.1 native emulator. They are not physical Chromatic photographs or captures. Their source-frame and ROM provenance is retained with the manual assets.</p>
+<p>Built with <b>GB Studio</b> by Chris Maltby and contributors, and <b>GBDK-2020</b> by the GBDK contributors. Retained project UI/font resources and third-party license notices remain with the source package. This booklet does not replace those notices.</p>
+<h3>Before the next launch</h3>
+<table><thead><tr><th>Check</th><th>Why</th></tr></thead><tbody>
+<tr><td>Read the objective</td><td>Salvage, relay, repair, escort and guardian differ</td></tr>
+<tr><td>Know where the real dock is</td><td>Delivery requires the terminal&#x27;s safe area</td></tr>
+<tr><td>Watch A READY / A WAIT</td><td>Use a pulse you actually have</td></tr>
+<tr><td>Brake before turning</td><td>Keep the drift under control</td></tr>
+<tr><td>Give the crew time and space</td><td>Three markers plus full dock arrival</td></tr>
+<tr><td>Confirm the save card</td><td>Resume the committed checkpoint</td></tr>
+</tbody></table>
+<aside><b>Make the next run yours.</b> Try a different middle-room order, discover every cache, master a new pulse rig or bank a bigger Arcade haul. Bring the crew home and keep the station flying.</aside>
+</section>
+</html>

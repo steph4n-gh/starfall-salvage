@@ -1,0 +1,460 @@
+{
+  "mission": 3,
+  "name": "PRESSURE NETWORK",
+  "zone": 1,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four staged native rooms; optional cache markers are background artwork only. Existing objective APIs only.",
+  "rooms": [
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 0,
+      "name": "PUMP GARDEN",
+      "scene_symbol": "scene_mission_04_room_00",
+      "zone": 1,
+      "objective": "salvage",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        24,
+        22,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          8,
+          7,
+          4,
+          12
+        ],
+        [
+          22,
+          5,
+          4,
+          9
+        ],
+        [
+          36,
+          12,
+          4,
+          14
+        ],
+        [
+          13,
+          24,
+          15,
+          3
+        ],
+        [
+          30,
+          31,
+          12,
+          3
+        ],
+        [
+          4,
+          28,
+          6,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          128,
+          64
+        ],
+        [
+          344,
+          168
+        ],
+        [
+          208,
+          264
+        ]
+      ],
+      "drone": [
+        248,
+        136
+      ],
+      "enemy_bounds": [
+        224,
+        112,
+        128,
+        128
+      ],
+      "art_kind": "pump_garden",
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "3 CELLS THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 1,
+      "name": "VALVE GALLERY",
+      "scene_symbol": "scene_mission_04_room_01",
+      "zone": 1,
+      "objective": "repair",
+      "enemy": "hunter",
+      "hazard": "vent",
+      "hazard_rect": [
+        18,
+        17,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          7,
+          6,
+          12,
+          3
+        ],
+        [
+          25,
+          8,
+          4,
+          13
+        ],
+        [
+          37,
+          7,
+          5,
+          3
+        ],
+        [
+          6,
+          17,
+          5,
+          11
+        ],
+        [
+          16,
+          28,
+          17,
+          3
+        ],
+        [
+          35,
+          26,
+          4,
+          8
+        ]
+      ],
+      "cells": [
+        [
+          88,
+          104
+        ],
+        [
+          328,
+          128
+        ],
+        [
+          184,
+          272
+        ]
+      ],
+      "drone": [
+        264,
+        128
+      ],
+      "enemy_bounds": [
+        240,
+        88,
+        112,
+        136
+      ],
+      "art_kind": "valve_gallery",
+      "brief1": "HOLD B TO REPAIR",
+      "brief2": "ANY ORDER THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        232
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 52,
+      "room": 2,
+      "name": "FLOW LADDER",
+      "scene_symbol": "scene_mission_04_room_02",
+      "zone": 1,
+      "objective": "relay",
+      "enemy": "sweeper",
+      "hazard": "laser",
+      "hazard_rect": [
+        4,
+        20,
+        9,
+        1
+      ],
+      "covers": [
+        [
+          14,
+          5,
+          3,
+          15
+        ],
+        [
+          28,
+          14,
+          3,
+          17
+        ],
+        [
+          5,
+          23,
+          9,
+          3
+        ],
+        [
+          34,
+          7,
+          10,
+          3
+        ],
+        [
+          12,
+          31,
+          12,
+          3
+        ],
+        [
+          39,
+          26,
+          5,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          64,
+          104
+        ],
+        [
+          328,
+          144
+        ],
+        [
+          200,
+          288
+        ]
+      ],
+      "drone": [
+        264,
+        160
+      ],
+      "enemy_bounds": [
+        248,
+        104,
+        112,
+        136
+      ],
+      "art_kind": "flow_ladder",
+      "brief1": "HOLD B IN NODE ORDER",
+      "brief2": "LIT NODE THEN NEXT",
+      "optional_cache_marker": [
+        344,
+        264
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 48,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 3,
+      "name": "PRESSURE WARDEN",
+      "scene_symbol": "scene_mission_04_room_03",
+      "zone": 1,
+      "objective": "core",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        27,
+        25,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          16,
+          9,
+          4,
+          13
+        ],
+        [
+          32,
+          6,
+          4,
+          13
+        ],
+        [
+          32,
+          26,
+          4,
+          9
+        ],
+        [
+          7,
+          19,
+          8,
+          3
+        ],
+        [
+          21,
+          30,
+          9,
+          3
+        ],
+        [
+          6,
+          5,
+          9,
+          3
+        ],
+        [
+          39,
+          17,
+          5,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          208,
+          64
+        ],
+        [
+          88,
+          120
+        ],
+        [
+          328,
+          256
+        ]
+      ],
+      "drone": [
+        216,
+        152
+      ],
+      "enemy_bounds": [
+        176,
+        120,
+        176,
+        112
+      ],
+      "art_kind": "pressure_warden",
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "optional_cache_marker": [
+        344,
+        64
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "7a41a940-6bea-5bed-a93a-4779921d0171",
+  "_index": 178,
+  "type": "ADVENTURE",
+  "name": "Event Spine",
+  "symbol": "scene_mission_18_room_00",
+  "x": 1200,
+  "y": 7900,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "0e0d0e4e-9dbe-59d8-a3de-b5e2c5a8f82b",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+006+0fc+006+0fe+008+0f2+006+0fc+006+0fe+008+0f2+006+0fc+006+0fe+008+0f2+002e+0f2+002e+0f2+002e+0f2+0027+0f3+004+0f2+0027+0f3+004+0f2+00f+0f5+0013+0f3+004+0f2+00f+0f5+0013+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+00a+0f5+004+0f3+004+0f2+00f+0f5+0013+0f3+004+0f2+00f+0f5+0013+0f3+004+0f2+0027+0f3+004+0f2+002e+0f2+004+0fc+001e+0f2+004+0fc+001e+0f2+004+0fc+001e+0f2+0017+0ff+008+0f2+0017+0ff+008+0f2+0017+0ff+008+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

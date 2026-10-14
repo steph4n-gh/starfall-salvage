@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "818dadc8-0f61-5c81-bdac-1861cf8c3358",
+  "_index": 111,
+  "type": "ADVENTURE",
+  "name": "Signal Works",
+  "symbol": "scene_mission_01_room_01",
+  "x": 1640,
+  "y": 420,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "b0e010aa-001e-5e31-9b89-402cc1e0e6ac",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "4a53b20b-a096-5f1f-aa6f-63010217e92c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+004+0f3+0027+0f2+004+0f3+0027+0f2+004+0f3+00a+0f10+00d+0f2+0011+0f10+00d+0f2+0011+0f10+00d+0f2+002e+0f2+002e+0f2+002e+0f2+008+0f3+0023+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+0021+0f3+00a+0f2+0015+0f4+008+0f3+00a+0f2+0015+0f4+008+0f3+00a+0f2+0015+0f4+0015+0f2+002e+0f2+002e+0f2+005+0fe+001b+0f2+005+0fe+001b+0f2+005+0fe+001b+0f2+001b+0fc+007+0f2+001b+0fc+007+0f2+001b+0fc+007+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

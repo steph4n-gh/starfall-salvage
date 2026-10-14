@@ -1,0 +1,560 @@
+{
+  "mission": 2,
+  "name": "RESCUE PASSAGE",
+  "zone": 0,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four staged native rooms; optional cache markers are background artwork only.",
+  "rooms": [
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 0,
+      "name": "DEBRIS HALO",
+      "scene_symbol": "scene_mission_03_room_00",
+      "objective": "salvage",
+      "enemy": "hunter",
+      "hazard": "vent",
+      "hazard_rect": [
+        23,
+        24,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          14,
+          8,
+          17,
+          3
+        ],
+        [
+          11,
+          13,
+          3,
+          15
+        ],
+        [
+          34,
+          12,
+          3,
+          14
+        ],
+        [
+          17,
+          30,
+          14,
+          3
+        ],
+        [
+          4,
+          6,
+          5,
+          4
+        ],
+        [
+          39,
+          26,
+          5,
+          6
+        ]
+      ],
+      "cells": [
+        [
+          56,
+          104
+        ],
+        [
+          224,
+          144
+        ],
+        [
+          344,
+          280
+        ]
+      ],
+      "drone": [
+        224,
+        112
+      ],
+      "enemy_bounds": [
+        128,
+        96,
+        136,
+        128
+      ],
+      "art_kind": "debris_halo",
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "LOOP AROUND THE HALO",
+      "optional_cache_marker": [
+        328,
+        64
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 1,
+      "name": "TRIAGE HUB",
+      "scene_symbol": "scene_mission_03_room_01",
+      "objective": "repair",
+      "enemy": "charger",
+      "hazard": "laser",
+      "hazard_rect": [
+        18,
+        18,
+        14,
+        1
+      ],
+      "covers": [
+        [
+          7,
+          11,
+          9,
+          3
+        ],
+        [
+          22,
+          5,
+          4,
+          10
+        ],
+        [
+          34,
+          12,
+          7,
+          3
+        ],
+        [
+          9,
+          25,
+          9,
+          3
+        ],
+        [
+          24,
+          27,
+          4,
+          7
+        ],
+        [
+          35,
+          24,
+          5,
+          8
+        ],
+        [
+          5,
+          30,
+          7,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          80,
+          56
+        ],
+        [
+          328,
+          168
+        ],
+        [
+          256,
+          264
+        ]
+      ],
+      "drone": [
+        240,
+        112
+      ],
+      "enemy_bounds": [
+        216,
+        80,
+        136,
+        144
+      ],
+      "art_kind": "triage_hub",
+      "brief1": "HOLD B TO REPAIR",
+      "brief2": "ANY ORDER THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 52,
+      "room": 2,
+      "name": "POD CAUSEWAY",
+      "scene_symbol": "scene_mission_03_room_02",
+      "objective": "escort",
+      "enemy": "sweeper",
+      "hazard": "vent",
+      "hazard_rect": [
+        34,
+        23,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          14,
+          10,
+          5,
+          17
+        ],
+        [
+          28,
+          7,
+          5,
+          12
+        ],
+        [
+          30,
+          27,
+          7,
+          3
+        ],
+        [
+          5,
+          7,
+          5,
+          4
+        ],
+        [
+          6,
+          23,
+          7,
+          3
+        ],
+        [
+          21,
+          30,
+          11,
+          3
+        ],
+        [
+          39,
+          14,
+          4,
+          8
+        ]
+      ],
+      "cells": [
+        [
+          328,
+          264
+        ],
+        [
+          184,
+          96
+        ],
+        [
+          64,
+          144
+        ]
+      ],
+      "drone": [
+        280,
+        112
+      ],
+      "enemy_bounds": [
+        264,
+        88,
+        88,
+        120
+      ],
+      "art_kind": "pod_causeway",
+      "brief1": "STAY NEAR THE CREW",
+      "brief2": "GUIDE THEM TO DOCK",
+      "optional_cache_marker": [
+        344,
+        64
+      ],
+      "escort_start": [
+        88,
+        280
+      ],
+      "escort_route": [
+        [
+          88,
+          280
+        ],
+        [
+          328,
+          280
+        ],
+        [
+          328,
+          264
+        ],
+        [
+          360,
+          264
+        ],
+        [
+          360,
+          200
+        ],
+        [
+          280,
+          200
+        ],
+        [
+          280,
+          40
+        ],
+        [
+          184,
+          40
+        ],
+        [
+          184,
+          96
+        ],
+        [
+          184,
+          40
+        ],
+        [
+          96,
+          40
+        ],
+        [
+          96,
+          144
+        ],
+        [
+          64,
+          144
+        ],
+        [
+          96,
+          144
+        ],
+        [
+          96,
+          168
+        ],
+        [
+          32,
+          168
+        ],
+        [
+          32,
+          264
+        ],
+        [
+          48,
+          264
+        ],
+        [
+          48,
+          296
+        ]
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 48,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 3,
+      "name": "POD WARDEN",
+      "scene_symbol": "scene_mission_03_room_03",
+      "objective": "core",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        20,
+        24,
+        12,
+        1
+      ],
+      "covers": [
+        [
+          15,
+          10,
+          12,
+          3
+        ],
+        [
+          30,
+          7,
+          4,
+          8
+        ],
+        [
+          10,
+          17,
+          5,
+          10
+        ],
+        [
+          33,
+          20,
+          10,
+          3
+        ],
+        [
+          22,
+          29,
+          8,
+          3
+        ],
+        [
+          4,
+          28,
+          9,
+          3
+        ],
+        [
+          36,
+          29,
+          5,
+          5
+        ],
+        [
+          6,
+          6,
+          6,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          176,
+          48
+        ],
+        [
+          56,
+          152
+        ],
+        [
+          344,
+          256
+        ]
+      ],
+      "drone": [
+        200,
+        144
+      ],
+      "enemy_bounds": [
+        128,
+        112,
+        216,
+        104
+      ],
+      "art_kind": "pod_warden",
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "optional_cache_marker": [
+        344,
+        56
+      ]
+    }
+  ]
+}

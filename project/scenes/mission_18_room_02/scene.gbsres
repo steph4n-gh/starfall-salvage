@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "5d4222a2-6451-5fa3-9bf6-dcb2f82a6e1c",
+  "_index": 180,
+  "type": "ADVENTURE",
+  "name": "Crown Network",
+  "symbol": "scene_mission_18_room_02",
+  "x": 2080,
+  "y": 7900,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "b5927ab7-59a4-5607-932b-1791694bf5f7",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0013+0f11+00a+0f2+0013+0f11+00a+0f2+0013+0f11+00a+0f2+008+0f5+0021+0f2+008+0f5+0019+0f4+004+0f2+008+0f5+0019+0f4+004+0f2+008+0f5+0019+0f4+004+0f2+008+0f5+0019+0f4+004+0f2+008+0f5+0019+0f4+004+0f2+008+0f5+00a+0f4+0013+0f2+008+0f5+00a+0f4+0013+0f2+008+0f5+00a+0f4+0013+0f2+008+0f5+00a+0f4+0013+0f2+008+0f5+00a+0f4+0013+0f2+008+0f5+00a+0f4+0013+0f2+0017+0f4+0013+0f2+0017+0f4+005+0f9+005+0f2+0017+0f4+005+0f9+005+0f2+0017+0f4+005+0f9+005+0f2+0017+0f4+0013+0f2+006+0fd+004+0f4+0013+0f2+006+0fd+004+0f4+0013+0f2+006+0fd+001b+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0013+0ff+00c+0f2+0013+0ff+00c+0f2+0013+0ff+00c+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

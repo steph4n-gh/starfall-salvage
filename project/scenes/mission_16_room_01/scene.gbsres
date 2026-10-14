@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "16a9ad96-ecf7-5438-8286-4c8a3b921554",
+  "_index": 171,
+  "type": "ADVENTURE",
+  "name": "Lens Gallery",
+  "symbol": "scene_mission_16_room_01",
+  "x": 1640,
+  "y": 7020,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "222a14d7-fc04-5541-a354-da2862d9884d",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+004+0f3+001f+0f4+004+0f2+004+0f3+001f+0f4+004+0f2+004+0f3+001f+0f4+004+0f2+00e+0f11+007+0f4+004+0f2+00e+0f11+007+0f4+004+0f2+00e+0f11+00f+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+008+0f3+0023+0f2+008+0f3+008+0fb+0010+0f2+008+0f3+008+0fb+003+0f3+00a+0f2+008+0f3+008+0fb+003+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+008+0f3+0016+0f3+00a+0f2+0021+0f3+00a+0f2+0021+0f3+00a+0f2+0010+0fb+006+0f3+00a+0f2+0010+0fb+006+0f3+00a+0f2+0010+0fb+006+0f3+00a+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

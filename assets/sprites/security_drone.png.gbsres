@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "e5567017-c669-5e03-b7dc-97d0384f23a6",
+  "name": "Security Drone",
+  "symbol": "sprite_security_drone",
+  "states": [
+    {
+      "id": "2c720923-e92b-53b6-a0eb-0549aa80c0f6",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "77efc0ec-4b86-523d-9f3c-dee1102b3322",
+          "frames": [
+            {
+              "id": "a9c57454-b49d-5bc8-a4bd-62c5c8d7814b",
+              "tiles": [
+                {
+                  "id": "679fff51-c14b-588a-978d-dec8f1e705b5",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 1,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "22bc5b57-ec4f-507c-9112-9843ff2b59c3",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 1,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "47cacb46-fd19-50d6-82ef-93e2720b307e",
+          "frames": [
+            {
+              "id": "406eb4b7-a62b-5a90-8a3f-898149aa7634",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fe3234eb-3361-5303-bf01-ac17202f3f9c",
+          "frames": [
+            {
+              "id": "8b6d12b8-fe37-50cb-a945-1be1fa63f71f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1ad3a9be-5133-5658-8092-1638c1bce55a",
+          "frames": [
+            {
+              "id": "fe08c92c-bfa5-59de-b3cc-534dc4a9c23e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "542c054d-e6ed-5181-8d0b-be8769e7fc95",
+          "frames": [
+            {
+              "id": "d7de0fd3-48e3-5a4e-8a38-1a6c43fb2086",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7960863f-7a2c-5337-b106-1415e53e4e1d",
+          "frames": [
+            {
+              "id": "612c59df-e6af-59ff-8a84-05e8fcb5f7aa",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "03ad6ffb-0159-5eda-9bcb-28d9cbc7da06",
+          "frames": [
+            {
+              "id": "27eda383-5ce5-5230-be07-bb0aa8f44fb2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "eb3a8604-3023-52c6-a854-177bcc5ba7d2",
+          "frames": [
+            {
+              "id": "d2399a9c-1801-53b2-ad70-be21380d7a76",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "security_drone.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "48a5adbeacf10bf5167efb2e0782811764da69af"
+}

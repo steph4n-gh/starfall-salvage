@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "26d93e0c-53b1-5bba-84a2-78a48ef44e5f",
+  "_index": 116,
+  "type": "ADVENTURE",
+  "name": "Patch Deck",
+  "symbol": "scene_mission_02_room_02",
+  "x": 2080,
+  "y": 860,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "7d028f80-1bfc-546c-b6e7-b4c715724b15",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "66041d40-65a9-50eb-914b-08e3719b2451",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+005+0f9+008+0f4+0014+0f2+005+0f9+008+0f4+0014+0f2+005+0f9+008+0f4+0014+0f2+005+0f9+008+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+008+0f7+005+0f2+0016+0f4+008+0f7+005+0f2+0016+0f4+008+0f7+005+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+002+0f7+0025+0f2+002+0f7+0025+0f2+002+0f7+0025+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+001d+0f5+00c+0f2+001d+0f5+00c+0f2+00a+0fc+007+0f5+00c+0f2+00a+0fc+007+0f5+00c+0f2+00a+0fc+007+0f5+002+0f5+005+0f2+00a+0fc+007+0f5+002+0f5+005+0f2+001d+0f5+002+0f5+005+0f2+001d+0f5+002+0f5+005+0f2+0024+0f5+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "877c8946-45ad-5e18-8938-8e1018d04bd8",
+  "_index": 131,
+  "type": "ADVENTURE",
+  "name": "Pressure Relays",
+  "symbol": "scene_mission_06_room_01",
+  "x": 1640,
+  "y": 2620,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "ae51f122-ba5b-51f5-822d-cd2592973640",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+006+0f4+0024+0f2+006+0f4+006+0fe+008+0f5+003+0f2+006+0f4+006+0fe+008+0f5+003+0f2+006+0f4+006+0fe+008+0f5+003+0f2+006+0f4+001c+0f5+003+0f2+006+0f4+0024+0f2+006+0f4+0024+0f2+006+0f4+0024+0f2+006+0f4+0024+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+006+0f4+0017+0f4+009+0f2+0021+0f4+009+0f2+00c+0fd+008+0f4+009+0f2+00c+0fd+008+0f4+009+0f2+00c+0fd+008+0f4+009+0f2+0021+0f4+009+0f2+0021+0f4+009+0f2+0021+0f4+009+0f2+002e+0f2+004+0fb+001f+0f2+004+0fb+009+0fb+00b+0f2+004+0fb+009+0fb+00b+0f2+0018+0fb+00b+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

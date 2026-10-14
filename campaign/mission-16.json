@@ -1,0 +1,475 @@
+{
+  "mission": 15,
+  "name": "IGNITION TRAIL",
+  "zone": 5,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Authored native geometry and existing salvage/relay/repair/escort/core mechanics only; staged assets, not native gameplay verification.",
+  "rooms": [
+    {
+      "name": "FUSION APPROACH",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "salvage",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        26,
+        25,
+        2,
+        2
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          9,
+          7,
+          4,
+          17
+        ],
+        [
+          21,
+          5,
+          4,
+          10
+        ],
+        [
+          21,
+          20,
+          4,
+          11
+        ],
+        [
+          33,
+          9,
+          5,
+          17
+        ],
+        [
+          3,
+          31,
+          8,
+          2
+        ],
+        [
+          13,
+          29,
+          4,
+          6
+        ],
+        [
+          39,
+          30,
+          5,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          152,
+          64
+        ],
+        [
+          296,
+          56
+        ],
+        [
+          336,
+          224
+        ]
+      ],
+      "drone": [
+        232,
+        160
+      ],
+      "art_kind": "fusion_approach",
+      "brief1": "THREE IGNITION CELLS",
+      "brief2": "WEAVE THE HEAT FINS",
+      "warning_frames": 48,
+      "dash_frames": 18,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Choose the left service loop or the two breaks in the long heat-fin walls; the final cell requires crossing into the far-right return aisle.",
+      "room": 0,
+      "scene_symbol": "scene_mission_16_room_00"
+    },
+    {
+      "name": "LENS GALLERY",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "repair",
+      "enemy": "sweeper",
+      "hazard": "laser",
+      "hazard_rect": [
+        16,
+        24,
+        12,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          15,
+          8,
+          17,
+          3
+        ],
+        [
+          9,
+          16,
+          3,
+          10
+        ],
+        [
+          20,
+          17,
+          11,
+          3
+        ],
+        [
+          34,
+          18,
+          3,
+          13
+        ],
+        [
+          17,
+          28,
+          11,
+          3
+        ],
+        [
+          5,
+          5,
+          3,
+          3
+        ],
+        [
+          39,
+          5,
+          4,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          80,
+          64
+        ],
+        [
+          304,
+          128
+        ],
+        [
+          208,
+          272
+        ]
+      ],
+      "drone": [
+        248,
+        120
+      ],
+      "art_kind": "lens_gallery",
+      "brief1": "REPAIR THREE LENSES",
+      "brief2": "BRAKE BEHIND THE FIN",
+      "warning_frames": 48,
+      "dash_frames": 24,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": [
+        360,
+        56
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Any-order repair around the central optical bench. The low laser splits the lower return route while the sweeper commits to one axis.",
+      "room": 1,
+      "scene_symbol": "scene_mission_16_room_01"
+    },
+    {
+      "name": "COOLANT THROAT",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "relay",
+      "enemy": "hunter",
+      "hazard": "vent",
+      "hazard_rect": [
+        15,
+        19,
+        2,
+        2
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          7,
+          8,
+          23,
+          3
+        ],
+        [
+          19,
+          16,
+          23,
+          3
+        ],
+        [
+          7,
+          24,
+          23,
+          3
+        ],
+        [
+          19,
+          32,
+          21,
+          3
+        ],
+        [
+          5,
+          13,
+          3,
+          6
+        ],
+        [
+          39,
+          22,
+          4,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          328,
+          64
+        ],
+        [
+          96,
+          176
+        ],
+        [
+          328,
+          240
+        ]
+      ],
+      "drone": [
+        288,
+        176
+      ],
+      "art_kind": "coolant_throat",
+      "brief1": "HOLD B AT LIT VALVE",
+      "brief2": "BRAKE AT BAFFLE ENDS",
+      "warning_frames": 50,
+      "dash_frames": 18,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Ordered valves alternate sides of three offset cooling baffles, making each turn and safe braking pocket matter.",
+      "room": 2,
+      "scene_symbol": "scene_mission_16_room_02"
+    },
+    {
+      "name": "IGNITION WARDEN",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "core",
+      "enemy": "charger",
+      "hazard": "laser",
+      "hazard_rect": [
+        22,
+        27,
+        12,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          16,
+          9,
+          5,
+          8
+        ],
+        [
+          30,
+          9,
+          5,
+          8
+        ],
+        [
+          22,
+          19,
+          7,
+          4
+        ],
+        [
+          8,
+          22,
+          4,
+          9
+        ],
+        [
+          37,
+          23,
+          5,
+          9
+        ],
+        [
+          18,
+          32,
+          12,
+          3
+        ],
+        [
+          5,
+          5,
+          4,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          264,
+          56
+        ],
+        [
+          112,
+          176
+        ],
+        [
+          336,
+          280
+        ]
+      ],
+      "drone": [
+        248,
+        152
+      ],
+      "art_kind": "ignition_warden",
+      "brief1": "THREE OPENING HITS",
+      "brief2": "BAIT THE WARDEN WIDE",
+      "warning_frames": 52,
+      "dash_frames": 20,
+      "recover_frames": 108,
+      "speed": 62,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "The guardian can be approached through either of two wide lens gaps. Leave its amber line, turn back during cyan recovery, then extract released cores.",
+      "room": 3,
+      "scene_symbol": "scene_mission_16_room_03"
+    }
+  ]
+}

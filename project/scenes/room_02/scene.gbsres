@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "0d9c731b-0eda-5cc5-905b-bb8c75c8b152",
+  "_index": 2,
+  "type": "ADVENTURE",
+  "name": "02 Cargo Spine",
+  "symbol": "scene_room_02",
+  "x": 240,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "81878dbb-7ad4-5bed-9495-dfacde4dfc0c",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+006+0f2+00a+0f2+006+0f2+00a+0f2+0012+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

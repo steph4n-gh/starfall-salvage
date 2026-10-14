@@ -1,0 +1,482 @@
+{
+  "mission": 9,
+  "name": "ARCHIVE UPLINK",
+  "zone": 3,
+  "zone_name": "SIGNAL ARCHIVE",
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four new staged native rooms. Existing objectives only; no reflector, forcefield or paired-enemy claims.",
+  "rooms": [
+    {
+      "name": "RECEIVER GALLERY",
+      "objective": "salvage",
+      "enemy": "charger",
+      "covers": [
+        [
+          14,
+          6,
+          3,
+          20
+        ],
+        [
+          26,
+          12,
+          3,
+          20
+        ],
+        [
+          36,
+          6,
+          3,
+          12
+        ],
+        [
+          5,
+          14,
+          6,
+          3
+        ],
+        [
+          30,
+          27,
+          12,
+          3
+        ],
+        [
+          17,
+          5,
+          8,
+          3
+        ],
+        [
+          7,
+          29,
+          6,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          72
+        ],
+        [
+          192,
+          160
+        ],
+        [
+          344,
+          264
+        ]
+      ],
+      "drone": [
+        328,
+        176
+      ],
+      "enemy_bounds": [
+        240,
+        144,
+        112,
+        88
+      ],
+      "hazard_rect": [
+        22,
+        27,
+        2,
+        2
+      ],
+      "hazard": "vent",
+      "art_kind": "receiver",
+      "room": 0,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_10_room_00",
+      "warning_frames": 44,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 60,
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "FIND THE COVER GAPS"
+    },
+    {
+      "name": "DECODER STACK",
+      "objective": "repair",
+      "enemy": "hunter",
+      "covers": [
+        [
+          6,
+          7,
+          10,
+          3
+        ],
+        [
+          21,
+          6,
+          3,
+          11
+        ],
+        [
+          34,
+          9,
+          8,
+          3
+        ],
+        [
+          8,
+          22,
+          3,
+          11
+        ],
+        [
+          18,
+          26,
+          12,
+          3
+        ],
+        [
+          34,
+          25,
+          3,
+          9
+        ],
+        [
+          28,
+          17,
+          11,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          152
+        ],
+        [
+          256,
+          56
+        ],
+        [
+          328,
+          192
+        ]
+      ],
+      "drone": [
+        264,
+        184
+      ],
+      "enemy_bounds": [
+        208,
+        160,
+        136,
+        88
+      ],
+      "hazard_rect": [
+        15,
+        20,
+        12,
+        1
+      ],
+      "hazard": "laser",
+      "art_kind": "decoder",
+      "room": 1,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_10_room_01",
+      "warning_frames": 44,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 60,
+      "brief1": "HOLD B AT EACH PANEL",
+      "brief2": "POWER THE NEXT PATH",
+      "hold_ticks": 45,
+      "optional_cache_marker": [
+        352,
+        56
+      ],
+      "optional_cache": {
+        "hold_ticks": 20,
+        "reward": "persistent mission badge",
+        "floor_marker": "gold diamond",
+        "runtime_support": "Existing B20 native trigger; stage only, not gameplay-qualified"
+      }
+    },
+    {
+      "name": "MEMORY SWITCH",
+      "objective": "relay",
+      "enemy": "sweeper",
+      "covers": [
+        [
+          10,
+          8,
+          16,
+          3
+        ],
+        [
+          29,
+          6,
+          3,
+          12
+        ],
+        [
+          5,
+          18,
+          11,
+          3
+        ],
+        [
+          19,
+          17,
+          3,
+          13
+        ],
+        [
+          29,
+          24,
+          14,
+          3
+        ],
+        [
+          7,
+          30,
+          8,
+          3
+        ],
+        [
+          38,
+          11,
+          4,
+          7
+        ]
+      ],
+      "cells": [
+        [
+          64,
+          56
+        ],
+        [
+          344,
+          168
+        ],
+        [
+          248,
+          280
+        ]
+      ],
+      "drone": [
+        264,
+        160
+      ],
+      "enemy_bounds": [
+        216,
+        112,
+        144,
+        136
+      ],
+      "hazard_rect": [
+        34,
+        32,
+        2,
+        2
+      ],
+      "hazard": "vent",
+      "art_kind": "memory",
+      "room": 2,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_10_room_02",
+      "warning_frames": 44,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 60,
+      "brief1": "HOLD B AT LIT RELAY",
+      "brief2": "ACTIVATE IN ORDER",
+      "hold_ticks": 30
+    },
+    {
+      "name": "ARCHIVE GUARDIAN",
+      "objective": "core",
+      "enemy": "sweeper",
+      "covers": [
+        [
+          16,
+          6,
+          3,
+          10
+        ],
+        [
+          34,
+          6,
+          3,
+          10
+        ],
+        [
+          16,
+          23,
+          3,
+          10
+        ],
+        [
+          34,
+          23,
+          3,
+          10
+        ],
+        [
+          5,
+          15,
+          8,
+          3
+        ],
+        [
+          26,
+          31,
+          6,
+          3
+        ],
+        [
+          40,
+          15,
+          3,
+          9
+        ],
+        [
+          8,
+          29,
+          5,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          80,
+          72
+        ],
+        [
+          312,
+          104
+        ],
+        [
+          192,
+          280
+        ]
+      ],
+      "drone": [
+        224,
+        152
+      ],
+      "enemy_bounds": [
+        168,
+        104,
+        144,
+        112
+      ],
+      "hazard_rect": [
+        21,
+        25,
+        10,
+        1
+      ],
+      "hazard": "laser",
+      "art_kind": "archive_guard",
+      "room": 3,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_10_room_03",
+      "warning_frames": 48,
+      "dash_frames": 24,
+      "recover_frames": 120,
+      "speed": 60,
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "core_hp": 3
+    }
+  ]
+}

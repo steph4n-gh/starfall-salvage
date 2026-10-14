@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "045a5a39-1da4-5dcd-aee5-d0a72098ae85",
+  "_index": 181,
+  "type": "ADVENTURE",
+  "name": "Star Engine Heart",
+  "symbol": "scene_mission_18_room_03",
+  "x": 2520,
+  "y": 7900,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "abf6460e-b391-5089-8eee-66480abd8915",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+003+0f4+007+0f4+00b+0f4+00d+0f2+003+0f4+007+0f4+00b+0f4+005+0f4+004+0f2+003+0f4+007+0f4+00b+0f4+005+0f4+004+0f2+003+0f4+007+0f4+00b+0f4+005+0f4+004+0f2+003+0f4+007+0f4+00b+0f4+005+0f4+004+0f2+003+0f4+007+0f4+00b+0f4+005+0f4+004+0f2+003+0f4+001f+0f4+004+0f2+003+0f4+001f+0f4+004+0f2+0026+0f4+004+0f2+0015+0f5+0014+0f2+0015+0f5+0014+0f2+0015+0f5+0014+0f2+0015+0f5+0014+0f2+0015+0f5+0014+0f2+005+0f9+007+0f5+0014+0f2+005+0f9+007+0f5+007+0f8+005+0f2+005+0f9+0013+0f8+005+0f2+0021+0f8+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0011+0fd+0010+0f2+0011+0fd+0010+0f2+0011+0fd+0010+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

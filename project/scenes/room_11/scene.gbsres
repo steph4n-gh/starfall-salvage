@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "80ac7ccb-6028-5995-ac74-1101a6b7ba1e",
+  "_index": 11,
+  "type": "ADVENTURE",
+  "name": "11 Capacitor Hall",
+  "symbol": "scene_room_11",
+  "x": 480,
+  "y": 440,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "6b3876c6-092c-51a9-9c9b-c321565a0e44",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "de5f2f7b-c2b9-509e-bfdb-465851b4e761",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "de5f2f7b-c2b9-509e-bfdb-465851b4e761",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+00c+0f2+004+0f2+00c+0f2+004+0f2+003+0f2+00d+0f2+003+0f2+00d+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

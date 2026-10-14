@@ -1,0 +1,466 @@
+{
+  "mission": 8,
+  "name": "HEAT GRID",
+  "zone": 2,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four staged native rooms; optional cache markers are background artwork only. Existing objective APIs only.",
+  "rooms": [
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 52,
+      "room": 0,
+      "name": "SLAG CIRCUIT",
+      "scene_symbol": "scene_mission_09_room_00",
+      "zone": 2,
+      "objective": "salvage",
+      "enemy": "sweeper",
+      "hazard": "laser",
+      "hazard_rect": [
+        12,
+        21,
+        14,
+        1
+      ],
+      "covers": [
+        [
+          8,
+          7,
+          4,
+          12
+        ],
+        [
+          21,
+          6,
+          4,
+          9
+        ],
+        [
+          33,
+          13,
+          4,
+          15
+        ],
+        [
+          12,
+          26,
+          15,
+          3
+        ],
+        [
+          5,
+          31,
+          8,
+          3
+        ],
+        [
+          30,
+          31,
+          12,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          120,
+          88
+        ],
+        [
+          328,
+          144
+        ],
+        [
+          224,
+          280
+        ]
+      ],
+      "drone": [
+        232,
+        144
+      ],
+      "enemy_bounds": [
+        208,
+        96,
+        144,
+        136
+      ],
+      "art_kind": "slag_circuit",
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "3 CELLS THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 1,
+      "name": "KILN REPAIR",
+      "scene_symbol": "scene_mission_09_room_01",
+      "zone": 2,
+      "objective": "repair",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        23,
+        17,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          6,
+          5,
+          14,
+          3
+        ],
+        [
+          26,
+          8,
+          4,
+          13
+        ],
+        [
+          38,
+          15,
+          5,
+          3
+        ],
+        [
+          9,
+          19,
+          4,
+          13
+        ],
+        [
+          18,
+          27,
+          15,
+          3
+        ],
+        [
+          35,
+          30,
+          7,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          104,
+          88
+        ],
+        [
+          352,
+          176
+        ],
+        [
+          192,
+          272
+        ]
+      ],
+      "drone": [
+        272,
+        152
+      ],
+      "enemy_bounds": [
+        248,
+        96,
+        112,
+        136
+      ],
+      "art_kind": "kiln_repair",
+      "brief1": "HOLD B TO REPAIR",
+      "brief2": "ANY ORDER THEN DOCK",
+      "optional_cache_marker": [
+        344,
+        72
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 2,
+      "name": "HEAT RELAYS",
+      "scene_symbol": "scene_mission_09_room_02",
+      "zone": 2,
+      "objective": "relay",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        19,
+        24,
+        14,
+        1
+      ],
+      "covers": [
+        [
+          12,
+          5,
+          4,
+          14
+        ],
+        [
+          27,
+          10,
+          4,
+          14
+        ],
+        [
+          37,
+          7,
+          6,
+          3
+        ],
+        [
+          5,
+          23,
+          12,
+          3
+        ],
+        [
+          20,
+          30,
+          12,
+          3
+        ],
+        [
+          37,
+          28,
+          5,
+          7
+        ]
+      ],
+      "cells": [
+        [
+          64,
+          88
+        ],
+        [
+          328,
+          152
+        ],
+        [
+          184,
+          280
+        ]
+      ],
+      "drone": [
+        272,
+        144
+      ],
+      "enemy_bounds": [
+        256,
+        104,
+        96,
+        136
+      ],
+      "art_kind": "heat_relays",
+      "brief1": "HOLD B IN NODE ORDER",
+      "brief2": "LIT NODE THEN NEXT",
+      "optional_cache_marker": [
+        336,
+        96
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 48,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 3,
+      "name": "FORGE WARDEN",
+      "scene_symbol": "scene_mission_09_room_03",
+      "zone": 2,
+      "objective": "core",
+      "enemy": "hunter",
+      "hazard": "vent",
+      "hazard_rect": [
+        13,
+        25,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          15,
+          6,
+          4,
+          16
+        ],
+        [
+          30,
+          9,
+          4,
+          12
+        ],
+        [
+          19,
+          28,
+          15,
+          3
+        ],
+        [
+          5,
+          17,
+          9,
+          3
+        ],
+        [
+          37,
+          17,
+          6,
+          3
+        ],
+        [
+          7,
+          31,
+          10,
+          3
+        ],
+        [
+          37,
+          30,
+          7,
+          3
+        ],
+        [
+          23,
+          5,
+          6,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          200,
+          88
+        ],
+        [
+          88,
+          112
+        ],
+        [
+          328,
+          280
+        ]
+      ],
+      "drone": [
+        200,
+        152
+      ],
+      "enemy_bounds": [
+        160,
+        80,
+        136,
+        136
+      ],
+      "art_kind": "forge_warden",
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    }
+  ]
+}

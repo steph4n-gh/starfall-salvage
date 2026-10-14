@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-sprite",
+  "name": "Space Suit",
+  "colors": [
+    "F5F8F0",
+    "71D9D5",
+    "2B4B73",
+    "14233D"
+  ],
+  "defaultName": "Default Sprites",
+  "defaultColors": [
+    "F8F0E0",
+    "D88078",
+    "B05010",
+    "000000"
+  ]
+}

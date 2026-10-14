@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "7f8ae1aa-3a81-54ae-9909-2a876bb1d0eb",
+  "_index": 149,
+  "type": "ADVENTURE",
+  "name": "Archive Guardian",
+  "symbol": "scene_mission_10_room_03",
+  "x": 2520,
+  "y": 4380,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "6a77e005-a650-52a0-8e6f-bb76523a09b7",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "6fcb2545-30db-5f04-81c6-92890ed14e71",
+    "0535e510-437f-59dc-90f7-f823f1bb852f",
+    "0e00d2ab-fc70-54ba-977a-88fed0219f6b",
+    "4826a3b5-7c73-590e-b218-a4578eb3612c",
+    "735ade14-66cd-50ad-af1c-4438f99d97f9",
+    "708167db-7f48-5edf-904f-9f1cb924d413",
+    "33bdb695-2fda-5111-bba4-b5d4c068dc29",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+004+0f8+003+0f3+00f+0f3+003+0f3+004+0f2+004+0f8+001b+0f3+004+0f2+004+0f8+001b+0f3+004+0f2+0027+0f3+004+0f2+0027+0f3+004+0f2+0027+0f3+004+0f2+0027+0f3+004+0f2+0027+0f3+004+0f2+00f+0f3+00f+0f3+003+0f3+004+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+00f+0f3+00f+0f3+00a+0f2+007+0f5+003+0f3+00f+0f3+00a+0f2+007+0f5+003+0f3+00f+0f3+00a+0f2+007+0f5+003+0f3+007+0f6+002+0f3+00a+0f2+00f+0f3+007+0f6+002+0f3+00a+0f2+0019+0f6+00f+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

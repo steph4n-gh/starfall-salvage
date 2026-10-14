@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "ca4a1df7-0a75-57fe-9895-7355540c4898",
+  "_index": 1,
+  "type": "ADVENTURE",
+  "name": "01 Airlock",
+  "symbol": "scene_room_01",
+  "x": 0,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "bd55b3c5-27cf-55b0-a59f-0b12c5dea05d",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+004+0f2+00c+0f2+004+0f2+00c+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

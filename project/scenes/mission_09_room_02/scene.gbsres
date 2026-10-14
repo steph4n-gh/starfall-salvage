@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "432a2e5c-b6bb-51a2-85a6-107a5861ecf4",
+  "_index": 144,
+  "type": "ADVENTURE",
+  "name": "Heat Relays",
+  "symbol": "scene_mission_09_room_02",
+  "x": 2080,
+  "y": 3940,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "fea4bf1e-4037-5e58-913d-56da83986956",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+00b+0f4+001f+0f2+00b+0f4+001f+0f2+00b+0f4+0015+0f6+004+0f2+00b+0f4+0015+0f6+004+0f2+00b+0f4+0015+0f6+004+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+00b+0f4+00b+0f4+0010+0f2+001a+0f4+0010+0f2+001a+0f4+0010+0f2+001a+0f4+0010+0f2+001a+0f4+0010+0f2+004+0fc+00a+0f4+0010+0f2+004+0fc+001e+0f2+004+0fc+001e+0f2+002e+0f2+002e+0f2+0024+0f5+005+0f2+0024+0f5+005+0f2+0013+0fc+005+0f5+005+0f2+0013+0fc+005+0f5+005+0f2+0013+0fc+005+0f5+005+0f2+0024+0f5+005+0f2+0024+0f5+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

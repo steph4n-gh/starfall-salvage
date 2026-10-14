@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "4ed80e47-4b20-5b9e-bef9-f126a3343279",
+  "_index": 129,
+  "type": "ADVENTURE",
+  "name": "Glass Guardian",
+  "symbol": "scene_mission_05_room_03",
+  "x": 2520,
+  "y": 2180,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "74abb0b7-2ae7-53e1-a610-bc48a656c808",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+00c+0f4+003+0f8+0013+0f2+00c+0f4+003+0f8+0013+0f2+00c+0f4+003+0f8+0013+0f2+00c+0f4+001e+0f2+00c+0f4+001e+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+004+0f4+004+0f4+00d+0f4+00d+0f2+001d+0f4+00d+0f2+001d+0f4+00d+0f2+001d+0f4+00d+0f2+001d+0f4+00d+0f2+002e+0f2+002e+0f2+002e+0f2+0011+0f12+00b+0f2+0011+0f12+00b+0f2+0011+0f12+00b+0f2+004+0f8+0019+0f6+003+0f2+004+0f8+0019+0f6+003+0f2+004+0f8+0019+0f6+003+0f2+0025+0f6+003+0f2+0025+0f6+003+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

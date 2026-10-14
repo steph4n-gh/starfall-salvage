@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "2f58daee-ec0b-59d5-97a9-7c7d88fe9062",
+  "_index": 164,
+  "type": "ADVENTURE",
+  "name": "Surveyor Route",
+  "symbol": "scene_mission_14_room_02",
+  "x": 2080,
+  "y": 6140,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "dc578484-f8e4-5f5c-9939-0793803a7502",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d3bc4bb6-e97b-5379-93fe-a4a7ba836484",
+    "7ec22f77-6291-576b-88a7-d76abd3151c8",
+    "ebe28edf-290e-57a8-b30e-ea610f9a5be6",
+    "eb0b9f88-1cce-52d7-a6c8-d5a1930a5475",
+    "4994d885-0092-50df-adce-5644e2e9c188",
+    "ef533cf6-1f7e-5d1f-8629-6e50f0bf238e",
+    "d26124d5-7c44-5e40-844c-016e570d4d8d",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0028+0f3+003+0f2+0028+0f3+003+0f2+0028+0f3+003+0f2+0028+0f3+003+0f2+0014+0fd+007+0f3+003+0f2+0014+0fd+00d+0f2+0014+0fd+00d+0f2+002e+0f2+002e+0f2+005+0fa+001f+0f2+005+0fa+001f+0f2+005+0fa+001f+0f2+0023+0f5+006+0f2+0023+0f5+006+0f2+0023+0f5+006+0f2+0015+0f7+007+0f5+006+0f2+0015+0f7+007+0f5+006+0f2+0015+0f7+007+0f5+006+0f2+0015+0f7+007+0f5+006+0f2+0015+0f7+007+0f5+006+0f2+0023+0f5+006+0f2+008+0fd+00e+0f5+006+0f2+008+0fd+0019+0f2+002e+0f2+001a+0f5+00f+0f2+001a+0f5+00f+0f2+001a+0f5+00f+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

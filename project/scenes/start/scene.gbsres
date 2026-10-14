@@ -1,0 +1,32 @@
+{
+  "_resourceType": "scene",
+  "id": "12f07015-0a42-504a-8d39-3f689e13ad3a",
+  "_index": 0,
+  "type": "ADVENTURE",
+  "name": "Reactor Dock",
+  "symbol": "scene_start",
+  "x": 0,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "822eaf91-14c5-5b91-8efc-eb0e215a1994",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+004+0f2+00c+0f2+004+0f2+00c+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

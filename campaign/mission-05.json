@@ -1,0 +1,544 @@
+{
+  "mission": 4,
+  "name": "CREW TRANSFER",
+  "zone": 1,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four staged native rooms; optional cache markers are background artwork only. Existing objective APIs only.",
+  "rooms": [
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 0,
+      "name": "FROST DEPOT",
+      "scene_symbol": "scene_mission_05_room_00",
+      "zone": 1,
+      "objective": "salvage",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        22,
+        21,
+        14,
+        1
+      ],
+      "covers": [
+        [
+          5,
+          7,
+          8,
+          3
+        ],
+        [
+          15,
+          13,
+          4,
+          15
+        ],
+        [
+          26,
+          5,
+          4,
+          11
+        ],
+        [
+          36,
+          17,
+          6,
+          3
+        ],
+        [
+          22,
+          29,
+          15,
+          3
+        ],
+        [
+          5,
+          29,
+          7,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          80,
+          104
+        ],
+        [
+          328,
+          80
+        ],
+        [
+          304,
+          272
+        ]
+      ],
+      "drone": [
+        272,
+        120
+      ],
+      "enemy_bounds": [
+        248,
+        88,
+        112,
+        136
+      ],
+      "art_kind": "frost_depot",
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "3 CELLS THEN DOCK",
+      "optional_cache_marker": [
+        176,
+        64
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 52,
+      "room": 1,
+      "name": "DEFROST WORKS",
+      "scene_symbol": "scene_mission_05_room_01",
+      "zone": 1,
+      "objective": "repair",
+      "enemy": "sweeper",
+      "hazard": "vent",
+      "hazard_rect": [
+        12,
+        18,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          5,
+          5,
+          4,
+          10
+        ],
+        [
+          16,
+          7,
+          16,
+          3
+        ],
+        [
+          37,
+          11,
+          4,
+          13
+        ],
+        [
+          14,
+          20,
+          4,
+          10
+        ],
+        [
+          24,
+          28,
+          11,
+          3
+        ],
+        [
+          4,
+          31,
+          7,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          104,
+          72
+        ],
+        [
+          352,
+          136
+        ],
+        [
+          168,
+          264
+        ]
+      ],
+      "drone": [
+        248,
+        144
+      ],
+      "enemy_bounds": [
+        160,
+        112,
+        128,
+        112
+      ],
+      "art_kind": "defrost_works",
+      "brief1": "HOLD B TO REPAIR",
+      "brief2": "ANY ORDER THEN DOCK",
+      "optional_cache_marker": [
+        344,
+        64
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 2,
+      "name": "EVAC TUNNELS",
+      "scene_symbol": "scene_mission_05_room_02",
+      "zone": 1,
+      "objective": "escort",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        21,
+        23,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          12,
+          8,
+          4,
+          17
+        ],
+        [
+          22,
+          17,
+          16,
+          3
+        ],
+        [
+          34,
+          7,
+          4,
+          7
+        ],
+        [
+          7,
+          28,
+          14,
+          3
+        ],
+        [
+          25,
+          29,
+          9,
+          3
+        ],
+        [
+          39,
+          24,
+          5,
+          9
+        ],
+        [
+          4,
+          6,
+          4,
+          4
+        ]
+      ],
+      "cells": [
+        [
+          208,
+          208
+        ],
+        [
+          336,
+          96
+        ],
+        [
+          80,
+          96
+        ]
+      ],
+      "drone": [
+        248,
+        184
+      ],
+      "enemy_bounds": [
+        160,
+        168,
+        144,
+        64
+      ],
+      "art_kind": "evac_tunnels",
+      "brief1": "STAY NEAR THE CREW",
+      "brief2": "GUIDE THEM TO DOCK",
+      "optional_cache_marker": [
+        344,
+        288
+      ],
+      "escort_start": [
+        88,
+        280
+      ],
+      "escort_route": [
+        [
+          88,
+          280
+        ],
+        [
+          184,
+          280
+        ],
+        [
+          184,
+          208
+        ],
+        [
+          208,
+          208
+        ],
+        [
+          184,
+          208
+        ],
+        [
+          184,
+          176
+        ],
+        [
+          360,
+          176
+        ],
+        [
+          360,
+          96
+        ],
+        [
+          336,
+          96
+        ],
+        [
+          360,
+          96
+        ],
+        [
+          360,
+          40
+        ],
+        [
+          80,
+          40
+        ],
+        [
+          80,
+          96
+        ],
+        [
+          80,
+          208
+        ],
+        [
+          24,
+          208
+        ],
+        [
+          24,
+          264
+        ],
+        [
+          48,
+          264
+        ],
+        [
+          48,
+          296
+        ]
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 48,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 3,
+      "name": "GLASS GUARDIAN",
+      "scene_symbol": "scene_mission_05_room_03",
+      "zone": 1,
+      "objective": "core",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        4,
+        23,
+        12,
+        1
+      ],
+      "covers": [
+        [
+          13,
+          5,
+          4,
+          13
+        ],
+        [
+          30,
+          10,
+          4,
+          12
+        ],
+        [
+          18,
+          25,
+          18,
+          3
+        ],
+        [
+          5,
+          28,
+          8,
+          3
+        ],
+        [
+          38,
+          28,
+          6,
+          5
+        ],
+        [
+          5,
+          10,
+          4,
+          8
+        ],
+        [
+          20,
+          5,
+          8,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          184,
+          88
+        ],
+        [
+          88,
+          160
+        ],
+        [
+          328,
+          280
+        ]
+      ],
+      "drone": [
+        184,
+        144
+      ],
+      "enemy_bounds": [
+        144,
+        80,
+        136,
+        144
+      ],
+      "art_kind": "glass_guardian",
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    }
+  ]
+}

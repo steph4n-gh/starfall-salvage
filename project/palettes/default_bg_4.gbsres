@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-4",
+  "name": "Ship Amber",
+  "colors": [
+    "FFEAC7",
+    "EFAC6D",
+    "A76260",
+    "29213D"
+  ],
+  "defaultName": "Default BG 4",
+  "defaultColors": [
+    "B8D0D0",
+    "D880D8",
+    "8000A0",
+    "380000"
+  ]
+}

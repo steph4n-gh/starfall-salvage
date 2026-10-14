@@ -1,0 +1,44 @@
+# Local operating-system and editor state
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Toolchain/build output and local recordings
+/build/
+/_gbsbuild/
+/.gbsbuild/
+/node_modules/
+/artifacts/
+/recordings/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+*.gbc.debug/
+
+# Player saves and emulator state must never enter source control
+*.sav
+*.srm
+*.state
+*.state.*
+*.ss0
+*.ss1
+*.rtc
+
+# Local credentials, keys and hardware tool licenses
+.env
+.env.*
+*.lic
+*.pem
+*.key
+credentials.json
+token.json
+
+# Manual build outputs; player-ready copies are promoted separately
+/campaign/full-length-packaging-stage/output/
+/campaign/full-length-packaging-stage/MANUAL-RECEIPTS.json
+/campaign/full-length-packaging-stage/fonts/

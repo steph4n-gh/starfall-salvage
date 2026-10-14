@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "b7bcb40d-5fdb-5341-ace1-8f9b2bac51b1",
+  "_index": 126,
+  "type": "ADVENTURE",
+  "name": "Frost Depot",
+  "symbol": "scene_mission_05_room_00",
+  "x": 1200,
+  "y": 2180,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "45f6ec1c-6120-5bc8-91ed-e049a0a6f055",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+004+0f8+00d+0f4+0011+0f2+004+0f8+00d+0f4+0011+0f2+004+0f8+00d+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+00e+0f4+007+0f4+0011+0f2+00e+0f4+007+0f4+0011+0f2+00e+0f4+007+0f4+0011+0f2+00e+0f4+001c+0f2+00e+0f4+0011+0f6+005+0f2+00e+0f4+0011+0f6+005+0f2+00e+0f4+0011+0f6+005+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+00e+0f4+001c+0f2+002e+0f2+004+0f7+00a+0ff+00a+0f2+004+0f7+00a+0ff+00a+0f2+004+0f7+00a+0ff+00a+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

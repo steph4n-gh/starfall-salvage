@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "7f726ee0-0c5b-5b81-90aa-c5cf14a974ac",
+  "_index": 118,
+  "type": "ADVENTURE",
+  "name": "Debris Halo",
+  "symbol": "scene_mission_03_room_00",
+  "x": 1200,
+  "y": 1300,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "1648e66c-5aad-5a42-9990-bf85516ad9d0",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "66041d40-65a9-50eb-914b-08e3719b2451",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+003+0f5+0026+0f2+003+0f5+0026+0f2+003+0f5+005+0f11+0010+0f2+003+0f5+005+0f11+0010+0f2+00d+0f11+0010+0f2+002e+0f2+0021+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0014+0f3+00a+0f2+00a+0f3+0019+0f5+003+0f2+00a+0f3+0019+0f5+003+0f2+0026+0f5+003+0f2+0026+0f5+003+0f2+0010+0fe+008+0f5+003+0f2+0010+0fe+008+0f5+003+0f2+0010+0fe+0010+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

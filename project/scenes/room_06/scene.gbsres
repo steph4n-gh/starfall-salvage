@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "d0292168-df34-58ab-861b-374fcebbb045",
+  "_index": 6,
+  "type": "ADVENTURE",
+  "name": "06 Heat Exchange",
+  "symbol": "scene_room_06",
+  "x": 240,
+  "y": 220,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "fdfb4af2-6994-57df-bb9e-878fb677a527",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+005+0f2+00b+0f2+005+0f2+00b+0f2+0012+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

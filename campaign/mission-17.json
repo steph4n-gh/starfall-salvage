@@ -1,0 +1,548 @@
+{
+  "mission": 16,
+  "name": "LAST SIGNAL",
+  "zone": 5,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Authored native geometry and existing salvage/relay/repair/escort/core mechanics only; staged assets, not native gameplay verification.",
+  "rooms": [
+    {
+      "name": "ANTENNA ROOT",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "relay",
+      "enemy": "sweeper",
+      "hazard": "laser",
+      "hazard_rect": [
+        16,
+        22,
+        8,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          12,
+          6,
+          3,
+          14
+        ],
+        [
+          24,
+          5,
+          3,
+          8
+        ],
+        [
+          24,
+          19,
+          3,
+          13
+        ],
+        [
+          36,
+          9,
+          3,
+          17
+        ],
+        [
+          5,
+          25,
+          12,
+          3
+        ],
+        [
+          30,
+          31,
+          10,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          64
+        ],
+        [
+          328,
+          96
+        ],
+        [
+          168,
+          256
+        ]
+      ],
+      "drone": [
+        328,
+        176
+      ],
+      "art_kind": "antenna_root",
+      "brief1": "LINK THREE BEACONS",
+      "brief2": "CUT ACROSS THE RIBS",
+      "warning_frames": 48,
+      "dash_frames": 24,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Three beacon links pull the pilot from the outer rim into the center. Tall aerial ribs stop sweeper dashes and offer deliberate turning shelter.",
+      "room": 0,
+      "scene_symbol": "scene_mission_17_room_00"
+    },
+    {
+      "name": "HELIOS CONTROL",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "repair",
+      "enemy": "charger",
+      "hazard": "vent",
+      "hazard_rect": [
+        27,
+        25,
+        2,
+        2
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          9,
+          9,
+          11,
+          3
+        ],
+        [
+          27,
+          7,
+          3,
+          12
+        ],
+        [
+          14,
+          18,
+          11,
+          3
+        ],
+        [
+          34,
+          24,
+          8,
+          3
+        ],
+        [
+          17,
+          29,
+          3,
+          7
+        ],
+        [
+          4,
+          19,
+          3,
+          7
+        ],
+        [
+          37,
+          6,
+          5,
+          4
+        ]
+      ],
+      "cells": [
+        [
+          96,
+          56
+        ],
+        [
+          320,
+          168
+        ],
+        [
+          240,
+          272
+        ]
+      ],
+      "drone": [
+        256,
+        128
+      ],
+      "art_kind": "helios_control",
+      "brief1": "RESTORE THE STAR BUS",
+      "brief2": "B45 REPAIR ANY ORDER",
+      "warning_frames": 50,
+      "dash_frames": 18,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": [
+        352,
+        56
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "Repair points occupy three different branches of the control bus, so choosing the first station changes which cover line the charger can use.",
+      "room": 1,
+      "scene_symbol": "scene_mission_17_room_01"
+    },
+    {
+      "name": "LIFELINE GANTRY",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "escort",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        28,
+        14,
+        10,
+        1
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          15,
+          28,
+          7,
+          3
+        ],
+        [
+          30,
+          16,
+          5,
+          7
+        ],
+        [
+          17,
+          8,
+          7,
+          3
+        ],
+        [
+          7,
+          13,
+          8,
+          3
+        ],
+        [
+          21,
+          20,
+          10,
+          3
+        ],
+        [
+          18,
+          37,
+          6,
+          2
+        ],
+        [
+          37,
+          31,
+          8,
+          4
+        ],
+        [
+          2,
+          19,
+          4,
+          6
+        ]
+      ],
+      "cells": [
+        [
+          208,
+          224
+        ],
+        [
+          304,
+          104
+        ],
+        [
+          336,
+          56
+        ]
+      ],
+      "drone": [
+        304,
+        152
+      ],
+      "art_kind": "lifeline_gantry",
+      "brief1": "STAY NEAR THE CREW",
+      "brief2": "ESCORT TO THE DOCK",
+      "warning_frames": 54,
+      "dash_frames": 22,
+      "recover_frames": 100,
+      "speed": 60,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "escort_start": [
+        96,
+        280
+      ],
+      "escort_route": [
+        [
+          96,
+          280
+        ],
+        [
+          208,
+          280
+        ],
+        [
+          208,
+          224
+        ],
+        [
+          304,
+          224
+        ],
+        [
+          304,
+          104
+        ],
+        [
+          336,
+          104
+        ],
+        [
+          336,
+          56
+        ],
+        [
+          224,
+          56
+        ],
+        [
+          224,
+          144
+        ],
+        [
+          144,
+          144
+        ],
+        [
+          144,
+          208
+        ],
+        [
+          80,
+          208
+        ],
+        [
+          80,
+          264
+        ],
+        [
+          48,
+          264
+        ],
+        [
+          48,
+          296
+        ]
+      ],
+      "tactical_goal": "Keep within 24 pixels of the real crew while guiding them around the three physical catwalk banks. Step away to stop them before an active beam, then regroup.",
+      "hazard_route_note": "The crew crosses the narrow beam twice. Moving more than 24px from the crew stops them, so its 120-safe/45-warning cycle can be waited out. Repair-first disables this beam.",
+      "room": 2,
+      "scene_symbol": "scene_mission_17_room_02"
+    },
+    {
+      "name": "CORONA SENTINEL",
+      "width": 48,
+      "height": 40,
+      "zone": 5,
+      "objective": "core",
+      "enemy": "sweeper",
+      "hazard": "vent",
+      "hazard_rect": [
+        27,
+        25,
+        2,
+        2
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "covers": [
+        [
+          13,
+          7,
+          3,
+          10
+        ],
+        [
+          21,
+          13,
+          12,
+          3
+        ],
+        [
+          8,
+          23,
+          16,
+          3
+        ],
+        [
+          32,
+          24,
+          3,
+          11
+        ],
+        [
+          37,
+          8,
+          4,
+          9
+        ],
+        [
+          17,
+          32,
+          8,
+          3
+        ],
+        [
+          4,
+          11,
+          4,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          248,
+          64
+        ],
+        [
+          112,
+          160
+        ],
+        [
+          328,
+          272
+        ]
+      ],
+      "drone": [
+        264,
+        176
+      ],
+      "art_kind": "corona_sentinel",
+      "brief1": "READ THE AXIS LOCK",
+      "brief2": "THREE CYAN PULSES",
+      "warning_frames": 54,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 64,
+      "hold_ticks": 45,
+      "optional_cache_marker": null,
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer native actor_x/actor_y pixel centers",
+        "escort_route": "Integer crew centers; generator derives native anchors",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        80,
+        48,
+        272,
+        232
+      ],
+      "tactical_goal": "A long horizontal conductor and offset vertical shields create two broad escape routes; the guardian commits to a horizontal or vertical charge before each opening.",
+      "room": 3,
+      "scene_symbol": "scene_mission_17_room_03"
+    }
+  ]
+}

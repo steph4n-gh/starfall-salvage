@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "4ae01240-047d-59ba-adbe-e38cc7e03f19",
+  "name": "Pulse Ring",
+  "symbol": "sprite_pulse_ring",
+  "states": [
+    {
+      "id": "6d5a40f9-8206-51d1-9d81-da3b6e9ba623",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "28678688-5cb5-5364-a6b0-63851d64b968",
+          "frames": [
+            {
+              "id": "122b86bc-9a2d-58c0-8132-421d771c7107",
+              "tiles": [
+                {
+                  "id": "35ee8faf-d1c8-5624-8ae1-3566a7634bdf",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 2,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "4484cd9e-8fc5-5d65-a802-d859bc301153",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 2,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "68a272b7-2ec0-5b0a-815f-99f693394530",
+          "frames": [
+            {
+              "id": "f3391b8d-bef1-5a46-902c-d86c15dca91b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9efc4575-fc71-58cc-9047-cf841189243a",
+          "frames": [
+            {
+              "id": "e39bf01d-93aa-5670-b667-e1d1ddfc59f0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "48d5ca0d-051a-50ca-8f81-420547557d61",
+          "frames": [
+            {
+              "id": "6290eba3-3c8b-539a-88f4-c260932efc3c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c715d62a-872b-53c5-a5a8-cb8464e7f963",
+          "frames": [
+            {
+              "id": "54a8c6b7-32ca-54fe-9a90-5ff47d406deb",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "94fab9d6-aee7-54f3-8500-12fa6d7af654",
+          "frames": [
+            {
+              "id": "7f4db20f-f7d9-5a78-a5ee-3cd6ff3747da",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1e8afe9c-becd-5f90-b1b4-881ae453485f",
+          "frames": [
+            {
+              "id": "161b40b9-c1d8-5a17-bbf2-8a5b0f990e1e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "57a5e901-928d-5e0c-8667-cddadb4905b7",
+          "frames": [
+            {
+              "id": "6b8a7813-2636-56a5-8160-5e23aa8a9224",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "pulse_ring.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "09977d0fec546ff79d1fabed22d2635be14a082c"
+}

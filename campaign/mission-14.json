@@ -1,0 +1,543 @@
+{
+  "mission": 13,
+  "name": "NAVIGATION RESCUE",
+  "zone": 4,
+  "zone_name": "OUTER ARRAY",
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four new staged native rooms. Existing objectives only; no reflector, forcefield or paired-enemy claims.",
+  "rooms": [
+    {
+      "name": "ANTENNA WALK",
+      "objective": "salvage",
+      "enemy": "hunter",
+      "covers": [
+        [
+          6,
+          7,
+          3,
+          20
+        ],
+        [
+          17,
+          7,
+          17,
+          3
+        ],
+        [
+          27,
+          15,
+          3,
+          13
+        ],
+        [
+          36,
+          9,
+          3,
+          8
+        ],
+        [
+          11,
+          26,
+          10,
+          3
+        ],
+        [
+          34,
+          31,
+          9,
+          3
+        ],
+        [
+          18,
+          16,
+          3,
+          6
+        ]
+      ],
+      "cells": [
+        [
+          112,
+          56
+        ],
+        [
+          336,
+          152
+        ],
+        [
+          200,
+          264
+        ]
+      ],
+      "drone": [
+        256,
+        128
+      ],
+      "enemy_bounds": [
+        216,
+        96,
+        136,
+        144
+      ],
+      "hazard_rect": [
+        19,
+        23,
+        2,
+        2
+      ],
+      "hazard": "vent",
+      "art_kind": "antenna",
+      "room": 0,
+      "width": 48,
+      "height": 40,
+      "zone": 4,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_14_room_00",
+      "warning_frames": 44,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 64,
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "FIND THE COVER GAPS"
+    },
+    {
+      "name": "RETURN BUS",
+      "objective": "repair",
+      "enemy": "sweeper",
+      "covers": [
+        [
+          11,
+          5,
+          3,
+          13
+        ],
+        [
+          22,
+          12,
+          14,
+          3
+        ],
+        [
+          36,
+          6,
+          4,
+          8
+        ],
+        [
+          6,
+          23,
+          10,
+          3
+        ],
+        [
+          26,
+          24,
+          3,
+          11
+        ],
+        [
+          36,
+          29,
+          6,
+          3
+        ],
+        [
+          17,
+          31,
+          6,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          72
+        ],
+        [
+          192,
+          160
+        ],
+        [
+          328,
+          200
+        ]
+      ],
+      "drone": [
+        288,
+        176
+      ],
+      "enemy_bounds": [
+        208,
+        136,
+        144,
+        120
+      ],
+      "hazard_rect": [
+        30,
+        20,
+        12,
+        1
+      ],
+      "hazard": "laser",
+      "art_kind": "return_bus",
+      "room": 1,
+      "width": 48,
+      "height": 40,
+      "zone": 4,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_14_room_01",
+      "warning_frames": 44,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 64,
+      "brief1": "HOLD B AT EACH PANEL",
+      "brief2": "POWER THE NEXT PATH",
+      "hold_ticks": 45,
+      "optional_cache_marker": [
+        344,
+        64
+      ],
+      "optional_cache": {
+        "hold_ticks": 20,
+        "reward": "persistent mission badge",
+        "floor_marker": "gold diamond",
+        "runtime_support": "Existing B20 native trigger; stage only, not gameplay-qualified"
+      }
+    },
+    {
+      "name": "SURVEYOR ROUTE",
+      "objective": "escort",
+      "enemy": "sweeper",
+      "covers": [
+        [
+          6,
+          14,
+          10,
+          3
+        ],
+        [
+          21,
+          9,
+          13,
+          3
+        ],
+        [
+          22,
+          20,
+          7,
+          5
+        ],
+        [
+          36,
+          17,
+          5,
+          10
+        ],
+        [
+          9,
+          26,
+          13,
+          2
+        ],
+        [
+          27,
+          29,
+          5,
+          3
+        ],
+        [
+          41,
+          5,
+          3,
+          5
+        ]
+      ],
+      "cells": [
+        [
+          88,
+          248
+        ],
+        [
+          296,
+          56
+        ],
+        [
+          280,
+          248
+        ]
+      ],
+      "drone": [
+        344,
+        184
+      ],
+      "enemy_bounds": [
+        272,
+        144,
+        80,
+        88
+      ],
+      "hazard_rect": [
+        19,
+        15,
+        14,
+        1
+      ],
+      "hazard": "laser",
+      "art_kind": "surveyor",
+      "room": 2,
+      "width": 48,
+      "height": 40,
+      "zone": 4,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_14_room_02",
+      "warning_frames": 44,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 64,
+      "brief1": "STAY CLOSE TO CREW",
+      "brief2": "MARKERS THEN DOCK",
+      "escort_start": [
+        88,
+        280
+      ],
+      "escort_route": [
+        [
+          88,
+          280
+        ],
+        [
+          88,
+          248
+        ],
+        [
+          24,
+          248
+        ],
+        [
+          24,
+          176
+        ],
+        [
+          152,
+          176
+        ],
+        [
+          152,
+          56
+        ],
+        [
+          296,
+          56
+        ],
+        [
+          296,
+          112
+        ],
+        [
+          360,
+          112
+        ],
+        [
+          360,
+          248
+        ],
+        [
+          280,
+          248
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          48,
+          280
+        ],
+        [
+          48,
+          296
+        ]
+      ]
+    },
+    {
+      "name": "SKY WARDEN",
+      "objective": "core",
+      "enemy": "sweeper",
+      "covers": [
+        [
+          14,
+          5,
+          3,
+          14
+        ],
+        [
+          33,
+          9,
+          3,
+          15
+        ],
+        [
+          6,
+          18,
+          8,
+          3
+        ],
+        [
+          21,
+          7,
+          9,
+          3
+        ],
+        [
+          22,
+          27,
+          4,
+          7
+        ],
+        [
+          34,
+          29,
+          9,
+          3
+        ],
+        [
+          5,
+          29,
+          9,
+          3
+        ],
+        [
+          38,
+          6,
+          4,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          56
+        ],
+        [
+          328,
+          104
+        ],
+        [
+          152,
+          264
+        ]
+      ],
+      "drone": [
+        224,
+        152
+      ],
+      "enemy_bounds": [
+        144,
+        96,
+        176,
+        136
+      ],
+      "hazard_rect": [
+        27,
+        25,
+        2,
+        2
+      ],
+      "hazard": "vent",
+      "art_kind": "sky_guard",
+      "room": 3,
+      "width": 48,
+      "height": 40,
+      "zone": 4,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_14_room_03",
+      "warning_frames": 48,
+      "dash_frames": 24,
+      "recover_frames": 120,
+      "speed": 64,
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "core_hp": 3
+    }
+  ]
+}

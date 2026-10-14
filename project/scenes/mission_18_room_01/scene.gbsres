@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "6eb5884d-c554-5cb9-842b-6d2168f8356b",
+  "_index": 179,
+  "type": "ADVENTURE",
+  "name": "Engine Balance",
+  "symbol": "scene_mission_18_room_01",
+  "x": 1640,
+  "y": 7900,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "8b6bf956-ba3c-59f5-824b-a0d44a9c07ce",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+00b+0f4+0012+0f6+007+0f2+00b+0f4+0012+0f6+007+0f2+00b+0f4+0012+0f6+007+0f2+00b+0f4+0012+0f6+007+0f2+00b+0f4+001f+0f2+00b+0f4+00a+0f3+0012+0f2+00b+0f4+00a+0f3+0012+0f2+00b+0f4+00a+0f3+0012+0f2+00b+0f4+00a+0f3+0012+0f2+004+0f3+004+0f4+00a+0f3+0012+0f2+004+0f3+004+0f4+00a+0f3+0012+0f2+004+0f3+004+0f4+00a+0f3+0012+0f2+004+0f3+004+0f4+00a+0f3+0012+0f2+004+0f3+004+0f4+00a+0f3+0012+0f2+004+0f3+0012+0f3+0012+0f2+004+0f3+0012+0f3+0012+0f2+004+0f3+009+0f5+004+0f3+0012+0f2+0010+0f5+004+0f3+0012+0f2+0010+0f5+004+0f3+0012+0f2+0019+0f3+0012+0f2+0019+0f3+0012+0f2+002e+0f2+007+0fe+00c+0f8+005+0f2+007+0fe+00c+0f8+005+0f2+007+0fe+00c+0f8+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

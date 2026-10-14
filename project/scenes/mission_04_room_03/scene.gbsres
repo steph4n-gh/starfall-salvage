@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "c4810972-bfff-5858-a106-fdb5cf461770",
+  "_index": 125,
+  "type": "ADVENTURE",
+  "name": "Pressure Warden",
+  "symbol": "scene_mission_04_room_03",
+  "x": 2520,
+  "y": 1740,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "4d7004d4-4380-506a-84e7-9b5466672607",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+005+0f9+0020+0f2+005+0f9+0011+0f4+00b+0f2+005+0f9+0011+0f4+00b+0f2+001f+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+00b+0f2+00f+0f4+00c+0f4+003+0f5+003+0f2+00f+0f4+00c+0f4+003+0f5+003+0f2+006+0f8+00!0f4+0013+0f5+003+0f2+006+0f8+00!0f4+001b+0f2+006+0f8+00!0f4+001b+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+001f+0f4+00b+0f2+001f+0f4+00b+0f2+001f+0f4+00b+0f2+001f+0f4+00b+0f2+0014+0f9+002+0f4+00b+0f2+0014+0f9+002+0f4+00b+0f2+0014+0f9+002+0f4+00b+0f2+001f+0f4+00b+0f2+001f+0f4+00b+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

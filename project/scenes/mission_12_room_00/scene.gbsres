@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "a3a07cee-3410-539b-bce3-a4a6470109aa",
+  "_index": 154,
+  "type": "ADVENTURE",
+  "name": "Lens Stack",
+  "symbol": "scene_mission_12_room_00",
+  "x": 1200,
+  "y": 5260,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "d51d0840-0944-53f5-bd47-1d56b9ed038a",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "6fcb2545-30db-5f04-81c6-92890ed14e71",
+    "0535e510-437f-59dc-90f7-f823f1bb852f",
+    "0e00d2ab-fc70-54ba-977a-88fed0219f6b",
+    "4826a3b5-7c73-590e-b218-a4578eb3612c",
+    "735ade14-66cd-50ad-af1c-4438f99d97f9",
+    "708167db-7f48-5edf-904f-9f1cb924d413",
+    "33bdb695-2fda-5111-bba4-b5d4c068dc29",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0017+0fd+00a+0f2+0017+0fd+00a+0f2+0017+0fd+00a+0f2+005+0f9+0010+0f3+00d+0f2+005+0f9+0010+0f3+00d+0f2+005+0f9+0010+0f3+00d+0f2+001e+0f3+00d+0f2+001e+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+00a+0f3+00d+0f2+0011+0f3+003+0f3+004+0f3+00d+0f2+0011+0f3+003+0f3+004+0f3+00d+0f2+0011+0f3+003+0f3+0014+0f2+004+0fa+003+0f3+003+0f3+00a+0f6+004+0f2+004+0fa+003+0f3+003+0f3+00a+0f6+004+0f2+004+0fa+003+0f3+003+0f3+00a+0f6+004+0f2+0011+0f3+003+0f3+0014+0f2+0011+0f3+003+0f3+0014+0f2+0011+0f3+003+0f3+0014+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

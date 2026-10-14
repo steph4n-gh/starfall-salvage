@@ -1,0 +1,26 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Cells Recovered",
+      "symbol": "var_cells_recovered"
+    },
+    {
+      "id": "1",
+      "name": "West Cell Taken",
+      "symbol": "var_west_cell_taken"
+    },
+    {
+      "id": "2",
+      "name": "North Cell Taken",
+      "symbol": "var_north_cell_taken"
+    },
+    {
+      "id": "3",
+      "name": "East Cell Taken",
+      "symbol": "var_east_cell_taken"
+    }
+  ],
+  "constants": []
+}

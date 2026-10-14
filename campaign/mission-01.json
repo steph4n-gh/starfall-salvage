@@ -1,0 +1,564 @@
+{
+  "mission": 0,
+  "name": "SALVAGE SIGNAL",
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four staged native rooms; optional cache markers are background artwork only.",
+  "rooms": [
+    {
+      "name": "FREIGHT SPINE",
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "objective": "salvage",
+      "enemy": "charger",
+      "hazard": "none",
+      "hazard_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "enemy_bounds": [
+        176,
+        112,
+        168,
+        96
+      ],
+      "covers": [
+        [
+          18,
+          6,
+          3,
+          9
+        ],
+        [
+          31,
+          6,
+          3,
+          8
+        ],
+        [
+          5,
+          13,
+          8,
+          3
+        ],
+        [
+          10,
+          20,
+          10,
+          3
+        ],
+        [
+          30,
+          21,
+          9,
+          3
+        ],
+        [
+          11,
+          29,
+          13,
+          3
+        ],
+        [
+          32,
+          28,
+          3,
+          7
+        ],
+        [
+          37,
+          14,
+          7,
+          3
+        ],
+        [
+          4,
+          22,
+          3,
+          9
+        ]
+      ],
+      "cells": [
+        [
+          328,
+          56
+        ],
+        [
+          200,
+          144
+        ],
+        [
+          328,
+          256
+        ]
+      ],
+      "drone": [
+        280,
+        152
+      ],
+      "landmark_kind": "freight_spine",
+      "brief1": "CROSS FREIGHT BAY",
+      "brief2": "3 CELLS THEN DOCK",
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 60,
+      "speed": 56,
+      "room": 0,
+      "scene_symbol": "scene_mission_01_room_00",
+      "art_kind": "freight_spine",
+      "optional_cache_marker": null
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 60,
+      "speed": 56,
+      "room": 1,
+      "name": "SIGNAL WORKS",
+      "scene_symbol": "scene_mission_01_room_01",
+      "objective": "repair",
+      "enemy": "sweeper",
+      "hazard": "vent",
+      "hazard_rect": [
+        26,
+        17,
+        2,
+        2
+      ],
+      "cells": [
+        [
+          80,
+          72
+        ],
+        [
+          304,
+          128
+        ],
+        [
+          208,
+          240
+        ]
+      ],
+      "drone": [
+        248,
+        128
+      ],
+      "enemy_bounds": [
+        128,
+        88,
+        224,
+        128
+      ],
+      "covers": [
+        [
+          18,
+          7,
+          16,
+          3
+        ],
+        [
+          9,
+          13,
+          3,
+          8
+        ],
+        [
+          34,
+          14,
+          3,
+          10
+        ],
+        [
+          6,
+          27,
+          14,
+          3
+        ],
+        [
+          28,
+          30,
+          12,
+          3
+        ],
+        [
+          22,
+          22,
+          4,
+          3
+        ],
+        [
+          5,
+          5,
+          3,
+          3
+        ]
+      ],
+      "brief1": "HOLD B TO REPAIR",
+      "brief2": "ANY ORDER THEN DOCK",
+      "art_kind": "signal_works",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 60,
+      "speed": 56,
+      "room": 2,
+      "name": "RESCUE CONCOURSE",
+      "scene_symbol": "scene_mission_01_room_02",
+      "objective": "escort",
+      "enemy": "hunter",
+      "hazard": "laser",
+      "hazard_rect": [
+        12,
+        25,
+        12,
+        1
+      ],
+      "cells": [
+        [
+          328,
+          248
+        ],
+        [
+          208,
+          104
+        ],
+        [
+          96,
+          64
+        ]
+      ],
+      "drone": [
+        328,
+        152
+      ],
+      "enemy_bounds": [
+        248,
+        96,
+        104,
+        136
+      ],
+      "covers": [
+        [
+          19,
+          15,
+          12,
+          6
+        ],
+        [
+          8,
+          12,
+          3,
+          13
+        ],
+        [
+          35,
+          13,
+          3,
+          11
+        ],
+        [
+          15,
+          29,
+          12,
+          3
+        ],
+        [
+          4,
+          27,
+          7,
+          3
+        ],
+        [
+          16,
+          5,
+          16,
+          3
+        ],
+        [
+          5,
+          5,
+          3,
+          3
+        ],
+        [
+          30,
+          28,
+          3,
+          5
+        ]
+      ],
+      "escort_start": [
+        88,
+        280
+      ],
+      "escort_route": [
+        [
+          88,
+          280
+        ],
+        [
+          328,
+          280
+        ],
+        [
+          328,
+          248
+        ],
+        [
+          328,
+          208
+        ],
+        [
+          264,
+          208
+        ],
+        [
+          264,
+          104
+        ],
+        [
+          208,
+          104
+        ],
+        [
+          108,
+          104
+        ],
+        [
+          108,
+          64
+        ],
+        [
+          96,
+          64
+        ],
+        [
+          108,
+          64
+        ],
+        [
+          108,
+          264
+        ],
+        [
+          48,
+          264
+        ],
+        [
+          48,
+          296
+        ]
+      ],
+      "brief1": "STAY NEAR THE CREW",
+      "brief2": "GUIDE THEM TO DOCK",
+      "art_kind": "rescue_concourse",
+      "optional_cache_marker": [
+        336,
+        64
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "zone": 0,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 96,
+      "speed": 56,
+      "room": 3,
+      "name": "BULWARK BAY",
+      "scene_symbol": "scene_mission_01_room_03",
+      "objective": "core",
+      "enemy": "charger",
+      "hazard": "none",
+      "hazard_rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cells": [
+        [
+          328,
+          80
+        ],
+        [
+          88,
+          136
+        ],
+        [
+          328,
+          264
+        ]
+      ],
+      "drone": [
+        248,
+        144
+      ],
+      "enemy_bounds": [
+        160,
+        80,
+        200,
+        144
+      ],
+      "covers": [
+        [
+          21,
+          12,
+          3,
+          5
+        ],
+        [
+          38,
+          16,
+          3,
+          5
+        ],
+        [
+          8,
+          5,
+          16,
+          3
+        ],
+        [
+          8,
+          21,
+          13,
+          3
+        ],
+        [
+          5,
+          11,
+          3,
+          9
+        ],
+        [
+          18,
+          29,
+          14,
+          3
+        ],
+        [
+          35,
+          27,
+          3,
+          5
+        ],
+        [
+          31,
+          5,
+          9,
+          3
+        ],
+        [
+          12,
+          27,
+          3,
+          7
+        ]
+      ],
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "art_kind": "bulwark_bay",
+      "optional_cache_marker": null
+    }
+  ]
+}

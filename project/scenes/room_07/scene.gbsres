@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "7101dd9a-696a-50f8-b7c8-84ff09759d3f",
+  "_index": 7,
+  "type": "ADVENTURE",
+  "name": "07 Prism Bridge",
+  "symbol": "scene_room_07",
+  "x": 480,
+  "y": 220,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "67830fc5-012d-5138-b908-07fffdcbf5ab",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+00c+0f2+004+0f2+00c+0f2+004+0f2+0012+0f2+003+0f2+00d+0f2+003+0f2+00d+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

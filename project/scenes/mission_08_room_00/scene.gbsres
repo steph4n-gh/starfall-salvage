@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "d55b77c1-d985-5d72-b391-944a0beeddce",
+  "_index": 138,
+  "type": "ADVENTURE",
+  "name": "Ash Sorter",
+  "symbol": "scene_mission_08_room_00",
+  "x": 1200,
+  "y": 3500,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "87722d24-591b-5243-bd1b-6150ab1f8997",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+005+0f8+004+0f4+0019+0f2+005+0f8+004+0f4+0019+0f2+005+0f8+004+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+009+0fc+004+0f2+0011+0f4+009+0fc+004+0f2+0011+0f4+009+0fc+004+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+0019+0f2+0011+0f4+00a+0f4+00b+0f2+0011+0f4+00a+0f4+00b+0f2+0011+0f4+00a+0f4+00b+0f2+001f+0f4+00b+0f2+004+0fb+0010+0f4+00b+0f2+004+0fb+0010+0f4+00b+0f2+004+0fb+0010+0f4+00b+0f2+001f+0f4+00b+0f2+001f+0f4+00b+0f2+0010+0fb+004+0f4+00b+0f2+0010+0fb+004+0f4+00b+0f2+0010+0fb+004+0f4+00b+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

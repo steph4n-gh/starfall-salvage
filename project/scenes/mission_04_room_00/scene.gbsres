@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "215e49c3-689c-5259-94f4-bbf42c5d2ea2",
+  "_index": 122,
+  "type": "ADVENTURE",
+  "name": "Pump Garden",
+  "symbol": "scene_mission_04_room_00",
+  "x": 1200,
+  "y": 1740,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "c378ba08-9401-58d3-a870-ee8f761b4544",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+007+0f4+00a+0f4+0015+0f2+007+0f4+00a+0f4+0015+0f2+007+0f4+00a+0f4+0015+0f2+007+0f4+00a+0f4+0015+0f2+007+0f4+00a+0f4+0015+0f2+007+0f4+00a+0f4+00a+0f4+007+0f2+007+0f4+00a+0f4+00a+0f4+007+0f2+007+0f4+0018+0f4+007+0f2+007+0f4+0018+0f4+007+0f2+007+0f4+0018+0f4+007+0f2+007+0f4+0018+0f4+007+0f2+007+0f4+0018+0f4+007+0f2+0023+0f4+007+0f2+0023+0f4+007+0f2+0023+0f4+007+0f2+0023+0f4+007+0f2+0023+0f4+007+0f2+00c+0ff+008+0f4+007+0f2+00c+0ff+008+0f4+007+0f2+00c+0ff+0013+0f2+002e+0f2+003+0f6+0025+0f2+003+0f6+0025+0f2+003+0f6+0025+0f2+001d+0fc+005+0f2+001d+0fc+005+0f2+001d+0fc+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

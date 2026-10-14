@@ -1,0 +1,62 @@
+STARFALL SALVAGE 1.1 - RELEASE NOTES
+Player-package draft prepared 2026-10-14
+
+THE GAME
+- Story: 18 missions, six zones, 72 large scrolling rooms.
+- Salvage, ordered relays, repair, physical crew escorts and guardians.
+- Four pulse rigs, middle-route order choices and optional caches.
+- Arcade: repeating 12-map route, changing hazard pressure, replacement
+  pulse rigs and the choice to continue or bank an earned haul.
+
+VERSION 1.1 CONTROLS
+Retry, route order, workbench upgrades and Arcade banking now use explicit
+highlighted choices: Up/Down selects and A confirms. B goes back or cancels
+instead of silently choosing a different action after each round. Flight
+physics and objective rules are unchanged by this controls update.
+
+WHAT WAS VERIFIED
+The exact native ROM in this download completed a fresh Story playthrough
+in PyBoy 2.7.0: all 18 missions, 72 rooms, 18 guardians, seven crew rescues,
+all four rigs and both middle-route orders. Pause froze gameplay, and
+Title -> Continue restored the completed ending. No game-code change was
+needed during the full campaign verification.
+
+A separate focused regression covered the complete 12-map Arcade cycle
+plus sector 13, banking 25,500, menu choices, retry/exit behavior and key
+Story/Arcade save transitions. It did not test every possible route and
+upgrade combination or indefinite Arcade loops.
+
+The guided native campaign clear displayed 00:35:27, Rank B. CLEAR TIME
+counts successful-room gameplay; it excludes menus, pauses and failed
+attempts. This is a functional test measurement, not elapsed session time
+or a measured first-time human completion time. Arcade has no fixed ending.
+
+WHAT REMAINS UNVERIFIED
+- Physical Chromatic/other handheld and exact cartridge combinations.
+- Save persistence after complete emulator shutdown or handheld power-off.
+- Speaker/headphone listening and music/sound-effect balance.
+- A complete browser campaign and browser reload/save persistence.
+- First-time human completion time, enjoyment and difficulty balance.
+
+The official browser export has been observed running, but that observation
+does not qualify a complete web playthrough. The browser edition is not
+included in this native download. SameBoy is a documented installation
+example, not a tested emulator for this release.
+
+PACKAGE AND VERIFICATION
+The native ROM and reviewed illustrated manual are byte-identical to the
+verified inputs. The package adds a short introduction, quick start, these
+release notes, credits and checksums. Manual screenshots are genuine
+unaltered 160 x 144 version 1.1 native-emulator captures; the illustrated
+cover is artwork, not a game frame or physical-device photograph.
+
+Native ROM SHA-256:
+105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db
+
+SHA256SUMS.txt lists every other payload file, excluding itself. To check
+the files with a SHA-256 utility, compare each hash against that list.
+On macOS, from the extracted folder: shasum -a 256 -c SHA256SUMS.txt
+On Linux, from the extracted folder: sha256sum -c SHA256SUMS.txt
+
+This is a local review draft. It has not been published. Original-content
+distribution terms and retained asset attribution remain publication gates.

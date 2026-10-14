@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "3cc6e9d9-7343-5669-ab63-6e95fe2f1557",
+  "_index": 130,
+  "type": "ADVENTURE",
+  "name": "Reservoir Cross",
+  "symbol": "scene_mission_06_room_00",
+  "x": 1200,
+  "y": 2620,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "0058e94e-407d-55db-b3da-728f40e67359",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+007+0fe+005+0fd+007+0f2+007+0fe+005+0fd+007+0f2+007+0fe+005+0fd+007+0f2+002e+0f2+002e+0f2+002e+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+005+0fa+006+0f4+0015+0f2+005+0fa+006+0f4+0015+0f2+005+0fa+006+0f4+008+0f8+005+0f2+0015+0f4+008+0f8+005+0f2+0015+0f4+008+0f8+005+0f2+0015+0f4+0015+0f2+002e+0f2+002e+0f2+002e+0f2+00b+0fa+007+0fd+005+0f2+00b+0fa+007+0fd+005+0f2+00b+0fa+007+0fd+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

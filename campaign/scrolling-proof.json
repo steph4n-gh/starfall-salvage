@@ -1,0 +1,219 @@
+{
+  "name": "FREIGHT SPINE",
+  "scene_symbol": "scene_proof_room_01",
+  "width": 48,
+  "height": 40,
+  "zone": 0,
+  "objective": "salvage",
+  "enemy": "charger",
+  "hazard": "none",
+  "hazard_rect": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "spawn": [
+    48,
+    296
+  ],
+  "terminal": [
+    48,
+    296
+  ],
+  "dock_rect": [
+    24,
+    272,
+    48,
+    40
+  ],
+  "coordinate_convention": {
+    "spawn_terminal_cells_drone": "Integer pixel centers returned by native actor_x/actor_y",
+    "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+    "covers_hazard_rect": "Tile x,y,width,height rectangles"
+  },
+  "enemy_bounds": [
+    176,
+    112,
+    168,
+    96
+  ],
+  "covers": [
+    [
+      18,
+      6,
+      3,
+      9
+    ],
+    [
+      31,
+      6,
+      3,
+      8
+    ],
+    [
+      5,
+      13,
+      8,
+      3
+    ],
+    [
+      10,
+      20,
+      10,
+      3
+    ],
+    [
+      30,
+      21,
+      9,
+      3
+    ],
+    [
+      11,
+      29,
+      13,
+      3
+    ],
+    [
+      32,
+      28,
+      3,
+      7
+    ],
+    [
+      37,
+      14,
+      7,
+      3
+    ],
+    [
+      4,
+      22,
+      3,
+      9
+    ]
+  ],
+  "cells": [
+    [
+      328,
+      56
+    ],
+    [
+      200,
+      144
+    ],
+    [
+      328,
+      256
+    ]
+  ],
+  "drone": [
+    280,
+    152
+  ],
+  "landmark_kind": "freight_spine",
+  "brief1": "CROSS FREIGHT BAY",
+  "brief2": "3 CELLS THEN DOCK",
+  "warning_frames": 42,
+  "dash_frames": 18,
+  "recover_frames": 60,
+  "speed": 56,
+  "proof_scope": "One isolated static native world. No active import, build, or hardware operation.",
+  "mission_sketch": [
+    "Room 1: salvage route across three broad chambers with alternate connectors",
+    "Room 2: ordered relay route changes the crossing sequence",
+    "Room 3: hazard and cover choices pressure the return route after streamed visuals qualify",
+    "Room 4: guarded keystone and extraction reward complete the sustained mission"
+  ],
+  "route_waypoints": [
+    [
+      [
+        48,
+        296
+      ],
+      [
+        224,
+        296
+      ],
+      [
+        224,
+        124
+      ],
+      [
+        284,
+        124
+      ],
+      [
+        284,
+        40
+      ],
+      [
+        328,
+        40
+      ],
+      [
+        328,
+        56
+      ]
+    ],
+    [
+      [
+        328,
+        56
+      ],
+      [
+        284,
+        56
+      ],
+      [
+        284,
+        128
+      ],
+      [
+        200,
+        128
+      ],
+      [
+        200,
+        144
+      ]
+    ],
+    [
+      [
+        200,
+        144
+      ],
+      [
+        224,
+        144
+      ],
+      [
+        224,
+        208
+      ],
+      [
+        328,
+        208
+      ],
+      [
+        328,
+        256
+      ]
+    ],
+    [
+      [
+        328,
+        256
+      ],
+      [
+        328,
+        296
+      ],
+      [
+        48,
+        296
+      ]
+    ]
+  ]
+}

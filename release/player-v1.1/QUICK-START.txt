@@ -1,0 +1,79 @@
+STARFALL SALVAGE 1.1 - QUICK START
+
+WAYS TO PLAY
+
+1. Game Boy Color emulator
+   Open Starfall-Salvage-1.1.gbc in an emulator supporting Game Boy Color,
+   MBC5 and battery saves. Use CGB or automatic color detection. SameBoy is
+   one example, but this release has not yet been tested in it. Follow the
+   emulator's key mapping and allow it to save battery-backed game data.
+
+2. Compatible GB/GBC SD flash cartridge
+   Use the cartridge in a color-capable handheld, such as a Game Boy Color
+   or Chromatic. The EverDrive GB X7 is one example, not a requirement.
+   Power off the handheld. Put the SD card into a computer's card reader,
+   copy the .gbc file to a games folder outside the cartridge system folder,
+   safely eject it, reinsert it and choose the game from the cartridge menu.
+   Keep existing system files and saves. Follow that cartridge's saving
+   instructions; do not format the card or replace its operating system.
+
+3. Compatible writable homebrew cartridge
+   Confirm support for this exact ROM: MBC5, at least 1 MiB ROM capacity,
+   32 KiB persistent save RAM, and header type 0x1E (MBC5 + rumble + RAM +
+   battery). Use that cartridge's supported writer/software and follow its
+   instructions, including verification. A physically fitting cartridge
+   does not by itself establish compatibility.
+
+4. Separate browser edition
+   This native download does not include the browser edition or a hosted
+   play link. When a separately supplied browser edition is available,
+   follow its hosting instructions. Default controls are listed below.
+
+Cartridge routes require Game Boy Color-compatible hardware. This game
+does not support original Game Boy or Game Boy Pocket. Chromatic does not
+need custom firmware to run it through a compatible cartridge. SD copying
+uses a card reader; the Chromatic USB port is not an SD-card passthrough.
+Hardware installation routes have not yet been qualified for this release.
+
+CONTROLS
+Handheld       Action                              Browser edition default
+D-pad          Thrust; release to drift             Arrow keys
+A              Pulse in play; confirm in menus      Z
+B              Hold to brake/interact; back/cancel  X
+Start          Pause/resume                         Enter
+Select         Open exit options                    P or Shift
+Up/Down        Highlight a menu choice              Up/Down
+
+At the flight deck, Up/Down selects a mission; Left/Right selects an
+unlocked rig; A launches. B does nothing at the title. Start does not
+confirm cards or upgrades. Other emulators may use different key maps.
+
+YOUR FIRST FIVE MINUTES
+1. Select Story with Up/Down and press A. Choose a mission and launch.
+2. Read the room briefing and press A when ready.
+3. Tap a direction to build speed. Release to drift; brake BEFORE a corner.
+4. Complete the displayed objective. Collect salvage by approaching it;
+   hold B beside relay/repair stations; stay near crew so they follow.
+5. Return beside the actual dock terminal. The whole bottom edge is not
+   a dock. Completing the objective alone does not finish the room.
+
+Press A for a ready close-range pulse; holding A does not repeatedly fire.
+Watch A READY / A WAIT. Guardian shields require three separate hits during
+CORE OPEN, then collection of the released cores and docking.
+
+SAVES AND RETRY
+Story saves checkpoints at accepted room entry and key completed-room,
+route and mission transitions. Look for CHECKPOINT SAVED. Continue at the
+title restores the committed checkpoint, not your mid-room position.
+SAVE WRITE FAILED means the write was not confirmed.
+
+Start opens Pause. Choose with Up/Down, confirm with A, or press B to resume.
+Retry restores the current checkpoint and full hull/crew. Arcade has no
+mid-sortie persistent resume: bank to save its best banked score. Quitting
+or failing an unfinished Arcade sortie loses its unbanked haul.
+
+Follow your emulator/cartridge's own battery-save workflow. Preserve and
+back up the matching save data when moving the ROM. Before a long session,
+check that your setup can close or power off and then Continue correctly;
+cold-start persistence has not yet been qualified for this release.
+See INSTRUCTIONS.pdf for detailed objectives, checkpoint rules and scoring.

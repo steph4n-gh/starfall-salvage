@@ -1,0 +1,9 @@
+# Preserve exact source and release bytes across platforms.
+* -text
+*.png binary
+*.jpg binary
+*.gbc binary
+*.pdf binary
+*.zip binary
+*.wav binary
+*.uge binary

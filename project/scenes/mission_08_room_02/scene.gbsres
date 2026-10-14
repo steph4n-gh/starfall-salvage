@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "069d0590-5954-595b-ada0-114672680285",
+  "_index": 140,
+  "type": "ADVENTURE",
+  "name": "Shift Walkway",
+  "symbol": "scene_mission_08_room_02",
+  "x": 2080,
+  "y": 3500,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "91763ad9-3fe6-55a4-a3e1-f38238882ce9",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+00b+0f4+001f+0f2+00b+0f4+001f+0f2+00b+0f4+001f+0f2+00b+0f4+001f+0f2+00b+0f4+009+0f4+0012+0f2+00b+0f4+009+0f4+008+0f5+005+0f2+00b+0f4+009+0f4+008+0f5+005+0f2+003+0f5+003+0f4+009+0f4+008+0f5+005+0f2+003+0f5+003+0f4+009+0f4+008+0f5+005+0f2+003+0f5+003+0f4+009+0f4+008+0f5+005+0f2+003+0f5+003+0f4+009+0f4+008+0f5+005+0f2+003+0f5+003+0f4+009+0f4+008+0f5+005+0f2+003+0f5+0010+0f4+008+0f5+005+0f2+0018+0f4+008+0f5+005+0f2+0018+0f4+008+0f5+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+006+0fd+001b+0f2+006+0fd+001b+0f2+006+0fd+001b+0f2+001d+0fb+006+0f2+001d+0fb+006+0f2+001d+0fb+006+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0012+0fc+0010+0f2+0012+0fc+0010+0f2+0012+0fc+0010+0f2+002e+0f2+002e+0f31+"
+}

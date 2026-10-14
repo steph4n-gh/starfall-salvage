@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "aee05993-f5b6-5196-a29d-bc07123abf98",
+  "_index": 5,
+  "type": "ADVENTURE",
+  "name": "05 Pump Garden",
+  "symbol": "scene_room_05",
+  "x": 0,
+  "y": 220,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "e209c6ec-0879-5c18-a901-f3744fa61317",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+004+0f2+00c+0f2+004+0f2+00c+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

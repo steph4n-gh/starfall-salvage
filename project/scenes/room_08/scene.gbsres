@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "4922060a-8cd0-5e9e-a1f8-489b1ce04d99",
+  "_index": 8,
+  "type": "ADVENTURE",
+  "name": "08 Manifold",
+  "symbol": "scene_room_08",
+  "x": 720,
+  "y": 220,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d684d574-98ab-57ae-994e-8992c95a6000",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "86e4a338-f439-52c9-a8bd-5be905e388fa",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+007+0f2+009+0f2+007+0f2+009+0f2+0012+0f2+0012+0f2+007+0f2+009+0f2+007+0f2+009+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

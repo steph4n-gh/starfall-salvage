@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "b606a589-0381-52fa-b289-eaf2aaf767ef",
+  "_index": 143,
+  "type": "ADVENTURE",
+  "name": "Kiln Repair",
+  "symbol": "scene_mission_09_room_01",
+  "x": 1640,
+  "y": 3940,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "5325b9c5-509b-57e1-84fc-d4d7711bc2b8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+005+0fe+001b+0f2+005+0fe+001b+0f2+005+0fe+001b+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+0011+0f2+0019+0f4+008+0f5+004+0f2+0019+0f4+008+0f5+004+0f2+0019+0f4+008+0f5+004+0f2+0019+0f4+0011+0f2+008+0f4+00d+0f4+0011+0f2+008+0f4+00d+0f4+0011+0f2+008+0f4+0022+0f2+008+0f4+0022+0f2+008+0f4+0022+0f2+008+0f4+0022+0f2+008+0f4+0022+0f2+008+0f4+0022+0f2+008+0f4+005+0ff+00e+0f2+008+0f4+005+0ff+00e+0f2+008+0f4+005+0ff+00e+0f2+008+0f4+0016+0f7+005+0f2+008+0f4+0016+0f7+005+0f2+0022+0f7+005+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

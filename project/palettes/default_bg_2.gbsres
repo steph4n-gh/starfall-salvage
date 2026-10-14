@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-2",
+  "name": "Violet Craters",
+  "colors": [
+    "DFC8F0",
+    "967CB7",
+    "58446F",
+    "201D3B"
+  ],
+  "defaultName": "Default BG 2",
+  "defaultColors": [
+    "E0F8A0",
+    "78C838",
+    "488818",
+    "081800"
+  ]
+}

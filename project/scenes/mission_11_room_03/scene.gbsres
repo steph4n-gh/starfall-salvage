@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "61848deb-bbb2-5043-87d7-cfd659d5697c",
+  "_index": 153,
+  "type": "ADVENTURE",
+  "name": "Signal Warden",
+  "symbol": "scene_mission_11_room_03",
+  "x": 2520,
+  "y": 4820,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "8173265f-0986-5c8f-b5ee-646a95df8e00",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "6fcb2545-30db-5f04-81c6-92890ed14e71",
+    "0535e510-437f-59dc-90f7-f823f1bb852f",
+    "0e00d2ab-fc70-54ba-977a-88fed0219f6b",
+    "4826a3b5-7c73-590e-b218-a4578eb3612c",
+    "735ade14-66cd-50ad-af1c-4438f99d97f9",
+    "708167db-7f48-5edf-904f-9f1cb924d413",
+    "33bdb695-2fda-5111-bba4-b5d4c068dc29",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+001b+0fc+007+0f2+001b+0fc+007+0f2+00b+0f5+00b+0fc+007+0f2+00b+0f5+006+0f4+0014+0f2+00b+0f5+006+0f4+0014+0f2+004+0f3+004+0f5+006+0f4+0014+0f2+004+0f3+004+0f5+006+0f4+0014+0f2+004+0f3+004+0f5+001e+0f2+004+0f3+004+0f5+0012+0f3+009+0f2+004+0f3+004+0f5+0012+0f3+009+0f2+004+0f3+004+0f5+0012+0f3+009+0f2+00b+0f5+0012+0f3+009+0f2+0022+0f3+009+0f2+0022+0f3+009+0f2+0022+0f3+009+0f2+0022+0f3+009+0f2+0022+0f3+009+0f2+0022+0f3+009+0f2+007+0fc+00f+0f3+009+0f2+007+0fc+001b+0f2+007+0fc+001b+0f2+002e+0f2+002e+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+006+0f9+005+0f2+0016+0f4+006+0f9+005+0f2+0016+0f4+006+0f9+005+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

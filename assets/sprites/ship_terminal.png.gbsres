@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "2d00fbaf-0227-52cb-9d1b-c9da5b7d1163",
+  "name": "Ship Terminal",
+  "symbol": "sprite_ship_terminal",
+  "states": [
+    {
+      "id": "7d0014ae-7a62-5f5e-9e55-f01dc8e7452b",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "a56840b9-dda2-547d-b4fa-4e0061092a66",
+          "frames": [
+            {
+              "id": "3bfe5afa-4d1f-5a1d-88e9-4995f59fb9be",
+              "tiles": [
+                {
+                  "id": "3de3bf96-1120-5604-a3c9-bbe6e37c1ecd",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 3,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "d6352275-ad7b-50b8-aa67-8021c26df192",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 3,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "89d82961-8afe-50a5-87b1-4eea26c319e5",
+          "frames": [
+            {
+              "id": "1660844d-02cc-5fe5-a9f1-7861ca05e5e0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "caa0ada1-53bd-5083-aa36-74cb724fe428",
+          "frames": [
+            {
+              "id": "800ae0d3-96b6-5c16-bbcd-7d2706d86f03",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7594c6cc-0035-53ec-9ea6-cfa2f18a6082",
+          "frames": [
+            {
+              "id": "44651105-0e4b-5c2d-8eb2-5a01ac5af357",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c23cbbe3-9f78-57ff-ad43-cb76008584b4",
+          "frames": [
+            {
+              "id": "fa1bd733-3777-5dee-9424-6cc4158f7e86",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3ff5fda7-e784-554a-a23b-bf3f285e8ff1",
+          "frames": [
+            {
+              "id": "afd1ff65-7cf3-5d7c-947d-1db45099d123",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "172b6fbe-6f49-58fb-beca-70d28b14a5db",
+          "frames": [
+            {
+              "id": "577eb50d-72d8-59c8-9d99-19946edf0538",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "732f0ad2-a8e9-5996-9193-3c36b3e3017e",
+          "frames": [
+            {
+              "id": "116143b9-c447-5518-a02e-407d17a03c0a",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "ship_terminal.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "8a1cf5cb34086c13a38edab937343dd66d456ad8"
+}

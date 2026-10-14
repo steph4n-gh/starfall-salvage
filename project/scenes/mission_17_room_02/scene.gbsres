@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "4db26cac-72e4-5e24-b5ce-e4b359d8cdb8",
+  "_index": 176,
+  "type": "ADVENTURE",
+  "name": "Lifeline Gantry",
+  "symbol": "scene_mission_17_room_02",
+  "x": 2080,
+  "y": 7460,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "5a9f37ac-90c3-5f38-91f7-c56128da3cd6",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0010+0f7+0017+0f2+0010+0f7+0017+0f2+0010+0f7+0017+0f2+002e+0f2+002e+0f2+006+0f8+0020+0f2+006+0f8+0020+0f2+006+0f8+0020+0f2+001d+0f5+00c+0f2+001d+0f5+00c+0f2+001d+0f5+00c+0f2+00!0f4+0018+0f5+00c+0f2+00!0f4+00f+0fe+00c+0f2+00!0f4+00f+0fe+00c+0f2+00!0f4+00f+0fe+00c+0f2+00!0f4+0029+0f2+00!0f4+0029+0f2+002e+0f2+002e+0f2+002e+0f2+00e+0f7+0019+0f2+00e+0f7+0019+0f2+00e+0f7+0019+0f2+0024+0f8+002+0f2+0024+0f8+002+0f2+0024+0f8+002+0f2+0024+0f8+002+0f2+002e+0f2+002e+0f2+0011+0f6+0017+0f2+0011+0f6+0017+0f31+"
+}

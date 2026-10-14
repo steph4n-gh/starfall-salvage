@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "5c91a045-c0d4-5b8e-b035-792e11d9b469",
+  "_index": 123,
+  "type": "ADVENTURE",
+  "name": "Valve Gallery",
+  "symbol": "scene_mission_04_room_01",
+  "x": 1640,
+  "y": 1740,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "fd0f3fc9-4d31-5921-bc42-a8013e7d9cc8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+006+0fc+001c+0f2+006+0fc+0012+0f5+005+0f2+006+0fc+006+0f4+008+0f5+005+0f2+0018+0f4+008+0f5+005+0f2+0018+0f4+0012+0f2+0018+0f4+0012+0f2+0018+0f4+0012+0f2+0018+0f4+0012+0f2+0018+0f4+0012+0f2+0018+0f4+0012+0f2+0018+0f4+0012+0f2+005+0f5+00e+0f4+0012+0f2+005+0f5+00e+0f4+0012+0f2+005+0f5+00e+0f4+0012+0f2+005+0f5+00e+0f4+0012+0f2+005+0f5+0024+0f2+005+0f5+0024+0f2+005+0f5+0024+0f2+005+0f5+0024+0f2+005+0f5+0024+0f2+005+0f5+0018+0f4+008+0f2+005+0f5+0018+0f4+008+0f2+00f+0f11+002+0f4+008+0f2+00f+0f11+002+0f4+008+0f2+00f+0f11+002+0f4+008+0f2+0022+0f4+008+0f2+0022+0f4+008+0f2+0022+0f4+008+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

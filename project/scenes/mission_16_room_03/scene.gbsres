@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "294a9db7-d046-5ce6-a1aa-d99306e0a6d5",
+  "_index": 173,
+  "type": "ADVENTURE",
+  "name": "Ignition Warden",
+  "symbol": "scene_mission_16_room_03",
+  "x": 2520,
+  "y": 7020,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "14ee3c6c-09de-56a6-abf0-a746cb4151ab",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "717b2e8a-df07-5174-b95d-d78bdaec1853",
+    "465d514d-bc88-55e8-95de-fa18df0fbab6",
+    "da4c15dd-4def-53fa-8e32-61e1cff0463d",
+    "f1f1af75-4c50-57b1-b800-2a9693ba7c52",
+    "74d93cee-827a-52ef-8ecd-7dc46eb1d712",
+    "da6d1bc9-0c3d-5d02-a2c4-e4985d26edb7",
+    "efe76959-4e5d-57ca-8bf9-e8f9bf78e094",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+004+0f4+0026+0f2+004+0f4+0026+0f2+004+0f4+0026+0f2+002e+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+00f+0f5+009+0f5+00c+0f2+002e+0f2+002e+0f2+0015+0f7+0012+0f2+0015+0f7+0012+0f2+0015+0f7+0012+0f2+007+0f4+00a+0f7+0012+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+007+0f4+0019+0f5+005+0f2+0024+0f5+005+0f2+0011+0fc+0011+0f2+0011+0fc+0011+0f2+0011+0fc+0011+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

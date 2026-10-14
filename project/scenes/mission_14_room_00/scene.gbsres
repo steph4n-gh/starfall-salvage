@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "938c5bbe-1ede-5123-b373-3b3a66613193",
+  "_index": 162,
+  "type": "ADVENTURE",
+  "name": "Antenna Walk",
+  "symbol": "scene_mission_14_room_00",
+  "x": 1200,
+  "y": 6140,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "d53f3a66-d205-50af-8ec8-1b04f3bf88e0",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d3bc4bb6-e97b-5379-93fe-a4a7ba836484",
+    "7ec22f77-6291-576b-88a7-d76abd3151c8",
+    "ebe28edf-290e-57a8-b30e-ea610f9a5be6",
+    "eb0b9f88-1cce-52d7-a6c8-d5a1930a5475",
+    "4994d885-0092-50df-adce-5644e2e9c188",
+    "ef533cf6-1f7e-5d1f-8629-6e50f0bf238e",
+    "d26124d5-7c44-5e40-844c-016e570d4d8d",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+005+0f3+008+0f11+00d+0f2+005+0f3+008+0f11+00d+0f2+005+0f3+008+0f11+002+0f3+008+0f2+005+0f3+001b+0f3+008+0f2+005+0f3+001b+0f3+008+0f2+005+0f3+001b+0f3+008+0f2+005+0f3+001b+0f3+008+0f2+005+0f3+001b+0f3+008+0f2+005+0f3+0012+0f3+006+0f3+008+0f2+005+0f3+009+0f3+006+0f3+006+0f3+008+0f2+005+0f3+009+0f3+006+0f3+0011+0f2+005+0f3+009+0f3+006+0f3+0011+0f2+005+0f3+009+0f3+006+0f3+0011+0f2+005+0f3+009+0f3+006+0f3+0011+0f2+005+0f3+009+0f3+006+0f3+0011+0f2+005+0f3+0012+0f3+0011+0f2+005+0f3+0012+0f3+0011+0f2+005+0f3+0012+0f3+0011+0f2+005+0f3+0012+0f3+0011+0f2+005+0f3+002+0fa+006+0f3+0011+0f2+00a+0fa+006+0f3+0011+0f2+00a+0fa+001a+0f2+002e+0f2+002e+0f2+0021+0f9+004+0f2+0021+0f9+004+0f2+0021+0f9+004+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

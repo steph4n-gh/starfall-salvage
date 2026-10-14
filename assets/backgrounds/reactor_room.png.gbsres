@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "822eaf91-14c5-5b91-8efc-eb0e215a1994",
+  "name": "Reactor Dock",
+  "symbol": "bg_reactor_dock",
+  "tileColors": "0028+0114+0022+022+007+022+009+022+007+022+0014+012+00!024+00d+012+00!024+0010+024+0010+024+012+0012+012+0015+022+0012+022+00b+034+0010+034+0030+",
+  "filename": "reactor_room.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

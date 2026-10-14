@@ -1,0 +1,46 @@
+STARFALL SALVAGE 1.1
+Native player download | Local release draft | Prepared 2026-10-14
+
+Thrust, drift and brake through a damaged orbital station. Restore its
+systems, protect the crew and bring the salvage home. Story offers 18
+missions across six zones and 72 rooms. Arcade repeats a 12-map route
+with changing hazard pressure, replacement pulse rigs and banking choices.
+
+START HERE
+1. Read QUICK-START.txt for installation, controls and your first flight.
+2. Open Starfall-Salvage-1.1.gbc in a compatible Game Boy Color emulator,
+   or install it using a compatible cartridge's own instructions.
+3. Read INSTRUCTIONS.pdf for illustrated objectives, routes, rigs and saves.
+
+CONTENTS
+Starfall-Salvage-1.1.gbc   The one native game ROM in this download
+INSTRUCTIONS.pdf          Illustrated 14-page flight manual
+QUICK-START.txt            Installation, controls and save guidance
+RELEASE-NOTES.txt          Version changes and exact verification scope
+CREDITS.txt                Original game credits and attribution status
+LICENSE                   Retained GB Studio MIT notice, unchanged
+SHA256SUMS.txt             SHA-256 hashes for the other seven files
+READ-ME.txt                This introduction (also listed in SHA256SUMS.txt)
+
+The manual covers several ways to play and refers to the broader game's
+browser and source editions. Those editions are separate; neither is
+included in this native player download. There is no hosted browser game
+or browser download link supplied with this local draft.
+
+COMPATIBILITY AT A GLANCE
+Game Boy Color only. Original Game Boy and Game Boy Pocket are unsupported.
+ROM: 1 MiB. Save RAM: 32 KiB. Cartridge header: 0x1E, MBC5 with rumble,
+RAM and battery. Confirm support for this exact image in your emulator or
+cartridge. The .gbc file is not a Game Boy Advance (.gba) game.
+
+The released native ROM completed Story and the focused Arcade/menu tests
+in PyBoy 2.7.0. Physical handheld/cartridge combinations, cold-start save
+persistence, heard audio and a complete browser campaign remain unverified.
+Full details are in RELEASE-NOTES.txt. A listed installation route is not
+a claim that every device or cartridge in that category has been tested.
+
+DRAFT STATUS
+Prepared locally for review; not publicly published. Original game
+distribution terms and retained asset provenance still need author review
+before publication. See CREDITS.txt. The existing third-party notice is
+preserved; this package does not make a new licensing choice for the author.

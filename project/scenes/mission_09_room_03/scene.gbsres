@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "8654a48b-b040-57db-b153-5dfe00685a31",
+  "_index": 145,
+  "type": "ADVENTURE",
+  "name": "Forge Warden",
+  "symbol": "scene_mission_09_room_03",
+  "x": 2520,
+  "y": 3940,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "19ec817f-b540-561a-b3e1-061441551df1",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0016+0f6+0012+0f2+00e+0f4+004+0f6+0012+0f2+00e+0f4+004+0f6+0012+0f2+00e+0f4+001c+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+00b+0f4+00d+0f2+004+0f9+00!0f4+00b+0f4+003+0f6+004+0f2+004+0f9+00!0f4+00b+0f4+003+0f6+004+0f2+004+0f9+00!0f4+00b+0f4+003+0f6+004+0f2+00e+0f4+00b+0f4+00d+0f2+00e+0f4+001c+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0012+0ff+00d+0f2+0012+0ff+00d+0f2+0012+0ff+003+0f7+003+0f2+006+0fa+0014+0f7+003+0f2+006+0fa+0014+0f7+003+0f2+006+0fa+001e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

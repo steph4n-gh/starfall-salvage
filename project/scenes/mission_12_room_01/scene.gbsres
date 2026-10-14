@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "a26e3a73-e1e6-5317-8b83-b0a5c5398d50",
+  "_index": 155,
+  "type": "ADVENTURE",
+  "name": "Relay Prism",
+  "symbol": "scene_mission_12_room_01",
+  "x": 1640,
+  "y": 5260,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "4a59f916-0da8-52a3-b936-a42029edaae9",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "6fcb2545-30db-5f04-81c6-92890ed14e71",
+    "0535e510-437f-59dc-90f7-f823f1bb852f",
+    "0e00d2ab-fc70-54ba-977a-88fed0219f6b",
+    "4826a3b5-7c73-590e-b218-a4578eb3612c",
+    "735ade14-66cd-50ad-af1c-4438f99d97f9",
+    "708167db-7f48-5edf-904f-9f1cb924d413",
+    "33bdb695-2fda-5111-bba4-b5d4c068dc29",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0012+0f3+0019+0f2+007+0f6+005+0f3+0019+0f2+007+0f6+005+0f3+0019+0f2+007+0f6+005+0f3+007+0f7+00b+0f2+0012+0f3+007+0f7+00b+0f2+0012+0f3+007+0f7+00b+0f2+0012+0f3+0019+0f2+0012+0f3+0019+0f2+0012+0f3+0019+0f2+002e+0f2+002e+0f2+002e+0f2+00c+0f3+001f+0f2+00c+0f3+001f+0f2+00c+0f3+0017+0f3+005+0f2+00c+0f3+0017+0f3+005+0f2+00c+0f3+0017+0f3+005+0f2+00c+0f3+0017+0f3+005+0f2+00c+0f3+007+0fc+004+0f3+005+0f2+00c+0f3+007+0fc+004+0f3+005+0f2+00c+0f3+007+0fc+004+0f3+005+0f2+00c+0f3+0017+0f3+005+0f2+00c+0f3+0017+0f3+005+0f2+00c+0f3+001f+0f2+005+0f5+002+0f3+001f+0f2+005+0f5+0024+0f2+005+0f5+0024+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "bf457d9f-68d5-5870-be03-64f589ac9e89",
+  "_index": 10,
+  "type": "ADVENTURE",
+  "name": "10 Ion Gallery",
+  "symbol": "scene_room_10",
+  "x": 240,
+  "y": 440,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1b89ae38-8891-599b-8af0-98872b42f325",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "de5f2f7b-c2b9-509e-bfdb-465851b4e761",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "de5f2f7b-c2b9-509e-bfdb-465851b4e761",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+0012+0f2+006+0f2+00a+0f2+006+0f2+00a+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

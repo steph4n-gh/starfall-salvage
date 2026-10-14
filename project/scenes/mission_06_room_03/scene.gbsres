@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "9e340174-36e2-54b1-9f76-516b469c5c38",
+  "_index": 133,
+  "type": "ADVENTURE",
+  "name": "Thermal Sentinel",
+  "symbol": "scene_mission_06_room_03",
+  "x": 2520,
+  "y": 2620,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "c17e92ba-33b8-5f52-9816-8a0c836e2535",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0012+0fa+0012+0f2+0012+0fa+0012+0f2+00d+0f4+00!0fa+0012+0f2+00d+0f4+001d+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+003+0f6+004+0f4+00e+0f4+00b+0f2+003+0f6+004+0f4+00e+0f4+00b+0f2+003+0f6+004+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+00d+0f4+00e+0f4+00b+0f2+001f+0f4+00b+0f2+001f+0f4+00b+0f2+002e+0f2+002e+0f2+002e+0f2+0012+0fc+0010+0f2+0012+0fc+0010+0f2+0012+0fc+0010+0f2+0024+0f7+003+0f2+004+0fa+0016+0f7+003+0f2+004+0fa+0016+0f7+003+0f2+004+0fa+0020+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

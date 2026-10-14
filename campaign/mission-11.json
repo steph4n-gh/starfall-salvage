@@ -1,0 +1,545 @@
+{
+  "mission": 10,
+  "name": "SIGNAL RESCUE",
+  "zone": 3,
+  "zone_name": "SIGNAL ARCHIVE",
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four new staged native rooms. Existing objectives only; no reflector, forcefield or paired-enemy claims.",
+  "rooms": [
+    {
+      "name": "PACKET CONCOURSE",
+      "objective": "salvage",
+      "enemy": "hunter",
+      "covers": [
+        [
+          7,
+          8,
+          12,
+          3
+        ],
+        [
+          23,
+          6,
+          3,
+          10
+        ],
+        [
+          32,
+          14,
+          10,
+          3
+        ],
+        [
+          13,
+          18,
+          3,
+          14
+        ],
+        [
+          23,
+          25,
+          13,
+          3
+        ],
+        [
+          36,
+          29,
+          3,
+          6
+        ],
+        [
+          5,
+          24,
+          5,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          64,
+          40
+        ],
+        [
+          304,
+          88
+        ],
+        [
+          248,
+          288
+        ]
+      ],
+      "drone": [
+        304,
+        152
+      ],
+      "enemy_bounds": [
+        224,
+        136,
+        128,
+        112
+      ],
+      "hazard_rect": [
+        23,
+        18,
+        2,
+        2
+      ],
+      "hazard": "vent",
+      "art_kind": "packet",
+      "room": 0,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_11_room_00",
+      "warning_frames": 44,
+      "dash_frames": 20,
+      "recover_frames": 112,
+      "speed": 60,
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "FIND THE COVER GAPS"
+    },
+    {
+      "name": "CARRIER REPAIR",
+      "objective": "repair",
+      "enemy": "charger",
+      "covers": [
+        [
+          5,
+          7,
+          5,
+          8
+        ],
+        [
+          17,
+          6,
+          14,
+          3
+        ],
+        [
+          35,
+          6,
+          3,
+          17
+        ],
+        [
+          12,
+          19,
+          12,
+          3
+        ],
+        [
+          6,
+          27,
+          8,
+          3
+        ],
+        [
+          25,
+          28,
+          11,
+          3
+        ],
+        [
+          24,
+          12,
+          3,
+          8
+        ]
+      ],
+      "cells": [
+        [
+          96,
+          56
+        ],
+        [
+          328,
+          184
+        ],
+        [
+          176,
+          264
+        ]
+      ],
+      "drone": [
+        256,
+        160
+      ],
+      "enemy_bounds": [
+        224,
+        96,
+        112,
+        144
+      ],
+      "hazard_rect": [
+        17,
+        24,
+        12,
+        1
+      ],
+      "hazard": "laser",
+      "art_kind": "carrier",
+      "room": 1,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_11_room_01",
+      "warning_frames": 44,
+      "dash_frames": 20,
+      "recover_frames": 112,
+      "speed": 60,
+      "brief1": "HOLD B AT EACH PANEL",
+      "brief2": "POWER THE NEXT PATH",
+      "hold_ticks": 45,
+      "optional_cache_marker": [
+        344,
+        56
+      ],
+      "optional_cache": {
+        "hold_ticks": 20,
+        "reward": "persistent mission badge",
+        "floor_marker": "gold diamond",
+        "runtime_support": "Existing B20 native trigger; stage only, not gameplay-qualified"
+      }
+    },
+    {
+      "name": "CREW TRANSIT",
+      "objective": "escort",
+      "enemy": "hunter",
+      "covers": [
+        [
+          17,
+          14,
+          12,
+          7
+        ],
+        [
+          5,
+          11,
+          6,
+          4
+        ],
+        [
+          38,
+          11,
+          5,
+          7
+        ],
+        [
+          6,
+          25,
+          6,
+          2
+        ],
+        [
+          18,
+          30,
+          14,
+          2
+        ],
+        [
+          38,
+          29,
+          4,
+          2
+        ]
+      ],
+      "cells": [
+        [
+          344,
+          248
+        ],
+        [
+          200,
+          96
+        ],
+        [
+          80,
+          56
+        ]
+      ],
+      "drone": [
+        328,
+        176
+      ],
+      "enemy_bounds": [
+        288,
+        144,
+        64,
+        96
+      ],
+      "hazard_rect": [
+        16,
+        24,
+        12,
+        1
+      ],
+      "hazard": "laser",
+      "art_kind": "crew",
+      "room": 2,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_11_room_02",
+      "warning_frames": 44,
+      "dash_frames": 20,
+      "recover_frames": 112,
+      "speed": 60,
+      "brief1": "STAY CLOSE TO CREW",
+      "brief2": "MARKERS THEN DOCK",
+      "escort_start": [
+        88,
+        280
+      ],
+      "escort_route": [
+        [
+          88,
+          280
+        ],
+        [
+          344,
+          280
+        ],
+        [
+          344,
+          248
+        ],
+        [
+          344,
+          216
+        ],
+        [
+          272,
+          216
+        ],
+        [
+          272,
+          96
+        ],
+        [
+          200,
+          96
+        ],
+        [
+          120,
+          96
+        ],
+        [
+          120,
+          56
+        ],
+        [
+          80,
+          56
+        ],
+        [
+          120,
+          56
+        ],
+        [
+          120,
+          240
+        ],
+        [
+          88,
+          240
+        ],
+        [
+          88,
+          264
+        ],
+        [
+          48,
+          264
+        ],
+        [
+          48,
+          296
+        ]
+      ]
+    },
+    {
+      "name": "SIGNAL WARDEN",
+      "objective": "core",
+      "enemy": "charger",
+      "covers": [
+        [
+          12,
+          7,
+          5,
+          10
+        ],
+        [
+          28,
+          5,
+          12,
+          3
+        ],
+        [
+          35,
+          13,
+          3,
+          11
+        ],
+        [
+          8,
+          23,
+          12,
+          3
+        ],
+        [
+          23,
+          28,
+          4,
+          7
+        ],
+        [
+          33,
+          30,
+          9,
+          3
+        ],
+        [
+          5,
+          10,
+          3,
+          6
+        ],
+        [
+          23,
+          8,
+          4,
+          4
+        ]
+      ],
+      "cells": [
+        [
+          72,
+          64
+        ],
+        [
+          328,
+          88
+        ],
+        [
+          344,
+          272
+        ]
+      ],
+      "drone": [
+        200,
+        168
+      ],
+      "enemy_bounds": [
+        144,
+        128,
+        176,
+        104
+      ],
+      "hazard_rect": [
+        28,
+        25,
+        2,
+        2
+      ],
+      "hazard": "vent",
+      "art_kind": "signal_guard",
+      "room": 3,
+      "width": 48,
+      "height": 40,
+      "zone": 3,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Native integer actor centers; player offset7,3",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "scene_symbol": "scene_mission_11_room_03",
+      "warning_frames": 48,
+      "dash_frames": 20,
+      "recover_frames": 120,
+      "speed": 60,
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "core_hp": 3
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "78857b30-54ac-5c25-a696-26e77701aeb2",
+  "_index": 124,
+  "type": "ADVENTURE",
+  "name": "Flow Ladder",
+  "symbol": "scene_mission_04_room_02",
+  "x": 2080,
+  "y": 1740,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "8506057f-092d-5309-a023-aeb53abe8045",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+00d+0f3+001e+0f2+00d+0f3+001e+0f2+00d+0f3+0011+0fa+003+0f2+00d+0f3+0011+0fa+003+0f2+00d+0f3+0011+0fa+003+0f2+00d+0f3+001e+0f2+00d+0f3+001e+0f2+00d+0f3+001e+0f2+00d+0f3+001e+0f2+00d+0f3+00b+0f3+0010+0f2+00d+0f3+00b+0f3+0010+0f2+00d+0f3+00b+0f3+0010+0f2+00d+0f3+00b+0f3+0010+0f2+00d+0f3+00b+0f3+0010+0f2+00d+0f3+00b+0f3+0010+0f2+001b+0f3+0010+0f2+001b+0f3+0010+0f2+001b+0f3+0010+0f2+004+0f9+00e+0f3+0010+0f2+004+0f9+00e+0f3+0010+0f2+004+0f9+00e+0f3+0010+0f2+001b+0f3+008+0f5+003+0f2+001b+0f3+008+0f5+003+0f2+001b+0f3+008+0f5+003+0f2+001b+0f3+008+0f5+003+0f2+001b+0f3+008+0f5+003+0f2+00b+0fc+0017+0f2+00b+0fc+0017+0f2+00b+0fc+0017+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "39cfeb85-5dd3-5ebe-bacd-93ccbbe93715",
+  "_index": 3,
+  "type": "ADVENTURE",
+  "name": "03 Signal Room",
+  "symbol": "scene_room_03",
+  "x": 480,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8a724dbc-7014-5546-b7b2-28803bb14327",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+00c+0f2+004+0f2+00c+0f2+004+0f2+0012+0f2+003+0f2+00d+0f2+003+0f2+00d+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

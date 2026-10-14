@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "1b06fb30-5380-5929-aaba-30729726d2eb",
+  "_index": 4,
+  "type": "ADVENTURE",
+  "name": "04 Dock Lock",
+  "symbol": "scene_room_04",
+  "x": 720,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "50098833-7241-5c71-85f8-882474372f43",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+0012+0f2+0012+0f2+0012+0f2+007+0f2+009+0f2+007+0f2+009+0f2+0012+0f2+0012+0f2+0012+0f2+007+0f2+009+0f2+007+0f2+009+0f2+0012+0f2+0012+0f2+0012+0f29+"
+}

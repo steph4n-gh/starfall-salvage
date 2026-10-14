@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "26a89cef-38d9-50ce-9ad7-c1c3cc397bb5",
+  "_index": 119,
+  "type": "ADVENTURE",
+  "name": "Triage Hub",
+  "symbol": "scene_mission_03_room_01",
+  "x": 1640,
+  "y": 1300,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "3827bb84-86b9-5b68-8d6a-eca5f547e0ae",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "c8ef798d-bf6d-5079-8ce3-5901844534d7",
+    "default-bg-3",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "66041d40-65a9-50eb-914b-08e3719b2451",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+0015+0f4+0015+0f2+006+0f9+006+0f4+0015+0f2+006+0f9+006+0f4+008+0f7+006+0f2+006+0f9+006+0f4+008+0f7+006+0f2+0015+0f4+008+0f7+006+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+0022+0f5+007+0f2+008+0f9+0011+0f5+007+0f2+008+0f9+0011+0f5+007+0f2+008+0f9+006+0f4+007+0f5+007+0f2+0017+0f4+007+0f5+007+0f2+0017+0f4+007+0f5+007+0f2+004+0f7+00c+0f4+007+0f5+007+0f2+004+0f7+00c+0f4+007+0f5+007+0f2+004+0f7+00c+0f4+0013+0f2+0017+0f4+0013+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

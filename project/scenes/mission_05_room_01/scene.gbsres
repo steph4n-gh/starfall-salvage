@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "2cc7a749-4cd0-5424-8a21-f8a809b20d3c",
+  "_index": 127,
+  "type": "ADVENTURE",
+  "name": "Defrost Works",
+  "symbol": "scene_mission_05_room_01",
+  "x": 1640,
+  "y": 2180,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "45f3e6fc-2576-5557-b3ed-2bfa51f0480f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "5fc20886-70b2-521b-8b68-b038a404da1d",
+    "default-bg-3",
+    "9b3ed3d7-dce1-5360-8ea4-21bf26960609",
+    "3cdc5a6e-83cb-5dde-a850-67b10cfed6ef",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+004+0f4+0026+0f2+004+0f4+0026+0f2+004+0f4+007+0f10+00f+0f2+004+0f4+007+0f10+00f+0f2+004+0f4+007+0f10+00f+0f2+004+0f4+0026+0f2+004+0f4+001c+0f4+006+0f2+004+0f4+001c+0f4+006+0f2+004+0f4+001c+0f4+006+0f2+004+0f4+001c+0f4+006+0f2+0024+0f4+006+0f2+0024+0f4+006+0f2+0024+0f4+006+0f2+0024+0f4+006+0f2+0024+0f4+006+0f2+00d+0f4+0013+0f4+006+0f2+00d+0f4+0013+0f4+006+0f2+00d+0f4+0013+0f4+006+0f2+00d+0f4+0013+0f4+006+0f2+00d+0f4+001d+0f2+00d+0f4+001d+0f2+00d+0f4+001d+0f2+00d+0f4+001d+0f2+00d+0f4+006+0fb+00c+0f2+00d+0f4+006+0fb+00c+0f2+0017+0fb+00c+0f2+003+0f7+0024+0f2+003+0f7+0024+0f2+003+0f7+0024+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

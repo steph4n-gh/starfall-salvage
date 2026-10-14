@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "6865404c-c9e5-5601-b977-9bb45bf06674",
+  "_index": 134,
+  "type": "ADVENTURE",
+  "name": "Ore Spine",
+  "symbol": "scene_mission_07_room_00",
+  "x": 1200,
+  "y": 3060,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "e092224e-c8e5-5bd0-94f8-17ff7f4f2ada",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "8d91d38f-9d15-538e-b4e2-4f19257a6c5c",
+    "default-bg-3",
+    "9645f38c-9914-5949-9e34-f090521cb5e2",
+    "54012934-29ce-5dc4-9a4d-5a153d7df950",
+    "default-bg-4",
+    "8f26f717-a877-5578-b316-1cb37cf1e10c",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "default-sprite",
+    "default-bg-4",
+    "default-bg-3",
+    "default-bg-4",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-ui"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f91+002e+0f2+002e+0f2+0022+0f6+006+0f2+009+0f5+0014+0f6+006+0f2+009+0f5+0014+0f6+006+0f2+009+0f5+0020+0f2+009+0f5+0020+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+009+0f5+008+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+0016+0f4+0014+0f2+002e+0f2+004+0fc+00e+0fb+005+0f2+004+0fc+00e+0fb+005+0f2+004+0fc+00e+0fb+005+0f2+002e+0f2+002e+0f2+002e+0f2+0010+0fd+0011+0f2+0010+0fd+0011+0f2+0010+0fd+0011+0f2+002e+0f2+002e+0f2+002e+0f2+002e+0f31+"
+}

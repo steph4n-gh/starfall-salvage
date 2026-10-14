@@ -1,0 +1,466 @@
+{
+  "mission": 6,
+  "name": "FOUNDRY ACCESS",
+  "zone": 2,
+  "room_count": 4,
+  "graph": {
+    "entry": 0,
+    "middle_choices": [
+      1,
+      2
+    ],
+    "middle_rule": "Visit both in either order",
+    "final": 3
+  },
+  "implementation_scope": "Four staged native rooms; optional cache markers are background artwork only. Existing objective APIs only.",
+  "rooms": [
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 0,
+      "name": "ORE SPINE",
+      "scene_symbol": "scene_mission_07_room_00",
+      "zone": 2,
+      "objective": "salvage",
+      "enemy": "charger",
+      "hazard": "laser",
+      "hazard_rect": [
+        4,
+        20,
+        9,
+        1
+      ],
+      "covers": [
+        [
+          10,
+          6,
+          5,
+          12
+        ],
+        [
+          23,
+          10,
+          4,
+          15
+        ],
+        [
+          35,
+          5,
+          6,
+          3
+        ],
+        [
+          31,
+          26,
+          11,
+          3
+        ],
+        [
+          5,
+          26,
+          12,
+          3
+        ],
+        [
+          17,
+          32,
+          13,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          64,
+          48
+        ],
+        [
+          344,
+          112
+        ],
+        [
+          288,
+          264
+        ]
+      ],
+      "drone": [
+        264,
+        136
+      ],
+      "enemy_bounds": [
+        240,
+        88,
+        112,
+        144
+      ],
+      "art_kind": "ore_spine",
+      "brief1": "GRAB THREE CELLS",
+      "brief2": "3 CELLS THEN DOCK",
+      "optional_cache_marker": [
+        144,
+        72
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 18,
+      "recover_frames": 112,
+      "speed": 56,
+      "room": 1,
+      "name": "SMELTER PATCH",
+      "scene_symbol": "scene_mission_07_room_01",
+      "zone": 2,
+      "objective": "repair",
+      "enemy": "hunter",
+      "hazard": "vent",
+      "hazard_rect": [
+        25,
+        20,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          5,
+          8,
+          15,
+          3
+        ],
+        [
+          26,
+          6,
+          4,
+          12
+        ],
+        [
+          37,
+          13,
+          5,
+          9
+        ],
+        [
+          13,
+          20,
+          4,
+          13
+        ],
+        [
+          22,
+          29,
+          14,
+          3
+        ],
+        [
+          4,
+          30,
+          6,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          96,
+          120
+        ],
+        [
+          352,
+          72
+        ],
+        [
+          288,
+          280
+        ]
+      ],
+      "drone": [
+        264,
+        184
+      ],
+      "enemy_bounds": [
+        160,
+        136,
+        136,
+        112
+      ],
+      "art_kind": "smelter_patch",
+      "brief1": "HOLD B TO REPAIR",
+      "brief2": "ANY ORDER THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        248
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 42,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 52,
+      "room": 2,
+      "name": "FURNACE LADDER",
+      "scene_symbol": "scene_mission_07_room_02",
+      "zone": 2,
+      "objective": "relay",
+      "enemy": "sweeper",
+      "hazard": "laser",
+      "hazard_rect": [
+        4,
+        24,
+        12,
+        1
+      ],
+      "covers": [
+        [
+          8,
+          5,
+          4,
+          13
+        ],
+        [
+          21,
+          11,
+          4,
+          16
+        ],
+        [
+          34,
+          6,
+          4,
+          13
+        ],
+        [
+          5,
+          27,
+          13,
+          3
+        ],
+        [
+          29,
+          29,
+          13,
+          3
+        ],
+        [
+          14,
+          32,
+          10,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          120,
+          72
+        ],
+        [
+          328,
+          112
+        ],
+        [
+          208,
+          272
+        ]
+      ],
+      "drone": [
+        240,
+        144
+      ],
+      "enemy_bounds": [
+        216,
+        88,
+        136,
+        144
+      ],
+      "art_kind": "furnace_ladder",
+      "brief1": "HOLD B IN NODE ORDER",
+      "brief2": "LIT NODE THEN NEXT",
+      "optional_cache_marker": [
+        344,
+        272
+      ]
+    },
+    {
+      "width": 48,
+      "height": 40,
+      "spawn": [
+        48,
+        296
+      ],
+      "terminal": [
+        48,
+        296
+      ],
+      "dock_rect": [
+        24,
+        272,
+        48,
+        40
+      ],
+      "coordinate_convention": {
+        "spawn_terminal_cells_drone_escort": "Integer pixel centers returned by native actor_x/actor_y",
+        "dock_rect_enemy_bounds": "Pixel x,y,width,height rectangles",
+        "covers_hazard_rect": "Tile x,y,width,height rectangles"
+      },
+      "warning_frames": 48,
+      "dash_frames": 24,
+      "recover_frames": 112,
+      "speed": 52,
+      "room": 3,
+      "name": "KILN GUARDIAN",
+      "scene_symbol": "scene_mission_07_room_03",
+      "zone": 2,
+      "objective": "core",
+      "enemy": "sweeper",
+      "hazard": "vent",
+      "hazard_rect": [
+        24,
+        25,
+        2,
+        2
+      ],
+      "covers": [
+        [
+          14,
+          8,
+          4,
+          14
+        ],
+        [
+          32,
+          8,
+          4,
+          14
+        ],
+        [
+          19,
+          5,
+          12,
+          3
+        ],
+        [
+          19,
+          27,
+          12,
+          3
+        ],
+        [
+          5,
+          18,
+          9,
+          3
+        ],
+        [
+          38,
+          18,
+          6,
+          3
+        ],
+        [
+          8,
+          31,
+          11,
+          3
+        ],
+        [
+          33,
+          30,
+          10,
+          3
+        ]
+      ],
+      "cells": [
+        [
+          208,
+          88
+        ],
+        [
+          88,
+          120
+        ],
+        [
+          344,
+          280
+        ]
+      ],
+      "drone": [
+        200,
+        152
+      ],
+      "enemy_bounds": [
+        160,
+        80,
+        160,
+        136
+      ],
+      "art_kind": "kiln_guardian",
+      "brief1": "PULSE WHEN CORE OPEN",
+      "brief2": "THREE HITS THEN DOCK",
+      "optional_cache_marker": [
+        336,
+        56
+      ]
+    }
+  ]
+}
