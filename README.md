@@ -21,7 +21,7 @@ To view the page locally, run this from the repository root:
 python3 -m http.server 8080 --bind 127.0.0.1 --directory launch-page/dist
 ```
 
-Then open `http://127.0.0.1:8080/`. The page also works as a local static document; hosting is not configured. The browser game itself is a separate export and is not included in the native player ZIP or launch draft.
+Then open `http://127.0.0.1:8080/`. The page also works as a local static document. Its Sites project is registered, but versions remain saved without deployment under the current no-publishing instruction. The browser game itself is a separate export and is not included in the native player ZIP or launch draft.
 
 To repackage the frozen player files with Python 3 (standard library only):
 
@@ -29,7 +29,21 @@ To repackage the frozen player files with Python 3 (standard library only):
 python3 scripts/package-player-release.py
 ```
 
-This reproduces the checked-in ZIP from the frozen payload; it does not compile the game. The helper checks exact payload and ZIP hashes and refuses unreviewed changes. The prepared ZIP SHA-256 is `dab86c9eec9a9524a2381094044b646cfb1fa6a1f625c4424a242f94d504ac22`. Review and update the approved inputs when preparing a future version. The draft page's `dist/downloads/` contains matching copies; refresh those and their checksum manifest together after an approved package update.
+This reproduces the checked-in ZIP from the frozen payload; it does not compile the game. The helper checks exact payload and ZIP hashes and refuses unreviewed changes. The prepared ZIP SHA-256 is `dab86c9eec9a9524a2381094044b646cfb1fa6a1f625c4424a242f94d504ac22`. Review and update the approved inputs when preparing a future version. Use the release synchronization commands below to refresh matching site downloads and metadata after an approved package update.
+
+## Keep updates synchronized
+
+The [release manifest](release/release-manifest.json) binds the reviewed ROM, source snapshot, manual, player documents and genuine screenshots. The site uses the same release metadata. Edit canonical sources and run:
+
+```sh
+python3 scripts/sync-release.py sync
+python3 scripts/sync-release.py check
+python3 scripts/test-release-sync.py
+```
+
+Changed review inputs stop preparation until the required review is recorded. Sync never approves a new ROM, manual or screenshot automatically. GitHub Actions runs checks only; it cannot deploy. See [the update workflow](docs/RELEASE-WORKFLOW.md) and [project instructions](AGENTS.md).
+
+The Sites project identity is retained in [the hosting manifest](launch-page/.openai/hosting.json). Reuse it for saved versions. No public website, GitHub Pages deployment or public release is authorized by a consistency check.
 
 ## Controls
 

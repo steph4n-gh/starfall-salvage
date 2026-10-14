@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Starfall Salvage: a momentum-driven Game Boy Color adventure. Explore {{STORY_MISSIONS}} missions, rescue the crew, and bring the station home. Private launch-page draft for version {{VERSION}}.">
+  <meta name="theme-color" content="#101915">
+  <title>Starfall Salvage — a Game Boy Color adventure</title>
+  <link rel="icon" href="assets/{{TITLE_SCREENSHOT}}" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="page.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="draft-strip"><span>PRIVATE LAUNCH DRAFT</span><span>Version {{VERSION}} · Prepared for review · Not publicly released</span></div>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#" aria-label="Starfall Salvage home"><span class="mark" aria-hidden="true">✦</span> STARFALL / SALVAGE</a>
+    <nav aria-label="Main navigation"><a href="#game">The game</a><a href="#screens">Screens</a><a href="#play">How to play</a><a href="#compatibility">Compatibility</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> An original Game Boy Color adventure</p>
+        <h1 id="hero-title">STARFALL<br><span>SALVAGE.</span></h1>
+        <p class="hero-line">Bring the station home.</p>
+        <p class="intro">A damaged station. A pulse rig. Just enough momentum to get into trouble. Drift through the wreckage, restore its systems, and get your crew out alive.</p>
+        <div class="actions"><a class="button primary" href="downloads/{{ZIP_FILENAME}}" download>Download v{{VERSION}} <span aria-hidden="true">↘</span></a><a class="text-link" href="downloads/INSTRUCTIONS.pdf">Read the flight manual <span aria-hidden="true">↗</span></a></div>
+        <p class="micro">Native .gbc ROM + illustrated manual · Local review download</p>
+      </div>
+      <figure class="hero-screen">
+        <div class="screen-label"><span>FLIGHT RECORDER / 01</span><span class="signal">● ● ●</span></div>
+        <img src="assets/{{TITLE_SCREENSHOT}}" width="160" height="144" alt="Starfall Salvage {{VERSION}} title screen, with a spacecraft crossing an orange planet and Story and Arcade choices.">
+        <figcaption><span>Actual version {{VERSION}} capture</span><span>160 × 144 / Native emulator</span></figcaption>
+      </figure>
+    </section>
+    <div class="stats wrap" aria-label="Game at a glance"><p><strong>{{STORY_MISSIONS}}</strong><span>Story missions</span></p><p><strong>{{ZONES_PADDED}}</strong><span>Station zones</span></p><p><strong>{{STORY_ROOMS}}</strong><span>Scrolling rooms</span></p><p><strong>02</strong><span>Ways to fly</span></p></div>
+
+    <section id="game" class="section wrap">
+      <div class="section-heading"><p class="eyebrow">01 / THE JOB</p><h2>Learn the drift.<br>Make the return trip.</h2></div>
+      <div class="game-grid">
+        <article class="story"><span class="mode-label">STORY CAMPAIGN</span><h3>One station.<br>{{STORY_MISSIONS}} reasons to go back.</h3><p>Recover salvage, reactivate ordered relays, repair damaged systems, and escort the crew through {{ZONES}} zones. Each four-room mission ends with a guardian: evade its dash, wait for <strong>CORE OPEN</strong>, then land your pulse.</p><p>Choose which middle route comes first. Shut down the next room’s hazard or earn a faster pulse reload. Both rooms are part of the job; the order changes your advantage.</p><p class="detail-note">{{RIGS}} pulse rigs · Mission checkpoints · Pause and retry</p></article>
+        <article class="arcade"><span class="mode-label">ARCADE SORTIES</span><h3>One more sector.<br>Or one safe payday.</h3><p>Take on a repeating route of {{ARCADE_MAPS}} compact maps, with pressure building on later loops. At the dock, bank your haul or continue to the workbench, where you can keep your rig or choose a replacement.</p><p>Your hull carries between sectors. Lose it all and the unbanked haul goes with it. A smaller score brought home still beats a fortune left in space.</p><p class="detail-note">Changing hazard pressure · Rig choices · Best banked score</p></article>
+      </div>
+    </section>
+
+    <section id="screens" class="section screenshots">
+      <div class="wrap"><div class="gallery-heading"><div><p class="eyebrow">02 / FLIGHT RECORDER</p><h2>Every pixel is in the game.</h2></div><p>Unaltered {{VERSION}} native emulator captures.<br>Select a frame to inspect it.</p></div>
+      <div class="gallery">
+        <figure><a href="assets/escort-flight.png" class="frame" data-shot><img src="assets/escort-flight.png" width="160" height="144" loading="lazy" alt="The astronaut and a crew member approach the dock in a metal-lined station room."></a><figcaption><span>01 / CREW ESCORT</span>Stay close. Bring them home.</figcaption></figure>
+        <figure><a href="assets/guardian-core-open.png" class="frame" data-shot><img src="assets/guardian-core-open.png" width="160" height="144" loading="lazy" alt="The guardian arena displays CORE OPEN and A PULSE while the astronaut approaches."></a><figcaption><span>02 / GUARDIAN</span>Wait for the opening. Make it count.</figcaption></figure>
+        <figure><a href="assets/ion-hazard-active.png" class="frame" data-shot><img src="assets/ion-hazard-active.png" width="160" height="144" loading="lazy" alt="The Ion Gallery in Arcade, with an active red floor hazard and relays online."></a><figcaption><span>03 / ION GALLERY</span>Read the warning. Time your crossing.</figcaption></figure>
+        <figure><a href="assets/route-choice.png" class="frame" data-shot><img src="assets/route-choice.png" width="160" height="144" loading="lazy" alt="The route menu offers repair power first to shut down a hazard, or crew supply first for faster pulses."></a><figcaption><span>04 / ROUTE CHOICE</span>Power or supply first? Plan your edge.</figcaption></figure>
+        <figure><a href="assets/workbench.png" class="frame" data-shot><img src="assets/workbench.png" width="160" height="144" loading="lazy" alt="The workbench offers keeping the current rig or replacing it with Fast Capacitor or Wide Coil."></a><figcaption><span>05 / WORKBENCH</span>A different rig. A different approach.</figcaption></figure>
+        <figure><a href="assets/arcade-bank-choice.png" class="frame" data-shot><img src="assets/arcade-bank-choice.png" width="160" height="144" loading="lazy" alt="Cargo secured at an Arcade dock, with Continue and Bank and Go Home choices."></a><figcaption><span>06 / SECURED DOCK</span>Risk another sector—or take the win.</figcaption></figure>
+      </div><p class="gallery-foot">Captured from the qualified native {{VERSION}} ROM in PyBoy. These are not photographs or captures of physical Chromatic hardware. <a href="assets/screenshots.json">Screenshot provenance</a></p></div>
+    </section>
+
+    <section id="play" class="section wrap">
+      <div class="section-heading"><p class="eyebrow">03 / YOUR FIRST FLIGHT</p><h2>Small inputs.<br>Deliberate moves.</h2></div>
+      <div class="learn-grid">
+        <ol class="flight-steps"><li><h3>Choose Story, then a job.</h3><p>Up/Down selects. A confirms. On the flight deck, Left/Right chooses an unlocked rig. Launch and read the room briefing.</p></li><li><h3>Thrust, drift, brake.</h3><p>Tap the D-pad to build momentum. Release it to drift. Hold B to slow down before a turn or to interact beside a station.</p></li><li><h3>Finish the objective. Find the dock.</h3><p>Complete the task shown in the briefing, then return beside the actual dock terminal. Delivery is automatic. The bottom edge of a large room is not all safe dock.</p></li></ol>
+        <div class="controls"><h3>Flight controls</h3><table><caption>Handheld controls and the separate browser edition’s default keys</caption><thead><tr><th scope="col">Handheld</th><th scope="col">Browser</th><th scope="col">Action</th></tr></thead><tbody><tr><th scope="row">D-pad</th><td>Arrows</td><td>Thrust / choose</td></tr><tr><th scope="row">A</th><td>Z</td><td>Pulse / confirm</td></tr><tr><th scope="row">B</th><td>X</td><td>Brake, interact / back</td></tr><tr><th scope="row">Start</th><td>Enter</td><td>Pause / resume</td></tr><tr><th scope="row">Select</th><td>P or Shift</td><td>Exit options in play</td></tr></tbody></table><p>Watch <strong>A READY / A WAIT</strong>. Press A for a pulse; holding it does not fire repeatedly. In choice menus, use Up/Down and confirm with A.</p><a href="downloads/INSTRUCTIONS.pdf" class="text-link">All objectives, rigs, and save rules in the manual ↗</a></div>
+      </div>
+    </section>
+
+    <section id="compatibility" class="section compatibility">
+      <div class="wrap"><div class="section-heading"><p class="eyebrow">04 / PICK YOUR SETUP</p><h2>Built for Game Boy Color.<br>Know what is verified.</h2></div>
+      <p class="section-intro">The native download is <code>{{ROM_FILENAME}}</code>. It requires color-capable GB/GBC hardware or emulation. It does not run on the original monochrome Game Boy or Game Boy Pocket, and it is not a .gba file.</p>
+      <div class="compat-table-wrap"><table class="compat-table"><caption>Compatibility and verification for the exact version {{VERSION}} ROM</caption><thead><tr><th scope="col">Setup</th><th scope="col">How to play</th><th scope="col">Current evidence</th></tr></thead><tbody>
+        <tr><th scope="row">GBC emulator</th><td>Open the .gbc ROM with color emulation and battery-save support. Follow your emulator’s key mapping and save settings. <a href="https://sameboy.github.io/features/">SameBoy</a> is one possible option.</td><td><span class="evidence tested">Native campaign verified</span>Full Story and an Arcade cycle passed in {{NATIVE_EMULATOR}}. SameBoy has not been tested with this release.</td></tr>
+        <tr><th scope="row">SD flash cartridge</th><td>Use a compatible GB/GBC cartridge in a Chromatic or Game Boy Color. The EverDrive GB X7 is one example; follow the card-copy steps below.</td><td><span class="evidence pending">Hardware check pending</span>These are intended hardware routes. This exact handheld/cartridge pairing has not been physically qualified.</td></tr>
+        <tr><th scope="row">Writable cartridge</th><td>Use a matching cartridge and writer with support for this image. Confirm MBC5, at least 1 MiB ROM, and 32 KiB persistent save RAM.</td><td><span class="evidence pending">Advanced / untested</span>Header: 0x1E, MBC5 + rumble + RAM + battery. This does not establish a tested rumble feature or universal cartridge compatibility.</td></tr>
+        <tr><th scope="row">Browser edition</th><td>Supplied separately from the native player ZIP. The <a href="https://www.gbstudio.dev/docs/build/">GB Studio web export</a> needs a web server. Click the game area for keyboard focus.</td><td><span class="evidence pending">Preview observed</span>A preview has run. A full browser campaign and persistence across reloads remain unverified. No public play link is active in this draft.</td></tr>
+      </tbody></table></div>
+      <div class="install-details"><details><summary>Copy the ROM to a compatible SD cartridge</summary><ol><li>Power off the handheld. Remove the cartridge’s SD card and connect it to your computer with a card reader.</li><li>Extract the player ZIP. Copy <code>{{ROM_FILENAME}}</code> into a games folder on the card, outside the cartridge’s system folder.</li><li>Eject the card, reinsert it, power on, and choose the game through the cartridge’s normal menu.</li><li>Follow the cartridge manufacturer’s save procedure. Keep existing system files and saves.</li></ol><p>No custom Chromatic firmware is required for this route. Chromatic USB is not an SD-card passthrough.</p></details>
+      <details><summary>Keep your progress: checkpoints, saves, and Arcade</summary><p>Story saves at checkpoints—not your exact position in the middle of a room. Look for <strong>CHECKPOINT SAVED</strong>, then choose Continue at the title. <strong>SAVE WRITE FAILED</strong> means you should not assume the write succeeded.</p><p>Arcade saves the best banked score; an unfinished sortie has no persistent resume point. Keep the ROM with its matching battery-save data, and use your emulator or cartridge’s documented import/export procedure.</p><p>Cold-start battery saves and browser reload persistence are still awaiting verification. Confirm close/reopen/Continue on your chosen setup before relying on a long session.</p></details>
+      <details><summary>What has been tested—and what remains</summary><p>The exact native {{VERSION}} ROM completed all {{STORY_MISSIONS}} Story missions and {{STORY_ROOMS}} rooms in {{NATIVE_EMULATOR}}, including all guardians, crew routes, four rigs, both middle-route orders, pause, and Title → Continue. A separate test completed the twelve-map Arcade cycle and sector 13.</p><p>The guided clear showed <strong>{{CLEAR_TIME}}</strong> on the in-game timer. That counts successful room attempts and excludes menus, pauses, and failed attempts. First-time human completion time has not been measured.</p><p>Physical handheld performance, speaker/headphone listening, cold-start save persistence, and a complete browser campaign remain open checks. The game has original music and effects; their presence is not a completed audio listening test.</p></details></div>
+      </div>
+    </section>
+
+    <section id="download" class="section wrap download-section">
+      <div><p class="eyebrow">05 / READY FOR REVIEW</p><h2>Your next<br>salvage run.</h2><p class="section-intro">Version {{VERSION}} includes clearer menu choices: select with Up/Down, confirm with A, and use B to go back. The drift physics and objective rules stay the same.</p><a class="button primary" href="downloads/{{ZIP_FILENAME}}" download>Download player ZIP <span aria-hidden="true">↘</span></a><p class="micro" id="download-size">{{ZIP_SIZE_MB}} MB · Native ROM · Illustrated PDF · Quick start · Release notes · Credits</p></div>
+      <aside class="download-detail"><h3>One current game. The essentials.</h3><p>The player ZIP contains one native {{VERSION}} ROM and its player documentation. Browser files, editable source, earlier versions, and development recordings are separate.</p><ul><li><a href="downloads/INSTRUCTIONS.pdf">{{MANUAL_PAGES}}-page illustrated flight manual</a></li><li><a href="downloads/SHA256SUMS.txt">Download checksums (SHA-256)</a></li><li><a href="downloads/RELEASE-NOTES.txt">Version {{VERSION}} release notes</a></li><li><a href="downloads/CREDITS.txt">Credits and tools</a></li></ul><details><summary>Identify the exact native ROM</summary><code class="hash">{{ROM_SHA256}}</code><p>{{ROM_BYTES}} bytes · Game Boy Color only · MBC5 · 32 KiB save RAM</p></details></aside>
+    </section>
+  </main>
+  <footer class="wrap footer"><div><a href="#" class="wordmark">✦ STARFALL / SALVAGE</a><p>An original homebrew game by Stephan Arrington, with OpenAI Codex assistance.<br>Built with GB Studio and GBDK-2020.</p></div><div><p>Private draft · Version {{VERSION}}</p><p>Original-work licensing and final hardware qualification remain under review.<br>Independent homebrew; no platform endorsement is claimed.</p></div></footer>
+  <dialog id="image-viewer" aria-labelledby="viewer-caption"><form method="dialog"><button class="close-viewer" aria-label="Close screenshot">Close ×</button></form><img id="viewer-image" width="160" height="144" alt=""><p id="viewer-caption"></p><p class="micro">Actual {{VERSION}} native emulator capture · Escape closes this view</p></dialog>
+</body>
+</html>

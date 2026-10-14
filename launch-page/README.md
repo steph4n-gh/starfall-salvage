@@ -1,6 +1,8 @@
 # Starfall Salvage launch-page draft
 
-Local-only static launch page for version 1.1. No hosting registration or deployment has been performed. The page carries a private-draft banner and `noindex, nofollow`; neither is access control. Keep hosting private until publication is explicitly approved.
+Static launch website for version 1.1, registered with Sites for saved-version preparation. No deployment has been performed. The page carries a private-draft banner and `noindex, nofollow`; neither is access control. Keep hosting private until publication is explicitly approved.
+
+Edit `index.template.html` for page copy. Repeated release metadata comes from `../release/release-manifest.json`; run `python3 scripts/sync-release.py sync` from the game repository root and then the check/tests documented in [the release workflow](../docs/RELEASE-WORKFLOW.md). Do not edit the generated HTML or duplicate download/screenshot copies directly.
 
 The `dist/` folder is self-contained. Serve it locally, for example:
 
@@ -21,4 +23,4 @@ Open the local URL printed by the server. There is no build step, dependency ins
 
 Resolve the original-work licensing and retained-asset provenance review. Complete the agreed hardware, audio, cold-save and browser tests, then update compatibility copy only for the exact combinations actually tested. Run blind player tests to refine onboarding and pacing. Choose a support channel and add it before launch. No typical first-time completion duration is advertised.
 
-If a public browser edition is added later, link only its verified stable URL. Do not copy an ephemeral plugin preview address. Remove the draft banner/noindex only as part of an explicitly authorized public release. No publishing scripts or automatic deployments are configured here.
+If a public browser edition is added later, link only its verified stable URL. Do not copy an ephemeral plugin preview address. Remove the draft banner/noindex only as part of an explicitly authorized public release. Sites identity is recorded in `.openai/hosting.json`; reuse that exact project. The game repository has a check-only GitHub Actions workflow. No automatic deployment is configured. Use the Sites skill to push/package the validated site and save a version; deployment remains a separate authorized step.

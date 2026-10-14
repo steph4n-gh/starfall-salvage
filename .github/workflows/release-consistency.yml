@@ -1,0 +1,22 @@
+name: Release consistency
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check release consistency without writing
+        run: python3 scripts/sync-release.py check
+      - name: Verify stale artifacts are rejected
+        run: python3 scripts/test-release-sync.py
