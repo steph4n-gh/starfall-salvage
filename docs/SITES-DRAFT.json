@@ -1,28 +1,40 @@
 {
   "recordedAt": "2026-10-14",
   "gameVersion": "1.1",
-  "gameRepositoryCommit": "a9a3c8455b9459a38259060c727a1317ee6c9c40",
+  "gameRepositoryCommit": "a03149b3c156ce32d7a2e4e20f6b6d324a5f0fc9",
   "siteProjectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
-  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_a7b943f365a88191a22927416b1546c6",
-  "siteVersionNumber": 1,
-  "siteSourceCommit": "d715fb5cb8a564436a2347dce7da0b4c6174cd7a",
-  "archiveContentHash": "sha256:2b096c413cc8d87791afad1d3edd8484e1720a809690e1d7f9c648ef3c75b272",
+  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_17a4d3fd266881918d59ce5c3f0fbfd6",
+  "siteVersionNumber": 2,
+  "siteSourceCommit": "d6da0787ea8f689eb9746208d8924243315aac51",
+  "archiveContentHash": "sha256:ef44f0b16983e1dc2b1553215b001d806c94cd0305464e477dd80af49a596a9c",
   "archiveBytes": 9584640,
   "archiveFiles": 18,
   "publication": "saved-only",
   "deploymentId": null,
   "liveUrl": null,
+  "previewUrl": null,
   "access": "owner-only",
   "siteFilesMatchCanonicalDist": true,
-  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38610502116",
+  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38643026860",
   "githubConsistencyConclusion": "success",
   "localBrowserChecks": {
-    "desktopWidth": 1280,
-    "mobileWidth": 390,
+    "viewportClientWidth": 1265,
     "horizontalOverflow": false,
     "screenshotDialogAndEscape": "passed",
     "consoleWarningsAndErrors": 0,
-    "downloadRomZipAndManualByteIdentity": "passed"
+    "all17ServedFilesMatchCanonicalBytes": true,
+    "downloadRomZipAndManualByteIdentity": "passed",
+    "scope": "Updated local site at current viewport. Prior version's 390px mobile check is historical; CSS/JS unchanged."
   },
-  "qualificationNote": "Website QA and consistency checks do not add gameplay, hardware, audio, save, or licensing qualifications. This is a historical saved-version receipt; re-save and record a new receipt after changing site files."
+  "releaseArtifacts": {
+    "manualSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
+    "playerZipSha256": "54eb3fe6ea297f76f50ce9d84cd2e993acc6bff7dce1fc8f3b6b363dfb6da674",
+    "nativeRomSha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db"
+  },
+  "qualificationNote": "Site copy and downloads reflect the completed local browser campaign, scoped persistence checks and clean builds. Website checks add no hardware, heard-audio, human or final-public-host qualification. No deployment or public URL exists.",
+  "previousSavedVersion": {
+    "number": 1,
+    "id": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_a7b943f365a88191a22927416b1546c6",
+    "sourceCommit": "d715fb5cb8a564436a2347dce7da0b4c6174cd7a"
+  }
 }

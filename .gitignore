@@ -21,6 +21,7 @@ venv/
 *.gbc.debug/
 
 # Player saves and emulator state must never enter source control
+/save-states/
 *.sav
 *.srm
 *.state
