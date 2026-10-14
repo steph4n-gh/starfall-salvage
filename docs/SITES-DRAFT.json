@@ -1,40 +1,50 @@
 {
   "recordedAt": "2026-10-14",
   "gameVersion": "1.1",
-  "gameRepositoryCommit": "a03149b3c156ce32d7a2e4e20f6b6d324a5f0fc9",
+  "gameRepositoryCommit": "294fa658d78a502a3e4459f72a865264643d3e21",
   "siteProjectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
-  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_17a4d3fd266881918d59ce5c3f0fbfd6",
-  "siteVersionNumber": 2,
-  "siteSourceCommit": "d6da0787ea8f689eb9746208d8924243315aac51",
-  "archiveContentHash": "sha256:ef44f0b16983e1dc2b1553215b001d806c94cd0305464e477dd80af49a596a9c",
-  "archiveBytes": 9584640,
-  "archiveFiles": 18,
+  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_6276e0ca56708191b5afb9c0f3029d83",
+  "siteVersionNumber": 3,
+  "siteSourceCommit": "c0d0c19d6c3b419d37336b9de388ddc2ac9b5030",
+  "archiveContentHash": "sha256:4c03fb199c553839e86f782e85debc730106f8a78c1d89787d048c0de474c437",
+  "archiveBytes": 10823680,
+  "archiveFiles": 27,
   "publication": "saved-only",
   "deploymentId": null,
   "liveUrl": null,
   "previewUrl": null,
   "access": "owner-only",
   "siteFilesMatchCanonicalDist": true,
-  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38643026860",
+  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38645041115",
   "githubConsistencyConclusion": "success",
   "localBrowserChecks": {
     "viewportClientWidth": 1265,
     "horizontalOverflow": false,
-    "screenshotDialogAndEscape": "passed",
     "consoleWarningsAndErrors": 0,
-    "all17ServedFilesMatchCanonicalBytes": true,
-    "downloadRomZipAndManualByteIdentity": "passed",
-    "scope": "Updated local site at current viewport. Prior version's 390px mobile check is historical; CSS/JS unchanged."
+    "all26ServedFilesMatchCanonicalBytes": true,
+    "playButtonLaunchAndBrowserBack": "passed",
+    "keyboardMovementBrakePulseAndPause": "passed",
+    "ordinaryReloadContinueCheckpoint": "passed",
+    "integrationReceipt": "docs/SITE-PLAY-VERIFICATION.json",
+    "scope": "Private local site at the default desktop viewport. Unmodified official web export and earned M01 room-entry checkpoint. Prior screenshot-dialog and mobile checks are historical; CSS and landing-page JavaScript are unchanged."
   },
   "releaseArtifacts": {
     "manualSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
     "playerZipSha256": "54eb3fe6ea297f76f50ce9d84cd2e993acc6bff7dce1fc8f3b6b363dfb6da674",
     "nativeRomSha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db"
   },
-  "qualificationNote": "Site copy and downloads reflect the completed local browser campaign, scoped persistence checks and clean builds. Website checks add no hardware, heard-audio, human or final-public-host qualification. No deployment or public URL exists.",
+  "qualificationNote": "The private Play in Browser route bundles the exact official export used for the completed local campaign. Local site launch, controls and ordinary reload to Continue passed independently of the plugin preview snapshot mechanism. No hosted-site, hardware, heard-audio or human qualification is implied. No deployment or public URL exists.",
   "previousSavedVersion": {
-    "number": 1,
-    "id": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_a7b943f365a88191a22927416b1546c6",
-    "sourceCommit": "d715fb5cb8a564436a2347dce7da0b4c6174cd7a"
+    "number": 2,
+    "id": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_17a4d3fd266881918d59ce5c3f0fbfd6",
+    "sourceCommit": "d6da0787ea8f689eb9746208d8924243315aac51"
+  },
+  "browserArtifacts": {
+    "canonicalDirectory": "release/browser-v1.1",
+    "siteRoute": "play/index.html",
+    "files": 9,
+    "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+    "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+    "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650"
   }
 }
