@@ -40,13 +40,15 @@ Do not edit a screenshot hash to disguise a different frame. Do not change the v
 6. Deliberately update the release manifest to bind the new source snapshot, qualified ROM, reviewed manual, screenshots and editorial review. Review that manifest diff alongside the actual evidence.
 7. Sync, check and run the failure tests. Inspect the generated site and download contents. Commit the coherent release to the private repository.
 
-The current source fingerprint identifies the reviewed portable snapshot. A clean-clone source-to-ROM build comparison is still a separate pending qualification; the fingerprint does not establish compiler reproducibility.
+The current source fingerprint identifies the reviewed portable snapshot. A [clean-clone build comparison](CLEAN-BUILD.json) passed for native and browser exports on macOS arm64. Only GB Studio's built-in save signature and global checksum varied; all other ROM bytes and all eight non-ROM browser files matched the frozen counterparts. Timestamp and inode metadata make ordinary builds non-identical. Two deeper-path builds failed at linking, while a fresh short `/tmp` directory passed; follow the [build instructions](BUILDING.md) for isolated short temporary paths. Neither the fingerprint nor this local comparison establishes cross-machine reproducibility, save persistence or a complete browser playthrough.
 
 ## When only documentation or the site changes
 
 Keep the ROM and its qualification unchanged. Edit the canonical text/template. If manual inputs changed, regenerate and review the PDF before updating its review record. Review any changed instructions or claims, then sync and check all copied downloads. A wording correction does not automatically require another full gameplay clear, but a new gameplay claim requires supporting evidence.
 
 The website uses release metadata for repeated fields such as version, native ROM identity and manual page count. Prose still needs editorial review: a checksum cannot decide whether an explanation is accurate or a game is enjoyable.
+
+Keep native and browser qualification separate. [The browser receipt](BROWSER-VERIFICATION.json) binds its 42:41 campaign result to the exact tested browser ROM/runtime; the native 35:27 result belongs to its own release ROM. A wrapper snapshot recovery and a fresh-emulator SRAM Continue test establish different save behaviors. Update their outcomes separately and retain final-host, hardware and human-play limits.
 
 ## Updating the Sites version
 

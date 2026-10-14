@@ -206,8 +206,8 @@ def content():
       ]),
       ('Choose how to play',[
         paragraph('Use <b>Starfall-Salvage-1.1.gbc</b> from the full-game package. This is a <b>Game Boy Color-only</b> game. Original Game Boy and Game Boy Pocket are unsupported. Keep the .gbc extension; this is not a .gba game.'),
-        heading('1. Play the supplied browser edition'),
-        paragraph('Extract the browser edition and serve its folder with a local or hosted web server, then open its index.html through that server. Click the game area to focus it. Use the keyboard controls on page 3 or the on-screen controls. Opening the file directly may not work. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.'),
+        heading('1. Play a separately supplied browser edition'),
+        paragraph('The native player ZIP does not include browser files or a hosted play link. If you have a separate browser edition, extract and serve its folder with a local or hosted web server, then open its index.html through that server. Click the game area to focus it. Use the controls on page 3 or the on-screen controls. Opening the file directly may not work. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.'),
         heading('2. Open the ROM in a GBC emulator'),
         paragraph('Open the .gbc file in an emulator that supports Game Boy Color and battery saves. Select CGB or automatic color detection, and allow it to save your progress. <a href="https://sameboy.github.io/" color="#08787D">SameBoy</a> is one example; its <a href="https://sameboy.github.io/features/" color="#08787D">documented features</a> include both. This release has not yet been tested in SameBoy.'),
         heading('3. Use a compatible SD flash cartridge'),
@@ -219,11 +219,13 @@ def content():
       ('Saves, clear time and tested scope',[
         heading('Keep the matching save data'),
         paragraph('Keep the game file with its matching battery-save data when moving between an emulator and a cartridge. Use the emulator or cartridge\'s documented save import/export process. Checkpoint behavior is described on page 9; mid-room position is not saved.'),
-        paragraph('Browser persistence depends on the export and its storage handling. A cartridge SRAM checkpoint does not prove that a browser run will survive reloading the page. Before depending on a long-term save, confirm that your chosen setup can close, reopen and Continue.'),
+        paragraph('In the tested local browser preview, <b>Restart Game, then Continue</b> restored the completed campaign. Reloading the page also restored the ending through the preview\'s saved emulator state. These checks apply to that build and local browser origin. Full browser close/reopen and crash recovery were not tested; confirm persistence on your chosen setup before relying on a long-term save.'),
         heading('Clear time and rank'),
         paragraph('CLEAR TIME counts successful room attempts; it excludes pauses, menus and failed room attempts. It is not a measure of first-time human campaign duration. Rank counts damage to your astronaut, including failed attempts: <b>S</b> for no hits, <b>A</b> for one or two, and <b>B</b> for three or more.'),
-        box('<b>Measured 1.1 clear:</b> a fresh guided native emulator playthrough completed all 18 Story missions and 72 rooms in <b>00:35:27</b> on the in-game timer, with <b>Rank B</b>. This is a functional test result, not elapsed session time or a first-time human estimate.'),
-        paragraph('<b>Tested in PyBoy 2.7.0:</b> the complete Story campaign, all guardians and crew rescues, all four rigs, both route orders, pause and Title/Continue passed using the exact released 1.1 native ROM. The separate 12-map Arcade cycle plus sector 13 also passed. These results qualify the native emulator run. Physical hardware, the complete browser campaign, heard audio and cold-start save persistence remain unverified.'),
+        box('<b>Measured native 1.1 clear:</b> a fresh guided native emulator playthrough completed all 18 Story missions and 72 rooms in <b>00:35:27</b> on the in-game timer, with <b>Rank B</b>. This is a functional test result, not elapsed session time or a first-time human estimate.'),
+        paragraph('<b>Tested in PyBoy 2.7.0:</b> the complete Story campaign, all guardians and crew rescues, all four rigs, both route orders, pause and Title/Continue passed using the exact released 1.1 native ROM. The separate 12-map Arcade cycle plus sector 13 also passed.'),
+        paragraph('<b>Tested in the local browser preview:</b> a guided playthrough of the separate browser build completed all 18 missions, 72 rooms, 18 guardians and seven crew escorts. STARFALL SAVED showed <b>00:42:41, Rank B</b>. The UI-driven test included pauses, retries and recovery of already-earned progress from a saved state. It is a functional clear, not an uninterrupted human usability or duration measurement.'),
+        paragraph('<b>Still to verify:</b> the final public browser host and other browser/origin configurations, full browser close/reopen or crash recovery, physical handheld/cartridge play, heard audio, power-off saves and uncoached human enjoyment. The browser result qualifies the exact local build and setup tested.'),
       ]),
       ('Credits and flight checklist',[
         heading('Original homebrew by Stephan Arrington'),

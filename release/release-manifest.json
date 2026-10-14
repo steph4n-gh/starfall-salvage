@@ -24,12 +24,12 @@
     ],
     "sha256": "a4a4072062ed11fa5ecb135599147e90ae9c298eb85192c91e1b1c045476b255",
     "fileCount": 904,
-    "scope": "Reviewed editable source snapshot guard only. A clean-clone build comparison with the frozen ROM remains pending."
+    "scope": "Reviewed editable source snapshot. Clean-clone native and browser compilation passed on macOS arm64; only GB Studio built-in save-signature and global-checksum fields differed from frozen ROMs. See docs/CLEAN-BUILD.json for exact comparisons and the short-temporary-path linker workaround. No byte-for-byte or cross-machine reproducibility claim."
   },
   "manualReview": {
-    "pdfSha256": "794a4305f70a7e9cd54eb6b183dfd5a4ea6d6a03c7b476ef99ef827e407565fd",
+    "pdfSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
     "pages": 14,
-    "review": "Retains the reviewed 2026-10-14 PDF; baseline portable generator inputs are guarded. No new rendering or visual review is implied by sync. Changed manual inputs require a new rendered-page review before accepting hashes.",
+    "review": "2026-10-14: all 14 rendered pages visually reviewed after clarifying separate browser delivery and adding the completed local-browser campaign and distinct restart/reload save results. Nine embedded native gameplay images match canonical capture pixels; no out-of-page text. See docs/MANUAL-REVIEW.json. Changed inputs require regenerated documents and a new visual review.",
     "inputs": {
       "paths": [
         "campaign/full-length-packaging-stage/generate_manual.py",
@@ -60,18 +60,33 @@
         "plugins/starfall/engine/include/starfall_save.h",
         "campaign/rooms.json"
       ],
-      "sha256": "b0d795aa7722b712614166cc22735ce4cdef51bd8feab89ff3218f03e4db516f",
+      "sha256": "e4654e6317b4b952bd1c092bfb3e1be1d5c4dd5b79b467a759f1ee89797cfd54",
       "fileCount": 39
     }
   },
   "editorialReview": {
     "scope": "Reviewed verification summary and manual text. Reconcile changed instructions and claims before deliberately accepting new hashes. Player text is additionally fixed by player.files.",
     "files": {
-      "docs/VERIFICATION.md": "4f8f008dccc5770895ae968f8e06219fcc4d7d9463db95fee0b71c1696f170ed",
-      "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "6390fdc0468bf19f3416f4bd1b6dfae34de3bc0d5c94cd98a6a928ce61735098",
-      "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "e7d5621a8ea1216a5f5e0a966ea5d04e20354503eb627755b1fca3a5f61364e8"
+      "README.md": "4dace9c2843bf3d6e83977003511fc37fe2bcba7eff1fe925118b6a8e770b933",
+      "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "382f53383d507b7661f754f08021029a58a60b78c733275d8e7ac201f9338cf6",
+      "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "cdd4637410e7a13a346c0a55bd696317ba0c41bfb96f69ad66e81de66b3a512e",
+      "campaign/full-length-packaging-stage/README.md": "0ee71c770bc49e37f4843f61bdc63f57880108362b9ca9fb47152b0172953dba",
+      "docs/BROWSER-VERIFICATION.json": "63f86a0308a7adf2dd53a47eca1879308efed07eef6aa25db109dc11034c55de",
+      "docs/BUILDING.md": "ba77e399dd1d0aa199742430ae370d27d0ba7d2e55c477f743574299c2270459",
+      "docs/CLEAN-BUILD.json": "a1dca04cd92d2f7b368ef376b74e5a91f4657e1ce5e666c6b3dbf216ed5ca045",
+      "docs/MANUAL-REVIEW.json": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
+      "docs/PUBLIC-RELEASE-PLAN.md": "423f17e4f3fd78ef0b7854f602649f1ccd485e46c9a2065aaecb03c085920020",
+      "docs/RELEASE-WORKFLOW.md": "86c342a101a081deb50b9f63ee02e73c000f58793d98b3a034f25b0098c50b4f",
+      "docs/VERIFICATION.md": "b42b5216137a3812cada1b1988d3b453cec8e7aa7804827222f4024d9a1fbd5a",
+      "docs/browser-evidence/SCREENSHOTS.json": "addd366779298b247ea82cb4c5d46cfe0b30665a86a45fbca57111f8f4f83aba",
+      "docs/browser-evidence/campaign-ending.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "docs/browser-evidence/page-reload.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "docs/browser-evidence/restart-continue.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "docs/browser-evidence/restart-title.jpg": "4a00108fc076ee43d87696071b672fa7375099115849e2e13d0b47b11e8559ab",
+      "launch-page/README.md": "fe2c16be5ab1c64e2820ca570c17d4d5adfc9ed3ee8443303edf45383ba150c3",
+      "launch-page/index.template.html": "3125c495abd16269a98da86fe40115f4dffeb3d9e9b828af0c6d14c726bdd382"
     },
-    "releaseFactsSha256": "c67fc95a8c5dd8917d0bea2fe18191cf9ce854cd239b55fc4d53664f75319cdc"
+    "releaseFactsSha256": "9b8561384bedc7b9dd30f3ee3137b9f89cc33126056c8fcb24e9c99bac06171c"
   },
   "screenshots": {
     "manifest": "campaign/full-length-packaging-stage/assets/screenshots/SCREENSHOTS.json"
@@ -80,8 +95,8 @@
     "directory": "release/player-v1.1",
     "archive": "release/starfall-salvage-1.1-player.zip",
     "archiveRoot": "Starfall-Salvage-1.1",
-    "archiveSha256": "dab86c9eec9a9524a2381094044b646cfb1fa6a1f625c4424a242f94d504ac22",
-    "archiveBytes": 4336655,
+    "archiveSha256": "54eb3fe6ea297f76f50ce9d84cd2e993acc6bff7dce1fc8f3b6b363dfb6da674",
+    "archiveBytes": 4337997,
     "zipTimestamp": [
       2026,
       10,
@@ -92,11 +107,11 @@
     ],
     "files": {
       "CREDITS.txt": "2b06cbe382c5013f005a6348fba1b79eb855cab8ecb63cd871459c269cb614e8",
-      "INSTRUCTIONS.pdf": "794a4305f70a7e9cd54eb6b183dfd5a4ea6d6a03c7b476ef99ef827e407565fd",
+      "INSTRUCTIONS.pdf": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
       "LICENSE": "6fc7dd0727262618eb53594406b778aa4fd4cde9eb1d978736fe7c07b5607e79",
       "QUICK-START.txt": "647478b77f287ffc80de8694826cecaa6594b002c1af5e3a10ddc3145f39e4e1",
-      "READ-ME.txt": "c7cb3926d2d46f0ea28d8e419f92523495de1a6ee3daa049c9d659b26a4a2f41",
-      "RELEASE-NOTES.txt": "1ebbc259f2c735c05be393e950d7d48383bcb787a851af206b96995be279da49",
+      "READ-ME.txt": "ee0f673ab928f198057e5326e68bdf45fe81361dfe6037c82687a71c96c56987",
+      "RELEASE-NOTES.txt": "6e077f54538a4aba832ddb95d8cd8c4e21ff1034739cb27562b1b08d83b95863",
       "Starfall-Salvage-1.1.gbc": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db"
     }
   },
@@ -119,16 +134,29 @@
     "romSha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db",
     "nativeEmulator": "PyBoy 2.7.0",
     "guidedClearTime": "35:27",
-    "scope": "Exact native-ROM functional qualification; successful-room timer, not first-time human duration. No hardware, heard-audio, cold-save, or complete browser qualification implied.",
+    "scope": "Exact native-ROM functional qualification; successful-room timer, not first-time human duration. Separate exact local-browser campaign and persistence results are recorded below. No hardware, heard-audio, power-off-save or final-public-host qualification implied.",
     "pending": [
       "Blind human playtests",
       "Physical handheld/cartridge qualification",
       "Speaker and headphone listening",
       "Full power-off save persistence",
-      "Complete final browser campaign and reload persistence",
-      "Clean-clone source-to-ROM build qualification",
+      "Final public browser host and other supported browser/runtime combinations",
+      "Full browser-process shutdown, storage eviction and cross-origin save behavior",
+      "Cross-machine build qualification beyond the recorded macOS arm64 toolchain",
       "Original-work licensing and retained-asset provenance",
       "Chosen public support channel"
-    ]
+    ],
+    "browser": {
+      "receipt": "docs/BROWSER-VERIFICATION.json",
+      "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+      "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+      "missions": 18,
+      "rooms": 72,
+      "guardians": 18,
+      "escortRooms": 7,
+      "guidedClearTime": "42:41",
+      "rank": "B",
+      "scope": "Guided ordinary-input campaign in the exact local export/runtime/origin, with pauses, retries and one already-earned Saved states recovery. Fresh-emulator Restart/Continue restored browser-stored SRAM; normal page reload separately restored an emulator snapshot. Not human wall time, every rig/route combination, complete Arcade browser cycle, full browser-process shutdown or a future public host."
+    }
   }
 }

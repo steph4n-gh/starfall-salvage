@@ -31,17 +31,43 @@ counts successful-room gameplay; it excludes menus, pauses and failed
 attempts. This is a functional test measurement, not elapsed session time
 or a measured first-time human completion time. Arcade has no fixed ending.
 
+A separately identified official browser export completed all 18 missions,
+72 rooms, 18 guardians and seven escorts in Codex's in-app browser. The
+ending displayed STARFALL SAVED, CLEAR TIME 00:42:41, RANK B - GOT HOME.
+This guided run used ordinary controls and frequent observation pauses.
+It included failed attempts and retries; one visible Saved states recovery
+returned to an already-earned mission 3 completion after an accidental
+relaunch. No new progress was injected and no game-code change was needed.
+The browser clear used the standard pulse initially and Wide Coil later,
+including both middle-route orders. It does not add an all-four-rig or
+complete Arcade browser test. Its timer has the same successful-room scope
+as the native timer; 42:41 is not elapsed session or human first-play time.
+
+Full-campaign browser ROM SHA-256:
+3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da
+Browser runtime WASM SHA-256:
+69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945
+
+Browser Title -> Continue restored the ending. The preview's Restart game
+control then produced a fresh title with CONTINUE M18; Continue restored
+the same 42:41/Rank B ending from browser-stored SRAM. This restart flushes
+external RAM and bypasses automatic emulator-state restoration. Ordinary
+page reload separately restored the ending paused using the plugin's full
+emulator-state recovery. These are different checks, both limited to this
+exact local export, runtime and origin.
+
 WHAT REMAINS UNVERIFIED
 - Physical Chromatic/other handheld and exact cartridge combinations.
-- Save persistence after complete emulator shutdown or handheld power-off.
+- Native save persistence after emulator shutdown or handheld power-off.
 - Speaker/headphone listening and music/sound-effect balance.
-- A complete browser campaign and browser reload/save persistence.
+- Full browser-process termination, storage eviction, cross-origin save
+  behavior and the final public browser host.
 - First-time human completion time, enjoyment and difficulty balance.
 
-The official browser export has been observed running, but that observation
-does not qualify a complete web playthrough. The browser edition is not
-included in this native download. SameBoy is a documented installation
-example, not a tested emulator for this release.
+The browser campaign result applies to the exact export and local in-app
+browser identified above. The browser edition is not included in this
+native download. SameBoy is a documented installation example, not a
+tested emulator for this release.
 
 PACKAGE AND VERIFICATION
 The native ROM and reviewed illustrated manual are byte-identical to the
@@ -49,6 +75,12 @@ verified inputs. The package adds a short introduction, quick start, these
 release notes, credits and checksums. Manual screenshots are genuine
 unaltered 160 x 144 version 1.1 native-emulator captures; the illustrated
 cover is artwork, not a game frame or physical-device photograph.
+
+The current manual clarifies that the browser edition is supplied separately
+and records the local browser campaign and distinct restart/reload results.
+The native ZIP includes no browser files or hosted play link. All 14 pages
+were rendered and visually reviewed after those updates. The nine native
+gameplay screenshots and the native ROM are unchanged.
 
 Native ROM SHA-256:
 105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db

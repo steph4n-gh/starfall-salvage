@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "scope": "Manual records the completed guided local-browser campaign and bounded local restart/reload persistence. Native ROM, native evidence and screenshots remain unchanged.",
+  "pdf": {
+    "promoted": "release/player-v1.1/INSTRUCTIONS.pdf",
+    "sha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
+    "bytes": 5173042,
+    "pages": 14
+  },
+  "change": "Page 13 separately records native clear 00:35:27 and browser clear 00:42:41 (both Rank B), exact local-browser scope, Restart Game/Continue checkpoint restoration, and page-reload emulator-state restoration. Public-host, other browser/origin, full browser close/crash, hardware, heard-audio, power-off save and human-enjoyment gates remain open.",
+  "changedTextPages": [
+    13
+  ],
+  "changedRenderedPages": [
+    13
+  ],
+  "visualReview": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "result": "Passed. All 14 rendered pages inspected; no clipped or overlapping text, broken tables/images, unreadable glyphs, or footer/page-number defects. Page 13 additions fit without pagination changes.",
+    "renderer": "Poppler pdftoppm, 110 dpi",
+    "renderedPdfSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d"
+  },
+  "structuralChecks": {
+    "outOfBoundsTextCharacters": 0,
+    "embeddedGameplayScreenshots": 9,
+    "allGameplayImages160x144": true,
+    "allGameplayPixelsMatchCanonicalCaptureManifest": true,
+    "coverIllustrationSeparate": true
+  },
+  "sourceSha256": {
+    "campaign/full-length-packaging-stage/generate_manual.py": "8b28c5dd9e34d1b93c97e813488ed61fb38eadb58e3c8f81d076856240220cc9",
+    "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "cdd4637410e7a13a346c0a55bd696317ba0c41bfb96f69ad66e81de66b3a512e",
+    "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "382f53383d507b7661f754f08021029a58a60b78c733275d8e7ac201f9338cf6"
+  },
+  "browserQualification": {
+    "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+    "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+    "storyMissions": 18,
+    "storyRooms": 72,
+    "guardians": 18,
+    "crewEscortRooms": 7,
+    "guidedInGameClear": "00:42:41",
+    "rank": "B",
+    "scope": "Exact local preview build/runtime/origin; ordinary UI controls, pauses/retries and an already-earned saved-state recovery; not an uninterrupted real-time human usability or duration measurement. Restart Game/Continue restored ending; page reload restored emulator snapshot. No general public-host, cross-origin, browser-process-restart, crash or hardware claim.",
+    "visuallyInspectedEvidenceSha256": {
+      "1792014047552-m18-heart-final-dock.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "ending-restart-fresh-title.jpg": "4a00108fc076ee43d87696071b672fa7375099115849e2e13d0b47b11e8559ab",
+      "ending-restart-continue.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "ending-page-reload.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8"
+    }
+  },
+  "unchangedQualification": "Native ROM and all gameplay screenshot pixels unchanged; no new hardware, heard-audio, cold power-off-save or human-enjoyment qualification.",
+  "retainedLocalEvidence": "Ignored build/manual-browser-pass-review-20261014 contains reviewed page renders and this full receipt; build/browser-full-qa-20261014 contains the browser run evidence."
+}

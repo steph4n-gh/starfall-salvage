@@ -34,10 +34,16 @@ RAM and battery. Confirm support for this exact image in your emulator or
 cartridge. The .gbc file is not a Game Boy Advance (.gba) game.
 
 The released native ROM completed Story and the focused Arcade/menu tests
-in PyBoy 2.7.0. Physical handheld/cartridge combinations, cold-start save
-persistence, heard audio and a complete browser campaign remain unverified.
-Full details are in RELEASE-NOTES.txt. A listed installation route is not
-a claim that every device or cartridge in that category has been tested.
+in PyBoy 2.7.0. A separate official browser export completed the full Story
+campaign in Codex's in-app browser, with a guided clear time of 42:41,
+Rank B. That browser edition is not included in this native ZIP.
+In that local preview, Restart -> Continue recovered the ending from
+browser-stored SRAM; ordinary reload separately recovered an emulator
+snapshot. Physical handheld/cartridge combinations, native cold saves,
+full browser-process termination, heard audio and the final public browser
+host remain unverified. Full details are in RELEASE-NOTES.txt. A listed
+installation route is not a claim that every device or cartridge in that
+category has been tested.
 
 DRAFT STATUS
 Prepared locally for review; not publicly published. Original game

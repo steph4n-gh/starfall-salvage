@@ -2,7 +2,7 @@
 
 `generate_manual.py` is the content source for `INSTRUCTIONS.md`, `INSTRUCTIONS.html` and the illustrated PDF. All 11 screenshot PNGs are genuine, unchanged 160 × 144 captures from the qualified native 1.1 ROM. Nine are embedded in the manual. `assets/screenshots/SCREENSHOTS.json` retains their hashes, captions and frame identifiers without private filesystem paths.
 
-The portable generator preserves the reviewed booklet's content. Its only code adjustment replaces a machine-specific font directory with the `STARFALL_MANUAL_FONT_DIR` environment variable and an explicit missing-font message. Fonts are not bundled. Use **DejaVuSans.ttf** and **DejaVuSans-Bold.ttf** from your own DejaVu Sans installation.
+The generator reads its font directory from `STARFALL_MANUAL_FONT_DIR` and reports missing fonts explicitly. Fonts are not bundled. Use **DejaVuSans.ttf** and **DejaVuSans-Bold.ttf** from your own DejaVu Sans installation. The current content clarifies that the browser edition is supplied separately and that the native player ZIP contains no browser files or hosted play link.
 
 From the repository root, with Python 3, Pillow and ReportLab installed:
 

@@ -29,7 +29,7 @@ To repackage the frozen player files with Python 3 (standard library only):
 python3 scripts/package-player-release.py
 ```
 
-This reproduces the checked-in ZIP from the frozen payload; it does not compile the game. The helper checks exact payload and ZIP hashes and refuses unreviewed changes. The prepared ZIP SHA-256 is `dab86c9eec9a9524a2381094044b646cfb1fa6a1f625c4424a242f94d504ac22`. Review and update the approved inputs when preparing a future version. Use the release synchronization commands below to refresh matching site downloads and metadata after an approved package update.
+This reproduces the checked-in ZIP from the reviewed payload; it does not compile the game. The helper checks exact payload and ZIP hashes and refuses unreviewed changes. The approved ZIP hash and payload identities are recorded in the [release manifest](release/release-manifest.json). Review and update those inputs when preparing a future version. Use the release synchronization commands below to refresh matching site downloads and metadata after an approved package update.
 
 ## Keep updates synchronized
 
@@ -61,13 +61,17 @@ Use Up/Down to highlight menu choices and A to confirm. At the flight deck, Up/D
 
 Open `project.gbsproj` in GB Studio with `project/`, `assets/` and `plugins/` together. The snapshot includes all 653 distributed project resources and the custom native engine code. See [build notes](docs/BUILDING.md) before regenerating assets or changing toolchains. The project metadata still says format 4.2.0/release 10; it was preserved without migration.
 
+A fresh clone compiled both native and browser exports on macOS arm64 with the recorded toolchain. All ROM bytes matched their frozen counterparts except GB Studio's built-in save signature and global checksum; all eight non-ROM browser files matched exactly. Two builds with deeper temporary paths failed at linking; a fresh short `/tmp` directory was the verified workaround. [The clean-build receipt](docs/CLEAN-BUILD.json) retains successes, failures and exact hashes. This establishes the recorded local build comparison, not byte-for-byte reproducibility or a cross-machine build qualification.
+
 The [editable manual](campaign/full-length-packaging-stage/INSTRUCTIONS.md) covers objectives, controls, saves and installation. Its [generator instructions](campaign/full-length-packaging-stage/README.md) explain how to rebuild PDF, HTML and Markdown. Original illustrated cover art is in `artwork/box-art.png`; it is not a gameplay screenshot.
 
 ## Verified release and remaining checks
 
 The exact native 1.1 ROM completed a fresh 18-mission / 72-room emulator run with Rank B and a displayed clear time of **35:27**. This guided functional time counts successful-room gameplay and excludes menus, pauses and failed attempts. It is not an expected first-time human completion time.
 
-Human enjoyment and pacing, actual audio listening, physical Chromatic play, cold save persistence, and a complete browser campaign remain open checks. [Verification scope](docs/VERIFICATION.md) records the tested hashes and limits. Private local recordings, saves, firmware experiments and historical releases are deliberately outside this source repository.
+The separately identified browser export completed all 18 missions, 72 rooms, 18 guardians and seven escorts in Codex's in-app browser, reaching **42:41, Rank B**. The guided run included failed attempts, ordinary retries and one visible Saved states recovery to already-earned progress. Restarting through the preview's **Restart game** control produced a fresh title, and Continue restored the same ending from browser-stored SRAM. Normal page reload also recovered the ending through the plugin's separate emulator-state mechanism. This browser timer is separate from the native result and excludes menus, pauses and failed attempts. See [the browser verification receipt](docs/BROWSER-VERIFICATION.json) for its exact ROM/runtime and scope.
+
+Human enjoyment and pacing, actual audio listening, physical Chromatic play, native cold-save persistence, full browser-process termination, the final public browser host, and cross-machine builds remain open checks. [Verification scope](docs/VERIFICATION.md) records the tested hashes and limits. Private local recordings, saves, firmware experiments and historical releases are deliberately outside this source repository.
 
 ## Credits and licensing
 

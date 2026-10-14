@@ -21,6 +21,6 @@ Open the local URL printed by the server. There is no build step, dependency ins
 
 ## Before public release
 
-Resolve the original-work licensing and retained-asset provenance review. Complete the agreed hardware, audio, cold-save and browser tests, then update compatibility copy only for the exact combinations actually tested. Run blind player tests to refine onboarding and pacing. Choose a support channel and add it before launch. No typical first-time completion duration is advertised.
+Resolve the original-work licensing and retained-asset provenance review. The complete local browser campaign and fresh-emulator SRAM Continue checks passed; see `../docs/BROWSER-VERIFICATION.json`. Complete hardware, audio, power-off save and final-host browser tests, then update compatibility copy only for the exact combinations actually tested. Run blind player tests to refine onboarding and pacing. Choose a support channel and add it before launch. No typical first-time completion duration is advertised.
 
 If a public browser edition is added later, link only its verified stable URL. Do not copy an ephemeral plugin preview address. Remove the draft banner/noindex only as part of an explicitly authorized public release. Sites identity is recorded in `.openai/hosting.json`; reuse that exact project. The game repository has a check-only GitHub Actions workflow. No automatic deployment is configured. Use the Sites skill to push/package the validated site and save a version; deployment remains a separate authorized step.

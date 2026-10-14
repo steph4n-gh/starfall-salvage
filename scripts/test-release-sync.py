@@ -26,11 +26,10 @@ class ReleaseSyncTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="starfall-release-test-")
         self.root = Path(self.temp.name)
-        for name in ("project", "assets", "plugins", "campaign", "artwork", "release", "launch-page"):
+        for name in ("project", "assets", "plugins", "campaign", "artwork", "release", "launch-page", "docs"):
             shutil.copytree(ROOT / name, self.root / name, ignore=shutil.ignore_patterns(".openai", "output", "__pycache__"))
         shutil.copy2(ROOT / "project.gbsproj", self.root / "project.gbsproj")
-        (self.root / "docs").mkdir()
-        shutil.copy2(ROOT / "docs/VERIFICATION.md", self.root / "docs/VERIFICATION.md")
+        shutil.copy2(ROOT / "README.md", self.root / "README.md")
 
     def tearDown(self):
         self.temp.cleanup()
@@ -122,6 +121,10 @@ class ReleaseSyncTests(unittest.TestCase):
     def test_broken_template_link_stops_sync_before_copying(self):
         template = self.root / "launch-page/index.template.html"
         template.write_text(template.read_text().replace('href="style.css"', 'href="missing.css"'))
+        # Pass the editorial guard in this fixture to exercise link validation.
+        self.mutate_manifest(lambda m: m["editorialReview"]["files"].update({
+            "launch-page/index.template.html": hashlib.sha256(template.read_bytes()).hexdigest()
+        }))
         self.mutate("launch-page/dist/downloads/INSTRUCTIONS.pdf")
         self.assert_rejected_without_writes("Missing local site link", sync=True)
 

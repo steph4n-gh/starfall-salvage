@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "scope": "Clean-clone source-to-ROM compilation and exact-byte comparison on macOS arm64. This is not a gameplay, audio, hardware, cross-machine or deterministic-build qualification. Frozen player and browser releases were not replaced.",
+  "sourceCommit": "9c5c727ad55454be5737c3f066d873e970188970",
+  "cloneMethod": "git clone --no-local of the private canonical repository; no generated output or cache copied",
+  "sourceSnapshot": {
+    "sha256": "a4a4072062ed11fa5ecb135599147e90ae9c298eb85192c91e1b1c045476b255",
+    "fileCount": 904
+  },
+  "sourceCleanBeforeAndAfter": true,
+  "toolchain": {
+    "hostSystem": "Darwin",
+    "hostArchitecture": "arm64",
+    "nodeVersion": "v26.9.0",
+    "gbStudioCliVersion": "4.3.2",
+    "gbStudioCliSha256": "78961636939edb44b0539ae26badfa07055be38124dbf08e3b84ec5608a2e627",
+    "engineVersion": "4.3.0-e1",
+    "gbdkVersion": "4.5.0",
+    "gbdkVersionEvidence": "include/gbdk/version.h defines __GBDK_VERSION 450; ChangeLog begins gbdk-4.5.0",
+    "buildToolsVersion": "4.2.3-v3",
+    "sdccVersion": "SDCC : z80/sm83/mos6502/mos65c02 TD- 4.5.1 #15267 (Mac OS X ppc)\npublished under GNU General Public License (GPL)",
+    "gbStudioBuildWorkerSha256": "1d4ba237c24b24127d70db6bd202c4a1d37b408755dc40de675f6dfd9003d86f"
+  },
+  "builds": [
+    {
+      "kind": "native",
+      "startedAt": "2026-10-14T18:09:03.039015+00:00",
+      "finishedAt": "2026-10-14T18:09:20.742643+00:00",
+      "durationSeconds": 17.704,
+      "exitCode": 0,
+      "temporaryDirectoryEmptyBeforeBuild": true,
+      "sourceUnchangedAfterBuild": true,
+      "temporaryPathClass": "isolated nested directory beneath ignored build evidence",
+      "invocation": "TMPDIR=<fresh-directory> node <GB_STUDIO_CLI> make:rom <clone>/project.gbsproj <output>/Starfall-Salvage-1.1.gbc --verbose",
+      "compilerLogs": {
+        "stdout": {
+          "localEvidenceFile": "native.stdout.log",
+          "sha256": "c41efa18c8d3309e53201b29c57542b67f195931b345b2cb84e6992fc2c49848"
+        },
+        "stderr": {
+          "localEvidenceFile": "native.stderr.log",
+          "sha256": "adc5aa3be9fa01cb8501d8e0d2b1a9ccdb45a6ba8701cc348daf2904cba3ee03"
+        }
+      }
+    },
+    {
+      "kind": "web",
+      "startedAt": "2026-10-14T18:09:20.763970+00:00",
+      "finishedAt": "2026-10-14T18:09:38.343683+00:00",
+      "durationSeconds": 17.58,
+      "exitCode": 0,
+      "temporaryDirectoryEmptyBeforeBuild": true,
+      "sourceUnchangedAfterBuild": true,
+      "temporaryPathClass": "isolated nested directory beneath ignored build evidence",
+      "invocation": "TMPDIR=<fresh-directory> node <GB_STUDIO_CLI> make:web <clone>/project.gbsproj <output>/web --verbose",
+      "compilerLogs": {
+        "stdout": {
+          "localEvidenceFile": "web.stdout.log",
+          "sha256": "c41efa18c8d3309e53201b29c57542b67f195931b345b2cb84e6992fc2c49848"
+        },
+        "stderr": {
+          "localEvidenceFile": "web.stderr.log",
+          "sha256": "444f932242ae3270f242728830b0bd5a32229e3206c285baf6705d15697b92c9"
+        }
+      }
+    },
+    {
+      "kind": "native-repeat",
+      "startedAt": "2026-10-14T18:10:35.746383+00:00",
+      "finishedAt": "2026-10-14T18:10:50.767795+00:00",
+      "durationSeconds": 15.021,
+      "exitCode": 1,
+      "temporaryDirectoryEmptyBeforeBuild": true,
+      "sourceUnchangedAfterBuild": true,
+      "temporaryPathClass": "isolated nested directory beneath ignored build evidence",
+      "invocation": "TMPDIR=<fresh-directory> node <GB_STUDIO_CLI> make:rom <clone>/project.gbsproj <output>/Starfall-Salvage-1.1.gbc --verbose",
+      "compilerLogs": {
+        "stdout": {
+          "localEvidenceFile": "native-repeat.stdout.log",
+          "sha256": "c41efa18c8d3309e53201b29c57542b67f195931b345b2cb84e6992fc2c49848"
+        },
+        "stderr": {
+          "localEvidenceFile": "native-repeat.stderr.log",
+          "sha256": "f293fea98460f0657b6f83f01516a6161844087158341d271cd9f1f5202cbaea"
+        }
+      },
+      "failure": "ENOENT while copying generated build/rom/starfall-salvage.gbc after linking; no ROM was produced."
+    },
+    {
+      "kind": "native-retry",
+      "startedAt": "2026-10-14T18:14:17.641444+00:00",
+      "finishedAt": "2026-10-14T18:14:33.547768+00:00",
+      "durationSeconds": 15.884,
+      "exitCode": 1,
+      "temporaryDirectoryEmptyBeforeBuild": true,
+      "sourceUnchangedAfterBuild": true,
+      "temporaryPathClass": "isolated nested directory beneath ignored build evidence",
+      "invocation": "TMPDIR=<fresh-directory> node <GB_STUDIO_CLI> make:rom <clone>/project.gbsproj <output>/Starfall-Salvage-1.1.gbc --verbose",
+      "compilerLogs": {
+        "stdout": {
+          "localEvidenceFile": "native-retry.stdout.log",
+          "sha256": "c41efa18c8d3309e53201b29c57542b67f195931b345b2cb84e6992fc2c49848"
+        },
+        "stderr": {
+          "localEvidenceFile": "native-retry.stderr.log",
+          "sha256": "645c613d52e726717cc672fa262f914690ce01ad42bfb7761d9e426fe46192ad"
+        }
+      },
+      "failure": "ENOENT while copying generated build/rom/starfall-salvage.gbc after linking; no ROM was produced."
+    },
+    {
+      "kind": "native-short-path",
+      "startedAt": "2026-10-14T18:15:27.121294+00:00",
+      "finishedAt": "2026-10-14T18:15:44.597951+00:00",
+      "durationSeconds": 17.458,
+      "exitCode": 0,
+      "temporaryDirectoryEmptyBeforeBuild": true,
+      "sourceUnchangedAfterBuild": true,
+      "temporaryPathClass": "short isolated /tmp directory",
+      "invocation": "TMPDIR=<fresh-directory> node <GB_STUDIO_CLI> make:rom <clone>/project.gbsproj <output>/Starfall-Salvage-1.1.gbc --verbose",
+      "compilerLogs": {
+        "stdout": {
+          "localEvidenceFile": "native-short-path.stdout.log",
+          "sha256": "c41efa18c8d3309e53201b29c57542b67f195931b345b2cb84e6992fc2c49848"
+        },
+        "stderr": {
+          "localEvidenceFile": "native-short-path.stderr.log",
+          "sha256": "c0696657d07f3bf5e6c3a732d564a152eb716f92a1dee937666d7511084c95f0"
+        }
+      }
+    }
+  ],
+  "artifacts": {
+    "frozenNativeRelease": {
+      "sha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db",
+      "bytes": 1048576,
+      "headerChecksumValid": true,
+      "globalChecksumValid": true,
+      "builtInSaveSignatureBytes": "16004655",
+      "globalChecksumBytes": "077d",
+      "diagnosticSha256WithOnlySixIdentifiedBytesZeroed": "745fcf77334b419b65c4624c1c987f949c272ccec863cecc3e0e5c50d8631b0e"
+    },
+    "frozenBrowserRom": {
+      "sha256": "cc5a3714c27f32f2a17d1e9a2cef2f465187212d4315c668ff41ea0b277ba177",
+      "bytes": 1048576,
+      "headerChecksumValid": true,
+      "globalChecksumValid": true,
+      "builtInSaveSignatureBytes": "4eccfd78",
+      "globalChecksumBytes": "095b",
+      "diagnosticSha256WithOnlySixIdentifiedBytesZeroed": "745fcf77334b419b65c4624c1c987f949c272ccec863cecc3e0e5c50d8631b0e"
+    },
+    "native": {
+      "sha256": "e6e901cc6ea5889db293d5f0ed47d95760752b72536d8e795181269382ec356c",
+      "bytes": 1048576,
+      "headerChecksumValid": true,
+      "globalChecksumValid": true,
+      "builtInSaveSignatureBytes": "05843b90",
+      "globalChecksumBytes": "0820",
+      "diagnosticSha256WithOnlySixIdentifiedBytesZeroed": "745fcf77334b419b65c4624c1c987f949c272ccec863cecc3e0e5c50d8631b0e",
+      "differingOffsetsAgainstMatchingFrozenArtifact": [
+        "0x014E",
+        "0x014F",
+        "0x0481",
+        "0x0482",
+        "0x0483",
+        "0x0484"
+      ],
+      "matchesFrozenArtifactSha256": false
+    },
+    "web": {
+      "sha256": "e81135aa72798c01380fd4cb6b75ccd8813d2ea5de7ee0b803e579e4f6790d82",
+      "bytes": 1048576,
+      "headerChecksumValid": true,
+      "globalChecksumValid": true,
+      "builtInSaveSignatureBytes": "5674c6b4",
+      "globalChecksumBytes": "0910",
+      "diagnosticSha256WithOnlySixIdentifiedBytesZeroed": "745fcf77334b419b65c4624c1c987f949c272ccec863cecc3e0e5c50d8631b0e",
+      "differingOffsetsAgainstMatchingFrozenArtifact": [
+        "0x014F",
+        "0x0481",
+        "0x0482",
+        "0x0483",
+        "0x0484"
+      ],
+      "matchesFrozenArtifactSha256": false
+    },
+    "native-short-path": {
+      "sha256": "5bf2dd969d7094b25fde6d8b14c9c077ff6df09f00d31766dab8d43cadd394b9",
+      "bytes": 1048576,
+      "headerChecksumValid": true,
+      "globalChecksumValid": true,
+      "builtInSaveSignatureBytes": "d100279e",
+      "globalChecksumBytes": "0862",
+      "diagnosticSha256WithOnlySixIdentifiedBytesZeroed": "745fcf77334b419b65c4624c1c987f949c272ccec863cecc3e0e5c50d8631b0e",
+      "differingOffsetsAgainstMatchingFrozenArtifact": [
+        "0x014E",
+        "0x014F",
+        "0x0481",
+        "0x0483",
+        "0x0484"
+      ],
+      "matchesFrozenArtifactSha256": false
+    }
+  },
+  "browserNonRomFiles": [
+    {
+      "file": "css/style.css",
+      "sha256": "5a1d25ef322248b938a0b69a586ac742ae454d921af257579c4e04a90891f62d",
+      "bytes": 6607,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "gbstudio.json",
+      "sha256": "db5be8dd992a41751c4e1ff03dffd050ae96356dc8dc089f78575740736380fd",
+      "bytes": 590,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "4cc9a58d53f0371462996c62cb8670b767f163cf12e5869d8410b189224d59b4",
+      "bytes": 1183,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "js/README.md",
+      "sha256": "99eb792898b7fecb5fd15f4b2fb36398cc181b0c97ada65d415914cbfd683e5e",
+      "bytes": 1222,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "js/binjgb.js",
+      "sha256": "0d8d628de318d0867f223797e16e8d598760ccf7f2c5a23aad12d4e46bc18cac",
+      "bytes": 13922,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "js/binjgb.wasm",
+      "sha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+      "bytes": 98840,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "js/debugger.js",
+      "sha256": "c6b1b6bfa0ff19e07b498a1e9723fb8e71e30220d57f11a575b10605cc8f3a12",
+      "bytes": 18195,
+      "matchesFrozenBrowserExport": true
+    },
+    {
+      "file": "js/script.js",
+      "sha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
+      "bytes": 39668,
+      "matchesFrozenBrowserExport": true
+    }
+  ],
+  "diagnosis": {
+    "identifiedVariableRomFields": [
+      {
+        "offset": "0x014E",
+        "length": 2,
+        "field": "Global ROM checksum"
+      },
+      {
+        "offset": "0x0481",
+        "length": 4,
+        "field": "GB Studio built-in save_signature"
+      }
+    ],
+    "symbolEvidence": "Generated native starfall-salvage.sym maps 00:0481 _save_signature; generated game_signature.c defines const unsigned long save_signature = 0x903B8405, matching the four ROM bytes.",
+    "signatureCause": "GB Studio hashes JSON.stringify(loaded project data). Asset loaders add Date.now() version fields and stat inode values, so unchanged authored inputs can yield a different signature.",
+    "maskingLimit": "Diagnostic comparison only; no ROM was patched, normalized or promoted for distribution.",
+    "linkerFailure": {
+      "failedAttempts": [
+        "native-repeat",
+        "native-retry"
+      ],
+      "directLinkReturnCode": -5,
+      "signal": "SIGTRAP",
+      "stdoutBytes": 0,
+      "stderrBytes": 0,
+      "workaround": "Fresh cold build with unchanged source and a short isolated /tmp directory passed. Keep temporary paths short. Upstream root cause is not established or patched.",
+      "nodeWarning": "DEP0190 occurred in successful builds as well; separate from the missing-ROM failure."
+    },
+    "saveScope": "Starfall checkpoints use a distinct versioned CRC-checked record in SRAM bank 3. This comparison alone does not test persistence or authorize reusing gameplay/screenshot claims for another ROM.",
+    "signatureCausalProbe": {
+      "scope": "Read-only project-loader calls using the installed CLI bundle in memory; no toolchain or project file modification.",
+      "sameCheckoutTimeDeltaMilliseconds": 1,
+      "changedTimestampFieldCount": 95,
+      "timestampHashes": [
+        "adaff676",
+        "3cc6c0ab"
+      ],
+      "cloneVsCanonicalChangedInodeCount": 95,
+      "inodeHashes": [
+        "adaff676",
+        "97928fc3"
+      ],
+      "allLoadedDataEqualAfterRemovingOnlyTimestampAndInodeFields": true,
+      "diagnosticLoadedProjectSha256": "e5bf995b40cb88746f697f0b8e85556397aed63a88cafdae6c56031dc52178cd"
+    },
+    "sourceEvidence": [
+      {
+        "file": "GB Studio src/lib/compiler/compileData.ts",
+        "lines": "2088-2090",
+        "finding": "Hashes JSON.stringify(projectData)"
+      },
+      {
+        "file": "GB Studio src/lib/compiler/generateGBVMData.ts",
+        "lines": "1392-1406",
+        "finding": "32-bit hash = hash * 31 + charCode signature"
+      },
+      {
+        "file": "GB Studio src/lib/project/loadBackgroundData.ts",
+        "lines": "37-58",
+        "finding": "Adds filesystem inode and _v: Date.now()"
+      },
+      {
+        "file": "plugins/starfall/engine/src/starfall_save.c",
+        "lines": "20-40,92-125,152-159,198-217",
+        "finding": "Separate bank-3 SFSV version-2 two-record checkpoint with generation, commit byte and CRC16"
+      }
+    ]
+  },
+  "retainedLocalEvidence": "Ignored build/clean-build-20261014 contains full commands, unmodified stdout/stderr, source clone, symbols and generated outputs. Machine-specific command paths and logs are intentionally excluded from this portable summary."
+}

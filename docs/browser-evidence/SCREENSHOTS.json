@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1",
+  "browserRomSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+  "runtimeSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+  "screenshots": [
+    {
+      "file": "campaign-ending.jpg",
+      "sha256": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "width": 240,
+      "height": 216,
+      "capture": "Unmodified browser canvas screenshot at displayed 1.5x scale; native game resolution 160x144.",
+      "pixelsAltered": false,
+      "caption": "Campaign ending after 18 missions and 72 rooms; game timer 00:42:41, rank B."
+    },
+    {
+      "file": "restart-title.jpg",
+      "sha256": "4a00108fc076ee43d87696071b672fa7375099115849e2e13d0b47b11e8559ab",
+      "width": 240,
+      "height": 216,
+      "capture": "Unmodified browser canvas screenshot at displayed 1.5x scale; native game resolution 160x144.",
+      "pixelsAltered": false,
+      "caption": "Fresh emulator title after the visible Restart game action; Continue M18 available."
+    },
+    {
+      "file": "restart-continue.jpg",
+      "sha256": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "width": 240,
+      "height": 216,
+      "capture": "Unmodified browser canvas screenshot at displayed 1.5x scale; native game resolution 160x144.",
+      "pixelsAltered": false,
+      "caption": "Continue restored the completed campaign after fresh emulator initialization from browser-stored SRAM."
+    },
+    {
+      "file": "page-reload.jpg",
+      "sha256": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "width": 240,
+      "height": 216,
+      "capture": "Unmodified browser canvas screenshot at displayed 1.5x scale; native game resolution 160x144.",
+      "pixelsAltered": false,
+      "caption": "Normal page reload restored the ending paused through plugin emulator-state recovery."
+    }
+  ]
+}
