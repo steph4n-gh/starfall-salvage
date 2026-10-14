@@ -59,7 +59,7 @@ Keep native and browser qualification separate. [The browser receipt](BROWSER-VE
 2. Use the Sites skill and the existing `project_id` in `launch-page/.openai/hosting.json`. Do not create a second site.
 3. Copy the validated site files to the separate Sites checkout, preserving its `.git` and `.openai/hosting.json`. Check that its `dist/` bytes equal the canonical generated site. Never copy the entire game repository into the site.
 4. Use the supported Sites source helper to push and package that exact site source. Keep short-lived credentials in session memory and pass them through stdin, never files or command arguments.
-5. Save the archive-backed version without deployment while the current no-publishing instruction remains in force. Record its source commit and saved version. A reserved URL is not evidence of a live website.
-6. Deploy only after explicit publication authorization; preserve the intended audience and verify the resulting deployment. Update compatibility or persistence claims only after the final hosted environment is tested.
+5. Save the archive-backed version and record its source commit and saved version. A reserved URL is not evidence of a live website.
+6. Owner-only deployment is authorized for the private site. Preserve owner-only access and verify the resulting deployment. Update compatibility or persistence claims only after the hosted environment is tested. Browser saves remain local to each browser and site address; they do not sync across devices. Public release requires separate explicit authorization.
 
-The GitHub repository and the Sites source repository serve different purposes. GitHub retains the editable game and release workflow. Sites receives only the matching web distribution. Neither a Git push nor a green consistency check authorizes a deployment.
+The GitHub repository and the Sites source repository serve different purposes. GitHub retains the editable game and release workflow. Sites receives only the matching web distribution. Keep GitHub private and automatic deployment disabled; neither a Git push nor a green consistency check expands the authorized audience.

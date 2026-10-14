@@ -24,7 +24,7 @@ The sync command copies and validates artifacts. It does not perform a playthrou
 
 ## Publication and repositories
 
-The user requested private preparation and no publishing. Keep GitHub private. Keep Sites versions saved but undeployed until the user explicitly changes that instruction. Do not add automatic deployment or upload credentials to GitHub Actions.
+The user authorized private, owner-only Sites deployment for stable browser play across devices. Keep GitHub private and preserve owner-only site access. Public release and GitHub Pages remain unauthorized. Do not add automatic deployment or upload credentials to GitHub Actions.
 
 Sites identity is in `launch-page/.openai/hosting.json`; reuse it. Stage only the validated site for the Sites source helper. Never send game saves, internal recordings, hardware firmware, license keys or machine-specific diagnostic receipts to either repository.
 

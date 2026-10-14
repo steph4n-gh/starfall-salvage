@@ -49,7 +49,7 @@ These authoring scripts are not a single incremental build pipeline. They preser
 
 The command above produces the official web export. Serve that export directory through a web server. Keep the export's JavaScript, WASM and ROM together. Use the full-campaign browser-export hash in [VERIFICATION.md](VERIFICATION.md) only for that actual export, not for the native `.gbc` file or an earlier browser build. [The browser receipt](BROWSER-VERIFICATION.json) identifies the tested ROM/runtime; the successful clean-clone build is a separate artifact.
 
-The private launch website includes the frozen official export at `play/index.html`, opened by its Play in Browser button. The nine canonical files in `release/browser-v1.1/` are copied unchanged by `scripts/sync-release.py`; serving this retained release does not require rebuilding it. The native player ZIP remains a separate download. The Site is saved without deployment, and no browser edition has been published. Browser focus, sound and persistent saves still require testing in any future hosted environment.
+The private launch website includes the frozen official export at `play/index.html`, opened by its Play in Browser button. The nine canonical files in `release/browser-v1.1/` are copied unchanged by `scripts/sync-release.py`; serving this retained release does not require rebuilding it. The native player ZIP remains a separate download. The site is deployed with authorized owner-only access. The full browser campaign qualification remains local. Hosted launch, keyboard controls and ordinary-reload checkpoint recovery passed the bounded [hosted check](HOSTED-VERIFICATION.json); other devices and sound still require separate checks. Browser saves do not sync across devices.
 
 ## Manual
 

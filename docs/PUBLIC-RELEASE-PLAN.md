@@ -1,11 +1,11 @@
 # Before public release
 
-This is a private preparation repository. No site, public repository, public release, or public player download has been launched.
+This is a private preparation repository. The site is deployed with authorized owner-only access. No public site, repository, release, or player download has been launched.
 
 ## Ready for review
 
 - The exact native 1.1 ROM, a clean eight-file player ZIP, quick start, release notes and reviewed 14-page manual.
-- A Sites website draft with seven displayed genuine native 1.1 captures, a private Play in Browser route, download links, installation routes, controls and compatibility scope. The site is registered for saved versions and remains undeployed.
+- An owner-only Sites website draft with seven displayed genuine native 1.1 captures, a private Play in Browser route, download links, installation routes, controls and compatibility scope. The site is deployed for private use; browser saves do not sync across devices.
 - A shared release manifest, synchronization/check commands, durable update instructions and check-only CI to detect mismatched release artifacts.
 - Editable game source, native art/data generators, and a portable manual generator.
 - Matching player archive rebuild and screenshot provenance without private test-session records.
@@ -20,6 +20,6 @@ This is a private preparation repository. No site, public repository, public rel
 4. **Licensing and asset provenance:** choose the original work's terms and confirm retained resources' origins/notices. See [licensing status](LICENSING.md). Private preparation assigns no new terms.
 5. **Launch/support:** select a feedback channel, prepare a genuine gameplay clip, recheck all links, and update only claims supported by completed tests. The 35:27 native and 42:41 browser guided clears are separate functional measurements, not typical-player durations.
 6. **Cross-machine builds:** the recorded macOS arm64 clean-clone comparison is complete. Qualify any additional supported host/toolchain combination before claiming it works; preserve the documented signature nondeterminism and short-temporary-path workaround. Ordinary builds are not byte-for-byte reproducible.
-7. **Explicit publication decision:** keep GitHub private and keep Pages off and Sites versions undeployed until publication is authorized. Remove draft banners/noindex only in that release step.
+7. **Explicit public-release decision:** keep GitHub private, GitHub Pages off and the deployed Sites website owner-only until public release is authorized. Remove draft banners/noindex only in that release step.
 
 The existing 1.1 binary stays frozen. Gameplay or save changes require a new identified build and appropriate repeat verification; documentation-only work does not create a newly verified game build.
