@@ -11,7 +11,7 @@
   "archiveFiles": 27,
   "publication": "deployed-private",
   "deploymentId": "appgdep_6ad00307ee8c8191a13816346aae6c11",
-  "liveUrl": "https://starfall-salvage.steph4n1.chatgpt.site",
+  "liveUrl": "https://starfall.steph4n.dev",
   "previewUrl": null,
   "access": "owner-only",
   "siteFilesMatchCanonicalDist": true,
@@ -56,11 +56,19 @@
   },
   "hostedBrowserChecks": {
     "receipt": "docs/HOSTED-VERIFICATION.json",
-    "testedGameVersion": 3,
+    "testedSiteVersion": 3,
     "finalVersion": 4,
     "gameFilesUnchangedBetweenVersions": true,
     "finalLandingCopyVerified": true,
     "launchKeyboardPauseAndReloadContinue": "passed",
-    "scope": "Desktop Codex browser on the owner account. Other devices, browsers, touch play and audio listening remain unverified; browser saves do not sync across devices."
+    "scope": "Earlier generated-origin checks in the desktop Codex browser on the owner account. Separate Chrome/custom-origin checks are in docs/CUSTOM-DOMAIN.json. Other devices, touch play and audio listening were not checked in these hosted browser runs; browser saves do not sync across devices."
+  },
+  "originalSiteUrl": "https://starfall-salvage.steph4n1.chatgpt.site",
+  "customDomain": {
+    "hostname": "starfall.steph4n.dev",
+    "status": "active",
+    "providerStatus": "active",
+    "sslStatus": "active",
+    "receipt": "docs/CUSTOM-DOMAIN.json"
   }
 }

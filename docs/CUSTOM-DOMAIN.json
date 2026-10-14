@@ -1,0 +1,104 @@
+{
+  "recordedAt": "2026-10-14",
+  "hostname": "starfall.steph4n.dev",
+  "liveUrl": "https://starfall.steph4n.dev",
+  "projectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
+  "domainId": "appgdom_6ad00692fdfc8191927d176684c3e0cd",
+  "siteVersionNumber": 4,
+  "siteSourceCommit": "51709d6c74a403eff67780629a7ea7a8c69ff469",
+  "changeScope": "Custom hostname and DNS only. Existing owner-private version 4 and all game/site bytes unchanged.",
+  "cloudflare": {
+    "zone": "steph4n.dev",
+    "records": [
+      {
+        "id": "5a9e070177493fdf33ac9d0d00cf2e90",
+        "type": "CNAME",
+        "name": "starfall.steph4n.dev",
+        "content": "custom-domains.chatgpt.site",
+        "proxied": false,
+        "ttl": 1
+      },
+      {
+        "id": "2a780ff37a364c06234af646c36062d6",
+        "type": "TXT",
+        "name": "_openai-site-verification.starfall.steph4n.dev",
+        "content": "\"openai-site-verification=IhiC_MYHo6XJYIbPXAg_id-qnC4IyVUWnPekhUyGiyE\"",
+        "proxied": false,
+        "ttl": 1
+      },
+      {
+        "id": "23201502cf00d5272edc5687b25fedf0",
+        "type": "TXT",
+        "name": "_cf-custom-hostname.starfall.steph4n.dev",
+        "content": "\"0aa13ca8-755f-4f8e-a0f7-c3a482581c8b\"",
+        "proxied": false,
+        "ttl": 1
+      }
+    ],
+    "writeMethod": "Cloudflare dashboard, after user sign-in; connector writes returned Authentication error (10000). Connector GET confirmed exact records afterward.",
+    "publicDns": "Independent resolution confirmed exact CNAME and both TXT values."
+  },
+  "domainStatus": {
+    "status": "active",
+    "providerStatus": "active",
+    "sslStatus": "active",
+    "verifiedAt": "2026-10-14T22:52:58.746858+00:00",
+    "lastError": null
+  },
+  "access": {
+    "mode": "custom",
+    "allowedOwners": 1,
+    "allowedGroups": 0,
+    "externalVisitors": 0,
+    "verifiedBy": "Post-activation Sites get_site, anonymous HTTP requests and successful owner browser login."
+  },
+  "tls": {
+    "verifiedHostname": "starfall.steph4n.dev",
+    "version": "TLSv1.3",
+    "certificateNotAfter": "2027-01-12T22:52:34Z"
+  },
+  "anonymousChecks": [
+    {
+      "path": "/",
+      "status": 401,
+      "result": "Sign in required"
+    },
+    {
+      "path": "/play/",
+      "status": 401,
+      "result": "Sign in required"
+    },
+    {
+      "path": "/play/rom/starfall-salvage.gbc",
+      "status": 401,
+      "result": "Sign in required"
+    },
+    {
+      "path": "/downloads/INSTRUCTIONS.pdf",
+      "status": 401,
+      "result": "Sign in required"
+    }
+  ],
+  "ownerBrowserChecks": {
+    "browser": "Desktop Google Chrome, existing user profile",
+    "login": "passed; user completed OpenAI passkey challenge",
+    "playButton": "passed; opened https://starfall.steph4n.dev/play/",
+    "initialTitle": "Story and Arcade",
+    "controls": "Story selection, launch, movement, brake, pulse and pause passed through ordinary keyboard input.",
+    "checkpoint": "Normal reload showed CONTINUE M01; confirmation restored Freight Spine M01 Bay 1/4 H3 with CHECKPOINT SAVED.",
+    "evidence": [
+      "docs/browser-evidence/custom-domain-reload-title.jpg",
+      "docs/browser-evidence/custom-domain-reload-continue.jpg"
+    ],
+    "consoleScope": "No warnings or errors attributed to game-origin scripts were observed. Chrome extension duplicate-element errors and OpenAI login telemetry warnings/errors were recorded separately; login and gameplay succeeded."
+  },
+  "originalSite": {
+    "url": "https://starfall-salvage.steph4n1.chatgpt.site",
+    "reachable": true,
+    "anonymousHomepageStatus": 401,
+    "anonymousPlayerStatus": 401,
+    "redirectObserved": false
+  },
+  "saveScope": "Storage is local to each browser and origin. Existing saves at the generated site URL do not automatically transfer to the custom hostname; no cross-device synchronization.",
+  "limitations": "Desktop custom-origin smoke verification only. No new full-campaign, mobile, audio-listening, full-browser-shutdown or physical-device qualification."
+}
