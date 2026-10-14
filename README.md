@@ -43,7 +43,7 @@ python3 scripts/test-release-sync.py
 
 Changed review inputs stop preparation until the required review is recorded. Sync never approves a new ROM, manual or screenshot automatically. GitHub Actions runs checks only; it cannot deploy. See [the update workflow](docs/RELEASE-WORKFLOW.md) and [project instructions](AGENTS.md).
 
-The Sites project identity is retained in [the hosting manifest](launch-page/.openai/hosting.json). Reuse it for saved versions. No public website, GitHub Pages deployment or public release is authorized by a consistency check.
+The Sites project identity is retained in [the hosting manifest](launch-page/.openai/hosting.json). Reuse it for saved versions. [Sites version 1 and its source receipt](docs/SITES-DRAFT.json) are saved, owner-private and undeployed. The receipt records that version only; prepare a new saved version after site updates. No public website, GitHub Pages deployment or public release is authorized by a consistency check.
 
 ## Controls
 

@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-10-14",
+  "gameVersion": "1.1",
+  "gameRepositoryCommit": "a9a3c8455b9459a38259060c727a1317ee6c9c40",
+  "siteProjectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
+  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_a7b943f365a88191a22927416b1546c6",
+  "siteVersionNumber": 1,
+  "siteSourceCommit": "d715fb5cb8a564436a2347dce7da0b4c6174cd7a",
+  "archiveContentHash": "sha256:2b096c413cc8d87791afad1d3edd8484e1720a809690e1d7f9c648ef3c75b272",
+  "archiveBytes": 9584640,
+  "archiveFiles": 18,
+  "publication": "saved-only",
+  "deploymentId": null,
+  "liveUrl": null,
+  "access": "owner-only",
+  "siteFilesMatchCanonicalDist": true,
+  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38610502116",
+  "githubConsistencyConclusion": "success",
+  "localBrowserChecks": {
+    "desktopWidth": 1280,
+    "mobileWidth": 390,
+    "horizontalOverflow": false,
+    "screenshotDialogAndEscape": "passed",
+    "consoleWarningsAndErrors": 0,
+    "downloadRomZipAndManualByteIdentity": "passed"
+  },
+  "qualificationNote": "Website QA and consistency checks do not add gameplay, hardware, audio, save, or licensing qualifications. This is a historical saved-version receipt; re-save and record a new receipt after changing site files."
+}
