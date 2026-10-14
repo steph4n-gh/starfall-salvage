@@ -1,21 +1,21 @@
 {
   "recordedAt": "2026-10-14",
   "gameVersion": "1.1",
-  "gameRepositoryCommit": "294fa658d78a502a3e4459f72a865264643d3e21",
+  "gameRepositoryCommit": "c0b214c256c08eedddb82d5e4c84350c3a41e1cc",
   "siteProjectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
-  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_6276e0ca56708191b5afb9c0f3029d83",
-  "siteVersionNumber": 3,
-  "siteSourceCommit": "c0d0c19d6c3b419d37336b9de388ddc2ac9b5030",
-  "archiveContentHash": "sha256:4c03fb199c553839e86f782e85debc730106f8a78c1d89787d048c0de474c437",
+  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_c599bf1df9b4819195ebd27c7ecc71b9",
+  "siteVersionNumber": 4,
+  "siteSourceCommit": "51709d6c74a403eff67780629a7ea7a8c69ff469",
+  "archiveContentHash": "sha256:a1446c0539fe0421275c3db982bda175adf24a14dbe25b5ca95310c69b4c3ce4",
   "archiveBytes": 10823680,
   "archiveFiles": 27,
-  "publication": "saved-only",
-  "deploymentId": null,
-  "liveUrl": null,
+  "publication": "deployed-private",
+  "deploymentId": "appgdep_6ad00307ee8c8191a13816346aae6c11",
+  "liveUrl": "https://starfall-salvage.steph4n1.chatgpt.site",
   "previewUrl": null,
   "access": "owner-only",
   "siteFilesMatchCanonicalDist": true,
-  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38645041115",
+  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38648305463",
   "githubConsistencyConclusion": "success",
   "localBrowserChecks": {
     "viewportClientWidth": 1265,
@@ -33,11 +33,12 @@
     "playerZipSha256": "54eb3fe6ea297f76f50ce9d84cd2e993acc6bff7dce1fc8f3b6b363dfb6da674",
     "nativeRomSha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db"
   },
-  "qualificationNote": "The private Play in Browser route bundles the exact official export used for the completed local campaign. Local site launch, controls and ordinary reload to Continue passed independently of the plugin preview snapshot mechanism. No hosted-site, hardware, heard-audio or human qualification is implied. No deployment or public URL exists.",
+  "qualificationNote": "Owner-only private deployment was explicitly authorized by the user. Version 3 hosted game launch, controls, pause and checkpoint reload passed; version 4 changes only site/documentation wording and retains identical game files. Final owner-only access and current landing copy were verified. Full campaign evidence remains the earlier local run. No public access, second-device, mobile, heard-audio or physical-device qualification is implied.",
   "previousSavedVersion": {
-    "number": 2,
-    "id": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_17a4d3fd266881918d59ce5c3f0fbfd6",
-    "sourceCommit": "d6da0787ea8f689eb9746208d8924243315aac51"
+    "number": 3,
+    "id": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_6276e0ca56708191b5afb9c0f3029d83",
+    "sourceCommit": "c0d0c19d6c3b419d37336b9de388ddc2ac9b5030",
+    "firstPrivateDeploymentId": "appgdep_6ad001e756d0819182f8f6359faa1663"
   },
   "browserArtifacts": {
     "canonicalDirectory": "release/browser-v1.1",
@@ -46,5 +47,20 @@
     "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
     "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
     "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650"
+  },
+  "accessVerification": {
+    "allowedOwners": 1,
+    "allowedGroups": 0,
+    "externalVisitors": 0,
+    "verifiedBy": "Successful deploy_private_site_version and post-deployment get_site"
+  },
+  "hostedBrowserChecks": {
+    "receipt": "docs/HOSTED-VERIFICATION.json",
+    "testedGameVersion": 3,
+    "finalVersion": 4,
+    "gameFilesUnchangedBetweenVersions": true,
+    "finalLandingCopyVerified": true,
+    "launchKeyboardPauseAndReloadContinue": "passed",
+    "scope": "Desktop Codex browser on the owner account. Other devices, browsers, touch play and audio listening remain unverified; browser saves do not sync across devices."
   }
 }
