@@ -24,6 +24,7 @@ GitHub Actions runs the read-only check and failure tests on pushes and pull req
 | Release identity and reviewed artifacts | `release/release-manifest.json` | Website metadata and validation expectations |
 | Manual content | `campaign/full-length-packaging-stage/generate_manual.py` and its inputs | Manual Markdown, HTML and reviewed PDF |
 | Gameplay screenshots | Manual `assets/screenshots/SCREENSHOTS.json` and the recorded PNGs beside it | Selected website screenshots and their public provenance |
+| Browser player | Frozen official export in `release/browser-v1.1`, bound by manifest `browser.files` and browser qualification hashes | `launch-page/dist/play/` |
 | Player instructions and notes | Current `release/player-v*/` text files | Player archive and matching website downloads |
 | Website copy | `launch-page/index.template.html`, plus site CSS/JS | `launch-page/dist/index.html` |
 | Compatibility and qualification summary | Release manifest, `docs/VERIFICATION.md`, and reviewed player-facing copy | Site and release summaries with the same evidence limits |
@@ -47,6 +48,8 @@ The current source fingerprint identifies the reviewed portable snapshot. A [cle
 Keep the ROM and its qualification unchanged. Edit the canonical text/template. If manual inputs changed, regenerate and review the PDF before updating its review record. Review any changed instructions or claims, then sync and check all copied downloads. A wording correction does not automatically require another full gameplay clear, but a new gameplay claim requires supporting evidence.
 
 The website uses release metadata for repeated fields such as version, native ROM identity and manual page count. Prose still needs editorial review: a checksum cannot decide whether an explanation is accurate or a game is enjoyable.
+
+The Play in Browser button uses the exact reviewed nine-file export. Keep the ROM, runtime and retained license notice together; the browser allowlist excludes saves and private preview metadata. Recheck initial load, controls and checkpoint recovery on the site origin after changing delivery.
 
 Keep native and browser qualification separate. [The browser receipt](BROWSER-VERIFICATION.json) binds its 42:41 campaign result to the exact tested browser ROM/runtime; the native 35:27 result belongs to its own release ROM. A wrapper snapshot recovery and a fresh-emulator SRAM Continue test establish different save behaviors. Update their outcomes separately and retain final-host, hardware and human-play limits.
 

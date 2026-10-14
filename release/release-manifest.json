@@ -67,26 +67,30 @@
   "editorialReview": {
     "scope": "Reviewed verification summary and manual text. Reconcile changed instructions and claims before deliberately accepting new hashes. Player text is additionally fixed by player.files.",
     "files": {
-      "README.md": "4dace9c2843bf3d6e83977003511fc37fe2bcba7eff1fe925118b6a8e770b933",
+      "README.md": "000f6f86cb319b2436562a211509498504c2aa3abe76728630076ef1cf10b686",
       "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "382f53383d507b7661f754f08021029a58a60b78c733275d8e7ac201f9338cf6",
       "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "cdd4637410e7a13a346c0a55bd696317ba0c41bfb96f69ad66e81de66b3a512e",
       "campaign/full-length-packaging-stage/README.md": "0ee71c770bc49e37f4843f61bdc63f57880108362b9ca9fb47152b0172953dba",
       "docs/BROWSER-VERIFICATION.json": "63f86a0308a7adf2dd53a47eca1879308efed07eef6aa25db109dc11034c55de",
-      "docs/BUILDING.md": "ba77e399dd1d0aa199742430ae370d27d0ba7d2e55c477f743574299c2270459",
+      "docs/BUILDING.md": "8af37230422ed983981b2ef9accf4df5be286439b073f4288c95149ca9b489f7",
       "docs/CLEAN-BUILD.json": "a1dca04cd92d2f7b368ef376b74e5a91f4657e1ce5e666c6b3dbf216ed5ca045",
       "docs/MANUAL-REVIEW.json": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
-      "docs/PUBLIC-RELEASE-PLAN.md": "423f17e4f3fd78ef0b7854f602649f1ccd485e46c9a2065aaecb03c085920020",
-      "docs/RELEASE-WORKFLOW.md": "86c342a101a081deb50b9f63ee02e73c000f58793d98b3a034f25b0098c50b4f",
+      "docs/PUBLIC-RELEASE-PLAN.md": "04ac2e4c121d2d2a59f0390fc12bd97c6c0ee934100c06e8b9bdcab2ad558ec3",
+      "docs/RELEASE-WORKFLOW.md": "d235ab14ce23899633e57d3ac09894e085d34b8f15b827ef15178a188c20f7f6",
       "docs/VERIFICATION.md": "b42b5216137a3812cada1b1988d3b453cec8e7aa7804827222f4024d9a1fbd5a",
       "docs/browser-evidence/SCREENSHOTS.json": "addd366779298b247ea82cb4c5d46cfe0b30665a86a45fbca57111f8f4f83aba",
       "docs/browser-evidence/campaign-ending.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
       "docs/browser-evidence/page-reload.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
       "docs/browser-evidence/restart-continue.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
       "docs/browser-evidence/restart-title.jpg": "4a00108fc076ee43d87696071b672fa7375099115849e2e13d0b47b11e8559ab",
-      "launch-page/README.md": "fe2c16be5ab1c64e2820ca570c17d4d5adfc9ed3ee8443303edf45383ba150c3",
-      "launch-page/index.template.html": "3125c495abd16269a98da86fe40115f4dffeb3d9e9b828af0c6d14c726bdd382"
+      "launch-page/README.md": "f873f8a34fcb1e035dff5e73ab827daa99359bae296716813e6119c25d766465",
+      "launch-page/index.template.html": "bb63df6ea2929d67967c4b6fd0d660d98d381f1ed114ef7230e18659cccb987b",
+      "docs/SITE-PLAY-VERIFICATION.json": "c76edb27a71515a0672c7cfd1e2c0aebbc1293078d84736b54bf90a428897a0c",
+      "docs/browser-evidence/site-fresh-title.jpg": "fcc5a055f7ecd079e68fea17a60cd618676d62edf94d459c8f3cb744899441c0",
+      "docs/browser-evidence/site-reload-title.jpg": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
+      "docs/browser-evidence/site-reload-continue.jpg": "f4ae5bb2d82c15073d45730fdbd91c2adc611c56010f7787905de7bf91a20c9b"
     },
-    "releaseFactsSha256": "9b8561384bedc7b9dd30f3ee3137b9f89cc33126056c8fcb24e9c99bac06171c"
+    "releaseFactsSha256": "fcf741b30694e86e1d8b3db31ea90af0992d79219680b45ab5d5dcaf983d794d"
   },
   "screenshots": {
     "manifest": "campaign/full-length-packaging-stage/assets/screenshots/SCREENSHOTS.json"
@@ -156,7 +160,23 @@
       "escortRooms": 7,
       "guidedClearTime": "42:41",
       "rank": "B",
-      "scope": "Guided ordinary-input campaign in the exact local export/runtime/origin, with pauses, retries and one already-earned Saved states recovery. Fresh-emulator Restart/Continue restored browser-stored SRAM; normal page reload separately restored an emulator snapshot. Not human wall time, every rig/route combination, complete Arcade browser cycle, full browser-process shutdown or a future public host."
+      "scope": "Guided ordinary-input campaign in the exact local export/runtime/origin, with pauses, retries and one already-earned Saved states recovery. Fresh-emulator Restart/Continue restored browser-stored SRAM; normal page reload separately restored an emulator snapshot. Not human wall time, every rig/route combination, complete Arcade browser cycle, full browser-process shutdown or a future public host.",
+      "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650"
     }
+  },
+  "browser": {
+    "directory": "release/browser-v1.1",
+    "files": {
+      "css/style.css": "5a1d25ef322248b938a0b69a586ac742ae454d921af257579c4e04a90891f62d",
+      "gbstudio.json": "db5be8dd992a41751c4e1ff03dffd050ae96356dc8dc089f78575740736380fd",
+      "index.html": "4cc9a58d53f0371462996c62cb8670b767f163cf12e5869d8410b189224d59b4",
+      "js/README.md": "99eb792898b7fecb5fd15f4b2fb36398cc181b0c97ada65d415914cbfd683e5e",
+      "js/binjgb.js": "0d8d628de318d0867f223797e16e8d598760ccf7f2c5a23aad12d4e46bc18cac",
+      "js/binjgb.wasm": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+      "js/debugger.js": "c6b1b6bfa0ff19e07b498a1e9723fb8e71e30220d57f11a575b10605cc8f3a12",
+      "js/script.js": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
+      "rom/starfall-salvage.gbc": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da"
+    },
+    "scope": "Unmodified nine-file official GB Studio export used for the completed local browser campaign. Includes Binjgb license notice; no saves, preview wrapper or diagnostic recordings."
   }
 }

@@ -10,7 +10,7 @@ Story contains 18 missions across six zones and 72 large scrolling rooms. Arcade
 
 - [Native player ZIP, version 1.1](release/starfall-salvage-1.1-player.zip) — 4.34 MB; eight player-facing files, one ROM.
 - [Illustrated manual](release/player-v1.1/INSTRUCTIONS.pdf) and [quick start](release/player-v1.1/QUICK-START.txt).
-- [Local launch-page draft](launch-page/README.md) — genuine screenshots, working local downloads, instructions and tested/untested compatibility.
+- [Local launch-page draft](launch-page/README.md) — Play in Browser, genuine screenshots, working local downloads, instructions and tested/untested compatibility.
 - [Remaining public-release work](docs/PUBLIC-RELEASE-PLAN.md).
 
 ![Private launch-page draft](docs/launch-preview.jpg)
@@ -21,7 +21,7 @@ To view the page locally, run this from the repository root:
 python3 -m http.server 8080 --bind 127.0.0.1 --directory launch-page/dist
 ```
 
-Then open `http://127.0.0.1:8080/`. The page also works as a local static document. Its Sites project is registered, but versions remain saved without deployment under the current no-publishing instruction. The browser game itself is a separate export and is not included in the native player ZIP or launch draft.
+Then open `http://127.0.0.1:8080/`. Use the local server for the browser game; opening its HTML directly as a file does not load it reliably. Its Sites project is registered, but versions remain saved without deployment under the current no-publishing instruction. The Play in Browser button opens the unmodified official export bundled under `play/`. Its canonical nine files are in `release/browser-v1.1`; they match the exact ROM/runtime used for the complete browser campaign. Browser files remain separate from the native player ZIP. The site button, keyboard controls and ordinary-reload checkpoint recovery passed a [local integration check](docs/SITE-PLAY-VERIFICATION.json).
 
 To repackage the frozen player files with Python 3 (standard library only):
 
@@ -43,7 +43,7 @@ python3 scripts/test-release-sync.py
 
 Changed review inputs stop preparation until the required review is recorded. Sync never approves a new ROM, manual or screenshot automatically. GitHub Actions runs checks only; it cannot deploy. See [the update workflow](docs/RELEASE-WORKFLOW.md) and [project instructions](AGENTS.md).
 
-The Sites project identity is retained in [the hosting manifest](launch-page/.openai/hosting.json). Reuse it for saved versions. [Sites version 1 and its source receipt](docs/SITES-DRAFT.json) are saved, owner-private and undeployed. The receipt records that version only; prepare a new saved version after site updates. No public website, GitHub Pages deployment or public release is authorized by a consistency check.
+The Sites project identity is retained in [the hosting manifest](launch-page/.openai/hosting.json). Reuse it for saved versions. [The saved Sites version and its source receipt](docs/SITES-DRAFT.json) are saved, owner-private and undeployed. The receipt records that version only; prepare a new saved version after site updates. No public website, GitHub Pages deployment or public release is authorized by a consistency check.
 
 ## Controls
 

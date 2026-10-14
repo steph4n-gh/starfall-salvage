@@ -247,6 +247,38 @@ def prepare(root):
         outputs[site["directory"] + "/downloads/" + name] = data
     outputs[site["directory"] + "/downloads/SHA256SUMS.txt"] = checksums(downloads)
 
+    browser = manifest["browser"]
+    browser_names = {"index.html", "gbstudio.json", "css/style.css", "js/README.md", "js/binjgb.js",
+                     "js/binjgb.wasm", "js/debugger.js", "js/script.js", "rom/starfall-salvage.gbc"}
+    require(set(browser["files"]) == browser_names, "Browser manifest must match the reviewed nine-file allowlist.")
+    browser_dir = path_at(root, browser["directory"])
+    require(browser_dir.is_dir(), "Reviewed browser directory is missing.")
+    found_browser_files = set()
+    for entry in browser_dir.rglob("*"):
+        name = entry.relative_to(browser_dir).as_posix()
+        path_at(root, entry.relative_to(root).as_posix())
+        if entry.is_dir():
+            require(any(expected.startswith(name + "/") for expected in browser_names),
+                    f"Unexpected browser directory outside the allowlist: {name}")
+        else:
+            require(entry.is_file() and name in browser_names,
+                    f"Unexpected browser file outside the allowlist: {name}")
+            found_browser_files.add(name)
+    require(found_browser_files == browser_names, "Browser directory must match the reviewed nine-file allowlist.")
+    browser_payload = {}
+    for name, sha in sorted(browser["files"].items()):
+        data = read(root, browser["directory"] + "/" + name)
+        require(digest(data) == sha, f"Unreviewed browser input: {name}; no output replaced.")
+        browser_payload[name] = data
+        outputs[site["directory"] + "/play/" + name] = data
+    require(digest(browser_payload["rom/starfall-salvage.gbc"]) == manifest["qualification"]["browser"]["romSha256"],
+            "Browser ROM identity differs from browser gameplay qualification.")
+    require(digest(browser_payload["js/binjgb.wasm"]) == manifest["qualification"]["browser"]["runtimeWasmSha256"],
+            "Browser runtime identity differs from browser gameplay qualification.")
+    require(digest(browser_payload["js/script.js"]) == manifest["qualification"]["browser"]["runtimeScriptSha256"],
+            "Browser script identity differs from browser gameplay qualification.")
+    check_links(root, browser_payload["index.html"], site["directory"] + "/play", outputs)
+
     game = manifest["game"]
     values = {"VERSION": manifest["version"], "ROM_FILENAME": rom["filename"], "ROM_SHA256": rom["sha256"],
               "ROM_BYTES": f'{rom["bytes"]:,}', "MANUAL_PAGES": manifest["manualReview"]["pages"],

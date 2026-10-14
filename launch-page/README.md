@@ -10,13 +10,13 @@ The `dist/` folder is self-contained. Serve it locally, for example:
 python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
 ```
 
-Open the local URL printed by the server. There is no build step, dependency installation, analytics, remote font, or third-party script. The only JavaScript enlarges screenshots in an accessible native dialog. Download links resolve to local files under `dist/downloads/`.
+Open the local URL printed by the server. There is no build step, dependency installation, analytics, remote font, or remotely loaded script. The landing-page JavaScript enlarges screenshots in an accessible native dialog. The separate `play/` route includes the official Binjgb JavaScript/WebAssembly player and ROM, all served locally without third-party requests. Download links resolve to local files under `dist/downloads/`.
 
 ## Contents and evidence
 
 - Native player ZIP, exact reviewed manual, release notes, credits, and download checksums.
 - Eight unaltered 160×144 screenshots from the exact native 1.1 ROM; seven are displayed and one is retained as an additional flight-deck asset. `dist/assets/screenshots.json` records their hashes without local machine paths. The full internal provenance stays outside this page.
-- Installation routes and tested/untested status are explicit. Browser playback is described as separate, with no invented public play URL. The original browser export and ongoing human preview are untouched.
+- Play in Browser opens `play/index.html`, a byte-identical copy of the nine-file official export in `../release/browser-v1.1`. Its ROM/runtime match the completed browser campaign. Browser files remain separate from the native ZIP; no ephemeral preview URL is embedded. The original plugin preview and its saved progress remain separate. [The site integration check](../docs/SITE-PLAY-VERIFICATION.json) covers the button, controls and ordinary reload → Continue on the local site origin.
 - References: [GB Studio web build](https://www.gbstudio.dev/docs/build/) and [SameBoy capabilities](https://sameboy.github.io/features/).
 
 ## Before public release

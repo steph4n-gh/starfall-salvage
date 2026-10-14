@@ -65,6 +65,59 @@ class ReleaseSyncTests(unittest.TestCase):
         self.mutate("release/player-v1.1/Starfall-Salvage-1.1.gbc")
         self.assert_rejected_without_writes("Unreviewed player input", sync=True)
 
+    def test_mutated_browser_rom_cannot_be_promoted(self):
+        self.mutate("release/browser-v1.1/rom/starfall-salvage.gbc")
+        self.assert_rejected_without_writes("Unreviewed browser input", sync=True)
+
+    def test_browser_rom_input_hash_cannot_replace_gameplay_qualification(self):
+        name = "rom/starfall-salvage.gbc"
+        path = "release/browser-v1.1/" + name
+        self.mutate(path)
+        self.mutate_manifest(lambda m: m["browser"]["files"].update({
+            name: hashlib.sha256((self.root / path).read_bytes()).hexdigest()
+        }))
+        self.assert_rejected_without_writes("Browser ROM identity differs", sync=True)
+
+    def test_browser_runtime_input_hash_cannot_replace_gameplay_qualification(self):
+        name = "js/binjgb.wasm"
+        path = "release/browser-v1.1/" + name
+        self.mutate(path)
+        self.mutate_manifest(lambda m: m["browser"]["files"].update({
+            name: hashlib.sha256((self.root / path).read_bytes()).hexdigest()
+        }))
+        self.assert_rejected_without_writes("Browser runtime identity differs", sync=True)
+
+    def test_browser_script_input_hash_cannot_replace_gameplay_qualification(self):
+        name = "js/script.js"
+        path = "release/browser-v1.1/" + name
+        self.mutate(path)
+        self.mutate_manifest(lambda m: m["browser"]["files"].update({
+            name: hashlib.sha256((self.root / path).read_bytes()).hexdigest()
+        }))
+        self.assert_rejected_without_writes("Browser script identity differs", sync=True)
+
+    def test_extra_browser_save_is_rejected_without_copying(self):
+        (self.root / "release/browser-v1.1/progress.sav").write_bytes(b"private save")
+        self.assert_rejected_without_writes("Unexpected browser file outside the allowlist", sync=True)
+
+    def test_browser_source_symlink_is_rejected(self):
+        target = self.root / "release/browser-v1.1/js/script.js"
+        data = target.read_bytes()
+        target.unlink()
+        replacement = self.root / "same-script.js"
+        replacement.write_bytes(data)
+        target.symlink_to(replacement)
+        self.assert_rejected_without_writes("Symlinks are not accepted", sync=True)
+
+    def test_stale_browser_copy_is_repaired_from_reviewed_export(self):
+        name = "launch-page/dist/play/js/script.js"
+        self.mutate(name)
+        self.assert_rejected_without_writes("Derived release files are stale")
+        result = run(self.root, sync=True)
+        self.assertEqual(result["changedFiles"], [name])
+        self.assertEqual((self.root / name).read_bytes(), (self.root / "release/browser-v1.1/js/script.js").read_bytes())
+        self.assertEqual(run(self.root)["status"], "verified")
+
     def test_game_source_change_invalidates_snapshot(self):
         self.mutate("plugins/starfall/engine/src/starfall_encounter.c")
         self.assert_rejected_without_writes("Game source snapshot changed", sync=True)

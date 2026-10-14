@@ -5,7 +5,7 @@ This is a private preparation repository. No site, public repository, public rel
 ## Ready for review
 
 - The exact native 1.1 ROM, a clean eight-file player ZIP, quick start, release notes and reviewed 14-page manual.
-- A Sites website draft with seven displayed genuine native 1.1 captures, download links, installation routes, controls and compatibility scope. The site is registered for saved versions and remains undeployed.
+- A Sites website draft with seven displayed genuine native 1.1 captures, a private Play in Browser route, download links, installation routes, controls and compatibility scope. The site is registered for saved versions and remains undeployed.
 - A shared release manifest, synchronization/check commands, durable update instructions and check-only CI to detect mismatched release artifacts.
 - Editable game source, native art/data generators, and a portable manual generator.
 - Matching player archive rebuild and screenshot provenance without private test-session records.
