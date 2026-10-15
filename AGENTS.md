@@ -29,3 +29,7 @@ The user authorized public release of the existing Sites website and GitHub repo
 Sites identity is in `launch-page/.openai/hosting.json`; reuse it. Stage only the validated site for the Sites source helper. Never send game saves, internal recordings, hardware firmware, license keys or machine-specific diagnostic receipts to either repository.
 
 Use the repository-local `steph4n-gh` Git identity, not a global fallback. Verify `git var GIT_AUTHOR_IDENT` before committing. Do not change global Git settings.
+
+## Cursor Cloud specific instructions
+
+The environment start script already serves `launch-page/dist` at `http://127.0.0.1:8080/`. Use that server for the site and browser edition; do not start a second one on port 8080. Release checks are `python3 scripts/sync-release.py check` and `python3 scripts/test-release-sync.py`. Host mechanics checks are `python3 scripts/test-ui-flow.py` and need `cc`. Manual generation uses the installed Pillow and ReportLab packages with `STARFALL_MANUAL_FONT_DIR=/usr/share/fonts/truetype/dejavu`. GB Studio CLI is not installed here; ROM and web export commands remain in `docs/BUILDING.md`.
