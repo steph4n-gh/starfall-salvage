@@ -1,0 +1,101 @@
+{
+  "url": "https://github.com/steph4n-gh/starfall-salvage/releases/tag/v1.2",
+  "tag": "v1.2",
+  "targetCommit": "ec08bffa03e758e01eeec9633a575fa618117346",
+  "publishedAt": "2026-10-15T01:21:45Z",
+  "isDraft": false,
+  "method": "Anonymous HTTPS API and asset downloads; no credentials or cookies",
+  "assets": [
+    {
+      "name": "CREDITS.txt",
+      "url": "https://github.com/steph4n-gh/starfall-salvage/releases/download/v1.2/CREDITS.txt",
+      "status": 200,
+      "bytes": 23736,
+      "sha256": "ebd3f3f253cb06f0f56dca591a0536227d3a654c98352d889dc98d93b3cd85d2",
+      "byteIdentical": true
+    },
+    {
+      "name": "INSTRUCTIONS.pdf",
+      "url": "https://github.com/steph4n-gh/starfall-salvage/releases/download/v1.2/INSTRUCTIONS.pdf",
+      "status": 200,
+      "bytes": 5168660,
+      "sha256": "0fb3b7ad21c4f7f675ca4268b54e568d88d877e5482cda7e2dffc1353a12a195",
+      "byteIdentical": true
+    },
+    {
+      "name": "RELEASE-NOTES.txt",
+      "url": "https://github.com/steph4n-gh/starfall-salvage/releases/download/v1.2/RELEASE-NOTES.txt",
+      "status": 200,
+      "bytes": 6230,
+      "sha256": "8589d9e6757669c9ceffaf768d7ccccc93b6cdbe17048b6b200ed8e39ae7a023",
+      "byteIdentical": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/steph4n-gh/starfall-salvage/releases/download/v1.2/SHA256SUMS.txt",
+      "status": 200,
+      "bytes": 434,
+      "sha256": "70184b3006c2ccf529f3bf4b0834fcc61acf43818c9a514d84ddd22c97ab9c96",
+      "byteIdentical": true
+    },
+    {
+      "name": "starfall-salvage-1.2-player.zip",
+      "url": "https://github.com/steph4n-gh/starfall-salvage/releases/download/v1.2/starfall-salvage-1.2-player.zip",
+      "status": 200,
+      "bytes": 4346997,
+      "sha256": "195a494bce1a34f3e7d65909397abb23f91f3e8699505b31685d76a18cc06fdb",
+      "byteIdentical": true
+    },
+    {
+      "name": "Starfall-Salvage-1.2.gbc",
+      "url": "https://github.com/steph4n-gh/starfall-salvage/releases/download/v1.2/Starfall-Salvage-1.2.gbc",
+      "status": 200,
+      "bytes": 1048576,
+      "sha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
+      "byteIdentical": true
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/steph4n-gh/starfall-salvage",
+    "visibility": "public",
+    "anonymousApiVerified": true,
+    "homepage": "https://starfall.steph4n.dev",
+    "topics": [
+      "arcade-game",
+      "chiptune",
+      "game-boy-color",
+      "gameboy",
+      "gb-studio",
+      "gbdk",
+      "homebrew",
+      "pixel-art"
+    ],
+    "readmeScreenshots": 6,
+    "allScreenshotsLoadedAtNative160x144": true,
+    "socialPreview": {
+      "file": "artwork/social-preview-v1.2.jpg",
+      "sha256": "3eae1161f88ed57c292958ef133813278e9a4532f981b13e77db63b2827151e8",
+      "width": 1280,
+      "height": 640,
+      "uploadedAndVisuallyVerified": true
+    },
+    "history": "Retained; no squash or force push."
+  },
+  "preflight": {
+    "date": "2026-10-14",
+    "historyHead": "b2d22457d3851ffaf3a22f6cfc39ea008cfa1520",
+    "historyCommits": 12,
+    "trackedPaths": 1114,
+    "scanner": "Gitleaks 8.30.1 default rules; redact100; no suppression",
+    "historyBytes": 8636681,
+    "currentTextFiles": 914,
+    "archiveTextMembers": 18,
+    "currentScannerBytes": 2163873,
+    "finalDiffScannerBytes": 199719,
+    "findings": 0,
+    "gitIdentities": "All 12 commit identities use steph4n-gh GitHub noreply",
+    "retainedNoticeFile": "docs/THIRD-PARTY-NOTICES.md",
+    "scopeLimit": "PNG/JPG/GIF/PDF/WASM/ROM binary contents were not semantically secret-scanned; generated manual text/source and ZIP text were scanned.",
+    "historyDecision": "Kept; scripts/test-ui-flow.py requires baseline 1726211 and release receipts reference earlier commits."
+  }
+}

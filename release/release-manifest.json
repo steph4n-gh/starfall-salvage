@@ -74,22 +74,22 @@
       "campaign/full-length-packaging-stage/README.md": "2ae6884a4b32347c6293d8c25e60570c6cc608d937b888df4c325fe3fe2975e5",
       "docs/BROWSER-VERIFICATION-v1.1.json": "63f86a0308a7adf2dd53a47eca1879308efed07eef6aa25db109dc11034c55de",
       "docs/BROWSER-VERIFICATION.json": "e1e7a3ec35d7b778ac42cfce932e1123156e5f5de8383e4e77ed47d0e6bd3797",
-      "docs/BUILDING.md": "7830ead8d45d4deee5b05190d8b996d954eb4b7cbb83329388e0ac5099934705",
+      "docs/BUILDING.md": "42590a04eb2b460c75827b6fc36beb9dbaaf33efbc6f0ef3d690c102929a8bd1",
       "docs/CLEAN-BUILD.json": "a1dca04cd92d2f7b368ef376b74e5a91f4657e1ce5e666c6b3dbf216ed5ca045",
       "docs/CUSTOM-DOMAIN-v1.1.json": "6418b6b55d8453130a8644ee9bd70d163e041fb9065872220d19430a99016202",
-      "docs/CUSTOM-DOMAIN.json": "60cf938298113c61d3706072c4d1b8fa346987eab278e837291d25f8a9380f49",
+      "docs/CUSTOM-DOMAIN.json": "24dcf54124008e783fc15fc0aeaa5683414801823ce885c57c2e0350367eff17",
       "docs/HOSTED-VERIFICATION-v1.1.json": "0b9cd1af29e78b94d4182cf6c67b149c6b4e45da5218e8f5022d163a21507f80",
-      "docs/HOSTED-VERIFICATION.json": "c8007fad898ca86ea88822b33a986995b7ebb188601be710a1b427b50de82aef",
+      "docs/HOSTED-VERIFICATION.json": "2717c6a1322eaae4b6533cb55478912aab5c29fdd256bdd76a87341f4e90ef33",
       "docs/MANUAL-REVIEW-v1.1.json": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
       "docs/MANUAL-REVIEW.json": "5c8948b623635d63371a42a8f94cac2164385cba2de2e2653c70d6ba123baac3",
       "docs/NATIVE-VERIFICATION.json": "1d65f53c40b059bc4026940b138a3b8989162b1a3abf68bad4877b8f535feba4",
-      "docs/PUBLIC-RELEASE-PLAN.md": "1c415ae4829763e1ea744bd828422ed2f1ddf8e9253a7026413d1ce05d9cf5ff",
-      "docs/RELEASE-WORKFLOW.md": "949dc965d5f483349b9f903f65080ed7bd5808408bf3cab3da2914561e4e95a1",
+      "docs/PUBLIC-RELEASE-PLAN.md": "d70e18e016482234df016fc3bf8569ad7a8cccd6205ab53fd787d2b23b783f4e",
+      "docs/RELEASE-WORKFLOW.md": "39b756a52f58ee77d41ad5ac8f5bef6777f85087aa23fadad56606efffcdd7d5",
       "docs/SITE-PLAY-VERIFICATION-v1.1.json": "c76edb27a71515a0672c7cfd1e2c0aebbc1293078d84736b54bf90a428897a0c",
       "docs/SITE-PLAY-VERIFICATION.json": "ba302fb0395dde0d234f51290410e78431eb885efb94d404421003fd023f6bb5",
       "docs/SITES-DRAFT-v1.1.json": "bcb2c57462a21d2fbe8c761ccc4db0145a3030c0bac1cbd597a4765fb7bd884a",
-      "docs/SITES-DRAFT.json": "e517f5a8c740b0021d03a8b29b38dc3135c135a9e7025f2692c3809734ddd045",
-      "docs/VERIFICATION.md": "5e71620e352279b4e996cbe15f7b54ce80549a7a7d2f7455f00fcd35291524cf",
+      "docs/SITES-DRAFT.json": "08a7c88ace5445664521ffdc042838e500566870fabeee9e02d1ada74832108e",
+      "docs/VERIFICATION.md": "820c6e14c3c92501d74aa1a8503d6d3f2089313e5c20c22b6fefa17db7c45169",
       "docs/browser-evidence-v1.2/SCREENSHOTS.json": "10e8488d197b39082b2d974a1f6dde316db3327388bc96f932fef52eb0536814",
       "docs/browser-evidence-v1.2/arcade-bank-committed.jpg": "ee70e481fbfee800d4e148a23ba255350c54a98c731976a2047adf1d60ae02de",
       "docs/browser-evidence-v1.2/arcade-bank-reload-story-continue.jpg": "b65900374a7d005378bed2eb80000d17adc39e1d4ea9999e854a449a580e2d0c",
@@ -143,7 +143,7 @@
       "docs/site-evidence-v1.2/local-play-title.jpg": "fcdb25f92b15e97c9080a7cfc9acc28b66db10b807d67a3c9042bfb8959e2949",
       "docs/site-evidence-v1.2/v1.1-continue-before-update.jpg": "fc22059216cfc6c4c6903c768f35a55acbff58e51cd8fa6ed67000aacfcdb9a7",
       "docs/site-evidence-v1.2/v1.1-title-before-update.jpg": "0246bf4f2aa7b6b8a54bfe663f3d0895c4887c21fd021f212ceaf5e8ee1e2273",
-      "launch-page/README.md": "5f12087fa861bed5b2d6fcc89822b526307958edd15760786ecd0f54d5e50182",
+      "launch-page/README.md": "063f2254cd53b150ae3409a0fef2d732e1f1aa61962bf9bb8f0258581b053090",
       "launch-page/index.template.html": "5382cfd18788146ae196ddfeffe02871dcf53e9f9f222fd8eaeffe65e669d854",
       "docs/SITE-PLAY-VERIFICATION-v1.2-private.json": "d590523059da13fce75077b1573bc7690c9efb8c8ef2a6ba0bd923291459b872",
       "docs/CUSTOM-DOMAIN-v1.2-private.json": "60cf938298113c61d3706072c4d1b8fa346987eab278e837291d25f8a9380f49",
@@ -154,9 +154,15 @@
       "artwork/social-preview-v1.2.jpg": "3eae1161f88ed57c292958ef133813278e9a4532f981b13e77db63b2827151e8",
       "docs/LICENSING.md": "7a99a949b2ceb74c8d5ad20b1f4af098b73db02ad6b98827b33066ffc2593227",
       "docs/public-evidence-v1.2/local-mobile.jpg": "3215439b4d9652756cba66a0083512d7ecc61b76fd05cfee5b8e16e64d41d716",
-      "docs/public-evidence-v1.2/local-hero.jpg": "c40f930512bd31262ad06356f764f42f3f533f95616e9523ec6f172bae2ec1e1"
+      "docs/public-evidence-v1.2/local-hero.jpg": "c40f930512bd31262ad06356f764f42f3f533f95616e9523ec6f172bae2ec1e1",
+      "docs/GITHUB-RELEASE-v1.2.json": "6f3df7ab02d9d625fd72c3259984afa0ecee707dc3d9ff6da02c26e14cfdd41f",
+      "docs/public-evidence-v1.2/incognito-play.jpg": "007533ab933118e8424134ed0c36714384a372e9ba1e4facab2489949ae03978",
+      "docs/public-evidence-v1.2/incognito-hero.jpg": "fb38b5f9d7837333b932f774beaec0e057ec9b1c82e0ebd91e5ebb614e98a21f",
+      "docs/public-evidence-v1.2/hosted-hero.jpg": "2cb6cf028f347d210956278ed995048de061ad1f382992b3eefe6cab49d83395",
+      "docs/public-evidence-v1.2/github-social-preview.jpg": "f46e020ff7b7f227ad6111d85b63dea0344bf5e29e38324c34d572e38297670b",
+      "docs/public-evidence-v1.2/github-readme.jpg": "8f155c16a4ff53f27e3c74e3b35237a4004f080363c9965a03609c15f0e7e334"
     },
-    "releaseFactsSha256": "29a89f28efd1d702390e03d9b3768c5576439c63d3f3f652d66bb4dba23020e3"
+    "releaseFactsSha256": "5607e1a4a76b37ce2d4c7a6b91eba28da1a95aa886d44d038f6f7acafa64a21d"
   },
   "screenshots": {
     "manifest": "campaign/full-length-packaging-stage/assets/screenshots/SCREENSHOTS.json"
@@ -237,8 +243,8 @@
     "hosted": {
       "status": "passed",
       "receipt": "docs/HOSTED-VERIFICATION.json",
-      "siteVersion": 5,
-      "scope": "Owner-private custom-domain delivery, actual 1.1-to-1.2 checkpoint upgrade, ordinary keyboard controls and reload/Continue; live player ZIP and manual byte-identical to canonical files."
+      "siteVersion": 6,
+      "scope": "Public delivery verification: signed-out landing, Play button and 1.2 title, plus exact ZIP/PDF downloads. Game ROM/runtime unchanged. Does not expand the recorded eight-room/one-sector browser gameplay scope or establish new persistence/audio/hardware coverage."
     },
     "hardware": {
       "status": "owner-confirmed-play",

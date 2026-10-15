@@ -1,23 +1,21 @@
 {
-  "recordedAt": "2026-10-15T00:56:01.716285+00:00",
+  "recordedAt": "2026-10-15T01:24:01.723561+00:00",
   "gameVersion": "1.2",
   "hostname": "starfall.steph4n.dev",
   "liveUrl": "https://starfall.steph4n.dev",
   "projectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
-  "siteVersionNumber": 5,
-  "siteSourceCommit": "68b8ca284d581d777c64a662046556dbb9078470",
-  "changeScope": "Published reviewed 1.2 payload to the existing owner-private site. No DNS or audience changes.",
-  "currentEvidence": "Sites get_site reports the custom URL as current_live_url. Authenticated HTTPS landing/game and actual ZIP/PDF downloads passed in desktop Chrome.",
+  "siteVersionNumber": 6,
+  "siteSourceCommit": "f235787516060bb68e773363564a93b85112d7f5",
+  "changeScope": "Public launch on existing domain; site audience changed to public. DNS unchanged.",
+  "currentEvidence": "Fresh Incognito landing/game and ZIP/PDF downloads passed without sign-in.",
   "access": {
-    "mode": "custom",
-    "allowedOwnerCount": 1,
-    "allowedGroupCount": 0,
-    "externalVisitorCount": 0,
-    "policyRevision": 1,
-    "basis": "Successful owner-private deployment followed by get_site: active, version 5, one owner, no groups or external visitors. No access change."
+    "mode": "public",
+    "policyRevision": 2,
+    "basis": "Native Sites update_site_access returned public revision 2; fresh get_site confirmed active version 6. Fresh Chrome Incognito opened landing and game without sign-in."
   },
   "ownerBrowserReceipt": "docs/HOSTED-VERIFICATION.json",
   "domainSetupHistoricalReceipt": "docs/CUSTOM-DOMAIN-v1.1.json",
-  "saveScope": "Ordinary page reload at this same browser and origin. No save injection or snapshot restore. Browser storage does not synchronize across origins or devices. Native same-session Continue is recorded separately.",
-  "limitations": "Hosted delivery, launch, bounded controls and same-origin checkpoint upgrade/reload. Full 72-room Story and 12-sector Arcade qualification is native; browser gameplay qualification remains the separately recorded eight Story rooms and one Arcade sector. No new full browser campaign, native cold-boot, browser-process shutdown, other-device/browser, heard-audio or physical-device coverage."
+  "saveScope": "Earlier owner-only version 5 check: ordinary page reload in the same browser and origin, without save injection or snapshot restore. Public version 6 delivery did not repeat persistence testing. Browser storage does not synchronize across origins or devices. Native same-session Continue is recorded separately.",
+  "limitations": "Public delivery verification: signed-out landing, Play button and 1.2 title, plus exact ZIP/PDF downloads. Game ROM/runtime unchanged. Does not expand the recorded eight-room/one-sector browser gameplay scope or establish new persistence/audio/hardware coverage.",
+  "previousDeliveryReceipt": "docs/CUSTOM-DOMAIN-v1.2-private.json"
 }

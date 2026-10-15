@@ -1,6 +1,6 @@
 # Version 1.2 verification status
 
-Version 1.2 is the current release, with public site and GitHub publication authorized by the owner on October 14. The frozen native ROM completed all 18 Story missions/72 rooms and one full 12-sector Arcade cycle. Eleven native captures and all fourteen rendered manual pages have been reviewed. The release manifest binds the exact source, player package, browser export and review records. Results below belong to the identified artifacts.
+Version 1.2 is published on the [public website](https://starfall.steph4n.dev) and [GitHub release](https://github.com/steph4n-gh/starfall-salvage/releases/tag/v1.2), with verified public repository visibility and anonymous website delivery. The frozen native ROM completed all 18 Story missions/72 rooms and one full 12-sector Arcade cycle. Eleven native captures and all fourteen rendered manual pages have been reviewed. The release manifest binds the exact source, player package, browser export and review records. Results below belong to the identified artifacts.
 
 | Version 1.2 artifact | SHA-256 |
 | --- | --- |
@@ -30,7 +30,7 @@ The frozen native/browser receipts describe their emulator runs before the later
 
 The [manual review](MANUAL-REVIEW.json) records all fourteen rendered pages and nine embedded native images whose pixels match the canonical captures. The [release manifest](../release/release-manifest.json) identifies the reviewed eight-file native player package and nine-file official browser export. Synchronization checks compare exact source, document, screenshot, archive and website identities; they do not add gameplay qualification.
 
-The pre-public Sites version 5 check at the existing custom origin recorded preserved 1.1 M01 Bay 1 progress with H3, movement/brake/pulse/pause, and ordinary reload/Continue. The live ZIP and PDF matched the canonical files byte for byte; all eight ZIP entries passed the archive CRC check. At that time, access was verified as one owner, no groups and no external visitors. Public publication is now authorized; verify public visibility and anonymous delivery separately from those earlier checks, and retain the current outcome in the [hosted receipt](HOSTED-VERIFICATION.json). Delivery checks add no full-browser campaign or Arcade-cycle qualification.
+Sites version 6 is publicly deployed. A fresh Chrome Incognito session opened the landing page and Play 1.2 without authentication. Anonymous player ZIP and manual PDF downloads matched the canonical files byte for byte, and all eight ZIP entries passed the archive CRC check. The [hosted receipt](HOSTED-VERIFICATION.json) records those checks; the [delivery receipt](SITES-DRAFT.json) identifies the site version, successful deployment and published artifacts. The GitHub repository's public status was verified through the anonymous API, and its v1.2 release is published. The [earlier owner-only Sites version 5 check](HOSTED-VERIFICATION-v1.2-private.json) separately recorded preserved 1.1 M01 Bay 1 progress with H3, movement/brake/pulse/pause and ordinary reload/Continue. Delivery checks add no full-browser campaign or Arcade-cycle qualification.
 
 The [historical hosted receipt](HOSTED-VERIFICATION-v1.1.json) remains tied to 1.1. Detailed local recordings stay private; portable summaries retain artifact identities and evidence limits without copying saves or machine-specific diagnostics.
 
@@ -58,7 +58,6 @@ The native 1.1 campaign used ordinary controls without injecting progress, posit
 - Actual title and six-zone audio listening on speakers and headphones, including music/effect balance and transitions.
 - Independent checks and additional handheld/cartridge configurations beyond the owner-confirmed Chromatic/SD-cartridge play; exact cartridge-model identification and save → full power-off → Continue on the reported setup.
 - Native emulator cold-start saves; full browser-process termination, storage eviction, cross-origin behavior and other browser/runtime combinations. Browser saves are local to the browser and site address and do not sync across devices.
-- Public visibility, anonymous downloads and browser delivery after the authorized publication change; retain exact results separately from the earlier owner-only hosted checks.
 - Fresh-clone 1.2 and cross-machine build comparisons. The existing [clean-build receipt](CLEAN-BUILD.json) belongs to 1.1 on the recorded macOS arm64 toolchain.
 
 Every route combination, later indefinite Arcade loops and all optional interaction boundaries have not been exhausted. These software checks do not load hardware firmware or write an SD card.
