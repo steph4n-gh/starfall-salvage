@@ -24,7 +24,7 @@ The sync command copies and validates artifacts. It does not perform a playthrou
 
 ## Publication and repositories
 
-The user authorized private, owner-only Sites deployment for stable browser play across devices. Keep GitHub private and preserve owner-only site access. Public release and GitHub Pages remain unauthorized. Do not add automatic deployment or upload credentials to GitHub Actions.
+The user authorized public release of the existing Sites website and GitHub repository on 2026-10-14, superseding the earlier owner-only publication limit. Use the existing site and repository identities, and verify their actual public visibility after publishing. Public source visibility does not assign a new license to original contributions; preserve the licensing scope in `docs/LICENSING.md` and the retained third-party notices. Do not add automatic deployment or upload credentials to GitHub Actions.
 
 Sites identity is in `launch-page/.openai/hosting.json`; reuse it. Stage only the validated site for the Sites source helper. Never send game saves, internal recordings, hardware firmware, license keys or machine-specific diagnostic receipts to either repository.
 

@@ -25,15 +25,17 @@ WAYS TO PLAY
    does not by itself establish compatibility.
 
 4. Separate browser edition
-   The private website supplies browser play separately. Choose Play in
-   Browser there and click the game area for keyboard focus. Browser files
-   are not included in this native ZIP. Default controls are listed below.
+   Open https://starfall.steph4n.dev and choose Play in Browser, then click
+   the game area for keyboard focus. Browser files are not included in
+   this native ZIP. Default controls are listed below.
 
 Cartridge routes require Game Boy Color-compatible hardware. This game
 does not support original Game Boy or Game Boy Pocket. Chromatic does not
 need custom firmware to run it through a compatible cartridge. SD copying
 uses a card reader; the Chromatic USB port is not an SD-card passthrough.
-Hardware installation routes have not yet been qualified for this release.
+The owner confirmed version 1.2 play on a Chromatic with an SD flash
+cartridge; its model was not specified. Independent hardware validation,
+other cartridge setups and power-off save persistence remain separate.
 
 CONTROLS
 Handheld       Action                              Browser edition default

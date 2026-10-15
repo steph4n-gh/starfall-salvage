@@ -1,5 +1,5 @@
 STARFALL SALVAGE 1.2
-Native player download | Private review draft | Prepared 2026-10-14
+Native player download | Public release | Published 2026-10-14
 
 Thrust, drift and brake through a damaged orbital station. Restore its
 systems, protect the crew and bring the salvage home. Story offers 18
@@ -17,14 +17,15 @@ Starfall-Salvage-1.2.gbc   The one native game ROM in this download
 INSTRUCTIONS.pdf          Illustrated flight manual
 QUICK-START.txt            Installation, controls and save guidance
 RELEASE-NOTES.txt          Version changes and exact verification scope
-CREDITS.txt                Original game credits and attribution status
+CREDITS.txt                Original game credits and notice scope
 LICENSE                   Retained GB Studio MIT notice, unchanged
 SHA256SUMS.txt             SHA-256 hashes for the other seven files
 READ-ME.txt                This introduction (also listed in SHA256SUMS.txt)
 
 The manual covers several ways to play. The browser edition and editable
 source are separate and are not included in this native player ZIP. The
-private website supplies browser play separately.
+website supplies browser play at https://starfall.steph4n.dev.
+Source project: https://github.com/steph4n-gh/starfall-salvage
 
 COMPATIBILITY AT A GLANCE
 Game Boy Color only. Original Game Boy and Game Boy Pocket are unsupported.
@@ -43,9 +44,10 @@ its nine native screenshots were reviewed. Targeted browser checks covered
 eight Story rooms and one Arcade sector; banking 300 and earned Story
 progress survived ordinary reload. This is not a full browser campaign or
 complete Arcade-cycle test.
-See RELEASE-NOTES.txt for exact scope. Native cold-start saves, heard audio
-and 1.2 hardware/power-off checks remain unverified. A listed installation
-route does not establish every hardware combination.
+The owner confirmed 1.2 play on a Chromatic using an SD flash cartridge.
+See RELEASE-NOTES.txt for exact scope. Independent hardware validation,
+other setups, native cold-start saves, power-off saves and heard audio
+remain separate checks.
 
 UPGRADING AN EXISTING SAVE
 Back up your old ROM and battery save first. Use the emulator or
@@ -55,8 +57,8 @@ ROM basename, so changing the ROM filename does not automatically migrate
 progress. Keep the original backup until Continue restores the expected
 checkpoint and the new version saves and reopens successfully.
 
-DRAFT STATUS
-Prepared for private review; not publicly published. Original game
-distribution terms and retained asset provenance still need author review
-before publication. See CREDITS.txt. The existing third-party notice is
-preserved; this package does not make a new licensing choice for the author.
+PUBLIC RELEASE AND NOTICES
+Published by Stephan Arrington for public download and play.
+Original-contribution reuse terms have not been separately specified.
+Third-party components retain their own licenses; see included notices
+and CREDITS.txt.

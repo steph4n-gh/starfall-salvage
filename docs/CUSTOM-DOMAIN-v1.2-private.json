@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-10-15T00:56:01.716285+00:00",
+  "gameVersion": "1.2",
+  "hostname": "starfall.steph4n.dev",
+  "liveUrl": "https://starfall.steph4n.dev",
+  "projectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
+  "siteVersionNumber": 5,
+  "siteSourceCommit": "68b8ca284d581d777c64a662046556dbb9078470",
+  "changeScope": "Published reviewed 1.2 payload to the existing owner-private site. No DNS or audience changes.",
+  "currentEvidence": "Sites get_site reports the custom URL as current_live_url. Authenticated HTTPS landing/game and actual ZIP/PDF downloads passed in desktop Chrome.",
+  "access": {
+    "mode": "custom",
+    "allowedOwnerCount": 1,
+    "allowedGroupCount": 0,
+    "externalVisitorCount": 0,
+    "policyRevision": 1,
+    "basis": "Successful owner-private deployment followed by get_site: active, version 5, one owner, no groups or external visitors. No access change."
+  },
+  "ownerBrowserReceipt": "docs/HOSTED-VERIFICATION.json",
+  "domainSetupHistoricalReceipt": "docs/CUSTOM-DOMAIN-v1.1.json",
+  "saveScope": "Ordinary page reload at this same browser and origin. No save injection or snapshot restore. Browser storage does not synchronize across origins or devices. Native same-session Continue is recorded separately.",
+  "limitations": "Hosted delivery, launch, bounded controls and same-origin checkpoint upgrade/reload. Full 72-room Story and 12-sector Arcade qualification is native; browser gameplay qualification remains the separately recorded eight Story rooms and one Arcade sector. No new full browser campaign, native cold-boot, browser-process shutdown, other-device/browser, heard-audio or physical-device coverage."
+}

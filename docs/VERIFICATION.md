@@ -1,6 +1,6 @@
 # Version 1.2 verification status
 
-Version 1.2 is the current private review release. The frozen native ROM completed all 18 Story missions/72 rooms and one full 12-sector Arcade cycle. Eleven native captures and all fourteen rendered manual pages have been reviewed. The release manifest binds the exact source, player package, browser export and review records. Results below belong to the identified artifacts.
+Version 1.2 is the current release, with public site and GitHub publication authorized by the owner on October 14. The frozen native ROM completed all 18 Story missions/72 rooms and one full 12-sector Arcade cycle. Eleven native captures and all fourteen rendered manual pages have been reviewed. The release manifest binds the exact source, player package, browser export and review records. Results below belong to the identified artifacts.
 
 | Version 1.2 artifact | SHA-256 |
 | --- | --- |
@@ -11,6 +11,7 @@ The inspected native image is 1 MiB, GBC-only, and uses header cartridge type `0
 
 ## Completed 1.2 checks
 
+- **Owner-confirmed hardware play:** on October 14, the owner confirmed that 1.2 worked on a physical Chromatic using an SD flash cartridge. The [hardware report](HARDWARE-REPORT-v1.2.json) preserves the exact statement. This confirms the reported play setup; the exact cartridge model and physical ROM hash were not independently identified. The current release hash above is associated as the referenced release, not a verified cartridge readback.
 - **Native Story:** all 18 missions and 72 distinct rooms, 18 guardians and seven crew rescues in PyBoy 2.7.0. The ending at frame 126152 showed **31:26, Rank B**. One M17 escort attempt failed when the pilot's hull depleted; ordinary in-game retry then rescued the crew with two crew HP. The [native receipt](NATIVE-VERIFICATION.json) retains all 72 room-clear records and the source receipt's identity. This was a guided ordinary-input run with frame inspection and read-only diagnostics, without emulator save-state loading or direct progress writes. The displayed timer counts successful-room gameplay and excludes menus, pauses and failed attempts; it is not first-time human duration or a difficulty measurement.
 - **Native pause and Continue:** same-session Title → Continue checks covered the launch, route-choice, result, mission-complete, flight-deck and ending stages. Continue at frame 126324 restored the same ending. At the flight deck, Continue returned to the last completed mission rather than retaining an unlaunched mission selection. Pause froze the sampled gameplay state for 120 emulator frames.
 - **Native Arcade:** all 12 distinct sectors cleared with zero failed Arcade attempts, followed by an ordinary Bank Haul action that saved **22,500**, also shown as the best banked score. Title → Continue after banking restored STARFALL SAVED, **31:26, Rank B**, at frame 136625. The [native receipt](NATIVE-VERIFICATION.json) preserves all 12 clear records, the bank result and this same-session Story recovery. A wrong-order relay check also left progress at zero as expected. Later loops and every rig combination are outside this run's scope; Story's separate M17 failure remains part of the record.
@@ -23,11 +24,13 @@ The inspected native image is 1 MiB, GBC-only, and uses header cartridge type `0
 
 The [browser receipt](BROWSER-VERIFICATION.json) records the bounded browser outcomes and identifies its [24 selected captures](browser-evidence-v1.2/SCREENSHOTS.json). Native save checks use same-session Title → Continue reading the committed checkpoint. The current native harness does not support a qualified cold-boot SRAM test. Continue is not a promise to restore a mid-room position.
 
-## Release artifacts and private delivery
+The frozen native/browser receipts describe their emulator runs before the later owner hardware report. Their hardware limits remain accurate for those runs; the separate report adds owner-confirmed 1.2 Chromatic/SD-cartridge play without adding power-off-save, audio-listening or independent hardware-test results.
+
+## Release artifacts and delivery
 
 The [manual review](MANUAL-REVIEW.json) records all fourteen rendered pages and nine embedded native images whose pixels match the canonical captures. The [release manifest](../release/release-manifest.json) identifies the reviewed eight-file native player package and nine-file official browser export. Synchronization checks compare exact source, document, screenshot, archive and website identities; they do not add gameplay qualification.
 
-Sites version 5 delivers 1.2 at the existing private custom origin. The [hosted receipt](HOSTED-VERIFICATION.json) records preserved 1.1 M01 Bay 1 progress with H3, movement/brake/pulse/pause, and ordinary reload/Continue checks. The live ZIP and PDF were downloaded through the browser and match the canonical files byte for byte; all eight ZIP entries passed the archive CRC check. Access was reverified as one owner, no groups and no external visitors. These delivery checks add no full-browser campaign or Arcade-cycle qualification.
+The pre-public Sites version 5 check at the existing custom origin recorded preserved 1.1 M01 Bay 1 progress with H3, movement/brake/pulse/pause, and ordinary reload/Continue. The live ZIP and PDF matched the canonical files byte for byte; all eight ZIP entries passed the archive CRC check. At that time, access was verified as one owner, no groups and no external visitors. Public publication is now authorized; verify public visibility and anonymous delivery separately from those earlier checks, and retain the current outcome in the [hosted receipt](HOSTED-VERIFICATION.json). Delivery checks add no full-browser campaign or Arcade-cycle qualification.
 
 The [historical hosted receipt](HOSTED-VERIFICATION-v1.1.json) remains tied to 1.1. Detailed local recordings stay private; portable summaries retain artifact identities and evidence limits without copying saves or machine-specific diagnostics.
 
@@ -45,7 +48,7 @@ These results remain tied to their original binaries. They are not 1.2 results.
 - **Browser:** all 18 missions, 72 rooms, 18 guardians and seven escorts; the ending showed STARFALL SAVED, 42:41 and Rank B. This run used standard pulse initially and Wide Coil later, with both middle-route orders. It did not repeat the native all-four-rig or complete Arcade qualification. The [historical browser receipt](BROWSER-VERIFICATION-v1.1.json) identifies the ROM and official Binjgb runtime, including WASM SHA-256 `69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945`.
 - **Browser persistence:** Title → Continue and the preview's Restart game → Continue restored the ending. The inspected restart wrapper flushed external RAM and suppressed automatic emulator-state recovery, so that check exercised browser-stored SRAM in a fresh emulator. Ordinary page reload separately recovered an emulator snapshot. The [historical hosted check](HOSTED-VERIFICATION-v1.1.json) records a narrower launch/control/reload test on the private site.
 - **Build and manual:** a fresh clone of commit `9c5c727ad55454be5737c3f066d873e970188970` compiled native and browser exports on macOS arm64 with GB Studio CLI 4.3.2, engine 4.3.0-e1 and GBDK 4.5.0. Only the built-in save-signature and global-checksum fields differed from the corresponding frozen images; all eight non-ROM export files matched. Two deeper-path linker failures and a successful short `/tmp` workaround are retained in the [clean-build receipt](CLEAN-BUILD.json). The earlier manual and its nine gameplay captures were reviewed for the native 1.1 image.
-- **Owner report:** the owner reported successful 1.1 Chromatic play on October 14. This informal report does not establish 1.2 hardware qualification, independently reproduced cartridge behavior, complete power-cycle persistence or audio listening.
+- **Earlier owner report:** the owner reported successful 1.1 Chromatic play on October 14. That report remains historical 1.1 evidence; the separate [1.2 report](HARDWARE-REPORT-v1.2.json) now confirms owner play on Chromatic with an SD flash cartridge. Neither report establishes independent cartridge testing, complete power-cycle persistence or audio listening.
 
 The native 1.1 campaign used ordinary controls without injecting progress, positions or saves. The browser campaign included pauses, failed attempts and retries; once, after an accidental mission relaunch, the visible Saved states menu restored an already-earned M03 completion and granted no new progress. Both clear timers count successful-room gameplay and exclude menus, pauses and failed attempts. Neither measures first-time human play duration or difficulty.
 
@@ -53,9 +56,9 @@ The native 1.1 campaign used ordinary controls without injecting progress, posit
 
 - Uncoached human feedback on onboarding, clarity, challenge, pacing and enjoyment.
 - Actual title and six-zone audio listening on speakers and headphones, including music/effect balance and transitions.
-- Physical 1.2 play on each precise handheld/cartridge configuration being recommended, followed by save → full power-off → Continue.
+- Independent checks and additional handheld/cartridge configurations beyond the owner-confirmed Chromatic/SD-cartridge play; exact cartridge-model identification and save → full power-off → Continue on the reported setup.
 - Native emulator cold-start saves; full browser-process termination, storage eviction, cross-origin behavior and other browser/runtime combinations. Browser saves are local to the browser and site address and do not sync across devices.
-- Final public-host qualification if public delivery is later authorized.
+- Public visibility, anonymous downloads and browser delivery after the authorized publication change; retain exact results separately from the earlier owner-only hosted checks.
 - Fresh-clone 1.2 and cross-machine build comparisons. The existing [clean-build receipt](CLEAN-BUILD.json) belongs to 1.1 on the recorded macOS arm64 toolchain.
 
 Every route combination, later indefinite Arcade loops and all optional interaction boundaries have not been exhausted. These software checks do not load hardware firmware or write an SD card.

@@ -66,6 +66,29 @@ class ReleaseSyncTests(unittest.TestCase):
         with mock.patch.dict(run.__globals__, {"make_zip": mock.Mock(side_effect=AssertionError("Unexpected recompression"))}):
             self.assertEqual(run(self.root)["status"], "verified")
 
+    def test_supported_publication_states_are_preserved_without_writes(self):
+        for publication in ("private-draft", "public-release"):
+            with self.subTest(publication=publication):
+                self.mutate_manifest(lambda m: m.update(publication=publication))
+                before = tree_state(self.root)
+                for sync in (False, True):
+                    result = run(self.root, sync=sync)
+                    self.assertEqual(result["publication"], publication)
+                    self.assertEqual(result["changedFiles"], [])
+                self.assertEqual(tree_state(self.root), before)
+
+    def test_unknown_publication_state_is_rejected_without_writes(self):
+        for publication in ("public", "unlisted", "", None, [], {}):
+            with self.subTest(publication=publication):
+                self.mutate_manifest(lambda m: m.update(publication=publication))
+                for sync in (False, True):
+                    self.assert_rejected_without_writes("Publication must be private-draft or public-release", sync=sync)
+
+    def test_public_release_does_not_bypass_player_review(self):
+        self.mutate_manifest(lambda m: m.update(publication="public-release"))
+        self.mutate(f"{self.player_dir}/{self.rom_filename}")
+        self.assert_rejected_without_writes("Unreviewed player input", sync=True)
+
     def test_mutated_rom_cannot_be_promoted(self):
         self.mutate(f"{self.player_dir}/{self.rom_filename}")
         self.assert_rejected_without_writes("Unreviewed player input", sync=True)
@@ -178,7 +201,10 @@ class ReleaseSyncTests(unittest.TestCase):
 
     def test_broken_template_link_stops_sync_before_copying(self):
         template = self.root / "launch-page/index.template.html"
-        template.write_text(template.read_text().replace('href="style.css"', 'href="missing.css"'))
+        original = template.read_text()
+        broken = original.replace('href="style.css', 'href="missing.css')
+        self.assertNotEqual(original, broken)
+        template.write_text(broken)
         # Pass the editorial guard in this fixture to exercise link validation.
         self.mutate_manifest(lambda m: m["editorialReview"]["files"].update({
             "launch-page/index.template.html": hashlib.sha256(template.read_bytes()).hexdigest()

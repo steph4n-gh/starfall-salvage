@@ -1,5 +1,5 @@
 STARFALL SALVAGE 1.2 - RELEASE NOTES
-Player-package draft prepared 2026-10-14
+Public player release published 2026-10-14
 
 THE GAME
 - Story: 18 missions, six zones, 72 large scrolling rooms.
@@ -83,13 +83,17 @@ Earlier evidence remains scoped to 1.1: the native functional clear showed
 35:27, Rank B; the separate browser clear showed 42:41, Rank B. These timers
 count successful-room gameplay and exclude menus, pauses and failed
 attempts. They are not first-time human completion times or 1.2 results.
-The owner also reported successful 1.1 play on a Chromatic on October 14.
-That informal report does not qualify 1.2, full cartridge power-cycle
-persistence, independently reproduced hardware behavior or audio listening.
+
+OWNER-CONFIRMED 1.2 HARDWARE
+The owner confirmed successful version 1.2 play on a Chromatic using an
+SD flash cartridge. The cartridge model was not specified. This confirms
+play on that owner setup; independent hardware validation, other setups,
+power-off save persistence and speaker/headphone listening remain separate
+checks.
 
 REMAINING CHECKS
 - Native cold-start persistence; the current harness does not qualify it.
-- 1.2 physical handheld/cartridge combinations and power-off saves.
+- Independent hardware validation, other setups and power-off saves.
 - 1.2 speaker/headphone listening and title/music/effects balance.
 - Full browser-process termination, storage eviction and other origins.
 - First-time human completion time, enjoyment and difficulty balance.
@@ -105,5 +109,9 @@ SHA256SUMS.txt lists every other payload file, excluding itself. To check:
 macOS: shasum -a 256 -c SHA256SUMS.txt
 Linux: sha256sum -c SHA256SUMS.txt
 
-This is a private review draft. Original-content distribution terms and
-retained asset attribution remain gates before any public release.
+Published by Stephan Arrington for public download and play.
+Original-contribution reuse terms have not been separately specified.
+Third-party components retain their own licenses; see included notices.
+
+Website and browser play: https://starfall.steph4n.dev
+Source project: https://github.com/steph4n-gh/starfall-salvage

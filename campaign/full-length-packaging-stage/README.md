@@ -2,6 +2,8 @@
 
 `generate_manual.py` is the content source for `INSTRUCTIONS.md`, `INSTRUCTIONS.html` and the illustrated PDF. Version 1.2 covers filled choices, direct room continuation, optional Arcade rigs, objective reminders in Pause, the animated title and native-save upgrade steps. The current PDF has fourteen pages including its cover and nine genuine native gameplay screenshots. [The manual review](../../docs/MANUAL-REVIEW.json) records visual, pixel and structural checks.
 
+The public edition links [browser play](https://starfall.steph4n.dev) and the [source project](https://github.com/steph4n-gh/starfall-salvage), and records the owner's confirmed Chromatic play. Pages 12-14 were updated and reviewed; pages 1-11 are unchanged from the earlier reviewed 1.2 manual.
+
 ## Accepted evidence
 
 Native ROM SHA-256:
@@ -14,7 +16,7 @@ The [native receipt](../../docs/NATIVE-VERIFICATION.json) records 18 missions, 7
 
 The separate [browser receipt](../../docs/BROWSER-VERIFICATION.json) covers M01/M02, eight Story rooms, plus one Arcade sector and 300 banked. Ordinary reload retained the best score and restored M03 Bay 1 at full hull. Earned route/mission checkpoints and one same-origin 1.1-to-1.2 launch checkpoint were also recovered. This is bounded browser coverage; no full browser campaign, full Arcade cycle or browser clear time is claimed.
 
-Native cold-start persistence is unsupported by the current native harness and remains unqualified. Full browser-process shutdown, physical 1.2 hardware, power-off saves and actual speaker/headphone listening are separate unverified checks. The owner's successful 1.1 Chromatic report remains informal historical feedback.
+The [owner report](../../docs/HARDWARE-REPORT-v1.2.json) confirms successful version 1.2 play on a Chromatic using an SD flash cartridge. This is owner confirmation for that setup; the report does not identify the cartridge model or establish independent hardware validation, other setups, power-off save persistence or speaker/headphone listening. Native cold-start persistence is unsupported by the current native harness and remains unqualified. Full browser-process shutdown is also a separate unverified check.
 
 ## Exact-ROM screenshots
 
@@ -34,7 +36,7 @@ All eleven canonical PNGs in `assets/screenshots/` are unchanged 160 x 144 frame
 | `mission-board.png` | Additional website Flight Deck asset |
 | `ion-hazard-active.png` | Additional website hazard frame |
 
-The original 1.1 receipt is retained as [MANUAL-REVIEW-v1.1.json](../../docs/MANUAL-REVIEW-v1.1.json). Its player PDF remains unchanged. Earlier screenshot/manuscript files and receipts are also retained in the ignored local review archive.
+The original 1.1 receipt is retained as [MANUAL-REVIEW-v1.1.json](../../docs/MANUAL-REVIEW-v1.1.json). Its player PDF remains unchanged. Earlier screenshot/manuscript files and receipts are also retained in the ignored local review archive. The pre-publication 1.2 PDF, generator, manuscripts and review receipt are retained in a separate hashed local backup; the current review records their identifiers.
 
 ## Generate and review again
 
@@ -45,6 +47,6 @@ export STARFALL_MANUAL_FONT_DIR=/path/to/dejavu-font-directory
 python3 campaign/full-length-packaging-stage/generate_manual.py
 ```
 
-Output PDF: `output/pdf/Starfall-Salvage-Full-Campaign-Manual.pdf`. The generator also writes the Markdown, HTML, `MANUAL-RECEIPTS.json` and `assets/source-provenance.json`. It hashes the immutable native/browser receipts, source code, campaign data, box art and canonical captures. Mutable delivery-status summaries are excluded so packaging/hosting updates do not invalidate the authoring evidence. A pending identity or qualification placeholder stops generation.
+Output PDF: `output/pdf/Starfall-Salvage-Full-Campaign-Manual.pdf`. The generator also writes the Markdown, HTML, `MANUAL-RECEIPTS.json` and `assets/source-provenance.json`. It hashes the immutable native/browser receipts, accepted owner hardware report, source code, campaign data, box art and canonical captures. Mutable delivery-status summaries are excluded so packaging/hosting updates do not invalidate the authoring evidence. A pending identity or qualification placeholder stops generation.
 
 Every regeneration requires fresh page rendering and visual inspection before promotion. Verify fourteen-page pagination, all text/tables/captions, nine embedded screenshot pixel matches, links, the resulting PDF hash and current source provenance. Record the review, copy the accepted PDF into the player folder, then synchronize the manifest, ZIP and site. Generation alone is not review approval.

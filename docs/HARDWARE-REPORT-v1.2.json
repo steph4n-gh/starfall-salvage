@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2",
+  "date": "2026-10-14",
+  "dateTimezone": "America/New_York",
+  "source": "owner-report",
+  "status": "owner-confirmed-play",
+  "device": "Chromatic",
+  "media": "SD flash cartridge",
+  "statementExact": "cool, and it worked on the chromatic, so **SD flash cartridge on the site is a confirmed for 1.2**",
+  "confirmedScope": "The owner confirms that version 1.2 worked on a physical Chromatic using an SD flash cartridge.",
+  "cartridgeModel": null,
+  "reportedRomSha256": null,
+  "referencedRelease": {
+    "version": "1.2",
+    "filename": "Starfall-Salvage-1.2.gbc",
+    "sha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
+    "association": "Current release referenced by the owner report; this hash was not supplied by the report or verified by physical cartridge readback.",
+    "physicalReadbackVerified": false
+  },
+  "notEstablishedByReport": [
+    "The exact SD flash cartridge model or a physical readback ROM hash.",
+    "Independent reproduction or support for additional handheld/cartridge combinations.",
+    "Play duration, exhaustive campaign coverage or measured latency/performance.",
+    "Save persistence through a full power-off and restart.",
+    "Speaker/headphone listening, music/effect balance or complete audio validation."
+  ],
+  "relationshipToEarlierReceipts": "Later owner hardware evidence. The frozen native and browser emulator receipts retain the narrower scope of their original runs."
+}

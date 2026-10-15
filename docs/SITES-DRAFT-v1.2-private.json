@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-15T00:56:01.716285+00:00",
+  "gameVersion": "1.2",
+  "gameRepositoryCommit": "04e0cf888ce429dbed037708aaa9df122f684251",
+  "siteProjectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
+  "siteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_fd02baf595a0819182f835ab37b56bbe",
+  "siteVersionNumber": 5,
+  "siteSourceCommit": "68b8ca284d581d777c64a662046556dbb9078470",
+  "archiveContentHash": "sha256:a3e41d2ab4a0126b7061a00cdd75bda1285597d67d4a2bb142e9bb90d21b6bf6",
+  "archiveBytes": 10823680,
+  "archiveFiles": 27,
+  "publication": "deployed-private",
+  "deploymentId": "appgdep_6ad0230ba38c819189fc685b4fb24320",
+  "deploymentSucceededAt": "2026-10-15T00:49:26.695660+00:00",
+  "liveUrl": "https://starfall.steph4n.dev",
+  "originalSiteUrl": "https://starfall-salvage.steph4n1.chatgpt.site",
+  "access": "owner-only",
+  "accessVerification": {
+    "mode": "custom",
+    "allowedOwnerCount": 1,
+    "allowedGroupCount": 0,
+    "externalVisitorCount": 0,
+    "policyRevision": 1,
+    "basis": "Successful owner-private deployment followed by get_site: active, version 5, one owner, no groups or external visitors. No access change."
+  },
+  "siteFilesMatchCanonicalDist": true,
+  "canonicalDistFiles": 26,
+  "githubConsistencyRun": "https://github.com/steph4n-gh/starfall-salvage/actions/runs/38662080727",
+  "githubConsistencyConclusion": "success",
+  "localBrowserReceipt": "docs/SITE-PLAY-VERIFICATION.json",
+  "hostedBrowserReceipt": "docs/HOSTED-VERIFICATION.json",
+  "customDomainReceipt": "docs/CUSTOM-DOMAIN.json",
+  "releaseArtifacts": {
+    "manualSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+    "playerZipSha256": "3d23acec15f6539f0f2aa88a8e360d1828d5bf6dc4e7946df9b7966b63d3afce",
+    "nativeRomSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78"
+  },
+  "browserArtifacts": {
+    "canonicalDirectory": "release/browser-v1.2",
+    "siteRoute": "play/index.html",
+    "files": 9,
+    "romSha256": "19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb",
+    "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+    "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
+    "basis": "Exact nine-file official export copied into synchronized site; all 26 dist files byte-compared with the pushed Sites source before deployment. Hosted UI confirms 1.2; live downloads independently byte-compared."
+  },
+  "qualificationNote": "Hosted delivery, launch, bounded controls and same-origin checkpoint upgrade/reload. Full 72-room Story and 12-sector Arcade qualification is native; browser gameplay qualification remains the separately recorded eight Story rooms and one Arcade sector. No new full browser campaign, native cold-boot, browser-process shutdown, other-device/browser, heard-audio or physical-device coverage.",
+  "previousSavedVersion": {
+    "number": 4,
+    "id": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_c599bf1df9b4819195ebd27c7ecc71b9",
+    "sourceCommit": "51709d6c74a403eff67780629a7ea7a8c69ff469",
+    "receipt": "docs/SITES-DRAFT-v1.1.json"
+  }
+}

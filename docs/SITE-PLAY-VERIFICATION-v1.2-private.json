@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2",
+  "recordedAt": "2026-10-15T00:47:15.368371+00:00",
+  "result": "passed",
+  "scope": "Local synchronized website delivery and layout check. Earlier targeted gameplay/save testing is recorded separately in BROWSER-VERIFICATION.json; this check does not add gameplay, audio or native cold-boot coverage.",
+  "origin": "http://127.0.0.1:8765",
+  "gameRoute": "/play/index.html",
+  "identity": {
+    "romSha256": "19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb",
+    "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+    "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
+    "playerArchiveSha256": "3d23acec15f6539f0f2aa88a8e360d1828d5bf6dc4e7946df9b7966b63d3afce",
+    "manualSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb"
+  },
+  "checks": {
+    "desktopLanding": "passed",
+    "narrowLayout": "passed; effective viewport width 375; no horizontal page overflow",
+    "playButtonAndTitleVersion": "passed; 1.2 title visible",
+    "consoleWarningsAndErrors": 0,
+    "canonicalSiteSynchronization": "passed; all 26 derived files agree",
+    "releaseConsistencyTests": "24 passed; test fixture updated to include newly reviewed root CREDITS.md"
+  },
+  "screenshots": [
+    {
+      "file": "docs/site-evidence-v1.2/local-desktop.jpg",
+      "sha256": "91920aff3be3bf0f1ab849c0624197204a23ef7315ddfcb2fc41c1f09690edfa",
+      "caption": "Current 1.2 desktop landing page after ordinary refresh."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/local-mobile.jpg",
+      "sha256": "4f1ed01740f22db5cb04165be79a7fcffe4b2b5ced2a21dc95180e8c799f6fc8",
+      "caption": "Narrow landing layout; effective viewport width 375 pixels with no horizontal page overflow."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/local-mobile-screens.jpg",
+      "sha256": "dcde3d69c109a796abbb9d201cd782477d213e8bb04cea0349d20955a129031b",
+      "caption": "Narrow screenshot-gallery layout showing native 1.2 captures."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/local-play-title.jpg",
+      "sha256": "fcdb25f92b15e97c9080a7cfc9acc28b66db10b807d67a3c9042bfb8959e2949",
+      "caption": "Play in Browser opens the synchronized official 1.2 export; existing local title shows Continue M01."
+    }
+  ],
+  "historicalReceipt": "docs/SITE-PLAY-VERIFICATION-v1.1.json",
+  "privateHostedCheck": {
+    "result": "passed",
+    "receipt": "docs/HOSTED-VERIFICATION.json",
+    "siteVersion": 5
+  }
+}

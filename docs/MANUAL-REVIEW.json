@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "date": "2026-10-14",
   "version": "1.2",
-  "scope": "Fourteen-page illustrated 1.2 manual for direct continuation, optional Arcade rigs, revised menus/title and native-save upgrades. Native Story/Arcade and bounded browser evidence remain separate.",
+  "scope": "Fourteen-page illustrated public 1.2 manual with confirmed owner play on a Chromatic using an SD flash cartridge, public browser/source links, direct continuation, optional Arcade rigs and native-save upgrades. Native, browser and owner hardware evidence remain distinct.",
   "pdf": {
     "promoted": "release/player-v1.2/INSTRUCTIONS.pdf",
-    "sha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
-    "bytes": 5168094,
+    "sha256": "0fb3b7ad21c4f7f675ca4268b54e568d88d877e5482cda7e2dffc1353a12a195",
+    "bytes": 5168660,
     "pages": 14
   },
-  "change": "Replaced all nine gameplay images with exact 1.2 native captures; updated controls, direct menu flow, optional rig choices, title, upgrade guidance and qualification scope. The final correction puts objective reading before launch in the first-flight steps.",
+  "change": "Updated pages 12-14 for owner-confirmed 1.2 Chromatic play using an SD flash cartridge and public website/source links. Pages 1-11 and all nine native gameplay captures are unchanged from the previously reviewed 1.2 manual.",
   "visualReview": {
     "pages": [
       1,
@@ -27,13 +27,28 @@
       13,
       14
     ],
-    "result": "Passed. All fourteen rendered pages were inspected by the authoring reviewer and independently by the root reviewer. No clipped or overlapping text, broken tables/images, unreadable glyphs or footer defects were found. The revised page 2 was re-inspected; the thirteen other rendered pages were byte-identical to the reviewed set.",
+    "result": "Passed. All fourteen pages were rendered. The authoring reviewer inspected the full owner-confirmation set, then inspected final public pages 12-14; the root reviewer independently inspected and accepted final pages 12-14. Pages 1-11 are byte-identical to the prior independently reviewed set. No clipped or overlapping text, broken tables/images, unreadable glyphs or footer defects were found.",
     "renderer": "Poppler pdftoppm, 110 dpi",
-    "renderedPdfSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
-    "finalCorrectionChangedRenderedPages": [
-      2
+    "renderedPdfSha256": "0fb3b7ad21c4f7f675ca4268b54e568d88d877e5482cda7e2dffc1353a12a195",
+    "changedRenderedPages": [
+      12,
+      13,
+      14
     ],
-    "independentReviewReceiptSha256": "22dcee201aef6ca689b69441f24d742e7178ecd69f720d53a0fb9b8c3ffe060b"
+    "unchangedPreviouslyReviewedPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "independentReviewReceiptSha256": "3d1857ff8acc504b4950770c317f6599a33a90d94424afbbf1cbd97243b420ff"
   },
   "structuralChecks": {
     "outOfBoundsTextCharacters": 0,
@@ -120,10 +135,10 @@
     "nativeRomSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78"
   },
   "sourceSha256": {
-    "campaign/full-length-packaging-stage/generate_manual.py": "0cad06359276b1c104a2cf9438b9ff3efd31d92139a02591c99c6f957f8fb376",
-    "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "97b4316b905ffd2fa988c5d2229ad9ff6f1907a1b74abd8edbaac3c156aa44ee",
-    "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "55d70bbdf49994e25af753b037c097afabf73efbfc235fbcfd2f48794d81305d",
-    "campaign/full-length-packaging-stage/assets/source-provenance.json": "6ae3b3dfd73f50eb354329874cbcd109d3665352629a9d7cbd265013a78a7bd2"
+    "campaign/full-length-packaging-stage/generate_manual.py": "dfdaf075bdb77dc018d7b7ec9332e662a8b6eb9f730d0e7d1bf9663b45ef8296",
+    "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "2d8d641604c11dcdac047517827fad96ffccd70218be6e8e8761c219251929ad",
+    "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "c720f9d59362b18aeaced63db26403c0cafdf42051c970a0ad759b96378e8488",
+    "campaign/full-length-packaging-stage/assets/source-provenance.json": "2f5d26b6f9011c745866efb60fb730e64767f058372c145ca953ab3bcb67bbe2"
   },
   "qualificationReceipts": {
     "native": {
@@ -152,15 +167,29 @@
       "fullCampaignCompleted": false,
       "fullArcadeCycleCompleted": false,
       "saveScope": "Ordinary reload retained earned Story checkpoints and banked score on the tested local origin, including one earned 1.1-to-1.2 launch checkpoint upgrade."
+    },
+    "ownerHardware": {
+      "path": "docs/HARDWARE-REPORT-v1.2.json",
+      "sha256": "cfd38cf3a68716af237eb600c5eb82fdcb9a278b867dc3167a4116aebb2211df",
+      "status": "owner-confirmed-play",
+      "version": "1.2",
+      "device": "Chromatic",
+      "media": "SD flash cartridge",
+      "cartridgeModel": null,
+      "reportedRomSha256": null,
+      "physicalReadbackVerified": false,
+      "scope": "Owner-reported successful play on this setup. Does not establish independent reproduction, other setups, exhaustive campaign coverage, power-off-save persistence or speaker/headphone listening."
     }
   },
   "externalLinkTargets": [
     "https://github.com/MouseBiteLabs/Game-Boy-MBC5-Cartridge",
+    "https://github.com/steph4n-gh/starfall-salvage",
     "https://sameboy.github.io/",
     "https://sameboy.github.io/features/",
+    "https://starfall.steph4n.dev",
     "https://www.gbstudio.dev/docs/build/"
   ],
-  "limits": "No physical 1.2 handheld/cartridge, heard speaker/headphone audio, native cold-start or power-off-save, full browser-process shutdown, full browser campaign or uncoached human duration/enjoyment claim. Hosted delivery is recorded separately.",
+  "limits": "The owner confirmed 1.2 play on a Chromatic using an unspecified SD flash cartridge. Independent hardware validation, additional setups, heard speaker/headphone audio, native cold-start and power-off-save persistence, full browser-process shutdown, full browser campaign and uncoached human duration/enjoyment remain unqualified. No physical ROM readback hash was supplied. Hosted delivery is recorded separately.",
   "historicalVersion1_1": {
     "review": "docs/MANUAL-REVIEW-v1.1.json",
     "reviewSha256": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
@@ -168,5 +197,11 @@
     "playerPdfSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
     "unchanged": true
   },
-  "retainedLocalEvidence": "Ignored build/manual-v1.2-review-20261014 retains fourteen page renders, before/after render hashes, structural checks and the independent root review. The separate ignored 1.1 backup retains earlier captures, manuscript files and receipts."
+  "retainedLocalEvidence": "Ignored build/manual-v1.2-public-release-review-20261014 retains fourteen page renders, render hashes, structural checks and root independent acceptance. The prior 1.2 set and pre-publication backup are preserved in their separate local review folders, as is the earlier 1.1 backup.",
+  "previousVersion1_2Review": {
+    "reviewSha256": "15db2fc6147a0c48cb3836aa17759efd2c32f963fa8a554ed0d828c0b71e30bc",
+    "playerPdfSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+    "retainedLocalBackup": "build/manual-v1.2-owner-confirmation-backup-20261014",
+    "backupManifestSha256": "8f10b6df2e400e6d447798e5cc786e40306e1063c032fdd12e23e35c6f2b88a1"
+  }
 }

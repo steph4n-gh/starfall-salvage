@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "version": "1.2",
   "documentationRevision": "2026-10-14",
-  "publication": "private-draft",
+  "publication": "public-release",
   "rom": {
     "filename": "Starfall-Salvage-1.2.gbc",
     "sha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
@@ -27,9 +27,9 @@
     "scope": "Frozen 1.2 editable source used for the recorded native and browser builds. Pairwise ROM comparison differs only at generated built-in save-signature and global-checksum bytes; all other bytes match. Exact artifacts have separate gameplay receipts. The clean-clone comparison in docs/CLEAN-BUILD.json is historical 1.1 evidence, not a 1.2 or cross-machine reproducibility claim."
   },
   "manualReview": {
-    "pdfSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+    "pdfSha256": "0fb3b7ad21c4f7f675ca4268b54e568d88d877e5482cda7e2dffc1353a12a195",
     "pages": 14,
-    "review": "2026-10-14: all fourteen rendered pages independently reviewed by the authoring and root reviewers; corrected first-flight launch order rereviewed. Nine embedded native images match canonical capture pixels, with no out-of-page text. See docs/MANUAL-REVIEW.json. Changed inputs require regenerated documents and renewed review.",
+    "review": "2026-10-14: public-release wording and owner-confirmed Chromatic SD-cartridge play reconciled. Fourteen rendered pages reviewed; changed pages independently reviewed by the root reviewer and unchanged pages verified against the prior reviewed set. Nine embedded native images match canonical captures; see docs/MANUAL-REVIEW.json.",
     "inputs": {
       "paths": [
         "campaign/full-length-packaging-stage/generate_manual.py",
@@ -60,36 +60,36 @@
         "plugins/starfall/engine/include/starfall_save.h",
         "campaign/rooms.json"
       ],
-      "sha256": "5afaf0b7ac86ef1406472c7fde26f895b0255c37dfc4677ebcff54646a434ad5",
+      "sha256": "ebdc535612597be90db66e80df113206b159dbf908d4392480dfb9ebc97cd809",
       "fileCount": 38
     }
   },
   "editorialReview": {
-    "scope": "Reviewed current 1.2 player/site/manual instructions and exact native/browser/visual qualification. Retained 1.1 evidence remains explicitly historical. Private-host delivery status is updated only from its own observed result.",
+    "scope": "Reviewed public 1.2 player/site/manual copy, separate owner-reported Chromatic SD-cartridge play, and exact native/browser/visual qualification. Earlier private-host delivery and 1.1 evidence remain historical. Current public delivery receives its own observed receipt.",
     "files": {
       "CREDITS.md": "636fe9d142662455d619a0492500e694649ea96ac289921c3de7de5079ae488d",
-      "README.md": "59b962d2d7556d8b34aacb32898d2b9c8bb37c4f452352fdad464367aa78d068",
-      "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "55d70bbdf49994e25af753b037c097afabf73efbfc235fbcfd2f48794d81305d",
-      "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "97b4316b905ffd2fa988c5d2229ad9ff6f1907a1b74abd8edbaac3c156aa44ee",
-      "campaign/full-length-packaging-stage/README.md": "3fc9972c9b4b9c8e32bb2edf03d7ff27cf07dcb3c6c2738bbd71b0dc4aa85eeb",
+      "README.md": "325bc9bf13aa7b17824deb85c69ccaa3e24422f563b6f321fb0345c07596a0c1",
+      "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "c720f9d59362b18aeaced63db26403c0cafdf42051c970a0ad759b96378e8488",
+      "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "2d8d641604c11dcdac047517827fad96ffccd70218be6e8e8761c219251929ad",
+      "campaign/full-length-packaging-stage/README.md": "2ae6884a4b32347c6293d8c25e60570c6cc608d937b888df4c325fe3fe2975e5",
       "docs/BROWSER-VERIFICATION-v1.1.json": "63f86a0308a7adf2dd53a47eca1879308efed07eef6aa25db109dc11034c55de",
       "docs/BROWSER-VERIFICATION.json": "e1e7a3ec35d7b778ac42cfce932e1123156e5f5de8383e4e77ed47d0e6bd3797",
-      "docs/BUILDING.md": "61e3066dc0dc689e9dc39b934f411f9a2841027211cddf9548e07521cfb50633",
+      "docs/BUILDING.md": "7830ead8d45d4deee5b05190d8b996d954eb4b7cbb83329388e0ac5099934705",
       "docs/CLEAN-BUILD.json": "a1dca04cd92d2f7b368ef376b74e5a91f4657e1ce5e666c6b3dbf216ed5ca045",
       "docs/CUSTOM-DOMAIN-v1.1.json": "6418b6b55d8453130a8644ee9bd70d163e041fb9065872220d19430a99016202",
       "docs/CUSTOM-DOMAIN.json": "60cf938298113c61d3706072c4d1b8fa346987eab278e837291d25f8a9380f49",
       "docs/HOSTED-VERIFICATION-v1.1.json": "0b9cd1af29e78b94d4182cf6c67b149c6b4e45da5218e8f5022d163a21507f80",
       "docs/HOSTED-VERIFICATION.json": "c8007fad898ca86ea88822b33a986995b7ebb188601be710a1b427b50de82aef",
       "docs/MANUAL-REVIEW-v1.1.json": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
-      "docs/MANUAL-REVIEW.json": "15db2fc6147a0c48cb3836aa17759efd2c32f963fa8a554ed0d828c0b71e30bc",
+      "docs/MANUAL-REVIEW.json": "5c8948b623635d63371a42a8f94cac2164385cba2de2e2653c70d6ba123baac3",
       "docs/NATIVE-VERIFICATION.json": "1d65f53c40b059bc4026940b138a3b8989162b1a3abf68bad4877b8f535feba4",
-      "docs/PUBLIC-RELEASE-PLAN.md": "ccf3ef40c0c62d54d9041854fcadc63db49492a98c1f2fa8fea1385a7c292964",
-      "docs/RELEASE-WORKFLOW.md": "6178a10205d778ad6b39c82649e9bbab8fe06db96b8a6024bc73de7f926a5f31",
+      "docs/PUBLIC-RELEASE-PLAN.md": "1c415ae4829763e1ea744bd828422ed2f1ddf8e9253a7026413d1ce05d9cf5ff",
+      "docs/RELEASE-WORKFLOW.md": "949dc965d5f483349b9f903f65080ed7bd5808408bf3cab3da2914561e4e95a1",
       "docs/SITE-PLAY-VERIFICATION-v1.1.json": "c76edb27a71515a0672c7cfd1e2c0aebbc1293078d84736b54bf90a428897a0c",
-      "docs/SITE-PLAY-VERIFICATION.json": "d590523059da13fce75077b1573bc7690c9efb8c8ef2a6ba0bd923291459b872",
+      "docs/SITE-PLAY-VERIFICATION.json": "ba302fb0395dde0d234f51290410e78431eb885efb94d404421003fd023f6bb5",
       "docs/SITES-DRAFT-v1.1.json": "bcb2c57462a21d2fbe8c761ccc4db0145a3030c0bac1cbd597a4765fb7bd884a",
       "docs/SITES-DRAFT.json": "e517f5a8c740b0021d03a8b29b38dc3135c135a9e7025f2692c3809734ddd045",
-      "docs/VERIFICATION.md": "a241514f19898231668f9537fddaeb1f76a04afda966a580a6ab47552474f2e4",
+      "docs/VERIFICATION.md": "5e71620e352279b4e996cbe15f7b54ce80549a7a7d2f7455f00fcd35291524cf",
       "docs/browser-evidence-v1.2/SCREENSHOTS.json": "10e8488d197b39082b2d974a1f6dde316db3327388bc96f932fef52eb0536814",
       "docs/browser-evidence-v1.2/arcade-bank-committed.jpg": "ee70e481fbfee800d4e148a23ba255350c54a98c731976a2047adf1d60ae02de",
       "docs/browser-evidence-v1.2/arcade-bank-reload-story-continue.jpg": "b65900374a7d005378bed2eb80000d17adc39e1d4ea9999e854a449a580e2d0c",
@@ -143,10 +143,20 @@
       "docs/site-evidence-v1.2/local-play-title.jpg": "fcdb25f92b15e97c9080a7cfc9acc28b66db10b807d67a3c9042bfb8959e2949",
       "docs/site-evidence-v1.2/v1.1-continue-before-update.jpg": "fc22059216cfc6c4c6903c768f35a55acbff58e51cd8fa6ed67000aacfcdb9a7",
       "docs/site-evidence-v1.2/v1.1-title-before-update.jpg": "0246bf4f2aa7b6b8a54bfe663f3d0895c4887c21fd021f212ceaf5e8ee1e2273",
-      "launch-page/README.md": "eefcc74e442a099bdc1249b7251b07175153dad16c18eb3915401eedfe91058f",
-      "launch-page/index.template.html": "1d674b75130492a63185e081136a20ad3f26fcaf420ad71027e9d51bcf023631"
+      "launch-page/README.md": "5f12087fa861bed5b2d6fcc89822b526307958edd15760786ecd0f54d5e50182",
+      "launch-page/index.template.html": "5382cfd18788146ae196ddfeffe02871dcf53e9f9f222fd8eaeffe65e669d854",
+      "docs/SITE-PLAY-VERIFICATION-v1.2-private.json": "d590523059da13fce75077b1573bc7690c9efb8c8ef2a6ba0bd923291459b872",
+      "docs/CUSTOM-DOMAIN-v1.2-private.json": "60cf938298113c61d3706072c4d1b8fa346987eab278e837291d25f8a9380f49",
+      "docs/HOSTED-VERIFICATION-v1.2-private.json": "c8007fad898ca86ea88822b33a986995b7ebb188601be710a1b427b50de82aef",
+      "docs/SITES-DRAFT-v1.2-private.json": "e517f5a8c740b0021d03a8b29b38dc3135c135a9e7025f2692c3809734ddd045",
+      "docs/HARDWARE-REPORT-v1.2.json": "cfd38cf3a68716af237eb600c5eb82fdcb9a278b867dc3167a4116aebb2211df",
+      "docs/THIRD-PARTY-NOTICES.md": "e8743805fed82833e3e21996caa7f82ee0265960a7c962a80b0640d9f927eb88",
+      "artwork/social-preview-v1.2.jpg": "3eae1161f88ed57c292958ef133813278e9a4532f981b13e77db63b2827151e8",
+      "docs/LICENSING.md": "7a99a949b2ceb74c8d5ad20b1f4af098b73db02ad6b98827b33066ffc2593227",
+      "docs/public-evidence-v1.2/local-mobile.jpg": "3215439b4d9652756cba66a0083512d7ecc61b76fd05cfee5b8e16e64d41d716",
+      "docs/public-evidence-v1.2/local-hero.jpg": "c40f930512bd31262ad06356f764f42f3f533f95616e9523ec6f172bae2ec1e1"
     },
-    "releaseFactsSha256": "5b169515b4eb07a6b0f9d54826337279a9c7655c739720ae7c6038aa7779fb96"
+    "releaseFactsSha256": "29a89f28efd1d702390e03d9b3768c5576439c63d3f3f652d66bb4dba23020e3"
   },
   "screenshots": {
     "manifest": "campaign/full-length-packaging-stage/assets/screenshots/SCREENSHOTS.json"
@@ -155,8 +165,8 @@
     "directory": "release/player-v1.2",
     "archive": "release/starfall-salvage-1.2-player.zip",
     "archiveRoot": "Starfall-Salvage-1.2",
-    "archiveSha256": "3d23acec15f6539f0f2aa88a8e360d1828d5bf6dc4e7946df9b7966b63d3afce",
-    "archiveBytes": 4339023,
+    "archiveSha256": "195a494bce1a34f3e7d65909397abb23f91f3e8699505b31685d76a18cc06fdb",
+    "archiveBytes": 4346997,
     "zipTimestamp": [
       2026,
       10,
@@ -166,12 +176,12 @@
       0
     ],
     "files": {
-      "CREDITS.txt": "35fcc53200182b19dba00e2689d91ea201d1eb53e1d3f70e2044c339aa746a5f",
-      "INSTRUCTIONS.pdf": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+      "CREDITS.txt": "ebd3f3f253cb06f0f56dca591a0536227d3a654c98352d889dc98d93b3cd85d2",
+      "INSTRUCTIONS.pdf": "0fb3b7ad21c4f7f675ca4268b54e568d88d877e5482cda7e2dffc1353a12a195",
       "LICENSE": "6fc7dd0727262618eb53594406b778aa4fd4cde9eb1d978736fe7c07b5607e79",
-      "QUICK-START.txt": "609a7d85def02551d6e73e57e9920e10e3040ca0f37fe7f21fe342db93e9300e",
-      "READ-ME.txt": "37438ca6cacea4c3facc7a9f2b2d7aed77632d702d5e70e20d63b5596faba903",
-      "RELEASE-NOTES.txt": "f0eb61705a66958c1dabcc30f37a6d84cfec8a5744be9ddd637cbc4fa60cb92c",
+      "QUICK-START.txt": "e9f7bd74ff4c49ac3430d0b9b221889d42dcaa154a57cd55d2d8e3b4e1ac1f9d",
+      "READ-ME.txt": "50b0a48ad8a06585038cf674134035f6c76d70eacb88cfc23a89f16f90043424",
+      "RELEASE-NOTES.txt": "8589d9e6757669c9ceffaf768d7ccccc93b6cdbe17048b6b200ed8e39ae7a023",
       "Starfall-Salvage-1.2.gbc": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78"
     }
   },
@@ -194,17 +204,16 @@
     "romSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
     "nativeEmulator": "PyBoy 2.7.0",
     "guidedClearTime": "31:26",
-    "scope": "Exact native-ROM ordinary-input qualification in PyBoy 2.7.0: 18 missions, 72 rooms, 18 guardians, seven rescues, all 12 Arcade sectors and 22,500 banked. One M17 escort failure recovered by ordinary retry; no Arcade retries. Same-session Title/Continue preserved checkpoint stages and the Story ending after Arcade. The 31:26 timer counts successful-room play, not first-time human duration. Native cold-boot SRAM, physical hardware and heard audio remain unverified.",
+    "scope": "Exact native-ROM ordinary-input qualification in PyBoy 2.7.0: 18 missions, 72 rooms, 18 guardians, seven rescues, all 12 Arcade sectors and 22,500 banked. One M17 escort failure recovered by ordinary retry; no Arcade retries. Same-session Title/Continue preserved checkpoint stages and the Story ending after Arcade. The 31:26 timer counts successful-room play, not first-time human duration. Native cold-boot SRAM and heard audio remain unverified by this run; a separate owner report confirms 1.2 play on Chromatic with an SD flash cartridge.",
     "pending": [
       "Blind human playtests",
-      "Physical handheld/cartridge qualification",
+      "Additional cartridge/device qualification and full power-off save testing",
       "Speaker and headphone listening",
       "Full power-off save persistence",
-      "Final public browser host and other supported browser/runtime combinations",
+      "Other supported browser/runtime combinations",
       "Full browser-process shutdown, storage eviction and cross-origin save behavior",
       "Cross-machine build qualification beyond the recorded macOS arm64 toolchain",
-      "Original-work licensing and retained-asset provenance",
-      "Chosen public support channel"
+      "Original-contribution reuse terms"
     ],
     "browser": {
       "receipt": "docs/BROWSER-VERIFICATION.json",
@@ -230,6 +239,13 @@
       "receipt": "docs/HOSTED-VERIFICATION.json",
       "siteVersion": 5,
       "scope": "Owner-private custom-domain delivery, actual 1.1-to-1.2 checkpoint upgrade, ordinary keyboard controls and reload/Continue; live player ZIP and manual byte-identical to canonical files."
+    },
+    "hardware": {
+      "status": "owner-confirmed-play",
+      "receipt": "docs/HARDWARE-REPORT-v1.2.json",
+      "device": "Chromatic",
+      "media": "SD flash cartridge",
+      "scope": "Owner reports successful 1.2 play. Exact cartridge model, physical ROM readback, power-off saves and audio listening were not independently verified."
     }
   },
   "browser": {

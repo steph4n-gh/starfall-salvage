@@ -224,11 +224,11 @@ def content():
       ('Choose how to play',[
         paragraph('Use <b>Starfall-Salvage-1.2.gbc</b> from the full-game package. This is a <b>Game Boy Color-only</b> game. Original Game Boy and Game Boy Pocket are unsupported. Keep the .gbc extension; this is not a .gba game.'),
         heading('1. Play a separately supplied browser edition'),
-        paragraph('Choose <b>Play in Browser</b> on the private website, then click the game area for keyboard focus. Browser files and editable source are separate from the native player ZIP. For a local browser export, extract and serve its folder with a web server, then open its index.html through that server; opening the file directly may not work. Use the controls on page 3 or the on-screen controller. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.'),
+        paragraph('Choose <b>Play in Browser</b> at <a href="https://starfall.steph4n.dev" color="#08787D">starfall.steph4n.dev</a>, then click the game area for keyboard focus. Browser files and editable source are separate from the native player ZIP. For a local browser export, extract and serve its folder with a web server, then open its index.html through that server; opening the file directly may not work. Use the controls on page 3 or the on-screen controller. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.'),
         heading('2. Open the ROM in a GBC emulator'),
         paragraph('Open the .gbc file in an emulator that supports Game Boy Color and battery saves. Select CGB or automatic color detection, and allow it to save your progress. <a href="https://sameboy.github.io/" color="#08787D">SameBoy</a> is one example; its <a href="https://sameboy.github.io/features/" color="#08787D">documented features</a> include both. This release has not yet been tested in SameBoy.'),
         heading('3. Use a compatible SD flash cartridge'),
-        paragraph('Use a compatible GB/GBC SD flash cartridge in a color-capable handheld such as a Chromatic or Game Boy Color. The EverDrive GB X7 is one example. Power off the handheld, remove the card and connect it to a computer using an ordinary SD-card reader. Copy the .gbc file into a games folder outside the cartridge system folder. Eject the card, reinsert it, power on and choose the game from the cartridge menu. Follow that cartridge\'s manual for saving.'),
+        paragraph('The owner confirmed successful <b>version 1.2 play on a Chromatic with an SD flash cartridge</b>. For other setups, use a compatible GB/GBC SD cartridge and color-capable handheld. The EverDrive GB X7 is one example; the owner report does not identify a cartridge model. Power off the handheld, remove the card and connect it to a computer using an ordinary SD-card reader. Copy the .gbc file into a games folder outside the cartridge system folder. Eject the card, reinsert it, power on and choose the game from the cartridge menu. Follow that cartridge\'s manual for saving.'),
         heading('4. Program a writable homebrew cartridge'),
         paragraph('Advanced users can program a compatible writable cartridge using its matching writer and software. Confirm the requirements below, follow the cartridge and writer instructions, and verify the written ROM before use. Different cartridge designs need different writers and settings; a blank cartridge alone is not enough. See this <a href="https://github.com/MouseBiteLabs/Game-Boy-MBC5-Cartridge" color="#08787D">MBC5 cartridge design and writer documentation</a> for an example, not a tested hardware recommendation.'),
         box('<b>Advanced cartridge requirements:</b> MBC5; at least 1 MiB of ROM storage; 32 KiB of persistent save RAM. The supplied ROM header is 0x1E (MBC5 + rumble + RAM + battery). Confirm the exact cartridge/writer combination supports this image. SD copying uses a card reader; Chromatic USB is not an SD-card passthrough.'),
@@ -241,15 +241,15 @@ def content():
         paragraph('CLEAR TIME counts successful room attempts; it excludes pauses, menus and failed room attempts. It is not a measure of first-time human campaign duration. Rank counts damage to your astronaut, including failed attempts: <b>S</b> for no hits, <b>A</b> for one or two, and <b>B</b> for three or more.'),
         box(NATIVE_QUALIFICATION),
         paragraph(BROWSER_QUALIFICATION),
-        paragraph('<b>Earlier owner report:</b> successful 1.1 play on a Chromatic was reported on October 14. This was informal owner feedback and does not qualify the 1.2 build.'),
-        paragraph('<b>Still to verify:</b> 1.2 physical handheld/cartridge play, heard speaker/headphone audio, native cold-start and power-off saves, full browser close/reopen or crash recovery, other browser/origin configurations and uncoached human enjoyment. Clear-time figures describe the identified build and test, not first-time human duration.'),
+        paragraph('<b>Owner-confirmed hardware:</b> version 1.2 worked on the owner\'s Chromatic with an SD flash cartridge. This records successful play on that setup; independent hardware validation, other setups and power-off save persistence remain separate checks.'),
+        paragraph('<b>Still to verify:</b> independent hardware validation and additional handheld/cartridge setups, heard speaker/headphone audio, native cold-start and power-off saves, full browser close/reopen or crash recovery, other browser/origin configurations and uncoached human enjoyment. Clear-time figures describe the identified build and test, not first-time human duration.'),
       ]),
       ('Credits and flight checklist',[
         heading('Original homebrew by Stephan Arrington'),
         paragraph('Game design, campaign and Arcade implementation, native project development and this booklet: <b>Stephan Arrington with OpenAI Codex assistance</b>.'),
         paragraph('Astronaut, cells, drone, pulse, native room and interface pixel artwork: original artwork authored for Starfall Salvage. Music and sound effects: original chiptune composition, zone arrangements, wave data and gameplay sound-effect code authored for this game.'),
         paragraph('Illustrated box art: AI-generated with the built-in image generation tool. The original illustration and prompt provenance are retained in the project\'s artwork folder. The nine gameplay screenshots in this booklet are unaltered 160 x 144 captures from the version 1.2 native emulator. They are not physical Chromatic photographs or captures. Their source-frame and ROM provenance is retained with the manual assets.'),
-        paragraph('Built with <b>GB Studio</b> by Chris Maltby and contributors, and <b>GBDK-2020</b> by the GBDK contributors. Retained project UI/font resources and third-party license notices remain with the source package. This booklet does not replace those notices.'),
+        paragraph('Built with <b>GB Studio</b> by Chris Maltby and contributors, and <b>GBDK-2020</b> by the GBDK contributors. Retained project UI/font resources and third-party license notices remain with the <a href="https://github.com/steph4n-gh/starfall-salvage" color="#08787D">source project on GitHub</a>. This booklet does not replace those notices.'),
         heading('Before the next launch'),
         table(['Check','Why'],[
           ['Read the objective','Check the launch/dock card or Pause reminder'],
@@ -396,12 +396,12 @@ def main():
         'plugins/starfall/engine/src/starfall_save.c','plugins/starfall/engine/include/starfall_save.h',
         'plugins/starfall/engine/src/starfall_ui.c','plugins/starfall/engine/src/starfall_screens.c',
         'plugins/starfall/engine/src/starfall_audio.c','CREDITS.md',
-        'docs/NATIVE-VERIFICATION.json','docs/BROWSER-VERIFICATION.json'):
+        'docs/NATIVE-VERIFICATION.json','docs/BROWSER-VERIFICATION.json','docs/HARDWARE-REPORT-v1.2.json'):
         INPUTS[name]=digest(ROOT/name)
     pages=content();render_text(pages);output=render_pdf(pages)
     (ASSETS/'source-provenance.json').write_text(json.dumps(INPUTS,indent=2)+'\n')
-    receipts={'status':'Version 1.2 instructions refreshed for direct continuation, optional rigs and save upgrades; visual review pending.',
-        'game_version':VERSION,'documentation_revision':DOCS_REVISION,'installation_revision':'native-save-upgrade-and-direct-flow','screenshot_rom_sha256':NATIVE_ROM_SHA256,
+    receipts={'status':'Version 1.2 public instructions include owner-confirmed Chromatic play; visual review pending.',
+        'game_version':VERSION,'documentation_revision':DOCS_REVISION,'installation_revision':'public-release-and-owner-confirmed-chromatic','screenshot_rom_sha256':NATIVE_ROM_SHA256,
         'author':'Stephan Arrington','coverage':{'story_missions':18,'story_rooms':72,'zones':6,'arcade_classic_rooms':12},
         'inputs_sha256':INPUTS,'generator_sha256':digest(Path(__file__)),'pdf_sha256':digest(output),
         'screenshot_captions_explicit':True,'embedded_gameplay_screenshots':9,'old_release_files_untouched':True,'native_build_or_device_operation':False,

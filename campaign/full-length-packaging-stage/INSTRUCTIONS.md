@@ -259,7 +259,7 @@ Use **Starfall-Salvage-1.2.gbc** from the full-game package. This is a **Game Bo
 
 ### 1. Play a separately supplied browser edition
 
-Choose **Play in Browser** on the private website, then click the game area for keyboard focus. Browser files and editable source are separate from the native player ZIP. For a local browser export, extract and serve its folder with a web server, then open its index.html through that server; opening the file directly may not work. Use the controls on page 3 or the on-screen controller. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.
+Choose **Play in Browser** at <a href="https://starfall.steph4n.dev" color="#08787D">starfall.steph4n.dev</a>, then click the game area for keyboard focus. Browser files and editable source are separate from the native player ZIP. For a local browser export, extract and serve its folder with a web server, then open its index.html through that server; opening the file directly may not work. Use the controls on page 3 or the on-screen controller. See the <a href="https://www.gbstudio.dev/docs/build/" color="#08787D">GB Studio web-build guide</a>.
 
 ### 2. Open the ROM in a GBC emulator
 
@@ -267,7 +267,7 @@ Open the .gbc file in an emulator that supports Game Boy Color and battery saves
 
 ### 3. Use a compatible SD flash cartridge
 
-Use a compatible GB/GBC SD flash cartridge in a color-capable handheld such as a Chromatic or Game Boy Color. The EverDrive GB X7 is one example. Power off the handheld, remove the card and connect it to a computer using an ordinary SD-card reader. Copy the .gbc file into a games folder outside the cartridge system folder. Eject the card, reinsert it, power on and choose the game from the cartridge menu. Follow that cartridge's manual for saving.
+The owner confirmed successful **version 1.2 play on a Chromatic with an SD flash cartridge**. For other setups, use a compatible GB/GBC SD cartridge and color-capable handheld. The EverDrive GB X7 is one example; the owner report does not identify a cartridge model. Power off the handheld, remove the card and connect it to a computer using an ordinary SD-card reader. Copy the .gbc file into a games folder outside the cartridge system folder. Eject the card, reinsert it, power on and choose the game from the cartridge menu. Follow that cartridge's manual for saving.
 
 ### 4. Program a writable homebrew cartridge
 
@@ -291,9 +291,9 @@ CLEAR TIME counts successful room attempts; it excludes pauses, menus and failed
 
 **Browser 1.2 checks:** two Story missions/eight rooms plus one Arcade sector passed, including retry and checkpoint Continue after failed attempts. Change Rig then Back kept the rig; direct launch and Pause were exercised. Banking 300 survived ordinary reload, which also restored Story M03 Bay 1 at full hull. Reload checked 1.1-to-1.2 continuation and earned route/mission checkpoints. Coverage is limited to those rooms; no full browser clear time or complete Arcade cycle is claimed. Same-session SRAM recovery differs from persisted browser reload; native cold-start saves remain unverified.
 
-**Earlier owner report:** successful 1.1 play on a Chromatic was reported on October 14. This was informal owner feedback and does not qualify the 1.2 build.
+**Owner-confirmed hardware:** version 1.2 worked on the owner's Chromatic with an SD flash cartridge. This records successful play on that setup; independent hardware validation, other setups and power-off save persistence remain separate checks.
 
-**Still to verify:** 1.2 physical handheld/cartridge play, heard speaker/headphone audio, native cold-start and power-off saves, full browser close/reopen or crash recovery, other browser/origin configurations and uncoached human enjoyment. Clear-time figures describe the identified build and test, not first-time human duration.
+**Still to verify:** independent hardware validation and additional handheld/cartridge setups, heard speaker/headphone audio, native cold-start and power-off saves, full browser close/reopen or crash recovery, other browser/origin configurations and uncoached human enjoyment. Clear-time figures describe the identified build and test, not first-time human duration.
 
 ## Credits and flight checklist
 
@@ -305,7 +305,7 @@ Astronaut, cells, drone, pulse, native room and interface pixel artwork: origina
 
 Illustrated box art: AI-generated with the built-in image generation tool. The original illustration and prompt provenance are retained in the project's artwork folder. The nine gameplay screenshots in this booklet are unaltered 160 x 144 captures from the version 1.2 native emulator. They are not physical Chromatic photographs or captures. Their source-frame and ROM provenance is retained with the manual assets.
 
-Built with **GB Studio** by Chris Maltby and contributors, and **GBDK-2020** by the GBDK contributors. Retained project UI/font resources and third-party license notices remain with the source package. This booklet does not replace those notices.
+Built with **GB Studio** by Chris Maltby and contributors, and **GBDK-2020** by the GBDK contributors. Retained project UI/font resources and third-party license notices remain with the <a href="https://github.com/steph4n-gh/starfall-salvage" color="#08787D">source project on GitHub</a>. This booklet does not replace those notices.
 
 ### Before the next launch
 

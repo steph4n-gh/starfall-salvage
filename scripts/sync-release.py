@@ -6,6 +6,8 @@ python3 scripts/sync-release.py sync   # rebuild derived files after input check
 
 The manifest is a deliberate review record. This script has no command to accept
 new hashes, qualify a build, regenerate a manual, or change publication status.
+It validates both private-draft and explicitly recorded public-release inputs;
+neither mode publishes files or changes repository or site access.
 """
 
 import argparse
@@ -182,7 +184,8 @@ def check_links(root, html_bytes, site_root, outputs):
 def prepare(root):
     manifest = json.loads(read(root, MANIFEST))
     require(manifest["schemaVersion"] == 1, "Unsupported release manifest schema.")
-    require(manifest["publication"] == "private-draft", "This local workflow only prepares private drafts.")
+    require(manifest.get("publication") in ("private-draft", "public-release"),
+            "Publication must be private-draft or public-release.")
     check_snapshot(root, manifest["gameSourceSnapshot"], "Game source snapshot")
     check_snapshot(root, manifest["manualReview"]["inputs"], "Manual inputs; render and visual-review qualification")
     check_release_facts(root, manifest)
@@ -230,6 +233,7 @@ def prepare(root):
         shots[name] = (shot, data)
 
     site = manifest["site"]
+    outputs[site["directory"] + "/assets/social-preview-v1.2.jpg"] = read(root, "artwork/social-preview-v1.2.jpg")
     require(site["titleScreenshot"] in site["screenshots"] and site["titleScreenshot"] in shots,
             "Title screenshot must be selected from current canonical captures.")
     selected = []
@@ -333,7 +337,7 @@ def run(root, sync=False):
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 temp.replace(destination)
     return {"status": "synchronized" if sync else "verified", "version": manifest["version"],
-            "derivedFiles": len(outputs), "changedFiles": changed, "publication": "private-draft",
+            "derivedFiles": len(outputs), "changedFiles": changed, "publication": manifest["publication"],
             "newGameplayOrVisualReviewPerformed": False,
             "remainingPublicReleaseChecks": manifest["qualification"]["pending"]}
 
