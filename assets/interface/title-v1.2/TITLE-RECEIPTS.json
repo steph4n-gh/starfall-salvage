@@ -1,0 +1,75 @@
+{
+  "format": "native-animated-title-v1.2",
+  "dimensions": [
+    160,
+    144
+  ],
+  "source_shades": [
+    "#071821",
+    "#306850",
+    "#86c06c",
+    "#e0f8cf"
+  ],
+  "art_rows": [
+    0,
+    8
+  ],
+  "quiet_menu_rows": [
+    9,
+    17
+  ],
+  "vram_bank": 1,
+  "static_deduplicated_tiles": 78,
+  "fixed_ship_tiles": 56,
+  "moving_star_tiles": 4,
+  "live_tile_count": 138,
+  "highest_live_tile": 137,
+  "reserved_ui_tiles": [
+    176,
+    191
+  ],
+  "reserved_font_tiles": [
+    192,
+    233
+  ],
+  "art_palettes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "untouched_ui_palettes": [
+    6,
+    7
+  ],
+  "motion_translation_unit_bytes": 14848,
+  "static_translation_unit_bytes": 2928,
+  "ship_upload": {
+    "first_tile": 78,
+    "tiles": 56,
+    "bytes": 896,
+    "frames": 16,
+    "update_interval_native_frames": 6
+  },
+  "star_upload": {
+    "near_interval": 4,
+    "far_interval": 16,
+    "bytes_each": 32
+  },
+  "round_trip": "Every initial screen pixel and all 16 ship frame patches match exact 2bpp decode",
+  "banking": "GBVM restoring bankdata helpers only; motion and static art independently autobanked",
+  "input": "Animation adds no wait beyond the existing menu transition guard; menu draws separately on rows9..17",
+  "preview_scope": "Authored pixel preview, not a native ROM screenshot or measured performance proof",
+  "native_rom": "Awaiting root build and emulator motion review",
+  "sources": {
+    "assets/interface/title-v1.2/title-source.png": "0daf2296c3f2e13d05f41117cd6d324ee9202258afb71500079296f8878c8ed0",
+    "assets/interface/title-v1.2/title-color.png": "3b11f2b022c1cd9d46b634322ae93aa815dbb05ac9ee8bead80b5ed236becfd8",
+    "assets/interface/title-v1.2/title-motion.gif": "1271027391a1597776a861cc17df3014f13a5cab568027b6bc17300ce4a4e33c",
+    "plugins/starfall/engine/src/sf_screen_title.c": "09f30a9aa5bd2c8ba9b9fa3eb339ec83a0c0092d91ce5350321e5f7ec19d7950",
+    "plugins/starfall/engine/src/sf_title_motion.c": "69e888527eb59c0580020972a454517268282d5ec213ba90419331dd2b4563a0",
+    "plugins/starfall/engine/src/starfall_screens.c": "06b3c6d73c80cd563a9c1ca878c886d813b34415f5610b5fb1acede3b46fb1e6",
+    "plugins/starfall/engine/include/starfall_screens.h": "0f51d8bee6fcfb27a4b714f8d1a763778d53e4c9259fd4a44cdd5f1af105634d"
+  }
+}

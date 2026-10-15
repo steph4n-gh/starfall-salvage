@@ -1,0 +1,109 @@
+STARFALL SALVAGE 1.2 - QUICK START
+
+WAYS TO PLAY
+
+1. Game Boy Color emulator
+   Open Starfall-Salvage-1.2.gbc in an emulator supporting Game Boy Color,
+   MBC5 and battery saves. Use CGB or automatic color detection. SameBoy is
+   one example, but this release has not yet been tested in it. Follow the
+   emulator's key mapping and allow it to save battery-backed game data.
+
+2. Compatible GB/GBC SD flash cartridge
+   Use the cartridge in a color-capable handheld, such as a Game Boy Color
+   or Chromatic. The EverDrive GB X7 is one example, not a requirement.
+   Power off the handheld. Put the SD card into a computer's card reader,
+   copy the .gbc file to a games folder outside the cartridge system folder,
+   safely eject it, reinsert it and choose the game from the cartridge menu.
+   Keep existing system files and saves. Follow that cartridge's saving
+   instructions; do not format the card or replace its operating system.
+
+3. Compatible writable homebrew cartridge
+   Confirm support for this exact ROM: MBC5, at least 1 MiB ROM capacity,
+   32 KiB persistent save RAM, and header type 0x1E (MBC5 + rumble + RAM +
+   battery). Use that cartridge's supported writer/software and follow its
+   instructions, including verification. A physically fitting cartridge
+   does not by itself establish compatibility.
+
+4. Separate browser edition
+   The private website supplies browser play separately. Choose Play in
+   Browser there and click the game area for keyboard focus. Browser files
+   are not included in this native ZIP. Default controls are listed below.
+
+Cartridge routes require Game Boy Color-compatible hardware. This game
+does not support original Game Boy or Game Boy Pocket. Chromatic does not
+need custom firmware to run it through a compatible cartridge. SD copying
+uses a card reader; the Chromatic USB port is not an SD-card passthrough.
+Hardware installation routes have not yet been qualified for this release.
+
+CONTROLS
+Handheld       Action                              Browser edition default
+D-pad          Thrust; release to drift             Arrow keys
+A              Pulse in play; confirm in menus      Z
+B              Hold to brake/interact; back/cancel  X
+Start          Pause/resume                         Enter
+Select         Open exit options                    P or Shift
+Up/Down        Highlight a menu choice              Up/Down
+
+At the flight deck, Up/Down selects a mission; Left/Right selects an
+unlocked rig; A launches. B does nothing at the title. Start does not
+confirm cards or upgrades. Other emulators may use different key maps.
+
+YOUR FIRST FIVE MINUTES
+1. Select Story with Up/Down and press A. Choose a mission and rig.
+2. Read the objective on the flight deck before A launches directly.
+   Initial Arcade, retry or restored entry briefings may still require A.
+3. Tap a direction to build speed. Release to drift; brake BEFORE a corner.
+4. Complete the displayed objective. Collect salvage by approaching it;
+   hold B beside relay/repair stations; stay near crew so they follow.
+5. Return beside the actual dock terminal. The whole bottom edge is not
+   a dock. Completing the objective alone does not finish the room.
+
+Press A for a ready close-range pulse; holding A does not repeatedly fire.
+Watch A READY / A WAIT. Guardian shields require three separate hits during
+CORE OPEN, then collection of the released cores and docking.
+
+
+DOCK AND ROUTE CHOICES
+Story: choose which middle bay comes first, then A flies directly there.
+Both bays are required. Power first disables the OTHER middle bay's hazard;
+supply first gives faster pulses in that other bay. Ordinary Bay Secured
+cards show the next objective and A continues directly. Mission Complete
+opens Flight Deck with A; select a job and press A again to launch.
+
+Arcade: Fly On is the default. A begins the next sector with your current
+rig. Change Rig is optional: choose Keep Current or an offer, then A fits
+and flies. B returns to the dock without applying a choice. Bank Haul ends
+the run with the score secured. B at the dock opens exit options; it does
+not bank. Read the next objective at the dock. During flight, press Start
+for help.
+
+After launch, release and press A again to pulse. Directions and B can
+remain held. Menu selections use a pointer and cyan fill. A/B badges show
+each screen's current actions.
+The animated title and its theme have no intro to wait through.
+
+SAVES AND RETRY
+Story saves checkpoints at accepted room entry and key completed-room,
+route and mission transitions. Continue restores the committed stage or
+room-entry briefing, not your mid-room position. Retained entry briefings
+show CHECKPOINT SAVED. Direct room transitions need no extra launch press.
+SAVE WRITE FAILED means the write was not confirmed.
+
+Start opens Pause with the current objective. Up/Down selects; A confirms;
+B or Start resumes. Retry Room restarts the current room with full hull
+and crew, keeping earlier completed rooms and the rig. Arcade has no
+mid-sortie persistent resume: bank to save its best banked score. Quitting
+or failing an unfinished Arcade sortie loses its unbanked haul.
+
+Before upgrading, back up the old ROM and battery save. Use your emulator
+or cartridge's documented save import/export or association process to
+connect a COPY with Starfall-Salvage-1.2.gbc. Some setups match saves by ROM
+basename; a new filename does not automatically migrate the old save. Keep
+the original backup until Continue restores the expected progress and the
+new version saves and reopens successfully. Before a long session,
+check that your setup can close or power off and then Continue correctly;
+native cold-start persistence has not yet been qualified for this release.
+Targeted browser 1.2 checks retained earned Story progress and a banked
+300-point score across ordinary reload. Those browser checks do not test
+native cold-start saves or full browser-process shutdown.
+See INSTRUCTIONS.pdf for detailed objectives, checkpoint rules and scoring.

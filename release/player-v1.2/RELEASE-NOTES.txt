@@ -1,0 +1,109 @@
+STARFALL SALVAGE 1.2 - RELEASE NOTES
+Player-package draft prepared 2026-10-14
+
+THE GAME
+- Story: 18 missions, six zones, 72 large scrolling rooms.
+- Salvage, ordered relays, repair, physical crew escorts and guardians.
+- Four pulse rigs, middle-route order choices and optional caches.
+- Arcade: repeating 12-map route, changing hazard pressure and banking.
+
+VERSION 1.2: CLEARER CHOICES, FEWER STOPS
+- Filled cyan selection cards, pointer, centered headings and A/B badges.
+- Arcade defaults to FLY ON. One confirmation starts the next sector with
+  the current rig. CHANGE RIG is optional; Keep Current is its default.
+  A fits the selected rig and flies. B returns to the dock unchanged.
+- BANK HAUL secures the score and ends the sortie. B at the dock opens exit
+  options; it does not bank the haul.
+- Story route choices and ordinary Bay Secured cards launch directly with
+  A. Mission Complete opens Flight Deck; choose the next job and A launches.
+  The deck initially highlights an available unfinished mission.
+- Flight Deck, next-bay and Arcade dock cards show the upcoming objective.
+  Pause repeats the current objective. Initial Arcade, retry and restored
+  launch checkpoints still have a Ready to Fly briefing.
+- Rig descriptions explain the tradeoff in plain words. Rigs replace one
+  another; Hull Patch still repairs the hull and returns to Standard.
+- Animated ship, exhaust and stars accompany the title theme. There is
+  no intro to wait through.
+- Confirming a launch does not fire a pulse. Release and press A again
+  to pulse. Held directions and B work when play resumes.
+
+Movement, combat, hazards, objective rules, scoring and rig effects retain
+their existing design. This update changes presentation and menu flow.
+
+UPGRADING A NATIVE SAVE
+Back up the existing ROM and battery-save file. Use your emulator or
+cartridge's normal save import/export or association process to connect a
+COPY of the old battery save with Starfall-Salvage-1.2.gbc. Some setups use
+the ROM basename to find its save, so a new ROM filename does not itself
+migrate progress. Do not overwrite the only copy of your previous save.
+
+Continue restores the committed checkpoint stage, including a room-entry
+briefing where applicable. Check that the expected progress is present,
+then verify saving and reopening on your setup before retiring the backup.
+Browser saves belong to the browser and site address; they do not sync
+across devices. Native save files and browser storage are managed by
+their respective emulator or runtime.
+
+QUALIFICATION STATUS
+The exact native 1.2 ROM completed all 18 Story missions, 72 rooms,
+18 guardians and seven rescues. The ending showed 31:26, Rank B. One M17
+escort attempt failed and recovered through ordinary Retry. CLEAR TIME
+counts successful-room gameplay; it excludes menus, pauses and failed
+attempts and is not a first-time human completion estimate. All 12 native
+Arcade sectors passed without retry and banked 22,500. The title retained
+BEST 22500 and CONTINUE M18; same-session Continue restored the Story
+ending at 31:26, Rank B. All eleven canonical captures match the exact
+native ROM receipt. All fourteen manual pages were visually reviewed,
+and its nine embedded gameplay images match the canonical capture pixels.
+
+Native ROM SHA-256:
+da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78
+
+TARGETED BROWSER 1.2 RESULT
+The exact browser build completed M01 and M02, all eight Story rooms. One
+M02 guardian attempt failed; checkpoint Continue then led to a full-H3
+victory. Direct launch and Pause/Retry were also exercised.
+
+Arcade sector 01 was cleared after an initial failed attempt. Change Rig
+then Back kept the current rig unchanged. Bank Haul saved 300. Ordinary
+reload showed BEST 00300 and CONTINUE M03; Continue restored M03 Bay 1,
+Debris Halo, with H3. Earlier ordinary reloads also recovered the
+1.1-to-1.2 launch checkpoint, earned M01 route choice and completed M02.
+
+Browser ROM SHA-256:
+19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb
+
+This covers eight Story rooms, one Arcade sector and targeted menu/save
+checks. No full browser campaign, complete Arcade cycle or browser clear
+time is claimed. Same-session SRAM Continue and persisted browser reload
+are separate checks. Neither establishes native cold-start saves, full
+browser-process shutdown, physical power-off persistence or heard audio.
+
+Earlier evidence remains scoped to 1.1: the native functional clear showed
+35:27, Rank B; the separate browser clear showed 42:41, Rank B. These timers
+count successful-room gameplay and exclude menus, pauses and failed
+attempts. They are not first-time human completion times or 1.2 results.
+The owner also reported successful 1.1 play on a Chromatic on October 14.
+That informal report does not qualify 1.2, full cartridge power-cycle
+persistence, independently reproduced hardware behavior or audio listening.
+
+REMAINING CHECKS
+- Native cold-start persistence; the current harness does not qualify it.
+- 1.2 physical handheld/cartridge combinations and power-off saves.
+- 1.2 speaker/headphone listening and title/music/effects balance.
+- Full browser-process termination, storage eviction and other origins.
+- First-time human completion time, enjoyment and difficulty balance.
+
+PACKAGE AND VERIFICATION
+The native download contains one Starfall-Salvage-1.2.gbc ROM,
+the illustrated manual, quick start, these notes, credits and checksums.
+Browser files and editable source are distributed separately. Screenshots
+come from the exact accepted 1.2 native ROM; the illustrated cover is
+artwork, not a game frame or physical-device photograph.
+
+SHA256SUMS.txt lists every other payload file, excluding itself. To check:
+macOS: shasum -a 256 -c SHA256SUMS.txt
+Linux: sha256sum -c SHA256SUMS.txt
+
+This is a private review draft. Original-content distribution terms and
+retained asset attribution remain gates before any public release.

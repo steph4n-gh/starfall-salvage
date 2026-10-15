@@ -1,0 +1,1209 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2",
+  "date": "2026-10-14",
+  "dateTimezone": "America/New_York",
+  "preparedAtUtc": "2026-10-15T00:37:04.912039+00:00",
+  "status": "native-story-and-first-arcade-cycle-verified",
+  "scope": "Accepted guided native run on the exact frozen ROM: all 18 Story missions and 72 rooms, 18 guardians and seven rescues, followed by all 12 distinct Arcade sectors and a banked score of 22,500. One failed M17 Story escort attempt and ordinary retry are retained; the Arcade cycle had zero failed attempts. This does not exhaust later Arcade loops or every rig/route combination.",
+  "identity": {
+    "romFilename": "Starfall-Salvage-1.2.gbc",
+    "romSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
+    "romBytes": 1048576,
+    "colorMode": "gbc-only",
+    "mapper": "MBC5",
+    "cartridgeType": "0x1E",
+    "saveRamBytes": 32768,
+    "runtime": {
+      "name": "PyBoy",
+      "version": "2.7.0",
+      "protocolVersion": 1,
+      "workerSha256": "6271cbbb9ca76d4d149173f4110705cfa3c567349f0cb7ceb347bf1df7598925"
+    }
+  },
+  "sourceEvidence": {
+    "storyReceiptFilename": "STORY-RECEIPT.json",
+    "storyReceiptSha256": "3c3852162aa5102cb66d0e031cb552ef1675976ee4507688352f22cdfd0ad2d9",
+    "sourceRoomRecordCount": 72,
+    "sourceFailedAttemptCount": 1,
+    "scope": "Compact summary of the retained private local Story and Arcade receipts. Raw recording, symbol diagnostics and saves are not copied into this portable document.",
+    "arcadeReceiptFilename": "ARCADE-RECEIPT.json",
+    "arcadeReceiptSha256": "ff8d4ad2ad882877eaae0a4b7d4551441a4268419dda54c77a5e58fc4e97d7c4",
+    "sourceArcadeRoomRecordCount": 12,
+    "sourceArcadeFailedAttemptCount": 0
+  },
+  "method": {
+    "input": "Guided ordinary bounded button inputs with actual frame inspection.",
+    "observation": "Read-only native diagnostics accompanied the framebuffer observations.",
+    "gameplayStateWrites": false,
+    "emulatorStateRestores": false,
+    "humanUncoachedPlaytest": false
+  },
+  "story": {
+    "status": "passed",
+    "missionsCompleted": 18,
+    "roomsCompleted": 72,
+    "uniqueRoomsCompleted": 72,
+    "guardiansCompleted": 18,
+    "crewRescuesCompleted": 7,
+    "displayedClearTime": "00:31:26",
+    "rank": "B",
+    "timerScope": "Displayed successful-room gameplay timer; menus, pauses and failed attempts are excluded. It is not elapsed wall time, first-time human completion time or a difficulty measurement.",
+    "endingFrame": 126152,
+    "failedAttempts": [
+      {
+        "mission": 17,
+        "roomIndex": 66,
+        "bay": 3,
+        "reason": "pilot hull depleted during final escort",
+        "failureFrame": 114854,
+        "failureCaptureSha256": "6b73fe58bb9a73fc2a8efc848fe37aaee05aae3b7137a708777fed39c748003d",
+        "failureCaptureRgbaSha256": "9f81e5f1043ee112aee9c54d30d5771bc27bc6c8b19be17a4dd84befdde6de98",
+        "recovery": "Ordinary in-game retry; no emulator-state restore or gameplay-state write.",
+        "successfulAttempt": 2,
+        "successfulClearFrame": 117587,
+        "rescuedCrewHp": 2
+      }
+    ],
+    "coverageLimit": "This recorded run does not exhaust every mission, route-order and rig combination. Host tests of additional choices remain separate evidence.",
+    "missions": [
+      {
+        "mission": 1,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "mission": 2,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "mission": 3,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "mission": 4,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "mission": 5,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "mission": 6,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "mission": 7,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "mission": 8,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      {
+        "mission": 9,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          32,
+          33,
+          34,
+          35
+        ]
+      },
+      {
+        "mission": 10,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      {
+        "mission": 11,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      {
+        "mission": 12,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          44,
+          45,
+          46,
+          47
+        ]
+      },
+      {
+        "mission": 13,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          48,
+          49,
+          50,
+          51
+        ]
+      },
+      {
+        "mission": 14,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          52,
+          53,
+          54,
+          55
+        ]
+      },
+      {
+        "mission": 15,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          56,
+          57,
+          58,
+          59
+        ]
+      },
+      {
+        "mission": 16,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          60,
+          61,
+          62,
+          63
+        ]
+      },
+      {
+        "mission": 17,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          64,
+          65,
+          66,
+          67
+        ]
+      },
+      {
+        "mission": 18,
+        "roomsCleared": 4,
+        "roomIndexes": [
+          68,
+          69,
+          70,
+          71
+        ]
+      }
+    ],
+    "roomClears": [
+      {
+        "mission": 1,
+        "roomIndex": 0,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 1767
+      },
+      {
+        "mission": 1,
+        "roomIndex": 1,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 3162
+      },
+      {
+        "mission": 1,
+        "roomIndex": 2,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 6328,
+        "rescuedCrewHp": 2,
+        "captureSha256": "d49251d0b90a17c260407d1be02977c25d7237b451f70b99bdb0b32b93c4636c",
+        "captureRgbaSha256": "aa5219fa26fd3a4d7b70fa72cd696060f6602da88eafb184b2ea7d771fe8aa3a"
+      },
+      {
+        "mission": 1,
+        "roomIndex": 3,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 8177,
+        "captureSha256": "d8ab0b6a88b96c3304e5b0166d54c855c1792c5a4ba3f21c2e667b1460cfd5b4",
+        "captureRgbaSha256": "092d899d7dd04842636cd5624b13a51814f1de76e30317972b56b01c8b8f155a"
+      },
+      {
+        "mission": 2,
+        "roomIndex": 4,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 9661,
+        "captureSha256": "8d3f4f420191344fba508436d15403cd032ce99b21f2b5a80e3854f88fd2df96",
+        "captureRgbaSha256": "abd38ca5d83e22093b6caf7129834cc0163aff25ae040015d1f536aca780df87"
+      },
+      {
+        "mission": 2,
+        "roomIndex": 5,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 11170,
+        "captureSha256": "1f4a1b2f0f73e5f4f59a32ec267cc69c11ada6cff47efd028c2c47c300bcee19",
+        "captureRgbaSha256": "1014e37b4b282c7b684fbcb52b61c03fd6f906825f8e77388a7310327fe1866f"
+      },
+      {
+        "mission": 2,
+        "roomIndex": 6,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 12552,
+        "captureSha256": "c4bf6a4684039ab53faf6c0d5d1e253dfe6cfb741945fdf006493f72c24a3d97",
+        "captureRgbaSha256": "72415115dc638c524481bd2b57d45817f24c335c90987d6bbc37a8f4c85d5d60"
+      },
+      {
+        "mission": 2,
+        "roomIndex": 7,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 14407,
+        "captureSha256": "579c824ee5b2a4dcd89cfa81514e4ab5e8355f2c9f800fb4f50e59d2cf08f97d",
+        "captureRgbaSha256": "4f456c56b8244b73d79a11388866c1651dc8c8b685574c0cfe47af2db193e23a"
+      },
+      {
+        "mission": 3,
+        "roomIndex": 8,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 15748,
+        "captureSha256": "fbba5eef5e43327b313c673f80a4c3d2a7d05368099a19365fb7cd1f144c77c6",
+        "captureRgbaSha256": "e59f82bca8f8512aeed6e98ef4a58f5f78b290cec581cf3f340cae9ea34432c3"
+      },
+      {
+        "mission": 3,
+        "roomIndex": 9,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 17050,
+        "captureSha256": "48364220a4494cd892c00e632e57df729b8402787bd74cece5e5abaf82c99fb1",
+        "captureRgbaSha256": "45202d12a5c4da7303d987fdad8bc9da6e145dda6cef305ab42850328f656c17"
+      },
+      {
+        "mission": 3,
+        "roomIndex": 10,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 20826,
+        "rescuedCrewHp": 1,
+        "captureSha256": "0250bc27a4bd64376aefb93335ec9a58acf712ed8819e4a028598ee560342947",
+        "captureRgbaSha256": "580218ad7c5e2fac3470d06a3705390306e125bd8ad1c902bc9f92dab07a5e1e"
+      },
+      {
+        "mission": 3,
+        "roomIndex": 11,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 23265,
+        "captureSha256": "9e7211a266293dee8ed307cce524b4e65d60b6cdb7af2c4a83e557b5a64b0626",
+        "captureRgbaSha256": "f4b96a3d8392241acdb8f12fd0d9153406983026ba567f267097efbbd6c263f2"
+      },
+      {
+        "mission": 4,
+        "roomIndex": 12,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 24600,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 4,
+        "roomIndex": 13,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 25873,
+        "captureSha256": "43b6218edf91ec3bea669b497f7f25cf569e98c55efec3929d6df3a4e9933a9d",
+        "captureRgbaSha256": "7a2e2fbe033fc55c0d66e8ba8d6ec66c88838e86ac154a5329713040a859a135",
+        "note": "Frame 25873 shows the already-earned clear restored by ordinary Title to Continue after B returned to Title; it is not the initial clear observation."
+      },
+      {
+        "mission": 4,
+        "roomIndex": 14,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 27650,
+        "captureSha256": "6274e602675411130ad6e8964da287fd72e9f355e64d9889267490cff8d62e98",
+        "captureRgbaSha256": "37c244f29cb0de62d99b765c1f19bcbdc32a63976ce80fb4f08e30c292e7d243"
+      },
+      {
+        "mission": 4,
+        "roomIndex": 15,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 29649,
+        "captureSha256": "1ba838a0b4f206d3bd8deba0b35d2c96e66f4a5fc7475d149c9d3a1518cf2a28",
+        "captureRgbaSha256": "7c40c547f464d17ed475d70bb20fe23ae39a331c36d4aab616dcb7155edbe702"
+      },
+      {
+        "mission": 5,
+        "roomIndex": 16,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 31054,
+        "captureSha256": "fbba5eef5e43327b313c673f80a4c3d2a7d05368099a19365fb7cd1f144c77c6",
+        "captureRgbaSha256": "e59f82bca8f8512aeed6e98ef4a58f5f78b290cec581cf3f340cae9ea34432c3"
+      },
+      {
+        "mission": 5,
+        "roomIndex": 17,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 32381,
+        "captureSha256": "ab2b439b8f5d3624ef1d0c7c121e91b560fe2802296e36dfd78ec555900fec4f",
+        "captureRgbaSha256": "817c588619b51c1dc64ed402818a4dff49ab312237b881be30dd6ab6dd4f6635"
+      },
+      {
+        "mission": 5,
+        "roomIndex": 18,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 36010,
+        "rescuedCrewHp": 2,
+        "captureSha256": "4548c3a7cdff80bf952f7a57d55ee856f07ccb42d3d53c8d19f62f088e1f32aa",
+        "captureRgbaSha256": "83282f305eb65e9a8338b60587f823b1b6f69400f54039d616f291c579b1919e"
+      },
+      {
+        "mission": 5,
+        "roomIndex": 19,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 37856,
+        "captureSha256": "2c63396cd6e9f2afcb85f0a6f39e07f68d002d54d861dd91d82af514b90cbae6",
+        "captureRgbaSha256": "5ef14b1df2fd52fa91be165ffd33018afb61cfd0d5c95156fdac192ba0bc7511"
+      },
+      {
+        "mission": 6,
+        "roomIndex": 20,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 39394,
+        "captureSha256": "8d3f4f420191344fba508436d15403cd032ce99b21f2b5a80e3854f88fd2df96",
+        "captureRgbaSha256": "abd38ca5d83e22093b6caf7129834cc0163aff25ae040015d1f536aca780df87"
+      },
+      {
+        "mission": 6,
+        "roomIndex": 21,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 40712,
+        "captureSha256": "fd9f6380a308e8b7120861af902555516fbef6143ece61bae9d4b1b5080e0c5e",
+        "captureRgbaSha256": "785ded372a5129fe282eb37af4f741808e7a19944d578ceec479127918c62931"
+      },
+      {
+        "mission": 6,
+        "roomIndex": 22,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 42062,
+        "captureSha256": "583f58d5090e2a594314d9af4050026e624791e806084e805003b09b12b44e67",
+        "captureRgbaSha256": "a2161ce78edd14d7822cccb973b0a275ac0b58bd48f1e0c3ca3842887c8695d0"
+      },
+      {
+        "mission": 6,
+        "roomIndex": 23,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 44022,
+        "captureSha256": "adb0510320b6da8a7e8508f894773cfd283ce610b6785e94fc4807b2279dbb45",
+        "captureRgbaSha256": "b094d913cb83d1ca062fb2bd8095d34fb6403c128c260eee435344d315b8f154"
+      },
+      {
+        "mission": 7,
+        "roomIndex": 24,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 45385,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 7,
+        "roomIndex": 25,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 46745,
+        "captureSha256": "9f44ff7c5bd5a2cf67eec3fd93cdbf32c6d983ce11be97b64cb9cb22163b5640",
+        "captureRgbaSha256": "05b6345959671878eab4ff577f602f3d39c8aaa03e64fc7235dc5d761458c7fc"
+      },
+      {
+        "mission": 7,
+        "roomIndex": 26,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 48098,
+        "captureSha256": "b6185006b5050df7069cf68ed089d26f282f63d82c28e0a28031340b3c4699bd",
+        "captureRgbaSha256": "67a3af5ffc011b033e9577b684561a12358789b906cf4c7ed6c6b46c349749c2"
+      },
+      {
+        "mission": 7,
+        "roomIndex": 27,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 50121,
+        "captureSha256": "059623327d070b5e234d00eddc1f4deffb4d63e948c7eb42e41eb9e9903b09e9",
+        "captureRgbaSha256": "d06a6113b32db5ca778d9f4c8389caedd88e81b3969393d4e9f2aeefb0f5d64a"
+      },
+      {
+        "mission": 8,
+        "roomIndex": 28,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 51486,
+        "captureSha256": "5705634271172be639bc83915103eca27fd6be09bc4ee4837685b10219545b51",
+        "captureRgbaSha256": "2a03e29ea44de7876eb6540298c18ab2c6dd8ebfa1f7eb857b708fdf9178479c"
+      },
+      {
+        "mission": 8,
+        "roomIndex": 29,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 52689,
+        "captureSha256": "9cb3c154d46e4becfca791b52fab4408dbe176722b4a1c22311d037656d04c7e",
+        "captureRgbaSha256": "72117b40d690b7f5cac2b0375d7cf0ddef963f57cd824a6e709dda2f933d06d5"
+      },
+      {
+        "mission": 8,
+        "roomIndex": 30,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 55367,
+        "rescuedCrewHp": 2,
+        "captureSha256": "4c54471591a4af13f3c85f396ee79da5ed8dcd1e686d8d37076cd875769abcba",
+        "captureRgbaSha256": "2ca765d69160719bbde3ef37ac6f687ff9bf61212577d00127bcdb7f4561f6d0"
+      },
+      {
+        "mission": 8,
+        "roomIndex": 31,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 57157,
+        "captureSha256": "a2d5b6b6b89b32d642d26596978a71c929e262778a59daccde2c58e41a4299bc",
+        "captureRgbaSha256": "2d755324123db48ffe48766f6c7705e2dd687cdd3d19d65c84727106567e1231"
+      },
+      {
+        "mission": 9,
+        "roomIndex": 32,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 58447,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 9,
+        "roomIndex": 33,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 59622,
+        "captureSha256": "5d8c05439605f6213a6690b15aea659bc0941e5bf312d50acaeab39a02eb8e35",
+        "captureRgbaSha256": "be849541708ebdfda7e08f490714de440585499af1f7913fc6795abbab42a52a"
+      },
+      {
+        "mission": 9,
+        "roomIndex": 34,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 60869,
+        "captureSha256": "f067baedd9c107def3f2b37afc694b46aac3e258db37fe3411933b71c674f596",
+        "captureRgbaSha256": "db3dfe0e36f8be7cba28b6d9ee7e0259bc6ad5d9e958b7eae57ff1e34663ee1a"
+      },
+      {
+        "mission": 9,
+        "roomIndex": 35,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 63359,
+        "captureSha256": "4c04d964013f433f5f2da950ea06c67100c03b7fa4ce388f441eb33c6d8403e7",
+        "captureRgbaSha256": "a896e6376f51b0599a3cbf5dcc61a58ffe363894858a480a95b45de3ee9b6976"
+      },
+      {
+        "mission": 10,
+        "roomIndex": 36,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 64799,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 10,
+        "roomIndex": 37,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 65996,
+        "captureSha256": "ea2a0ecadfd347183fd9740eb42cb4777d2da76953f0241b760bc0a8ac65b7a9",
+        "captureRgbaSha256": "1a35e16b5731504d6a5d820f7ab5e6cda4abb96e449877024cbd5f4f4bd8afed"
+      },
+      {
+        "mission": 10,
+        "roomIndex": 38,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 67386,
+        "captureSha256": "c615e0bbcd1a18973bb59a00d28165c78820519cea629fc7cfeb0d7ce98bc3bc",
+        "captureRgbaSha256": "7d691192b65b9617864c0b0e2c64680ebe3373779d233c8cd150781bcc88fdd1"
+      },
+      {
+        "mission": 10,
+        "roomIndex": 39,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 69256,
+        "captureSha256": "642aecd6c379841056f010dfaa7b904cd188a7f27e9acd864048362ceff015c6",
+        "captureRgbaSha256": "707043295c68aa3e1181067e9ba9eb45387f6cb6606f37543006c82beb1f0ac3"
+      },
+      {
+        "mission": 11,
+        "roomIndex": 40,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 70542,
+        "captureSha256": "fbba5eef5e43327b313c673f80a4c3d2a7d05368099a19365fb7cd1f144c77c6",
+        "captureRgbaSha256": "e59f82bca8f8512aeed6e98ef4a58f5f78b290cec581cf3f340cae9ea34432c3"
+      },
+      {
+        "mission": 11,
+        "roomIndex": 41,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 71999,
+        "captureSha256": "ec7a41775716e16f060287b0f1f866adea3b938fc603d5137a9742e5bd23a1bc",
+        "captureRgbaSha256": "3fb1d42e1f927d3acd5e931dd7757be56855c2b9060516fd305a3557fc8f6778"
+      },
+      {
+        "mission": 11,
+        "roomIndex": 42,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 75247,
+        "rescuedCrewHp": 1,
+        "captureSha256": "923a8b621d29d924d076f00b319d145dc3bb3795fd6db8dd5e9ef4d759bd9a80",
+        "captureRgbaSha256": "3df68054ea6f3ea1490131797c6e92c884d5534e271cda1a531ad3a508c39227"
+      },
+      {
+        "mission": 11,
+        "roomIndex": 43,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 77402,
+        "captureSha256": "c4230ffa92529f582379607404d120abdcdcb5d72469fcc890d37cecba425bd5",
+        "captureRgbaSha256": "59298de4ae2b4ca7020ea38768e7ab74909ad2086993d89971416cb0ac9d8f9c"
+      },
+      {
+        "mission": 12,
+        "roomIndex": 44,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 78860,
+        "captureSha256": "8d3f4f420191344fba508436d15403cd032ce99b21f2b5a80e3854f88fd2df96",
+        "captureRgbaSha256": "abd38ca5d83e22093b6caf7129834cc0163aff25ae040015d1f536aca780df87"
+      },
+      {
+        "mission": 12,
+        "roomIndex": 45,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 80203,
+        "captureSha256": "6372b5ba51e8a2d3a054a4ac69a22b9025bae8027d6b53b4e8c296045ce51ba3",
+        "captureRgbaSha256": "a710e6ced013e3b07fb517e150df5fdb0ba9681ab6bdca496e8f6553d11efd45"
+      },
+      {
+        "mission": 12,
+        "roomIndex": 46,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 81531,
+        "captureSha256": "0fe59d42d095b66b886596a92b0fb3f42b8931350b3c41ef410caad0407d0f5c",
+        "captureRgbaSha256": "6959515544eca298885ea97526b7948d826e2e8fb2a358f84f90a56d52f5dede"
+      },
+      {
+        "mission": 12,
+        "roomIndex": 47,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 83738,
+        "captureSha256": "304ab24818e8d0a70c5995f60adf4d48905eb8dcf5b7ee0d0cc6b8be14730864",
+        "captureRgbaSha256": "fcd30c5f3ddc8c2ad9b622a6ff5c61673dd97962847cbadb512d5c1a40ba2947"
+      },
+      {
+        "mission": 13,
+        "roomIndex": 48,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 85118,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 13,
+        "roomIndex": 49,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 86479,
+        "captureSha256": "301b4ea7f60c050d90627f00b840dd557e8d819c5f2eed247bf0dad44475d784",
+        "captureRgbaSha256": "ca31cd8271744964f0e6e8590fed71896377487de2279c744351de3b761d8837"
+      },
+      {
+        "mission": 13,
+        "roomIndex": 50,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 87821,
+        "captureSha256": "e1349f78de746546037a09c647170452d77d9e4df3ad711078a5e822d36bf763",
+        "captureRgbaSha256": "ffb4d5976535dfd1abcc626ad8f654796aa7f014fbe48e083163f0dff70db167"
+      },
+      {
+        "mission": 13,
+        "roomIndex": 51,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 89882,
+        "captureSha256": "8764d457cfbc5a990a95d73674db7c7d0c3cdf5126b1228a680914c5100755ee",
+        "captureRgbaSha256": "83bac7dc8bd207554286a23af150684c773be0714b5515e2f6434c8897642cd7"
+      },
+      {
+        "mission": 14,
+        "roomIndex": 52,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 91166,
+        "captureSha256": "fbba5eef5e43327b313c673f80a4c3d2a7d05368099a19365fb7cd1f144c77c6",
+        "captureRgbaSha256": "e59f82bca8f8512aeed6e98ef4a58f5f78b290cec581cf3f340cae9ea34432c3"
+      },
+      {
+        "mission": 14,
+        "roomIndex": 53,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 92523,
+        "captureSha256": "f96d80ac77c18cc4c22709f217502d1be31c85df97c1bd2efdedcbd4e3c995f5",
+        "captureRgbaSha256": "af846988a34df1eaa581c9d95ffcd244950309089d393628029e4bc263fc88ad"
+      },
+      {
+        "mission": 14,
+        "roomIndex": 54,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 96027,
+        "rescuedCrewHp": 1,
+        "captureSha256": "a298227689d509def3e4ad9be885edc0b04ef4700647f140c3325e364a6285d7",
+        "captureRgbaSha256": "74676940fdef4312a65bafb6ecfdfa5cfe804c8f7e292d814d962313175b5135"
+      },
+      {
+        "mission": 14,
+        "roomIndex": 55,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 98110,
+        "captureSha256": "ae2e3b3450dfec60339a74a993de5ced9bd29e6025d12c536b02953f1d36ae73",
+        "captureRgbaSha256": "14178d3bb7d4b2aaae303bf0a8000d1c445e3a4a79814fabca85311a9cfdc285"
+      },
+      {
+        "mission": 15,
+        "roomIndex": 56,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 99227,
+        "captureSha256": "8d3f4f420191344fba508436d15403cd032ce99b21f2b5a80e3854f88fd2df96",
+        "captureRgbaSha256": "abd38ca5d83e22093b6caf7129834cc0163aff25ae040015d1f536aca780df87"
+      },
+      {
+        "mission": 15,
+        "roomIndex": 57,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 100563,
+        "captureSha256": "be81ded7b5c81d36d624d4421a62baf7d0ca1e381949c51f113ccb85d3556676",
+        "captureRgbaSha256": "59c79f09cb5cec2969cd5983d16dbb27994738a0919592a9777dddc18bc864f6"
+      },
+      {
+        "mission": 15,
+        "roomIndex": 58,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 102041,
+        "captureSha256": "a884354f45e441f82e3b725da54e846ff06aacaae6afe13c00651efd05738c62",
+        "captureRgbaSha256": "0d175a0c0fb95f0f623e2fecd5de5d41bab644b4e5a905936b88eb956e176561"
+      },
+      {
+        "mission": 15,
+        "roomIndex": 59,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 104108,
+        "captureSha256": "c9b44c8089d47b1be913ee9954f14756b816726d565429db6be8bcb86cc0a533",
+        "captureRgbaSha256": "19fb510d352a7e15d5c6986c5d603ab3e8a588342af034a75d2231ff3d40f4e7"
+      },
+      {
+        "mission": 16,
+        "roomIndex": 60,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 105404,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 16,
+        "roomIndex": 61,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 106694,
+        "captureSha256": "3701395a9529e67ff0f42ae94c656ed79cd40a306fd61392fb0a7ab564f4dca1",
+        "captureRgbaSha256": "c66a28c1453d216e49f74b3945963b22502d6cf8c9b5438865d4a1c73865db98"
+      },
+      {
+        "mission": 16,
+        "roomIndex": 62,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 108292,
+        "captureSha256": "28e0d416ce7bc061c8e298f71a34c4749b8cb2462f2e2945855692878195e1ce",
+        "captureRgbaSha256": "49cd1983dbacdb8f9c4305bab40f29ef402baa95a48687411ba135f0247169f3"
+      },
+      {
+        "mission": 16,
+        "roomIndex": 63,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 110231,
+        "captureSha256": "fd8c25b18e3c2f9f9239fbe2a00a3eb199fb95b84c8ea89f522394937c5bfbf9",
+        "captureRgbaSha256": "a8f4c695b9553eeded5971567ab6ad5e437df48ee1bcb4d499a04e9e2a8e2be6"
+      },
+      {
+        "mission": 17,
+        "roomIndex": 64,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 111683,
+        "captureSha256": "fbba5eef5e43327b313c673f80a4c3d2a7d05368099a19365fb7cd1f144c77c6",
+        "captureRgbaSha256": "e59f82bca8f8512aeed6e98ef4a58f5f78b290cec581cf3f340cae9ea34432c3"
+      },
+      {
+        "mission": 17,
+        "roomIndex": 65,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 113037,
+        "captureSha256": "722ffddb4c71a236ff08c793281b0f25c0c355861d6468898cbdb296c5f82767",
+        "captureRgbaSha256": "0c5f0aaf37ca5c25ccd4558b5e0b56f019a98cb10a711652b70317c09e621c5d"
+      },
+      {
+        "mission": 17,
+        "roomIndex": 66,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 117587,
+        "successfulAttempt": 2,
+        "rescuedCrewHp": 2,
+        "captureSha256": "a2c883660f2fd79df12888c66039a3b395613caef0b99ef5031425fc942a03d2",
+        "captureRgbaSha256": "3a6d3187a2c349b5a10aad5952783411a6f4a38892d4434c1e319ae77d8bef19"
+      },
+      {
+        "mission": 17,
+        "roomIndex": 67,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 119444,
+        "captureSha256": "f6bd18b8905651a64dfbe4cdddbf6ffbab3553b594014d1372177af979751edb",
+        "captureRgbaSha256": "8719cafddbbbfe76c55d514e475c14e3c77b6b4b84db6b5e092e1218a164cfb1"
+      },
+      {
+        "mission": 18,
+        "roomIndex": 68,
+        "bay": 1,
+        "clearCount": 1,
+        "clearFrame": 121177,
+        "captureSha256": "4141c3081a473b6e5efacbb781f9c190fdb78daae61be8566e3ff9a179e6e4c0",
+        "captureRgbaSha256": "bae969dfa0ccdebfa12f8e73495d52f9de583ffc1b43aca94674b2086d0d8c92"
+      },
+      {
+        "mission": 18,
+        "roomIndex": 69,
+        "bay": 2,
+        "clearCount": 1,
+        "clearFrame": 122462,
+        "captureSha256": "e5665e911899cbe62b4e1eb95f6e8d544d2aee3af9db4b2a72fbd59178b9bc7a",
+        "captureRgbaSha256": "1dba62e4fb19a77927344180a4ec102ac1ac5f96d7b54651c10989b357907aff"
+      },
+      {
+        "mission": 18,
+        "roomIndex": 70,
+        "bay": 3,
+        "clearCount": 1,
+        "clearFrame": 123715,
+        "captureSha256": "5e47dcb8094f0f064d583c69a3f612f8393a30a9facd0247dc8bcf9bc7f256f8",
+        "captureRgbaSha256": "2919b98d72d71ba443ea895d860847b6e8945a1da52f64347a8734022ac69aba"
+      },
+      {
+        "mission": 18,
+        "roomIndex": 71,
+        "bay": 4,
+        "clearCount": 1,
+        "clearFrame": 126152,
+        "captureSha256": "8c4ada82b3f4afb9c78ca992920b0b3a149dfc3f255c2d31a62a56d9bd54b78a",
+        "captureRgbaSha256": "8ee62c1c1e5fb58e8bcc5bc7ee83e3e2c337397dfe32582d5ced055e651defbd"
+      }
+    ],
+    "roomClearFrameScope": "Frames identify observed cleared states. Any later in-game Continue observation is identified in the corresponding row."
+  },
+  "saveChecks": {
+    "scope": "Same-live-emulator Title/Continue recovery only. Cold boot battery persistence not tested by this native tool.",
+    "checks": [
+      {
+        "name": "launch",
+        "result": "passed",
+        "beforeFrame": 119636,
+        "afterFrame": 119924,
+        "scope": "Same-live-emulator Title to Continue; committed checkpoint stage, not a mid-room snapshot.",
+        "roomIndexBefore": 68,
+        "roomIndexAfter": 68,
+        "completedRoomMaskBefore": 0,
+        "completedRoomMaskAfter": 0
+      },
+      {
+        "name": "branch",
+        "result": "passed",
+        "beforeFrame": 1767,
+        "afterFrame": 1881,
+        "scope": "Same-live-emulator Title to Continue; committed checkpoint stage, not a mid-room snapshot.",
+        "roomIndexBefore": 0,
+        "roomIndexAfter": 0,
+        "completedRoomMaskBefore": 1,
+        "completedRoomMaskAfter": 1
+      },
+      {
+        "name": "result",
+        "result": "passed",
+        "beforeFrame": 3162,
+        "afterFrame": 3396,
+        "scope": "Same-live-emulator Title to Continue; committed checkpoint stage, not a mid-room snapshot.",
+        "roomIndexBefore": 1,
+        "roomIndexAfter": 1,
+        "completedRoomMaskBefore": 3,
+        "completedRoomMaskAfter": 3
+      },
+      {
+        "name": "complete",
+        "result": "passed",
+        "beforeFrame": 8177,
+        "afterFrame": 8271,
+        "scope": "Same-live-emulator Title to Continue; committed checkpoint stage, not a mid-room snapshot.",
+        "roomIndexBefore": 3,
+        "roomIndexAfter": 3,
+        "completedRoomMaskBefore": 15,
+        "completedRoomMaskAfter": 15
+      },
+      {
+        "name": "board",
+        "result": "passed",
+        "beforeFrame": 37897,
+        "afterFrame": 38049,
+        "scope": "Same-live-emulator Title to Continue; committed checkpoint stage, not a mid-room snapshot.",
+        "roomIndexBefore": 19,
+        "roomIndexAfter": 19,
+        "completedRoomMaskBefore": 15,
+        "completedRoomMaskAfter": 15,
+        "note": "Continue returns to last completed mission card; next highlighted unlaunched mission not retained."
+      },
+      {
+        "name": "ending",
+        "result": "passed",
+        "beforeFrame": 126152,
+        "afterFrame": 126324,
+        "scope": "Same-live-emulator Title to Continue; committed checkpoint stage, not a mid-room snapshot.",
+        "roomIndexBefore": 71,
+        "roomIndexAfter": 71,
+        "completedRoomMaskBefore": 15,
+        "completedRoomMaskAfter": 15
+      },
+      {
+        "name": "pause",
+        "result": "passed",
+        "beforeFrame": 396,
+        "afterFrame": 516,
+        "scope": "Same-session pause froze the sampled gameplay state for 120 emulator frames."
+      }
+    ],
+    "coldBootSramTested": false,
+    "coldBootLimitation": "The current native tool does not support a qualified cold-boot battery-save test."
+  },
+  "endingCapture": {
+    "name": "story-ending-1.2.png",
+    "romSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
+    "frame": 126152,
+    "sha256": "8c4ada82b3f4afb9c78ca992920b0b3a149dfc3f255c2d31a62a56d9bd54b78a",
+    "rgbaSha256": "8ee62c1c1e5fb58e8bcc5bc7ee83e3e2c337397dfe32582d5ced055e651defbd",
+    "width": 160,
+    "height": 144
+  },
+  "arcade": {
+    "status": "passed",
+    "fullCycleCompleted": true,
+    "sectorsCompleted": 12,
+    "roomsCompleted": 12,
+    "sectorNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "failedAttempts": 0,
+    "bankedScore": 22500,
+    "bestBankedScore": 22500,
+    "scope": "One complete 12-sector cycle, then ordinary Bank Haul. Later indefinite loops and every possible rig choice are not covered by this receipt.",
+    "roomClears": [
+      {
+        "sector": 1,
+        "roomIndex": 72,
+        "clearCount": 1,
+        "clearFrame": 126978,
+        "scoreAfterClear": 300,
+        "captureSha256": "56ce7fcde6c3e7071d44581eaf8d0adadd20b4828da4b082d8c55d90df1f2321",
+        "captureRgbaSha256": "cb0a6380db378d2e236767ea1a888c8512770b95ebb8f9f0c27970f434932afb"
+      },
+      {
+        "sector": 2,
+        "roomIndex": 73,
+        "clearCount": 1,
+        "clearFrame": 127690,
+        "scoreAfterClear": 900,
+        "captureSha256": "e5dd094ab2af54fa382a3429748c4e72bb2ba65f0522e4acee8aa458804055c2",
+        "captureRgbaSha256": "6159beade4f7c8b9d44fd9e1dd0cdfc1582245560718aa6675051e9e4b531d94"
+      },
+      {
+        "sector": 3,
+        "roomIndex": 74,
+        "clearCount": 1,
+        "clearFrame": 128484,
+        "scoreAfterClear": 1800,
+        "captureSha256": "57a2cfc0b40d58220e03effe81910110ebf3cea7dcf476c6c8a8d43c562c7514",
+        "captureRgbaSha256": "1d826efbe4f56229c6ecd88b0daafc22ebc84f0f455cb9f935397d6b60913935"
+      },
+      {
+        "sector": 4,
+        "roomIndex": 75,
+        "clearCount": 1,
+        "clearFrame": 129188,
+        "scoreAfterClear": 3000,
+        "captureSha256": "7f66a6604bc9d19a3768e5552642cbf826a588c11fc9d6efaba3eaba219eaeec",
+        "captureRgbaSha256": "4ad9ca9b6b7347f78757e1c1bf5381f4faacf6d2807c1b164c8413b7b8b1d186"
+      },
+      {
+        "sector": 5,
+        "roomIndex": 76,
+        "clearCount": 1,
+        "clearFrame": 130121,
+        "scoreAfterClear": 4500,
+        "captureSha256": "c853e28d794db21c6f4433bee465b8c202841a696ee6b91286e9a222f64e3150",
+        "captureRgbaSha256": "7e70e9846e63fbc1cc44354f3f834dda18f70a8fa0fa0155c979a6cc9d8684fd"
+      },
+      {
+        "sector": 6,
+        "roomIndex": 77,
+        "clearCount": 1,
+        "clearFrame": 130947,
+        "scoreAfterClear": 6300,
+        "captureSha256": "e93ad0eb973f5f5c9280cf2ef2818f361672ae973ea6ba03581bfbe11c0d41db",
+        "captureRgbaSha256": "b516d1852ed3b3b5e535d8d9629ef5c76dc5817d06120a066ed718dc54db597f"
+      },
+      {
+        "sector": 7,
+        "roomIndex": 78,
+        "clearCount": 1,
+        "clearFrame": 131717,
+        "scoreAfterClear": 8400,
+        "captureSha256": "c2759020b3ded23eb885cb81c69d64b5140ee23478e3b2107961b42923d51578",
+        "captureRgbaSha256": "e590e265d0a95fa3d5cd7c7d5b3c47bdaadc3c792db87e6c8442517254738c8f"
+      },
+      {
+        "sector": 8,
+        "roomIndex": 79,
+        "clearCount": 1,
+        "clearFrame": 132667,
+        "scoreAfterClear": 10800,
+        "captureSha256": "23c1f7ae25e4792ed51482f2087d6e44e78ba439642a09b404c2023233f3e801",
+        "captureRgbaSha256": "6ce46d6407604802d965bec5dfff23c2e291774809432852609341c520b4d9aa"
+      },
+      {
+        "sector": 9,
+        "roomIndex": 80,
+        "clearCount": 1,
+        "clearFrame": 133394,
+        "scoreAfterClear": 13500,
+        "captureSha256": "3c0476df1550cdad103bf0622a9004702280e793c184a112ce796d0015084e69",
+        "captureRgbaSha256": "ccb474cc07df62f184beab07d3b0f7b62fd83c0ce1c325cc69ab6f31633b70b2"
+      },
+      {
+        "sector": 10,
+        "roomIndex": 81,
+        "clearCount": 1,
+        "clearFrame": 134385,
+        "scoreAfterClear": 16500,
+        "captureSha256": "74b4b0d5a00b3008f5ff984abe1aaa270eebbe8afb039e47de5cfb147326706f",
+        "captureRgbaSha256": "c91dca9d1a6b0c8ea013bfcac4421db76f028cd995ac24be2619b03acf700842"
+      },
+      {
+        "sector": 11,
+        "roomIndex": 82,
+        "clearCount": 1,
+        "clearFrame": 135058,
+        "scoreAfterClear": 19500,
+        "captureSha256": "75ccd121457b89295fb630daf4db8c785f670cf9a9a22ff545156d67714ffa10",
+        "captureRgbaSha256": "112396caf6d7a395f8fe16b43f72dc3abe64f7de24861872fac2a47773e6c87f"
+      },
+      {
+        "sector": 12,
+        "roomIndex": 83,
+        "clearCount": 1,
+        "clearFrame": 136315,
+        "scoreAfterClear": 22500,
+        "captureSha256": "5ee0b56d30e4d2ad496747b52b9b67423648ed13ea10d8917bd983846fd02670",
+        "captureRgbaSha256": "75124380b4f400c334345be97ad6c0916015e221cdff60bb51d5817a0bd2a884"
+      }
+    ],
+    "orderedRelayCheck": {
+      "sector": 8,
+      "frame": 132080,
+      "result": "passed",
+      "observation": "Operating the third relay before the first left completed-relay count at zero.",
+      "capture": {
+        "frame": 132080,
+        "sha256": "8a15e65d7a8462edff941c106696f93c0fbc35a3116a7b455ace1468777e6902",
+        "rgbaSha256": "d43fe88e993615316ffdef7e1b03d48fa3602ed6ac000417cb7323c6ed2ea178",
+        "width": 160,
+        "height": 144
+      }
+    },
+    "bankResult": {
+      "frame": 136453,
+      "bankedScore": 22500,
+      "bestBankedScore": 22500,
+      "capture": {
+        "frame": 136453,
+        "sha256": "fb930af6c7a05f85a1ee5da3eae3fc4d22bab510cfeb22ff9650fbae4dde3d7e",
+        "rgbaSha256": "6015476147a4f01250def540a59569758eb272d32aa41d7a4c6f43ea4ad33f11",
+        "width": 160,
+        "height": 144
+      }
+    },
+    "titleAfterBank": {
+      "frame": 136519,
+      "capture": {
+        "frame": 136519,
+        "sha256": "76534066952939b772256824306c23a892078874527a9daa96728b6be4d4d4cb",
+        "rgbaSha256": "4690b9047f5f7046d0a5015314f40eb73388be79ddf5b53803622781367f5285",
+        "width": 160,
+        "height": 144
+      }
+    },
+    "storyContinueAfterBank": {
+      "result": "passed",
+      "frame": 136625,
+      "display": "STARFALL SAVED / CLEAR TIME 00:31:26 / RANK B",
+      "restoredRoomIndex": 71,
+      "completedRoomMask": 15,
+      "capture": {
+        "frame": 136625,
+        "sha256": "8c4ada82b3f4afb9c78ca992920b0b3a149dfc3f255c2d31a62a56d9bd54b78a",
+        "rgbaSha256": "8ee62c1c1e5fb58e8bcc5bc7ee83e3e2c337397dfe32582d5ced055e651defbd",
+        "width": 160,
+        "height": 144
+      },
+      "scope": "Ordinary Title to Continue in the same live emulator session preserved the completed Story checkpoint; no cold-boot persistence claim."
+    }
+  },
+  "limitations": [
+    "No physical 1.2 handheld/cartridge qualification.",
+    "No speaker/headphone listening or native audio capture qualification.",
+    "No native cold-boot or full power-off save persistence qualification.",
+    "No first-time human completion time, enjoyment or balance claim.",
+    "Native execution does not transfer its full-campaign result to the separately identified browser ROM/runtime.",
+    "Final screenshot promotion, rendered manual review, packaging and hosted 1.2 checks remain separate release work."
+  ],
+  "recordingSummary": {
+    "status": "stopped",
+    "finalFrame": 136871,
+    "eventCount": 16809,
+    "finalEventDigest": "dbce172356c26c44a34f415952d9f7b044d8d75c31f048a3460b5a67ec5cfba9",
+    "scope": "One continuous native emulator session from fresh boot through Story, Arcade and same-session Continue checks; stopped normally. These identities describe the retained recording, not a deterministic replay certification."
+  },
+  "titleMotion": {
+    "format": "GIF",
+    "sha256": "e1822728f36576c922f9db938e738e50c51e52f4556006a4f35763e8e62c0a8b",
+    "startFrame": 136691,
+    "endFrame": 136871,
+    "durationMs": 3030,
+    "frameCount": 25,
+    "sourceFrameCount": 26,
+    "width": 160,
+    "height": 144,
+    "scope": "Sparse genuine framebuffer samples held at native timing, without motion interpolation or audio. This short capture does not establish complete title-loop timing, audible playback or physical-hardware performance."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "recordedAt": "2026-10-14T22:31:37.805665+00:00",
+  "result": "passed",
+  "url": "https://starfall-salvage.steph4n1.chatgpt.site",
+  "gameRoute": "/play/",
+  "testedSiteVersion": 3,
+  "testedDeploymentId": "appgdep_6ad001e756d0819182f8f6359faa1663",
+  "runtime": "Codex in-app browser on the owner account",
+  "identity": {
+    "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+    "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
+    "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650"
+  },
+  "checks": {
+    "landingPageAndPlayButton": "passed",
+    "gameInitialLoad": "passed",
+    "ordinaryKeyboardMovementBrakePulseAndPause": "passed",
+    "ordinaryReloadContinueEarnedM01Checkpoint": "passed",
+    "consoleWarningsAndErrors": 0
+  },
+  "accessVerification": {
+    "basis": "Sites get_site and successful deploy_private_site_version enforce owner-only access. Re-read after deployment confirmed only one owner, no groups and no external visitors.",
+    "allowedOwnerCount": 1,
+    "allowedGroupCount": 0,
+    "externalVisitorCount": 0,
+    "anonymousHttpProbe": "Unauthenticated Python requests to landing page, player, ROM and WASM returned Cloudflare 403 code 1010. This is client-blocking evidence, not an independent authentication check."
+  },
+  "saveScope": "Each browser and site origin keeps its own progress; login does not synchronize saves across devices. Wait at least two seconds after CHECKPOINT SAVED before leaving.",
+  "screenshots": [
+    {
+      "file": "docs/browser-evidence/hosted-reload-title.jpg",
+      "sha256": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
+      "caption": "Fresh hosted title after ordinary reload shows CONTINUE M01.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/browser-evidence/hosted-reload-continue.jpg",
+      "sha256": "d821248db0811c2bfb1d343039c19e7abb49708f475dccb877a4c791eaa5773a",
+      "caption": "Continue restores the earned Freight Spine M01 Bay 1/4 H3 briefing with CHECKPOINT SAVED.",
+      "processing": "Unmodified full-viewport browser capture."
+    }
+  ],
+  "scope": "Deployment smoke and earned room-entry checkpoint recovery at the stable private origin using ordinary input. No injected save or emulator snapshot. Full campaign qualification remains the earlier local run on identical game files. No second-device, mobile, other-browser, heard-audio, browser-process shutdown or physical-device qualification."
+}

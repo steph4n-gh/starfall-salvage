@@ -1,20 +1,15 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-14",
-  "scope": "Manual records the completed guided local-browser campaign and bounded local restart/reload persistence. Native ROM, native evidence and screenshots remain unchanged.",
+  "version": "1.2",
+  "scope": "Fourteen-page illustrated 1.2 manual for direct continuation, optional Arcade rigs, revised menus/title and native-save upgrades. Native Story/Arcade and bounded browser evidence remain separate.",
   "pdf": {
-    "promoted": "release/player-v1.1/INSTRUCTIONS.pdf",
-    "sha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
-    "bytes": 5173042,
+    "promoted": "release/player-v1.2/INSTRUCTIONS.pdf",
+    "sha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+    "bytes": 5168094,
     "pages": 14
   },
-  "change": "Page 13 separately records native clear 00:35:27 and browser clear 00:42:41 (both Rank B), exact local-browser scope, Restart Game/Continue checkpoint restoration, and page-reload emulator-state restoration. Public-host, other browser/origin, full browser close/crash, hardware, heard-audio, power-off save and human-enjoyment gates remain open.",
-  "changedTextPages": [
-    13
-  ],
-  "changedRenderedPages": [
-    13
-  ],
+  "change": "Replaced all nine gameplay images with exact 1.2 native captures; updated controls, direct menu flow, optional rig choices, title, upgrade guidance and qualification scope. The final correction puts objective reading before launch in the first-flight steps.",
   "visualReview": {
     "pages": [
       1,
@@ -32,39 +27,146 @@
       13,
       14
     ],
-    "result": "Passed. All 14 rendered pages inspected; no clipped or overlapping text, broken tables/images, unreadable glyphs, or footer/page-number defects. Page 13 additions fit without pagination changes.",
+    "result": "Passed. All fourteen rendered pages were inspected by the authoring reviewer and independently by the root reviewer. No clipped or overlapping text, broken tables/images, unreadable glyphs or footer defects were found. The revised page 2 was re-inspected; the thirteen other rendered pages were byte-identical to the reviewed set.",
     "renderer": "Poppler pdftoppm, 110 dpi",
-    "renderedPdfSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d"
+    "renderedPdfSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+    "finalCorrectionChangedRenderedPages": [
+      2
+    ],
+    "independentReviewReceiptSha256": "22dcee201aef6ca689b69441f24d742e7178ecd69f720d53a0fb9b8c3ffe060b"
   },
   "structuralChecks": {
     "outOfBoundsTextCharacters": 0,
+    "typographicDashCharacters": 0,
     "embeddedGameplayScreenshots": 9,
     "allGameplayImages160x144": true,
     "allGameplayPixelsMatchCanonicalCaptureManifest": true,
-    "coverIllustrationSeparate": true
+    "coverIllustrationSeparate": true,
+    "coverPixelsMatchOriginalArtwork": true,
+    "allSourceProvenanceHashesCurrent": true,
+    "allHtmlImagesPresent": true,
+    "bodyTextStaysAboveFooter": true
+  },
+  "embeddedGameplayImages": [
+    {
+      "page": 2,
+      "file": "title-1.2.png",
+      "rgbaSha256": "27469539bf605377d6ab63a82bb30be480f5f6c45e47edc4f1f09c9b76ed8033",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 5,
+      "file": "escort-flight.png",
+      "rgbaSha256": "e0a87d3774fa24c578ffa62b1df799818bf99f8ec04e8aa8f1df1a32168b628e",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 5,
+      "file": "guardian-core-open.png",
+      "rgbaSha256": "979d450775b43e08f1521c0b8be4bcb4fa12cb752ca7c6460f9730d2008f361b",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 7,
+      "file": "route-choice.png",
+      "rgbaSha256": "e59f82bca8f8512aeed6e98ef4a58f5f78b290cec581cf3f340cae9ea34432c3",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 9,
+      "file": "pause-menu.png",
+      "rgbaSha256": "ce5b41d5a689eb1e0cfdb18d6db3982b9562c4265e54e77230b4961f399d014a",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 10,
+      "file": "workbench.png",
+      "rgbaSha256": "68e6ab723a47f773ec01b9f1c4846b0a223f1d9e8201bfa85867857c680f5bf5",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 10,
+      "file": "arcade-bank-choice.png",
+      "rgbaSha256": "e196aa7938712af9f3c1c6c8ffa88ac9fe9135200e8c564b3cfebd95d9464bad",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 11,
+      "file": "arcade-bank-result.png",
+      "rgbaSha256": "6015476147a4f01250def540a59569758eb272d32aa41d7a4c6f43ea4ad33f11",
+      "width": 160,
+      "height": 144
+    },
+    {
+      "page": 11,
+      "file": "story-ending-1.2.png",
+      "rgbaSha256": "8ee62c1c1e5fb58e8bcc5bc7ee83e3e2c337397dfe32582d5ced055e651defbd",
+      "width": 160,
+      "height": 144
+    }
+  ],
+  "captureManifest": {
+    "path": "campaign/full-length-packaging-stage/assets/screenshots/SCREENSHOTS.json",
+    "sha256": "d082b6b435e9489341dfcc950bbbdde7edd8f50f0028aa3ec936540554c4ed84",
+    "canonicalCaptures": 11,
+    "embeddedInManual": 9,
+    "nativeRomSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78"
   },
   "sourceSha256": {
-    "campaign/full-length-packaging-stage/generate_manual.py": "8b28c5dd9e34d1b93c97e813488ed61fb38eadb58e3c8f81d076856240220cc9",
-    "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "cdd4637410e7a13a346c0a55bd696317ba0c41bfb96f69ad66e81de66b3a512e",
-    "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "382f53383d507b7661f754f08021029a58a60b78c733275d8e7ac201f9338cf6"
+    "campaign/full-length-packaging-stage/generate_manual.py": "0cad06359276b1c104a2cf9438b9ff3efd31d92139a02591c99c6f957f8fb376",
+    "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "97b4316b905ffd2fa988c5d2229ad9ff6f1907a1b74abd8edbaac3c156aa44ee",
+    "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "55d70bbdf49994e25af753b037c097afabf73efbfc235fbcfd2f48794d81305d",
+    "campaign/full-length-packaging-stage/assets/source-provenance.json": "6ae3b3dfd73f50eb354329874cbcd109d3665352629a9d7cbd265013a78a7bd2"
   },
-  "browserQualification": {
-    "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
-    "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
-    "storyMissions": 18,
-    "storyRooms": 72,
-    "guardians": 18,
-    "crewEscortRooms": 7,
-    "guidedInGameClear": "00:42:41",
-    "rank": "B",
-    "scope": "Exact local preview build/runtime/origin; ordinary UI controls, pauses/retries and an already-earned saved-state recovery; not an uninterrupted real-time human usability or duration measurement. Restart Game/Continue restored ending; page reload restored emulator snapshot. No general public-host, cross-origin, browser-process-restart, crash or hardware claim.",
-    "visuallyInspectedEvidenceSha256": {
-      "1792014047552-m18-heart-final-dock.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
-      "ending-restart-fresh-title.jpg": "4a00108fc076ee43d87696071b672fa7375099115849e2e13d0b47b11e8559ab",
-      "ending-restart-continue.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
-      "ending-page-reload.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8"
+  "qualificationReceipts": {
+    "native": {
+      "path": "docs/NATIVE-VERIFICATION.json",
+      "sha256": "1d65f53c40b059bc4026940b138a3b8989162b1a3abf68bad4877b8f535feba4",
+      "storyMissions": 18,
+      "storyRooms": 72,
+      "guardians": 18,
+      "crewRescues": 7,
+      "guidedInGameClear": "00:31:26",
+      "rank": "B",
+      "storyFailedAttempts": 1,
+      "arcadeSectors": 12,
+      "arcadeFailedAttempts": 0,
+      "bankedScore": 22500,
+      "saveScope": "Same-session Title/Continue, including the Story ending after Arcade banking; native cold-start persistence is unverified."
+    },
+    "browser": {
+      "path": "docs/BROWSER-VERIFICATION.json",
+      "sha256": "e1e7a3ec35d7b778ac42cfce932e1123156e5f5de8383e4e77ed47d0e6bd3797",
+      "romSha256": "19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb",
+      "storyMissions": 2,
+      "storyRooms": 8,
+      "arcadeSectors": 1,
+      "bankedScore": 300,
+      "fullCampaignCompleted": false,
+      "fullArcadeCycleCompleted": false,
+      "saveScope": "Ordinary reload retained earned Story checkpoints and banked score on the tested local origin, including one earned 1.1-to-1.2 launch checkpoint upgrade."
     }
   },
-  "unchangedQualification": "Native ROM and all gameplay screenshot pixels unchanged; no new hardware, heard-audio, cold power-off-save or human-enjoyment qualification.",
-  "retainedLocalEvidence": "Ignored build/manual-browser-pass-review-20261014 contains reviewed page renders and this full receipt; build/browser-full-qa-20261014 contains the browser run evidence."
+  "externalLinkTargets": [
+    "https://github.com/MouseBiteLabs/Game-Boy-MBC5-Cartridge",
+    "https://sameboy.github.io/",
+    "https://sameboy.github.io/features/",
+    "https://www.gbstudio.dev/docs/build/"
+  ],
+  "limits": "No physical 1.2 handheld/cartridge, heard speaker/headphone audio, native cold-start or power-off-save, full browser-process shutdown, full browser campaign or uncoached human duration/enjoyment claim. Hosted delivery is recorded separately.",
+  "historicalVersion1_1": {
+    "review": "docs/MANUAL-REVIEW-v1.1.json",
+    "reviewSha256": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
+    "playerPdf": "release/player-v1.1/INSTRUCTIONS.pdf",
+    "playerPdfSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
+    "unchanged": true
+  },
+  "retainedLocalEvidence": "Ignored build/manual-v1.2-review-20261014 retains fourteen page renders, before/after render hashes, structural checks and the independent root review. The separate ignored 1.1 backup retains earlier captures, manuscript files and receipts."
 }

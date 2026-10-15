@@ -2,6 +2,8 @@
 
 The game repository is the source of truth. The website is a generated distribution of the same reviewed release. A successful sync means the declared files agree; it does not mean new gameplay, hardware, audio, licensing or visual review has passed.
 
+Version 1.2 is the current private review release. Its frozen native/browser artifacts are identified in [VERIFICATION.md](VERIFICATION.md). Native Story passed all 72 rooms at 31:26 and Rank B, including one M17 failed attempt and ordinary retry. All 12 native Arcade sectors passed without retry and banked 22,500; subsequent Continue restored the Story ending. The manifest binds these receipts, eleven reviewed captures, the fourteen-page manual and the player package. Future changes require the evidence and review steps below before accepting new hashes.
+
 ## Daily commands
 
 From the repository root, with Python 3:
@@ -24,7 +26,7 @@ GitHub Actions runs the read-only check and failure tests on pushes and pull req
 | Release identity and reviewed artifacts | `release/release-manifest.json` | Website metadata and validation expectations |
 | Manual content | `campaign/full-length-packaging-stage/generate_manual.py` and its inputs | Manual Markdown, HTML and reviewed PDF |
 | Gameplay screenshots | Manual `assets/screenshots/SCREENSHOTS.json` and the recorded PNGs beside it | Selected website screenshots and their public provenance |
-| Browser player | Frozen official export in `release/browser-v1.1`, bound by manifest `browser.files` and browser qualification hashes | `launch-page/dist/play/` |
+| Browser player | Frozen official export selected by manifest `browser.directory` and `browser.files`; currently `release/browser-v1.2` | `launch-page/dist/play/` |
 | Player instructions and notes | Current `release/player-v*/` text files | Player archive and matching website downloads |
 | Website copy | `launch-page/index.template.html`, plus site CSS/JS | `launch-page/dist/index.html` |
 | Compatibility and qualification summary | Release manifest, `docs/VERIFICATION.md`, and reviewed player-facing copy | Site and release summaries with the same evidence limits |
@@ -34,14 +36,14 @@ Do not edit a screenshot hash to disguise a different frame. Do not change the v
 ## When game code or assets change
 
 1. Build a new ROM from the intended source and inspect its header/hash. A changed source snapshot invalidates the old release check even if the old ROM is still present.
-2. Play the affected behavior and required release route on that exact ROM. Keep receipts for failures as well as successes. A new build does not inherit the old 35:27 clear result.
+2. Play the affected behavior and required release route on that exact ROM. Keep receipts for failures as well as successes. Record completed coverage and pending coverage explicitly; no 1.2 build inherits the old 1.1 native 35:27 or browser 42:41 clear result. Keep source/host tests separate from emulator play, and register/APU traces separate from actual audio listening.
 3. Capture genuine screenshots for the new ROM. Review the screenshots and their captions; add exact ROM/frame/file identities to the canonical manifest. Old screenshots may be retained only when clearly labeled as historical, not relabeled as new captures.
 4. Update controls, objectives, unlocks, compatibility, save behavior, timing statements and version references wherever the change affects them. Check the manual, quick start, release notes, verification summary and website together.
 5. Regenerate and visually review the manual if its inputs changed. Record the reviewed PDF, current manual-input snapshot and page count. Generation alone is insufficient.
-6. Deliberately update the release manifest to bind the new source snapshot, qualified ROM, reviewed manual, screenshots and editorial review. Review that manifest diff alongside the actual evidence.
+6. Deliberately update the release manifest to bind the new source snapshot, qualified ROM, reviewed manual, screenshots and editorial review. Review that manifest diff alongside the actual evidence. Preserve historical receipts under their original version/hash before replacing a current receipt; add the new portable receipts to editorial review. Never replace a pending result with a pass merely to make synchronization succeed.
 7. Sync, check and run the failure tests. Inspect the generated site and download contents. Commit the coherent release to the private repository.
 
-The current source fingerprint identifies the reviewed portable snapshot. A [clean-clone build comparison](CLEAN-BUILD.json) passed for native and browser exports on macOS arm64. Only GB Studio's built-in save signature and global checksum varied; all other ROM bytes and all eight non-ROM browser files matched the frozen counterparts. Timestamp and inode metadata make ordinary builds non-identical. Two deeper-path builds failed at linking, while a fresh short `/tmp` directory passed; follow the [build instructions](BUILDING.md) for isolated short temporary paths. Neither the fingerprint nor this local comparison establishes cross-machine reproducibility, save persistence or a complete browser playthrough.
+The manifest source fingerprint identifies its reviewed portable snapshot, not every later working-tree edit. The existing [clean-clone comparison](CLEAN-BUILD.json) passed for 1.1 native/browser exports on macOS arm64. Only GB Studio's built-in save signature and global checksum varied; all other compared ROM bytes and all eight non-ROM browser files matched the frozen counterparts. Timestamp and inode metadata make ordinary builds non-identical. Two deeper-path builds failed at linking, while a fresh short `/tmp` directory passed; follow the [build instructions](BUILDING.md). A new 1.2 clean-clone comparison remains pending, and signature offsets must be read from the new symbol map. Neither a fingerprint nor a build comparison establishes gameplay, cross-machine reproducibility or save persistence.
 
 ## When only documentation or the site changes
 
@@ -51,7 +53,7 @@ The website uses release metadata for repeated fields such as version, native RO
 
 The Play in Browser button uses the exact reviewed nine-file export. Keep the ROM, runtime and retained license notice together; the browser allowlist excludes saves and private preview metadata. Recheck initial load, controls and checkpoint recovery on the site origin after changing delivery.
 
-Keep native and browser qualification separate. [The browser receipt](BROWSER-VERIFICATION.json) binds its 42:41 campaign result to the exact tested browser ROM/runtime; the native 35:27 result belongs to its own release ROM. A wrapper snapshot recovery and a fresh-emulator SRAM Continue test establish different save behaviors. Update their outcomes separately and retain final-host, hardware and human-play limits.
+Keep native and browser qualification separate. The [native 1.2 receipt](NATIVE-VERIFICATION.json) records Story at 31:26, Rank B and a complete 12-sector Arcade cycle with 22,500 banked; the earlier browser 42:41 and native 35:27 results belong to 1.1. These are successful-room timers, not human wall time. Current [1.2 browser evidence](BROWSER-VERIFICATION.json) covers targeted Story/menu/Arcade and save checks; it must not be described as a complete campaign. Record ordinary reload, fresh-emulator SRAM Continue and same-session Title → Continue separately. The current native harness does not qualify cold-boot SRAM persistence. A same-origin 1.1-to-1.2 checkpoint upgrade does not prove every old save, cartridge or host. Preserve final-host, hardware, audio and human-play limits in all summaries.
 
 ## Updating the Sites version
 

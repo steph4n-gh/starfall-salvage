@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "version": "1.1",
+  "version": "1.2",
   "documentationRevision": "2026-10-14",
   "publication": "private-draft",
   "rom": {
-    "filename": "Starfall-Salvage-1.1.gbc",
-    "sha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db",
+    "filename": "Starfall-Salvage-1.2.gbc",
+    "sha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
     "bytes": 1048576
   },
   "game": {
@@ -22,14 +22,14 @@
       "assets",
       "plugins"
     ],
-    "sha256": "a4a4072062ed11fa5ecb135599147e90ae9c298eb85192c91e1b1c045476b255",
-    "fileCount": 904,
-    "scope": "Reviewed editable source snapshot. Clean-clone native and browser compilation passed on macOS arm64; only GB Studio built-in save-signature and global-checksum fields differed from frozen ROMs. See docs/CLEAN-BUILD.json for exact comparisons and the short-temporary-path linker workaround. No byte-for-byte or cross-machine reproducibility claim."
+    "sha256": "515cd3ac7793697c119d975087b53252959a9c11bbce873e2cc11a5d5d76e5fe",
+    "fileCount": 910,
+    "scope": "Frozen 1.2 editable source used for the recorded native and browser builds. Pairwise ROM comparison differs only at generated built-in save-signature and global-checksum bytes; all other bytes match. Exact artifacts have separate gameplay receipts. The clean-clone comparison in docs/CLEAN-BUILD.json is historical 1.1 evidence, not a 1.2 or cross-machine reproducibility claim."
   },
   "manualReview": {
-    "pdfSha256": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
+    "pdfSha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
     "pages": 14,
-    "review": "2026-10-14: all 14 rendered pages visually reviewed after clarifying separate browser delivery and adding the completed local-browser campaign and distinct restart/reload save results. Nine embedded native gameplay images match canonical capture pixels; no out-of-page text. See docs/MANUAL-REVIEW.json. Changed inputs require regenerated documents and a new visual review.",
+    "review": "2026-10-14: all fourteen rendered pages independently reviewed by the authoring and root reviewers; corrected first-flight launch order rereviewed. Nine embedded native images match canonical capture pixels, with no out-of-page text. See docs/MANUAL-REVIEW.json. Changed inputs require regenerated documents and renewed review.",
     "inputs": {
       "paths": [
         "campaign/full-length-packaging-stage/generate_manual.py",
@@ -60,53 +60,89 @@
         "plugins/starfall/engine/include/starfall_save.h",
         "campaign/rooms.json"
       ],
-      "sha256": "e4654e6317b4b952bd1c092bfb3e1be1d5c4dd5b79b467a759f1ee89797cfd54",
-      "fileCount": 39
+      "sha256": "5afaf0b7ac86ef1406472c7fde26f895b0255c37dfc4677ebcff54646a434ad5",
+      "fileCount": 38
     }
   },
   "editorialReview": {
-    "scope": "Reviewed verification summary and manual text. Reconcile changed instructions and claims before deliberately accepting new hashes. Player text is additionally fixed by player.files.",
+    "scope": "Reviewed current 1.2 player/site/manual instructions and exact native/browser/visual qualification. Retained 1.1 evidence remains explicitly historical. Private-host delivery status is updated only from its own observed result.",
     "files": {
-      "README.md": "96d6334d946f7165a6b1079348d7cbc29597e29878786751ad2fedec60787f7e",
-      "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "382f53383d507b7661f754f08021029a58a60b78c733275d8e7ac201f9338cf6",
-      "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "cdd4637410e7a13a346c0a55bd696317ba0c41bfb96f69ad66e81de66b3a512e",
-      "campaign/full-length-packaging-stage/README.md": "0ee71c770bc49e37f4843f61bdc63f57880108362b9ca9fb47152b0172953dba",
-      "docs/BROWSER-VERIFICATION.json": "63f86a0308a7adf2dd53a47eca1879308efed07eef6aa25db109dc11034c55de",
-      "docs/BUILDING.md": "712ff211a113d48d4eb271d580449db16d8ceee9aa5a832fadb3a44dbd38c923",
+      "CREDITS.md": "636fe9d142662455d619a0492500e694649ea96ac289921c3de7de5079ae488d",
+      "README.md": "5ccd1bd8d5ab84607b782fb1e9ff081a2978a6d8c319f7916b1522ab9528918f",
+      "campaign/full-length-packaging-stage/INSTRUCTIONS.html": "55d70bbdf49994e25af753b037c097afabf73efbfc235fbcfd2f48794d81305d",
+      "campaign/full-length-packaging-stage/INSTRUCTIONS.md": "97b4316b905ffd2fa988c5d2229ad9ff6f1907a1b74abd8edbaac3c156aa44ee",
+      "campaign/full-length-packaging-stage/README.md": "3fc9972c9b4b9c8e32bb2edf03d7ff27cf07dcb3c6c2738bbd71b0dc4aa85eeb",
+      "docs/BROWSER-VERIFICATION-v1.1.json": "63f86a0308a7adf2dd53a47eca1879308efed07eef6aa25db109dc11034c55de",
+      "docs/BROWSER-VERIFICATION.json": "e1e7a3ec35d7b778ac42cfce932e1123156e5f5de8383e4e77ed47d0e6bd3797",
+      "docs/BUILDING.md": "45e4d53759c7f294207de0bd55830ab21d3651814ff03834e661d87352db01d0",
       "docs/CLEAN-BUILD.json": "a1dca04cd92d2f7b368ef376b74e5a91f4657e1ce5e666c6b3dbf216ed5ca045",
-      "docs/MANUAL-REVIEW.json": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
-      "docs/PUBLIC-RELEASE-PLAN.md": "72ac88378474260d261728b7bcac8bc20e6ed9834114a26bfe75cc505838b505",
-      "docs/RELEASE-WORKFLOW.md": "d4022bcea8fb8cd536d2a26c16bfb8a48a8ff5edf283c9f1ce516b36f0cc7342",
-      "docs/VERIFICATION.md": "b42b5216137a3812cada1b1988d3b453cec8e7aa7804827222f4024d9a1fbd5a",
+      "docs/CUSTOM-DOMAIN-v1.1.json": "6418b6b55d8453130a8644ee9bd70d163e041fb9065872220d19430a99016202",
+      "docs/CUSTOM-DOMAIN.json": "6418b6b55d8453130a8644ee9bd70d163e041fb9065872220d19430a99016202",
+      "docs/HOSTED-VERIFICATION-v1.1.json": "0b9cd1af29e78b94d4182cf6c67b149c6b4e45da5218e8f5022d163a21507f80",
+      "docs/HOSTED-VERIFICATION.json": "0b9cd1af29e78b94d4182cf6c67b149c6b4e45da5218e8f5022d163a21507f80",
+      "docs/MANUAL-REVIEW-v1.1.json": "1edef631d5aa6d9df109c2ea146d46113938a88de9fd77439c1878d31aad7ad6",
+      "docs/MANUAL-REVIEW.json": "15db2fc6147a0c48cb3836aa17759efd2c32f963fa8a554ed0d828c0b71e30bc",
+      "docs/NATIVE-VERIFICATION.json": "1d65f53c40b059bc4026940b138a3b8989162b1a3abf68bad4877b8f535feba4",
+      "docs/PUBLIC-RELEASE-PLAN.md": "3f51002629d79e1ca2cd3339460f2370ac813729d2c946d7aa8ffc0776932920",
+      "docs/RELEASE-WORKFLOW.md": "6178a10205d778ad6b39c82649e9bbab8fe06db96b8a6024bc73de7f926a5f31",
+      "docs/SITE-PLAY-VERIFICATION-v1.1.json": "c76edb27a71515a0672c7cfd1e2c0aebbc1293078d84736b54bf90a428897a0c",
+      "docs/SITE-PLAY-VERIFICATION.json": "919fb1db3e4dd156961124cf33d79be278c9c990dc3af77eaaa6bbd9f3bca519",
+      "docs/VERIFICATION.md": "a3ec4029c87e4ba1c95edb9fd7fe40d37d3cbcafbc9ff28ad6ae1e77a3cf261a",
+      "docs/browser-evidence-v1.2/SCREENSHOTS.json": "10e8488d197b39082b2d974a1f6dde316db3327388bc96f932fef52eb0536814",
+      "docs/browser-evidence-v1.2/arcade-bank-committed.jpg": "ee70e481fbfee800d4e148a23ba255350c54a98c731976a2047adf1d60ae02de",
+      "docs/browser-evidence-v1.2/arcade-bank-reload-story-continue.jpg": "b65900374a7d005378bed2eb80000d17adc39e1d4ea9999e854a449a580e2d0c",
+      "docs/browser-evidence-v1.2/arcade-bank-reload-title.jpg": "0eb7eb82a31b6f1c1bf2be4140f4a835b9534a450643fddd827b0d6bd060b619",
+      "docs/browser-evidence-v1.2/arcade-optional-change-rig.jpg": "ce55903cd4236c5d48ed939b8de0e39903b8e5bdf1e56e60ceb82e711c092c35",
+      "docs/browser-evidence-v1.2/m01-branch-earned.jpg": "13e7c7fd1fe4d6b14fdc6f857ff54ec7139f0ca21fe43bc4d765be9a267ed11d",
+      "docs/browser-evidence-v1.2/m01-branch-reloaded.jpg": "13e7c7fd1fe4d6b14fdc6f857ff54ec7139f0ca21fe43bc4d765be9a267ed11d",
+      "docs/browser-evidence-v1.2/m01-escort-bay-secured.jpg": "97be4f2f19fbeb4c0b70b9b9d4ce17a1a4a514852eecb503d3a4f6d0ab5d2672",
+      "docs/browser-evidence-v1.2/m01-mission-complete.jpg": "a614d6dd286d3402d5678657d65ec794bcdb2b10e90e3b4f2fac6134b66b4074",
+      "docs/browser-evidence-v1.2/m02-complete-reload-continue.jpg": "68f1fd75ff0b3bde428bd26ac920f6b4ffd0364a89a6d46b667583c96ea64b4a",
+      "docs/browser-evidence-v1.2/m02-complete-reload-title.jpg": "565f55fc6b6c8e632530b6c49f4c51a4380b1d5723b735860524e2abc6ca9e26",
+      "docs/browser-evidence-v1.2/m02-guardian-hit-one.jpg": "bedfd81c6d8405bbe1c55dc9564bfcb62f65b84c240bf2bc79cd5ed9d601a909",
+      "docs/browser-evidence-v1.2/m02-guardian-hit-three.jpg": "7a4e0feca18f173f6fb5e1d0885ebe7091a5346f5a44b8d1372eb652ba0ec318",
+      "docs/browser-evidence-v1.2/m02-guardian-hit-two.jpg": "7a3a67a803b94011e7a30090403ba9a1b13f5ea436ddbf090d42d350cd0456be",
+      "docs/browser-evidence-v1.2/m02-mission-complete.jpg": "68f1fd75ff0b3bde428bd26ac920f6b4ffd0364a89a6d46b667583c96ea64b4a",
+      "docs/browser-evidence-v1.2/m03-held-a-right-launch.jpg": "5664f26f536ba858fb779b7a28b585352efd9c578ba08135c12f67ac1d28d4d8",
+      "docs/browser-evidence-v1.2/m03-pause-exit-confirmation.jpg": "ad798be3df78528506b47f514a581c907d3d42a5d0e33fb607e52ce9a39d474f",
+      "docs/browser-evidence-v1.2/m03-pause-exit-selected.jpg": "e50e0fd5d38b7cfd683c9e89efe64c5529adb77e35d3cead8ec1191688308efa",
+      "docs/browser-evidence-v1.2/m03-pause-menu.jpg": "f5f31f4b9ddf9bf625c57b172a6b39b294fbdc174172c51f3b5c7f5acef6cec2",
+      "docs/browser-evidence-v1.2/m03-retry-ready-to-fly.jpg": "b65900374a7d005378bed2eb80000d17adc39e1d4ea9999e854a449a580e2d0c",
+      "docs/browser-evidence-v1.2/m03-select-exit-confirmation.jpg": "ad798be3df78528506b47f514a581c907d3d42a5d0e33fb607e52ce9a39d474f",
+      "docs/browser-evidence-v1.2/m03-wide-flight-deck.jpg": "124fd316f40989743cfb2a87a0da093747ff8ce82053bccc68570df6bf4ef7a5",
+      "docs/browser-evidence-v1.2/save-upgrade-v1.1-continue.jpg": "d821248db0811c2bfb1d343039c19e7abb49708f475dccb877a4c791eaa5773a",
+      "docs/browser-evidence-v1.2/save-upgrade-v1.2-continue.jpg": "f939cffe4a395868d09e335c14b426e6ff49cbdd296efabad06bbf4db4aa7882",
+      "docs/browser-evidence-v1.2/save-upgrade-v1.2-title.jpg": "af0e2093d1464a200340a51323e743cb4bc8b8e600e656ab303e804e6588c32c",
       "docs/browser-evidence/SCREENSHOTS.json": "addd366779298b247ea82cb4c5d46cfe0b30665a86a45fbca57111f8f4f83aba",
       "docs/browser-evidence/campaign-ending.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
+      "docs/browser-evidence/custom-domain-reload-continue.jpg": "87833b6601b24674ed45d4bb6886217a02a9ac1af9850ef68512c2f8d694a84c",
+      "docs/browser-evidence/custom-domain-reload-title.jpg": "74d6e2ea7c8dee3e6533e1bc4abf3b58cee90681bb2e1665a4add687ad247b02",
+      "docs/browser-evidence/hosted-reload-continue.jpg": "d821248db0811c2bfb1d343039c19e7abb49708f475dccb877a4c791eaa5773a",
+      "docs/browser-evidence/hosted-reload-title.jpg": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
       "docs/browser-evidence/page-reload.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
       "docs/browser-evidence/restart-continue.jpg": "15b90df3c95def4c8b0f1e46f48a49923e91b4d24bde496045a2ebd0e4ebb3a8",
       "docs/browser-evidence/restart-title.jpg": "4a00108fc076ee43d87696071b672fa7375099115849e2e13d0b47b11e8559ab",
-      "launch-page/README.md": "2d7b954a9667bed56ef1f7ebbff7e854e589771084577b5df5427a09ba5208d6",
-      "launch-page/index.template.html": "10a3b3626677c91aae26f99c3d0e3ac2e74aab445c9ca1fa8f0c05a76597e63d",
-      "docs/SITE-PLAY-VERIFICATION.json": "c76edb27a71515a0672c7cfd1e2c0aebbc1293078d84736b54bf90a428897a0c",
       "docs/browser-evidence/site-fresh-title.jpg": "fcc5a055f7ecd079e68fea17a60cd618676d62edf94d459c8f3cb744899441c0",
-      "docs/browser-evidence/site-reload-title.jpg": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
       "docs/browser-evidence/site-reload-continue.jpg": "f4ae5bb2d82c15073d45730fdbd91c2adc611c56010f7787905de7bf91a20c9b",
-      "docs/HOSTED-VERIFICATION.json": "0b9cd1af29e78b94d4182cf6c67b149c6b4e45da5218e8f5022d163a21507f80",
-      "docs/browser-evidence/hosted-reload-title.jpg": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
-      "docs/browser-evidence/hosted-reload-continue.jpg": "d821248db0811c2bfb1d343039c19e7abb49708f475dccb877a4c791eaa5773a",
-      "docs/CUSTOM-DOMAIN.json": "6418b6b55d8453130a8644ee9bd70d163e041fb9065872220d19430a99016202",
-      "docs/browser-evidence/custom-domain-reload-title.jpg": "74d6e2ea7c8dee3e6533e1bc4abf3b58cee90681bb2e1665a4add687ad247b02",
-      "docs/browser-evidence/custom-domain-reload-continue.jpg": "87833b6601b24674ed45d4bb6886217a02a9ac1af9850ef68512c2f8d694a84c"
+      "docs/browser-evidence/site-reload-title.jpg": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
+      "docs/site-evidence-v1.2/local-desktop.jpg": "91920aff3be3bf0f1ab849c0624197204a23ef7315ddfcb2fc41c1f09690edfa",
+      "docs/site-evidence-v1.2/local-mobile-screens.jpg": "dcde3d69c109a796abbb9d201cd782477d213e8bb04cea0349d20955a129031b",
+      "docs/site-evidence-v1.2/local-mobile.jpg": "4f1ed01740f22db5cb04165be79a7fcffe4b2b5ced2a21dc95180e8c799f6fc8",
+      "docs/site-evidence-v1.2/local-play-title.jpg": "fcdb25f92b15e97c9080a7cfc9acc28b66db10b807d67a3c9042bfb8959e2949",
+      "launch-page/README.md": "3652eb31ea3fd80db7ffde4f2b75e829decb231eb10b6263b3b509bfb6048c6b",
+      "launch-page/index.template.html": "1d674b75130492a63185e081136a20ad3f26fcaf420ad71027e9d51bcf023631"
     },
-    "releaseFactsSha256": "fcf741b30694e86e1d8b3db31ea90af0992d79219680b45ab5d5dcaf983d794d"
+    "releaseFactsSha256": "7bdc0f764844253c70c72174fc3ecee38572d921013da91b96b0976dcdbb86ee"
   },
   "screenshots": {
     "manifest": "campaign/full-length-packaging-stage/assets/screenshots/SCREENSHOTS.json"
   },
   "player": {
-    "directory": "release/player-v1.1",
-    "archive": "release/starfall-salvage-1.1-player.zip",
-    "archiveRoot": "Starfall-Salvage-1.1",
-    "archiveSha256": "54eb3fe6ea297f76f50ce9d84cd2e993acc6bff7dce1fc8f3b6b363dfb6da674",
-    "archiveBytes": 4337997,
+    "directory": "release/player-v1.2",
+    "archive": "release/starfall-salvage-1.2-player.zip",
+    "archiveRoot": "Starfall-Salvage-1.2",
+    "archiveSha256": "3d23acec15f6539f0f2aa88a8e360d1828d5bf6dc4e7946df9b7966b63d3afce",
+    "archiveBytes": 4339023,
     "zipTimestamp": [
       2026,
       10,
@@ -116,21 +152,21 @@
       0
     ],
     "files": {
-      "CREDITS.txt": "2b06cbe382c5013f005a6348fba1b79eb855cab8ecb63cd871459c269cb614e8",
-      "INSTRUCTIONS.pdf": "6ab347492e9fded4cac07198700f9b8657b45fa7dce1580e4f4c4eb46b71777d",
+      "CREDITS.txt": "35fcc53200182b19dba00e2689d91ea201d1eb53e1d3f70e2044c339aa746a5f",
+      "INSTRUCTIONS.pdf": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
       "LICENSE": "6fc7dd0727262618eb53594406b778aa4fd4cde9eb1d978736fe7c07b5607e79",
-      "QUICK-START.txt": "647478b77f287ffc80de8694826cecaa6594b002c1af5e3a10ddc3145f39e4e1",
-      "READ-ME.txt": "ee0f673ab928f198057e5326e68bdf45fe81361dfe6037c82687a71c96c56987",
-      "RELEASE-NOTES.txt": "6e077f54538a4aba832ddb95d8cd8c4e21ff1034739cb27562b1b08d83b95863",
-      "Starfall-Salvage-1.1.gbc": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db"
+      "QUICK-START.txt": "609a7d85def02551d6e73e57e9920e10e3040ca0f37fe7f21fe342db93e9300e",
+      "READ-ME.txt": "37438ca6cacea4c3facc7a9f2b2d7aed77632d702d5e70e20d63b5596faba903",
+      "RELEASE-NOTES.txt": "f0eb61705a66958c1dabcc30f37a6d84cfec8a5744be9ddd637cbc4fa60cb92c",
+      "Starfall-Salvage-1.2.gbc": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78"
     }
   },
   "site": {
     "directory": "launch-page/dist",
     "template": "launch-page/index.template.html",
-    "titleScreenshot": "title-1.1.png",
+    "titleScreenshot": "title-1.2.png",
     "screenshots": [
-      "title-1.1.png",
+      "title-1.2.png",
       "escort-flight.png",
       "guardian-core-open.png",
       "route-choice.png",
@@ -141,11 +177,12 @@
     ]
   },
   "qualification": {
-    "romSha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db",
+    "romSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
     "nativeEmulator": "PyBoy 2.7.0",
-    "guidedClearTime": "35:27",
-    "scope": "Exact native-ROM functional qualification; successful-room timer, not first-time human duration. Separate exact local-browser campaign and persistence results are recorded below. No hardware, heard-audio, power-off-save or final-public-host qualification implied.",
+    "guidedClearTime": "31:26",
+    "scope": "Exact native-ROM ordinary-input qualification in PyBoy 2.7.0: 18 missions, 72 rooms, 18 guardians, seven rescues, all 12 Arcade sectors and 22,500 banked. One M17 escort failure recovered by ordinary retry; no Arcade retries. Same-session Title/Continue preserved checkpoint stages and the Story ending after Arcade. The 31:26 timer counts successful-room play, not first-time human duration. Native cold-boot SRAM, physical hardware and heard audio remain unverified.",
     "pending": [
+      "Final hosted 1.2 integration checks",
       "Blind human playtests",
       "Physical handheld/cartridge qualification",
       "Speaker and headphone listening",
@@ -158,20 +195,26 @@
     ],
     "browser": {
       "receipt": "docs/BROWSER-VERIFICATION.json",
-      "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+      "romSha256": "19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb",
       "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
-      "missions": 18,
-      "rooms": 72,
-      "guardians": 18,
-      "escortRooms": 7,
-      "guidedClearTime": "42:41",
-      "rank": "B",
-      "scope": "Guided ordinary-input campaign in the exact local export/runtime/origin, with pauses, retries and one already-earned Saved states recovery. Fresh-emulator Restart/Continue restored browser-stored SRAM; normal page reload separately restored an emulator snapshot. Not human wall time, every rig/route combination, complete Arcade browser cycle, full browser-process shutdown or a future public host.",
-      "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650"
-    }
+      "missions": 2,
+      "rooms": 8,
+      "guardians": 2,
+      "escortRooms": 1,
+      "guidedClearTime": null,
+      "rank": null,
+      "scope": "Ordinary-input M01/M02 play (eight Story rooms), one Arcade sector and 300-point bank after retry, optional rig and held-input/menu checks, same-origin 1.1-to-1.2 checkpoint upgrade and ordinary page reloads. No full browser campaign, full Arcade cycle, browser clear time, browser-process shutdown or cross-origin persistence claim.",
+      "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
+      "status": "targeted-checks-passed"
+    },
+    "status": "native-story-and-arcade-passed",
+    "receipt": "docs/NATIVE-VERIFICATION.json",
+    "rank": "B",
+    "arcadeSectors": 12,
+    "arcadeBanked": 22500
   },
   "browser": {
-    "directory": "release/browser-v1.1",
+    "directory": "release/browser-v1.2",
     "files": {
       "css/style.css": "5a1d25ef322248b938a0b69a586ac742ae454d921af257579c4e04a90891f62d",
       "gbstudio.json": "db5be8dd992a41751c4e1ff03dffd050ae96356dc8dc089f78575740736380fd",
@@ -181,8 +224,8 @@
       "js/binjgb.wasm": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
       "js/debugger.js": "c6b1b6bfa0ff19e07b498a1e9723fb8e71e30220d57f11a575b10605cc8f3a12",
       "js/script.js": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
-      "rom/starfall-salvage.gbc": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da"
+      "rom/starfall-salvage.gbc": "19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb"
     },
-    "scope": "Unmodified nine-file official GB Studio export used for the completed local browser campaign. Includes Binjgb license notice; no saves, preview wrapper or diagnostic recordings."
+    "scope": "Exact nine-file official GB Studio 1.2 export used for the targeted local browser tests. Includes Binjgb license notice; no saves, preview wrapper or diagnostic recordings."
   }
 }

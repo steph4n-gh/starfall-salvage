@@ -1,79 +1,79 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "source": "Unaltered native PyBoy emulator captures; not physical hardware or browser captures.",
-  "nativeRomSha256": "105e410008ceb8dd2d6c83aebb033972b8cfcfeb41a714fcc7f260966ba193db",
+  "nativeRomSha256": "da88897984d4ead183a8e14aa9c7dcea91592445e27a9cd62517cba432f83a78",
   "screenshots": [
     {
-      "file": "title-1.1.png",
-      "sha256": "85e2a94a7a432b4ac133e812a66def45d6eeb3f9ba221bc3f77c9474cc7f3063",
+      "file": "title-1.2.png",
+      "sha256": "dacdbf4b08e062d40ed40b3fad06d2f2057caeea9774b1cd104bc97213eb674e",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 240,
-      "caption": "Starfall Salvage 1.1: choose Story or Arcade with Up/Down, then press A."
+      "frame": 180,
+      "caption": "Starfall Salvage 1.2: Story is selected; use Up/Down to choose a mode and A to begin."
     },
     {
       "file": "escort-flight.png",
-      "sha256": "eb613addf464260eed09262ed8061600c4f28e4d1ddca8017274a46a5733f4d9",
+      "sha256": "4a1ac868eeac04a26a581a8726a058403f3f2265e433f57c7876a5b574cd4568",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 8040,
+      "frame": 4383,
       "caption": "Mission 01 escort: stay close to the crew member and guide them through the room to the dock."
     },
     {
       "file": "guardian-core-open.png",
-      "sha256": "1beab9f3af8e9d90a0c72b3f30c90a9c9e9c03f08e9ad803aecd7da4440141e4",
+      "sha256": "e8d1a7defd71c9a848c127a09af58d0358d25b91eeb57aef8b2dc47bc3f90b56",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 10316,
+      "frame": 6822,
       "caption": "Mission 01 guardian: the HUD announces CORE OPEN - A PULSE; attack during this opening."
     },
     {
       "file": "route-choice.png",
-      "sha256": "5ad7f623f8f8c98fa1ceb07942ae9d723e1de1a7f7902dc9f54eb9aed6953948",
+      "sha256": "fbba5eef5e43327b313c673f80a4c3d2a7d05368099a19365fb7cd1f144c77c6",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 4951,
-      "caption": "Route choice: Up/Down highlights a route; A confirms it. Both rooms remain required."
+      "frame": 1767,
+      "caption": "Route choice: Power is selected. Use Up/Down and A to choose the first middle bay; both bays remain required."
     },
     {
       "file": "ion-hazard-active.png",
-      "sha256": "9e4351915ce218c12f9f6c1d863c7d1911c42a1114b8cd153326fea55e5c1cb8",
+      "sha256": "def45a0b17cabc27eb588470b851373aa1ba639a8e5537cfd8a4346856b276ff",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 24555,
-      "caption": "Arcade Ion Gallery: the red phase warns that the floor is active. Time the return to the dock."
+      "frame": 134240,
+      "caption": "Arcade sector 10, Ion Gallery: the red beam is active. Wait safely and time the return to the dock."
     },
     {
       "file": "arcade-bank-choice.png",
-      "sha256": "2e2d6db5d42df2deecae4349c2736e9e9a5665e1e4174c81fa6802bd340cc7be",
+      "sha256": "7be1bb67f77fa18e7357af6b1a4245a723be1e2618263e8cea393700b73300a4",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 28463,
-      "caption": "Secured dock: choose Continue or Bank and Go Home, then press A."
+      "frame": 136397,
+      "caption": "Sector 12 is secured with 22,500 points and full hull. Bank Haul is selected here; Fly On is the default dock choice."
     },
     {
       "file": "workbench.png",
-      "sha256": "0e5a3ef394c0117d22d0c237012435376b936fabc15c09801cfcb405ff4e9eed",
+      "sha256": "c56967b21113d44d6f2bb32823b9b2cbcd408123e1e178b7f6fc8e137faa4524",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 14249,
-      "caption": "Workbench: choose Keep Current Rig or a replacement with Up/Down and A; B returns to the secured dock."
+      "frame": 127085,
+      "caption": "Optional Arcade rig choice: Keep Current is selected. A fits and flies; B returns to the dock without changing the rig."
     },
     {
       "file": "mission-board.png",
-      "sha256": "eb3b6e771b7068e92c00b8bc7cbd7af2b071840b7952b45ea17294fb077ffe62",
+      "sha256": "0684fd78045fc325731d38da74c06c23b60a7a5aacde97f846212a31869a8b44",
       "width": 160,
       "height": 144,
       "pixelsAltered": false,
-      "frame": 433,
-      "caption": "Flight Deck: select a Story mission with Up/Down, choose a rig with Left/Right, and press A to launch."
+      "frame": 262,
+      "caption": "Flight Deck: select a mission with Up/Down, choose an unlocked rig with Left/Right, and press A to launch."
     }
   ]
 }

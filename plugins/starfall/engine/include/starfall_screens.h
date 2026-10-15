@@ -18,10 +18,18 @@ enum {
  * Hides the window, loads original artwork, and leaves the window hidden.
  * The caller overlays every text row, then reveals the completed card with
  * overlay_cut_scanline = 150 and ui_set_pos(0, 0).
- * Changes bank-1 tiles 00..BF, window maps, and background palettes 0..6.
+ * Changes bank-1 tiles 00..AF, window maps, and background palettes 0..5.
  * The encounter must restore its room palettes before gameplay resumes.
- * Font C0..E9, hazard EA..EE, background maps, and object palettes are intact.
+ * Menu chrome B0..BF, font C0..E9, hazard EA..EE, UI palettes 6/7,
+ * background maps, and object palettes are intact.
  */
 void starfall_screen_show(UBYTE kind, UBYTE zone, UBYTE room) BANKED;
+
+/* screen_show(TITLE) initializes the animation without revealing the window.
+ * Call update once per TITLE frame, including during the input grace period.
+ * Only artwork rows0..8 and art palettes0..5 may change; input never waits.
+ */
+void starfall_title_init(void) BANKED;
+void starfall_title_update(void) BANKED;
 
 #endif

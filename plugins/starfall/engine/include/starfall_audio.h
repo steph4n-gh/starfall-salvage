@@ -24,6 +24,10 @@ void starfall_audio_init(void) BANKED;
  * 4: Outer Array; 5: Star Engine. Same-zone calls are harmless. A change
  * restarts the local arrangement without cutting an ongoing cue. */
 void starfall_audio_zone(UBYTE zone) BANKED;
+/* Enable only on the title. Repeated calls do not restart its original theme.
+ * Leaving restores the zone waveform and retains its exact sequencer position;
+ * channel-2 gameplay cues always take priority over the title's harmony. */
+void starfall_audio_title(UBYTE enabled) BANKED;
 /* Pausing freezes and silences music; queued channel-2 cues still finish. */
 void starfall_audio_update(UBYTE paused) BANKED;
 void starfall_audio_sfx(UBYTE effect) BANKED;

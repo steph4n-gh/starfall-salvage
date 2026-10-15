@@ -1,0 +1,31 @@
+STARFALL SALVAGE - CREDITS AND NOTICE SCOPE
+
+Game by Stephan Arrington, with OpenAI Codex assistance for design,
+the eighteen-mission Story campaign, Arcade mode, native implementation,
+original pixel artwork, animated title, six-zone chiptune and title-theme
+composition, sound effects, and the instruction booklet.
+
+The illustrated box art in the manual was generated with the built-in
+image generation tool. It is not a native game frame. The reviewed manual
+includes nine unaltered captures from the accepted version 1.2 native ROM;
+its fourteen rendered pages and embedded screenshot pixels were checked.
+
+Built with GB Studio by Chris Maltby and contributors:
+https://www.gbstudio.dev/
+
+Built with GBDK-2020 by its contributors:
+https://gbdk.org/
+
+The booklet was prepared with ReportLab.
+
+THIRD-PARTY NOTICE
+LICENSE contains the retained GB Studio MIT notice naming Chris Maltby,
+unchanged from the project. Third-party components retain their own terms.
+This notice is not a new licensing choice for the original game content.
+
+LOCAL DRAFT / AUTHOR REVIEW
+The author's distribution terms for original code, art and music are still
+being finalized. The provenance and attribution of retained UI/font assets
+also need review before public distribution. This package preserves the
+existing notice without asserting that it settles those original-content
+or asset-provenance questions.

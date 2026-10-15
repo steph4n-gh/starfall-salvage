@@ -2,12 +2,13 @@ STARFALL SALVAGE - CREDITS AND NOTICE SCOPE
 
 Game by Stephan Arrington, with OpenAI Codex assistance for design,
 the eighteen-mission Story campaign, Arcade mode, native implementation,
-original pixel artwork, six-zone chiptune composition and sound effects,
-and the instruction booklet.
+original pixel artwork, animated title, six-zone chiptune and title-theme
+composition, sound effects, and the instruction booklet.
 
 The illustrated box art in the manual was generated with the built-in
-image generation tool. It is not a native game frame. The manual's nine
-gameplay screenshots are unaltered version 1.1 native-emulator captures.
+image generation tool. It is not a native game frame. The reviewed manual
+includes nine unaltered captures from the accepted version 1.2 native ROM;
+its fourteen rendered pages and embedded screenshot pixels were checked.
 
 Built with GB Studio by Chris Maltby and contributors:
 https://www.gbstudio.dev/

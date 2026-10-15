@@ -7,6 +7,10 @@
  * Signal Archive, Outer Array and Star Engine add distinct original four-bar
  * lead/answer scores, running 16 bars per cycle at ~90/112/128 BPM. Their loops
  * occupy 2560/2048/1792 unpaused frames; all original zones/cues retain timing.
+ * "Ignition Vector": original 32-bar title anthem, six frames per sixteenth
+ * (~149 BPM, 3072 frames / ~51.4 seconds). Four-bar hook intro, four-bar build,
+ * eight-bar chorus, eight-bar answering chorus, four-bar half-time break and
+ * four-bar lift. The title borrows channel 2 only while no gameplay cue owns it.
  *
  * Channel 1: articulated square lead. Channel 3: triangle-wave bass.
  * Channel 2: priority-controlled gameplay cues. Channel 4: quiet percussion,
@@ -46,6 +50,7 @@
 #define C6 36u
 #define D6 38u
 #define E6 40u
+#define F6 41u
 #define G6 43u
 #define A6 45u
 
@@ -167,10 +172,47 @@ static const UBYTE star_engine_wave[16] = {
 static const UBYTE zone_steps[6] = {8u,9u,7u,10u,8u,7u};
 static const UBYTE zone_transpose[6] = {0u,5u,3u,7u,0u,5u};
 
+/* A compact recurring A-C-E / D-C-B hook over Am-F-C-G. Deliberate rests
+ * let the harmony answer; the bridge brings the same hook down one octave.
+ * All notes are authored indices C3..G6; HOLD and REST are handled first. */
+static const UBYTE title_intro[64] = {
+    A5,HOLD,HOLD,REST,C6,HOLD,E6,HOLD,D6,C6,B5,HOLD,A5,HOLD,HOLD,REST,
+    A5,HOLD,HOLD,REST,C6,HOLD,F6,HOLD,E6,D6,C6,HOLD,A5,HOLD,HOLD,REST,
+    G5,HOLD,HOLD,REST,C6,HOLD,E6,HOLD,D6,C6,G5,HOLD,E5,HOLD,HOLD,REST,
+    G5,HOLD,HOLD,REST,B5,HOLD,D6,HOLD,C6,B5,A5,HOLD,G5,HOLD,E5,REST
+};
+static const UBYTE title_hook[128] = {
+    A5,HOLD,E5,A5,C6,HOLD,E6,HOLD,D6,C6,B5,HOLD,A5,HOLD,E5,REST,
+    F5,HOLD,A5,C6,F6,HOLD,E6,D6,C6,HOLD,A5,HOLD,G5,A5,C6,REST,
+    E5,HOLD,G5,C6,E6,HOLD,G6,HOLD,E6,D6,C6,HOLD,G5,HOLD,E5,REST,
+    G5,HOLD,B5,D6,G6,HOLD,D6,B5,A5,HOLD,G5,HOLD,B5,D6,HOLD,REST,
+    A5,C6,E6,HOLD,E6,HOLD,D6,C6,B5,A5,E5,HOLD,G5,A5,C6,HOLD,
+    F5,A5,C6,HOLD,F6,HOLD,E6,D6,C6,A5,F5,HOLD,A5,C6,D6,REST,
+    E6,HOLD,G6,E6,D6,C6,G5,HOLD,E5,G5,C6,HOLD,D6,E6,G6,REST,
+    D6,HOLD,B5,G5,D5,G5,B5,HOLD,D6,C6,B5,A5,G5,HOLD,E5,HOLD
+};
+static const UBYTE title_answer[128] = {
+    E6,HOLD,C6,A5,E5,HOLD,A5,C6,D6,HOLD,C6,B5,A5,HOLD,HOLD,REST,
+    C6,HOLD,A5,F5,A5,C6,F6,HOLD,E6,D6,C6,HOLD,A5,HOLD,G5,REST,
+    G6,HOLD,E6,D6,C6,HOLD,G5,E5,G5,C6,E6,HOLD,D6,C6,HOLD,REST,
+    B5,HOLD,D6,G6,D6,HOLD,B5,G5,A5,B5,D6,HOLD,C6,B5,G5,REST,
+    A5,HOLD,C6,E6,A5,HOLD,C6,E6,D6,C6,B5,HOLD,A5,HOLD,E5,REST,
+    A5,C6,F6,HOLD,E6,D6,C6,A5,C6,HOLD,A5,HOLD,G5,A5,C6,REST,
+    C6,E6,G6,HOLD,E6,D6,C6,G5,E6,HOLD,D6,C6,G5,E5,G5,REST,
+    G5,B5,D6,HOLD,G6,D6,B5,G5,A5,B5,C6,D6,E6,HOLD,HOLD,REST
+};
+static const UBYTE title_chords[4][4] = {
+    {A4,C5,E5,C5}, {F4,A4,C5,A4},
+    {C4,E4,G4,E4}, {G4,B4,D5,B4}
+};
+static const UBYTE title_roots[4] = {A3,F3,C3,G3};
+static const UBYTE title_fifths[4] = {E4,C4,G3,D4};
+
 static UBYTE song_step, song_wait, song_arrangement, song_zone, music_paused;
 static UBYTE lead_note, bass_note, lead_duty, lead_envelope, bass_level;
 static UBYTE noise_timer, noise_lock;
 static UBYTE fx_effect, fx_age, fx_duration, fx_priority, fx_duck, fx_zone;
+static UBYTE title_active, title_step, title_bar, title_wait;
 
 static void load_wave(UBYTE zone) {
     UBYTE i;
@@ -223,6 +265,73 @@ static void play_noise(UBYTE polynomial, UBYTE envelope, UBYTE frames) {
     NR43_REG = polynomial;
     NR44_REG = 0x80u;
     noise_timer = frames;
+}
+
+/* These writers deliberately leave the gameplay lead/bass caches unchanged.
+ * The title can be entered from any zone, then return to its frozen phrase. */
+static void play_title_lead(UBYTE note, UBYTE quiet) {
+    UWORD frequency = pitch[note];
+    NR10_REG = 0u;
+    NR11_REG = quiet ? 0x40u : 0x80u;
+    NR12_REG = fx_duck ? 0x43u : (quiet ? 0x53u : 0x83u);
+    NR13_REG = (UBYTE)frequency;
+    NR14_REG = 0x80u | (UBYTE)(frequency >> 8);
+}
+
+static void play_title_harmony(UBYTE note) {
+    UWORD frequency = pitch[note];
+    NR21_REG = 0x40u;
+    NR22_REG = 0x32u;
+    NR23_REG = (UBYTE)frequency;
+    NR24_REG = 0x80u | (UBYTE)(frequency >> 8);
+}
+
+static void play_title_bass(UBYTE note, UBYTE quiet) {
+    UWORD frequency = pitch[note];
+    NR32_REG = (quiet || fx_duck) ? 0x60u : 0x40u;
+    NR33_REG = (UBYTE)frequency;
+    NR34_REG = 0x80u | (UBYTE)(frequency >> 8);
+}
+
+static void play_title_step(void) {
+    UBYTE chord = title_bar & 3u, step = title_step;
+    UBYTE quiet = title_bar < 4u || (title_bar >= 24u && title_bar < 28u);
+    UBYTE note, index = ((title_bar & 7u) << 4) | step;
+    if (quiet) note = title_intro[(chord << 4) | step];
+    else if (title_bar < 8u) note = title_hook[(chord << 4) | step];
+    else if (title_bar < 16u) note = title_hook[index];
+    else note = title_answer[index];
+    if (note == REST) NR12_REG = 0u;
+    else if (note != HOLD) {
+        if (title_bar >= 24u && title_bar < 28u) note -= 12u;
+        play_title_lead(note,quiet);
+    }
+
+    /* The intro sparkles in eighths; the chorus leaves alternate eighths open
+     * for the lead. Cue playback gets channel 2 unconditionally. */
+    if (!fx_effect && !(step & 1u)) {
+        if (quiet || (step & 2u)) play_title_harmony(title_chords[chord][(step >> 1) & 3u]);
+        else NR22_REG = 0u;
+    }
+    if (!(step & 3u)) play_title_bass(title_roots[chord],quiet);
+    else if (!quiet && ((step & 3u) == 2u)) {
+        play_title_bass((step & 4u) ? title_fifths[chord] : title_roots[chord] + 12u,FALSE);
+    }
+    if (!noise_lock) {
+        if (quiet) {
+            if (!step) play_noise(0x64u,0x31u,4u);
+            else if (step == 8u) play_noise(0x35u,0x21u,3u);
+            else if ((step & 3u) == 2u) play_noise(0x15u,0x11u,2u);
+        } else if ((title_bar & 3u) == 3u && step >= 12u) {
+            /* One-bar turnarounds tighten into a four-sixteenth snare fill. */
+            play_noise(0x35u,(step & 1u) ? 0x31u : 0x51u,3u);
+        } else if (step == 4u || step == 12u) play_noise(0x35u,0x51u,4u);
+        else if (step == 0u || step == 6u || step == 8u) play_noise(0x64u,0x51u,4u);
+        else if (!(step & 1u) || title_bar >= 28u) play_noise(0x15u,0x21u,2u);
+    }
+    title_step = (step + 1u) & 15u;
+    if (!title_step) title_bar = (title_bar + 1u) & 31u;
+    title_wait = 6u;
 }
 
 static void restore_music_levels(void) {
@@ -451,23 +560,40 @@ void starfall_audio_init(void) BANKED {
     music_paused = 1u;
     fx_effect = fx_age = fx_duration = fx_priority = fx_duck = fx_zone = 0u;
     noise_timer = noise_lock = 0u;
+    title_active = title_step = title_bar = title_wait = 0u;
 }
 
 void starfall_audio_zone(UBYTE zone) BANKED {
     if (zone > 5u) zone = 5u;
     if (zone == song_zone) return;
     NR12_REG = 0u;
-    load_wave(zone);
+    load_wave(title_active ? 0u : zone);
     song_zone = zone;
     song_step = song_wait = song_arrangement = 0u;
     lead_note = bass_note = REST;
     /* Channel 2's current cue and its priority/age are deliberately retained. */
 }
 
+void starfall_audio_title(UBYTE enabled) BANKED {
+    enabled = !!enabled;
+    if (enabled == title_active) return;
+    title_active = enabled;
+    NR12_REG = NR32_REG = 0u;
+    if (!fx_effect) NR22_REG = 0u;
+    if (!noise_lock) { NR42_REG = 0u; noise_timer = 0u; }
+    music_paused = 1u;
+    load_wave(enabled ? 0u : song_zone);
+    if (enabled) title_step = title_bar = title_wait = 0u;
+}
+
 void starfall_audio_update(UBYTE paused) BANKED {
     if (noise_timer && !--noise_timer) NR42_REG = 0u;
     if (noise_lock) --noise_lock;
     update_cue();
+    if (title_active) {
+        if (!title_wait || !--title_wait) play_title_step();
+        return;
+    }
     if (paused) {
         if (!music_paused) {
             NR12_REG = NR32_REG = 0u;

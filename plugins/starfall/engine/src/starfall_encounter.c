@@ -63,6 +63,8 @@ static sf_save_t persisted_session;
 static UBYTE resume_stage;
 static UBYTE crew_grace, cache_found, cache_hold;
 static UBYTE menu_cursor, exit_return_mode;
+/* Transient navigation intent; checkpoint stages and save layout stay unchanged. */
+static UBYTE direct_launch;
 static sf_objective_state_t objective_state;
 static upoint16_t escort_route[20];
 static UBYTE escort_count;
@@ -357,42 +359,49 @@ static UBYTE mission_available(UBYTE index) {
     if (index % 3u == 2u && (done & (3UL << (zone * 3u))) != (3UL << (zone * 3u))) return FALSE;
     return TRUE;
 }
+static UBYTE next_room_index(void) {
+    UBYTE base = sf_room_index & 252u;
+    if (arcade) return sf_room_index + 1u >= SF_ROOM_COUNT ? SF_ARCADE_FIRST : sf_room_index + 1u;
+    if (!(sf_room_clear_mask & 2u)) return base + 1u;
+    if (!(sf_room_clear_mask & 4u)) return base + 2u;
+    return base + 3u;
+}
 static void mission_board_card(void) {
-    char name[21], label[] = "MISSION 01/01", credits[] = "SALVAGE 00000";
+    char name[21], label[] = "MISSION 01/01";
+    sf_room_t first;
     screen(SF_SCREEN_LAUNCH); starfall_mission_name(sf_mission_cursor,name);
+    starfall_room_read(sf_mission_cursor * 4u,&first);
     starfall_ui_two_digits(label + 8,sf_mission_cursor + 1u); starfall_ui_two_digits(label + 11,SF_MISSION_COUNT);
-    starfall_ui_text_row(5,"FLIGHT DECK"); starfall_ui_text_row(6,label); starfall_ui_text_row(8,name);
-    starfall_ui_text_row(9,!mission_available(sf_mission_cursor) ? "LOCKED - CLEAR PRIOR" :
-        (persisted_session.mission_flags & (1UL << sf_mission_cursor)) ? "CLEARED - REPLAY" : "READY TO LAUNCH");
-    starfall_ui_five_digits(credits + 8,persisted_session.credits); starfall_ui_text_row(10,credits);
-    starfall_ui_module_option(11,TRUE,pulse_module);
-    starfall_ui_text_row(13,persisted_session.optional_flags & (1UL << sf_mission_cursor) ? "CACHE BADGE EARNED" : "GOLD CACHE OPTIONAL");
-    starfall_ui_text_row(14,"UP DOWN CHOOSE JOB"); starfall_ui_text_row(15,"LEFT RIGHT RIG");
-    starfall_ui_text_row(16,"A LAUNCH  B BACK"); screen_ready();
+    starfall_ui_header("FLIGHT DECK"); starfall_ui_menu_card(3,3,TRUE,label); starfall_ui_centered_row(6,name);
+    starfall_ui_centered_row(7,!mission_available(sf_mission_cursor) ? "LOCKED" :
+        (persisted_session.mission_flags & (1UL << sf_mission_cursor)) ? "CLEARED / REPLAY" : "READY TO FLY");
+    starfall_ui_objective_hint(8,first.objective);
+    starfall_ui_module_option(9,FALSE,pulse_module); starfall_ui_module_description(13,pulse_module);
+    if (persisted_session.optional_flags & (1UL << sf_mission_cursor)) starfall_ui_centered_row(14,"CACHE BADGE EARNED");
+    starfall_ui_centered_row(15,"UP/DOWN JOB L/R RIG");
+    starfall_ui_footer(SF_FOOTER_LAUNCH); screen_ready();
 }
 static void branch_options(void) {
     sf_room_t option;
-    starfall_ui_menu_option(7,menu_cursor == 0u,"REPAIR / POWER");
+    starfall_room_read((sf_room_index & 252u) + 1u,&option);
+    starfall_ui_route_option(0,menu_cursor == 0u,option.objective);
     starfall_room_read((sf_room_index & 252u) + 2u,&option);
-    starfall_ui_menu_option(11,menu_cursor == 1u,option.objective == SF_OBJECTIVE_ESCORT ? "CREW / SUPPLY" : "TOOLS / SUPPLY");
+    starfall_ui_route_option(1,menu_cursor == 1u,option.objective);
 }
 static void branch_card(void) {
-    sf_room_t option;
-    screen(SF_SCREEN_RESULT); starfall_ui_text_row(5,"UP DOWN CHOOSE ROUTE");
-    starfall_room_read((sf_room_index & 252u) + 1u,&option);
-    starfall_ui_text_row(8,option.name); starfall_ui_text_row(9,"SHUTS NEXT HAZARD");
-    starfall_room_read((sf_room_index & 252u) + 2u,&option);
-    starfall_ui_text_row(12,option.name); starfall_ui_text_row(13,"FASTER PULSE NEXT");
-    branch_options(); starfall_ui_text_row(15,"BOTH ROUTES REQUIRED"); starfall_ui_text_row(16,"A CONFIRM  B BACK"); screen_ready();
+    screen(SF_SCREEN_RESULT); starfall_ui_header("CHOOSE YOUR ROUTE");
+    starfall_ui_centered_row(4,"BOTH BAYS TO CLEAR"); branch_options();
+    starfall_ui_footer(SF_FOOTER_FLY); screen_ready();
 }
 static void mission_complete_card(void) {
     char name[21], count[] = "MISSIONS CLEARED 00";
     UBYTE i,n=0;
     for(i=0;i<SF_MISSION_COUNT;++i) if(persisted_session.mission_flags & (1UL<<i)) ++n;
-    screen(SF_SCREEN_RESULT); starfall_mission_name(sf_room_index / 4u,name);
-    starfall_ui_text_row(5,"MISSION COMPLETE"); starfall_ui_text_row(7,name); starfall_ui_two_digits(count+17,n); starfall_ui_text_row(9,count);
-    starfall_ui_text_row(11,cache_found ? "OPTIONAL CACHE FOUND" : "CREW SYSTEMS ONLINE");
-    starfall_ui_text_row(14,"A JOB BOARD"); starfall_ui_text_row(16,"B BACK TO TITLE"); screen_ready();
+    screen(SF_SCREEN_RESULT); starfall_ui_header("MISSION COMPLETE"); starfall_mission_name(sf_room_index / 4u,name);
+    starfall_ui_centered_row(5,name); starfall_ui_two_digits(count+17,n); starfall_ui_centered_row(7,count);
+    starfall_ui_centered_row(9,cache_found ? "CACHE BADGE EARNED" : "ALL FOUR BAYS CLEAR");
+    starfall_ui_menu_card(12,3,TRUE,"FLIGHT DECK");
+    starfall_ui_footer(SF_FOOTER_CONTINUE); screen_ready();
 }
 static void title_options(void) {
     char resume[] = "CONTINUE M01";
@@ -405,9 +414,9 @@ static void title_options(void) {
 static void title_card(void) {
     char best[] = "BEST BANKED: 00000";
     hazard_restore(); screen(SF_SCREEN_TITLE); title_options();
-    starfall_ui_text_row(14,"UP DOWN CHOOSE"); starfall_ui_text_row(15,"A CONFIRM");
-    starfall_ui_five_digits(best + 13, best_banked_score); starfall_ui_text_row(16,best);
-    starfall_ui_text_row(17,sf_save_status == 2u ? "SAVE WRITE FAILED" : "FULL CAMPAIGN 1.1");
+    starfall_ui_centered_row(9,"FULL CAMPAIGN 1.2");
+    starfall_ui_five_digits(best + 13, best_banked_score); starfall_ui_centered_row(15,best);
+    starfall_ui_footer(SF_FOOTER_PLAY);
     screen_ready();
 }
 static void launch_card(void) {
@@ -415,23 +424,25 @@ static void launch_card(void) {
     char arcade_label[] = "SECTOR 01 HULL 3";
     starfall_ui_two_digits(label + 1,sf_room_index / 4u + 1u); label[8] = '1' + (sf_room_index & 3u); label[13] = '0' + hull;
     starfall_ui_two_digits(arcade_label+7,sector); arcade_label[15]='0'+hull;
-    screen(SF_SCREEN_LAUNCH); starfall_ui_text_row(6, room.name); starfall_ui_text_row(7,arcade ? arcade_label : label);
-    starfall_ui_text_row(9,room.brief1); starfall_ui_text_row(10,room.brief2); starfall_ui_text_row(12,enemy_name());
-    starfall_ui_text_row(13,"FINISH THEN DOCK");
-    if (!arcade && (sf_room_index & 3u) == 2u && sf_branch_order == 1u) starfall_ui_text_row(13,"POWERED - HAZARD OFF");
-    else if (!arcade && (sf_room_index & 3u) == 1u && sf_branch_order == 2u) starfall_ui_text_row(13,"SUPPLY FAST RECHARGE");
-    starfall_ui_text_row(14,"A LAUNCH"); starfall_ui_text_row(16,arcade ? "B EXIT OPTIONS" : "B BACK TO TITLE");
-    if (!arcade) starfall_ui_text_row(17,sf_save_status == 2u ? "SAVE WRITE FAILED" : "CHECKPOINT SAVED");
+    screen(SF_SCREEN_LAUNCH); starfall_ui_header("READY TO FLY");
+    starfall_ui_centered_row(4,room.name); starfall_ui_centered_row(6,arcade ? arcade_label : label);
+    starfall_ui_centered_row(8,room.brief1); starfall_ui_centered_row(9,room.brief2); starfall_ui_centered_row(11,enemy_name());
+    starfall_ui_centered_row(13,"FINISH THEN DOCK");
+    if (!arcade && (sf_room_index & 3u) == 2u && sf_branch_order == 1u) starfall_ui_centered_row(13,"POWERED / HAZARD OFF");
+    else if (!arcade && (sf_room_index & 3u) == 1u && sf_branch_order == 2u) starfall_ui_centered_row(13,"FAST RECHARGE");
+    if (!arcade) starfall_ui_centered_row(15,"CHECKPOINT SAVED");
+    starfall_ui_footer(arcade ? SF_FOOTER_LAUNCH_EXIT : SF_FOOTER_LAUNCH);
     screen_ready();
 }
 static void pause_options(void) {
-    starfall_ui_menu_option(10,menu_cursor == 0u,"RESUME"); starfall_ui_menu_option(12,menu_cursor == 1u,arcade ? "FRESH SORTIE" : "RETRY CHECKPOINT");
-    starfall_ui_menu_option(14,menu_cursor == 2u,"EXIT TO TITLE");
+    starfall_ui_menu_card(6,3,menu_cursor == 0u,"RESUME");
+    starfall_ui_menu_card(9,3,menu_cursor == 1u,arcade ? "FRESH SORTIE" : "RETRY ROOM");
+    starfall_ui_menu_card(12,3,menu_cursor == 2u,"EXIT TO TITLE");
 }
 static void pause_card(void) {
-    screen(SF_SCREEN_PAUSE); starfall_ui_text_row(5,"PAUSED"); starfall_ui_text_row(6,room.name);
-    starfall_ui_text_row(8,"DPAD THRUST  B BRAKE"); starfall_ui_text_row(9,arcade ? "NEW RUN LOSES LOOT" : "A PULSE STUNS DRONE");
-    pause_options(); starfall_ui_text_row(15,"UP DOWN CHOOSE"); starfall_ui_text_row(16,"A CONFIRM  B BACK");
+    screen(SF_SCREEN_PAUSE); starfall_ui_header("PAUSED"); starfall_ui_centered_row(4,room.name);
+    starfall_ui_objective_hint(5,room.objective);
+    pause_options(); starfall_ui_footer(SF_FOOTER_CONFIRM);
     screen_ready();
 }
 static void exit_card(void) {
@@ -441,36 +452,46 @@ static void new_story_card(void) {
     screen(SF_SCREEN_PAUSE); starfall_ui_new_story_card_text(); screen_ready();
 }
 static void result_card(void) {
-    char time[] = "ROOM TIME: 00:00:00";
-    starfall_ui_elapsed_time(time + 11, room_frames); screen(SF_SCREEN_RESULT);
-    starfall_ui_text_row(6,"ROOM SECURED"); starfall_ui_text_row(7,room.name);
-    starfall_ui_text_row(9,resume_stage == SF_SAVE_STAGE_RESULT ? "CHECKPOINT RESTORED" : time);
-    starfall_ui_text_row(11,"SHIP REPAIRS HULL"); starfall_ui_text_row(14,"A NEXT ROOM"); starfall_ui_text_row(16,"B BACK TO TITLE");
+    char time[] = "TIME 00:00:00";
+    sf_room_t next;
+    starfall_room_read(next_room_index(),&next);
+    starfall_ui_elapsed_time(time + 5, room_frames); screen(SF_SCREEN_RESULT); starfall_ui_header("BAY SECURED");
+    starfall_ui_centered_row(4,resume_stage == SF_SAVE_STAGE_RESULT ? "CHECKPOINT RESTORED" : time);
+    starfall_ui_centered_row(6,"NEXT BAY"); starfall_ui_centered_row(8,next.name);
+    starfall_ui_objective_hint(10,next.objective); starfall_ui_menu_card(12,3,TRUE,"FLY ON");
+    starfall_ui_footer(SF_FOOTER_CONTINUE);
     screen_ready();
 }
 static void ending_card(void) {
     char time[] = "CLEAR TIME: 00:00:00";
     starfall_ui_elapsed_time(time + 12, campaign_frames);
-    screen(SF_SCREEN_ENDING); starfall_ui_text_row(8,SF_MISSION_COUNT == 18u ? "STARFALL SAVED" : "ZONE SLICE COMPLETE"); starfall_ui_text_row(10,time);
-    starfall_ui_text_row(12,!damage_total ? "RANK S - CLEAN RUN" : damage_total <= 2u ? "RANK A - NICE FLYING" : "RANK B - GOT HOME");
-    starfall_ui_text_row(14,"A CONTINUE TO TITLE"); starfall_ui_text_row(16,"B BACK TO TITLE");
+    screen(SF_SCREEN_ENDING); starfall_ui_header(SF_MISSION_COUNT == 18u ? "STARFALL SAVED" : "SLICE COMPLETE");
+    starfall_ui_centered_row(6,time);
+    starfall_ui_centered_row(9,!damage_total ? "RANK S / CLEAN RUN" : damage_total <= 2u ? "RANK A / NICE FLYING" : "RANK B / GOT HOME");
+    starfall_ui_menu_card(12,3,TRUE,"BACK TO TITLE"); starfall_ui_footer(SF_FOOTER_CONTINUE);
     screen_ready();
 }
 static void arcade_dock_options(void) {
-    starfall_ui_menu_option(13,menu_cursor == 0u,"CONTINUE"); starfall_ui_menu_option(15,menu_cursor == 1u,"BANK AND GO HOME");
+    starfall_ui_menu_card(8,3,menu_cursor == 0u,"FLY ON");
+    starfall_ui_menu_card(11,3,menu_cursor == 1u,"CHANGE RIG");
+    starfall_ui_menu_card(14,3,menu_cursor == 2u,"BANK HAUL");
 }
 static void arcade_dock_card(void) {
-    char score[] = "CARGO SCORE: 00000";
-    starfall_ui_five_digits(score + 13, sortie_score); screen(SF_SCREEN_RESULT);
-    starfall_ui_text_row(6,"CARGO SECURED"); starfall_ui_text_row(7,room.name); starfall_ui_text_row(9,score);
-    starfall_ui_text_row(11,"DOCK REPAIRS 1 HULL"); starfall_ui_text_row(12,"UP DOWN CHOOSE");
-    arcade_dock_options(); starfall_ui_text_row(16,"A CONFIRM  B BACK");
+    char score[] = "HAUL 00000  HULL 3";
+    sf_room_t next;
+    starfall_room_read(next_room_index(),&next);
+    starfall_ui_five_digits(score + 5, sortie_score); score[17] = '0' + hull;
+    screen(SF_SCREEN_RESULT); starfall_ui_header("SAFE AT DOCK");
+    starfall_ui_centered_row(4,score); starfall_ui_centered_row(6,next.name);
+    starfall_ui_objective_hint(7,next.objective);
+    arcade_dock_options(); starfall_ui_footer(SF_FOOTER_CONFIRM_EXIT);
     screen_ready();
 }
 static void upgrade_options(void) {
-    starfall_ui_module_option(7,menu_cursor == 0u,pulse_module);
-    starfall_ui_module_option(10,menu_cursor == 1u,choice_a);
-    starfall_ui_module_option(13,menu_cursor == 2u,choice_b);
+    starfall_ui_menu_card(5,3,menu_cursor == 0u,"KEEP CURRENT");
+    starfall_ui_module_option(8,menu_cursor == 1u,choice_a);
+    starfall_ui_module_option(11,menu_cursor == 2u,choice_b);
+    starfall_ui_module_description(15,!menu_cursor ? pulse_module : menu_cursor == 1u ? choice_a : choice_b);
 }
 static void upgrade_card(void) {
     switch ((sector - 1u) % 5u) {
@@ -480,9 +501,8 @@ static void upgrade_card(void) {
         case 3: choice_a = WIDE_COIL; choice_b = OVERCHARGE; break;
         default: choice_a = HULL_PATCH; choice_b = FAST_CAPACITOR; break;
     }
-    screen(SF_SCREEN_UPGRADE); starfall_ui_text_row(4,"CHOOSE YOUR RIG"); starfall_ui_text_row(5,"REPLACES OLD MODULE");
-    starfall_ui_text_row(6,"KEEP CURRENT RIG"); starfall_ui_text_row(9,"OR REPLACE WITH"); upgrade_options();
-    starfall_ui_text_row(15,"UP DOWN CHOOSE"); starfall_ui_text_row(16,"A CONFIRM  B BACK");
+    screen(SF_SCREEN_UPGRADE); starfall_ui_header("CHOOSE YOUR RIG"); starfall_ui_module_name(4,pulse_module);
+    upgrade_options(); starfall_ui_footer(SF_FOOTER_FIT);
     screen_ready();
 }
 static void bank_card(void) {
@@ -494,21 +514,25 @@ static void bank_card(void) {
     persisted_session.best_banked = best_banked_score;
     sf_save_status = starfall_save_write(&persisted_session) ? 1u : 2u;
     starfall_ui_five_digits(score + 8,sortie_score); starfall_ui_five_digits(best + 8,best_banked_score);
-    screen(SF_SCREEN_ENDING); starfall_ui_text_row(8,sf_save_status == 2u ? "SAVE WRITE FAILED" : "SAFELY BACK HOME"); starfall_ui_text_row(10,score); starfall_ui_text_row(12,best);
-    starfall_ui_text_row(14,"A CONTINUE TO TITLE"); starfall_ui_text_row(16,"B BACK TO TITLE");
+    screen(SF_SCREEN_ENDING); starfall_ui_header(sf_save_status == 2u ? "SAVE WRITE FAILED" : "HAUL BANKED");
+    starfall_ui_centered_row(6,score); starfall_ui_centered_row(9,best);
+    starfall_ui_menu_card(12,3,TRUE,"BACK TO TITLE"); starfall_ui_footer(SF_FOOTER_CONTINUE);
     screen_ready();
 }
 static void failure_card(void) {
     char lost[] = "LOST: 00000";
     starfall_ui_five_digits(lost + 6,sortie_score);
     if (arcade) sortie_score = 0;
-    screen(SF_SCREEN_FAILURE); starfall_ui_text_row(5,room.objective == SF_OBJECTIVE_ESCORT && !sf_crew_hp ? "CREW LOST - RETRY" : "HULL CRITICAL"); starfall_ui_text_row(7,room.name);
-    starfall_ui_text_row(9,arcade ? "UNBANKED CARGO LOST" : "CHECKPOINT RETAINED");
-    if (arcade) starfall_ui_text_row(11,lost);
-    starfall_ui_text_row(14,arcade ? "A FRESH SORTIE" : "A RETRY CHECKPOINT"); starfall_ui_text_row(16,"B BACK TO TITLE");
+    screen(SF_SCREEN_FAILURE); starfall_ui_header(room.objective == SF_OBJECTIVE_ESCORT && !sf_crew_hp ? "CREW LOST" : "HULL CRITICAL");
+    starfall_ui_centered_row(5,room.name); starfall_ui_centered_row(7,arcade ? "UNBANKED CARGO LOST" : "CHECKPOINT RETAINED");
+    if (arcade) starfall_ui_centered_row(9,lost);
+    starfall_ui_menu_card(12,3,TRUE,arcade ? "FRESH SORTIE" : "RETRY ROOM"); starfall_ui_footer(SF_FOOTER_RETRY);
     screen_ready();
 }
-static void to_title(void) { menu_cursor = 0; sf_mode = SF_MODE_TITLE; title_card(); }
+static void to_title(void) {
+    direct_launch = 0;
+    menu_cursor = 0; sf_mode = SF_MODE_TITLE; title_card();
+}
 static void request_room(UBYTE index) {
     if (index >= SF_ROOM_COUNT) index = 0;
     pending_room = index;
@@ -523,6 +547,7 @@ static void request_room(UBYTE index) {
 }
 static void start_game(UBYTE is_arcade) {
     arcade = is_arcade; sector = 1; hull = 3; damage_total = 0;
+    direct_launch = 0;
     resume_stage = NO_RESUME_STAGE;
     sortie_score = 0; campaign_frames = 0; apply_module(STANDARD);
     if (!arcade) {
@@ -539,6 +564,7 @@ static void continue_story(void) {
         to_title(); return;
     }
     sf_save_status = 1;
+    direct_launch = 0;
     arcade = FALSE; sector = 1; hull = 3; sortie_score = 0;
     sf_room_clear_mask = persisted_session.room_clear_mask;
     sf_branch_order = persisted_session.branch_order;
@@ -551,19 +577,20 @@ static void continue_story(void) {
     request_room(persisted_session.room);
 }
 static void next_room(void) {
-    if (arcade) {
-        if (sector < 99u) ++sector;
-        request_room(sf_room_index + 1u >= SF_ROOM_COUNT ? SF_ARCADE_FIRST : sf_room_index + 1u);
-    } else {
-        UBYTE base = sf_room_index & 252u;
-        if (!(sf_room_clear_mask & 2u)) request_room(base + 1u);
-        else if (!(sf_room_clear_mask & 4u)) request_room(base + 2u);
-        else request_room(base + 3u);
-    }
+    direct_launch = TRUE;
+    if (arcade && sector < 99u) ++sector;
+    request_room(next_room_index());
 }
 static void open_mission_board(void) {
+    UBYTE i, candidate;
     sf_mission_cursor = sf_room_index / 4u;
     if (sf_mission_cursor >= SF_MISSION_COUNT) sf_mission_cursor = 0;
+    for (i = 1u; i <= SF_MISSION_COUNT; ++i) {
+        candidate = (sf_mission_cursor + i) % SF_MISSION_COUNT;
+        if (mission_available(candidate) && !(persisted_session.mission_flags & (1UL << candidate))) {
+            sf_mission_cursor = candidate; break;
+        }
+    }
     sf_mode = SF_MODE_MISSION_BOARD;
     checkpoint(SF_SAVE_STAGE_MISSION_BOARD); mission_board_card();
 }
@@ -755,6 +782,8 @@ static void configure_room(void) {
 }
 static void enter_play(void) {
     sf_mode = SF_MODE_PLAY; menu_grace = 0; hazard_stamp();
+    /* Consume the confirmation edge while preserving held movement controls. */
+    last_buttons = joy;
     if (sf_boss_hp) { boss_grace = 60; hazard_activate(); }
     hud_dirty = palette_dirty = TRUE; lighting(); hud(); starfall_audio_sfx(STARFALL_SFX_LAUNCH);
 }
@@ -772,6 +801,7 @@ void starfall_encounter_init(void) BANKED {
         sf_save_status = persisted_session.has_checkpoint ? 1u : 0u;
         best_banked_score = persisted_session.best_banked;
         menu_cursor = 0; exit_return_mode = SF_MODE_PAUSE;
+        direct_launch = 0;
         sf_mode = SF_MODE_TITLE; last_buttons = 0; apply_module(STANDARD); starfall_audio_init();
     }
     scene_transition = FALSE;
@@ -790,7 +820,15 @@ void starfall_encounter_init(void) BANKED {
         else if (resume_stage == SF_SAVE_STAGE_BRANCH) { sf_mode = SF_MODE_BRANCH; branch_card(); }
         else if (resume_stage == SF_SAVE_STAGE_MISSION_BOARD) { sf_mode = SF_MODE_MISSION_BOARD; mission_board_card(); }
         else if (resume_stage == SF_SAVE_STAGE_MISSION_COMPLETE) { sf_mode = SF_MODE_MISSION_COMPLETE; mission_complete_card(); }
-        else { sf_mode = SF_MODE_LAUNCH; launch_card(); }
+        else {
+            sf_mode = SF_MODE_LAUNCH;
+            if (!direct_launch) launch_card();
+            else {
+                /* Core paints this room after init; launch only after hazard_capture(). */
+                overlay_cut_scanline = 0u; ui_set_pos(0,144); hide_sprites = TRUE;
+                menu_grace = 0;
+            }
+        }
         resume_stage = NO_RESUME_STAGE;
     } else { sf_mode = SF_MODE_TITLE; title_card(); }
 }
@@ -799,7 +837,12 @@ UBYTE starfall_encounter_update(void) BANKED {
     UBYTE pressed = joy & ~last_buttons;
     last_buttons = joy;
     if (!hazard_saved) hazard_capture();
+    starfall_audio_title(sf_mode == SF_MODE_TITLE);
     starfall_audio_update(sf_mode != SF_MODE_PLAY);
+    if (sf_mode == SF_MODE_TITLE) starfall_title_update();
+    if (direct_launch && sf_mode == SF_MODE_LAUNCH) {
+        direct_launch = FALSE; enter_play(); return FALSE;
+    }
     if (menu_grace) { --menu_grace; return FALSE; }
     if (sf_mode == SF_MODE_TITLE) {
         if (menu_move(pressed,persisted_session.has_checkpoint ? 3u : 2u)) title_options();
@@ -824,6 +867,7 @@ UBYTE starfall_encounter_update(void) BANKED {
         else if ((pressed & J_A) && mission_available(sf_mission_cursor)) {
             sf_room_clear_mask = sf_branch_order = 0; hull = 3;
             cache_found = !!(persisted_session.optional_flags & (1UL << sf_mission_cursor));
+            direct_launch = TRUE;
             request_room(sf_mission_cursor * 4u);
         }
         return FALSE;
@@ -832,6 +876,7 @@ UBYTE starfall_encounter_update(void) BANKED {
         if (menu_move(pressed,2u)) branch_options();
         else if (pressed & J_A) {
             sf_branch_order = menu_cursor + 1u;
+            direct_launch = TRUE;
             request_room((sf_room_index & 252u) + sf_branch_order);
         } else if (pressed & J_B) to_title();
         return FALSE;
@@ -889,9 +934,10 @@ UBYTE starfall_encounter_update(void) BANKED {
         return FALSE;
     }
     if (sf_mode == SF_MODE_ARCADE_DOCK) {
-        if (menu_move(pressed,2u)) arcade_dock_options();
+        if (menu_move(pressed,3u)) arcade_dock_options();
         else if (pressed & J_A) {
-            if (!menu_cursor) { menu_cursor = 0; sf_mode = SF_MODE_UPGRADE; upgrade_card(); }
+            if (!menu_cursor) next_room();
+            else if (menu_cursor == 1u) { menu_cursor = 0; sf_mode = SF_MODE_UPGRADE; upgrade_card(); }
             else { sf_mode = SF_MODE_BANK_RESULT; bank_card(); }
         } else if (pressed & J_B) {
             exit_return_mode = SF_MODE_ARCADE_DOCK; sf_mode = SF_MODE_EXIT_CONFIRM; exit_card();

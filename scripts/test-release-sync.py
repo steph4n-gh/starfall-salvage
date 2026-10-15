@@ -30,6 +30,11 @@ class ReleaseSyncTests(unittest.TestCase):
             shutil.copytree(ROOT / name, self.root / name, ignore=shutil.ignore_patterns(".openai", "output", "__pycache__"))
         shutil.copy2(ROOT / "project.gbsproj", self.root / "project.gbsproj")
         shutil.copy2(ROOT / "README.md", self.root / "README.md")
+        shutil.copy2(ROOT / "CREDITS.md", self.root / "CREDITS.md")
+        manifest = json.loads((self.root / "release/release-manifest.json").read_text())
+        self.player_dir = manifest["player"]["directory"]
+        self.browser_dir = manifest["browser"]["directory"]
+        self.rom_filename = manifest["rom"]["filename"]
 
     def tearDown(self):
         self.temp.cleanup()
@@ -62,16 +67,16 @@ class ReleaseSyncTests(unittest.TestCase):
             self.assertEqual(run(self.root)["status"], "verified")
 
     def test_mutated_rom_cannot_be_promoted(self):
-        self.mutate("release/player-v1.1/Starfall-Salvage-1.1.gbc")
+        self.mutate(f"{self.player_dir}/{self.rom_filename}")
         self.assert_rejected_without_writes("Unreviewed player input", sync=True)
 
     def test_mutated_browser_rom_cannot_be_promoted(self):
-        self.mutate("release/browser-v1.1/rom/starfall-salvage.gbc")
+        self.mutate(f"{self.browser_dir}/rom/starfall-salvage.gbc")
         self.assert_rejected_without_writes("Unreviewed browser input", sync=True)
 
     def test_browser_rom_input_hash_cannot_replace_gameplay_qualification(self):
         name = "rom/starfall-salvage.gbc"
-        path = "release/browser-v1.1/" + name
+        path = f"{self.browser_dir}/{name}"
         self.mutate(path)
         self.mutate_manifest(lambda m: m["browser"]["files"].update({
             name: hashlib.sha256((self.root / path).read_bytes()).hexdigest()
@@ -80,7 +85,7 @@ class ReleaseSyncTests(unittest.TestCase):
 
     def test_browser_runtime_input_hash_cannot_replace_gameplay_qualification(self):
         name = "js/binjgb.wasm"
-        path = "release/browser-v1.1/" + name
+        path = f"{self.browser_dir}/{name}"
         self.mutate(path)
         self.mutate_manifest(lambda m: m["browser"]["files"].update({
             name: hashlib.sha256((self.root / path).read_bytes()).hexdigest()
@@ -89,7 +94,7 @@ class ReleaseSyncTests(unittest.TestCase):
 
     def test_browser_script_input_hash_cannot_replace_gameplay_qualification(self):
         name = "js/script.js"
-        path = "release/browser-v1.1/" + name
+        path = f"{self.browser_dir}/{name}"
         self.mutate(path)
         self.mutate_manifest(lambda m: m["browser"]["files"].update({
             name: hashlib.sha256((self.root / path).read_bytes()).hexdigest()
@@ -97,11 +102,11 @@ class ReleaseSyncTests(unittest.TestCase):
         self.assert_rejected_without_writes("Browser script identity differs", sync=True)
 
     def test_extra_browser_save_is_rejected_without_copying(self):
-        (self.root / "release/browser-v1.1/progress.sav").write_bytes(b"private save")
+        (self.root / self.browser_dir / "progress.sav").write_bytes(b"private save")
         self.assert_rejected_without_writes("Unexpected browser file outside the allowlist", sync=True)
 
     def test_browser_source_symlink_is_rejected(self):
-        target = self.root / "release/browser-v1.1/js/script.js"
+        target = self.root / self.browser_dir / "js/script.js"
         data = target.read_bytes()
         target.unlink()
         replacement = self.root / "same-script.js"
@@ -115,7 +120,7 @@ class ReleaseSyncTests(unittest.TestCase):
         self.assert_rejected_without_writes("Derived release files are stale")
         result = run(self.root, sync=True)
         self.assertEqual(result["changedFiles"], [name])
-        self.assertEqual((self.root / name).read_bytes(), (self.root / "release/browser-v1.1/js/script.js").read_bytes())
+        self.assertEqual((self.root / name).read_bytes(), (self.root / self.browser_dir / "js/script.js").read_bytes())
         self.assertEqual(run(self.root)["status"], "verified")
 
     def test_game_source_change_invalidates_snapshot(self):
@@ -139,7 +144,7 @@ class ReleaseSyncTests(unittest.TestCase):
         self.assert_rejected_without_writes("Reviewed documentation changed", sync=True)
 
     def test_unexpected_player_file_is_rejected(self):
-        (self.root / "release/player-v1.1/private-save.sav").write_bytes(b"private")
+        (self.root / self.player_dir / "private-save.sav").write_bytes(b"private")
         self.assert_rejected_without_writes("eight-file allowlist", sync=True)
 
     def test_unexpected_site_download_is_rejected_without_deleting(self):
@@ -161,7 +166,7 @@ class ReleaseSyncTests(unittest.TestCase):
 
     def test_dirty_site_check_is_read_only_then_sync_repairs(self):
         dirty = ["launch-page/dist/assets/escort-flight.png", "launch-page/dist/downloads/INSTRUCTIONS.pdf",
-                 "launch-page/dist/index.html", "release/player-v1.1/SHA256SUMS.txt"]
+                 "launch-page/dist/index.html", f"{self.player_dir}/SHA256SUMS.txt"]
         for name in dirty:
             self.mutate(name)
         self.assert_rejected_without_writes("Derived release files are stale")
