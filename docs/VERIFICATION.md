@@ -27,7 +27,9 @@ The [browser receipt](BROWSER-VERIFICATION.json) records the bounded browser out
 
 The [manual review](MANUAL-REVIEW.json) records all fourteen rendered pages and nine embedded native images whose pixels match the canonical captures. The [release manifest](../release/release-manifest.json) identifies the reviewed eight-file native player package and nine-file official browser export. Synchronization checks compare exact source, document, screenshot, archive and website identities; they do not add gameplay qualification.
 
-The private 1.2 deployment still requires its hosted delivery check. The [historical hosted receipt](HOSTED-VERIFICATION-v1.1.json) describes 1.1 and does not establish 1.2 behavior. Detailed local recordings stay private; portable summaries retain artifact identities and evidence limits without copying saves or machine-specific diagnostics.
+Sites version 5 delivers 1.2 at the existing private custom origin. The [hosted receipt](HOSTED-VERIFICATION.json) records preserved 1.1 M01 Bay 1 progress with H3, movement/brake/pulse/pause, and ordinary reload/Continue checks. The live ZIP and PDF were downloaded through the browser and match the canonical files byte for byte; all eight ZIP entries passed the archive CRC check. Access was reverified as one owner, no groups and no external visitors. These delivery checks add no full-browser campaign or Arcade-cycle qualification.
+
+The [historical hosted receipt](HOSTED-VERIFICATION-v1.1.json) remains tied to 1.1. Detailed local recordings stay private; portable summaries retain artifact identities and evidence limits without copying saves or machine-specific diagnostics.
 
 ## Historical 1.1 evidence
 

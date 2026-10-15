@@ -2,7 +2,7 @@
 
 An original Game Boy Color adventure by Stephan Arrington, created with OpenAI Codex assistance. Thrust, drift and brake through a damaged station, restore its systems, escort the crew and recover guardian cores.
 
-**Private 1.2 review draft.** Native Story and Arcade, targeted browser checks, the eleven-frame capture set and the fourteen-page illustrated manual have been reviewed. Final manifest/package synchronization and hosted verification are tracked separately. Keep GitHub private and the existing site owner-only. This repository does not deploy or publish automatically.
+**Private 1.2 review release.** Native Story and Arcade, targeted browser checks, the eleven-frame capture set and the fourteen-page illustrated manual have been reviewed. The synchronized package is deployed as Sites version 5, with [live delivery checks passed](docs/HOSTED-VERIFICATION.json). Keep GitHub private and the existing site owner-only. This repository does not deploy or publish automatically.
 
 Story contains 18 missions across six zones and 72 large scrolling rooms. Arcade repeats 12 compact room templates with changing hazard pressure and replacement pulse rigs. The native game is GBC-only; its cartridge requirements are a 1 MiB MBC5 ROM and 32 KiB battery-backed save RAM.
 
@@ -19,8 +19,8 @@ Movement, combat, objective rules, scoring and rig effects retain their existing
 ## Player materials and private site
 
 - [1.2 quick start](release/player-v1.2/QUICK-START.txt) and [release notes](release/player-v1.2/RELEASE-NOTES.txt).
-- The candidate player package is `release/starfall-salvage-1.2-player.zip`, containing `Starfall-Salvage-1.2.gbc` and its documentation. The reviewed native ROM, PDF and player text are ready for final manifest/package synchronization.
-- [Existing private owner-only site](https://starfall.steph4n.dev) and [local launch-page workflow](launch-page/README.md). The live site remains on its separately recorded version until a qualified 1.2 update is deployed.
+- The reviewed player package is `release/starfall-salvage-1.2-player.zip`, containing `Starfall-Salvage-1.2.gbc` and its documentation. The live ZIP and PDF downloads match the canonical files byte for byte; all eight ZIP entries passed the archive CRC check.
+- [Private owner-only site](https://starfall.steph4n.dev) and [local launch-page workflow](launch-page/README.md). Sites version 5 serves 1.2. The [hosted receipt](docs/HOSTED-VERIFICATION.json) records controls, the preserved 1.1 M01 checkpoint, ordinary reload/Continue and download checks at the custom origin.
 - [Remaining public-release work](docs/PUBLIC-RELEASE-PLAN.md).
 
 To view the currently generated site locally:

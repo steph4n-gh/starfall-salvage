@@ -44,5 +44,9 @@
     }
   ],
   "historicalReceipt": "docs/SITE-PLAY-VERIFICATION-v1.1.json",
-  "privateHostedCheck": "pending"
+  "privateHostedCheck": {
+    "result": "passed",
+    "receipt": "docs/HOSTED-VERIFICATION.json",
+    "siteVersion": 5
+  }
 }

@@ -2,9 +2,9 @@
 
 This is a private review repository. The site uses authorized owner-only access. No public site, repository, release or player download has been launched. The current release manifest selects the reviewed 1.2 source, ROMs, screenshots, manual and player package.
 
-## Version 1.2 preparation
+## Current version 1.2 release
 
-- Native and browser candidates are frozen at the hashes in [VERIFICATION.md](VERIFICATION.md). The [native receipt](NATIVE-VERIFICATION.json) accepts all 18 Story missions/72 rooms, 18 guardians and seven crew rescues: **31:26, Rank B**, with one M17 pilot-hull failure followed by ordinary retry. All 12 Arcade sectors then cleared with zero failed Arcade attempts; Bank Haul saved **22,500**, and same-session Continue restored the Story ending afterward. The Story timer counts successful-room gameplay, not first-time human duration.
+- Native and browser release artifacts are frozen at the hashes in [VERIFICATION.md](VERIFICATION.md). The [native receipt](NATIVE-VERIFICATION.json) accepts all 18 Story missions/72 rooms, 18 guardians and seven crew rescues: **31:26, Rank B**, with one M17 pilot-hull failure followed by ordinary retry. All 12 Arcade sectors then cleared with zero failed Arcade attempts; Bank Haul saved **22,500**, and same-session Continue restored the Story ending afterward. The Story timer counts successful-room gameplay, not first-time human duration.
 - The targeted browser check completed M01/M02, all eight rooms, with a failed guardian attempt followed by checkpoint Continue and a full-hull victory. The same-origin 1.1-to-1.2 checkpoint upgrade and ordinary-reload route/completed-mission recovery passed. Optional rigs, held-input direct launch, Pause, Retry and exits were exercised. Browser Arcade S01 passed after an initial failure and retry; Back from Change Rig left the rig unchanged, banking saved 300, and ordinary reload retained BEST 00300 plus the Story M03 checkpoint. These checks do not establish a full 1.2 browser campaign or complete Arcade cycle.
 - Source/host checks cover the revised menu flow, legacy checkpoint stages and unchanged gameplay audio traces. Actual title/six-zone music and effect listening remains unverified.
 - Updated player text, eleven exact-native-ROM captures and the fourteen-page manual have been reviewed. All nine embedded gameplay images match their canonical capture pixels. The player archive and generated site are bound by the release manifest.
@@ -12,7 +12,9 @@ This is a private review repository. The site uses authorized owner-only access.
 
 ## Private delivery
 
-Deploy only the accepted, synchronized distribution to the existing owner-only site, preserving its identity and audience. Verify initial load, controls, downloads and the specific save/reload behavior at that origin. The 1.2 hosted check is pending; the [historical 1.1 receipt](HOSTED-VERIFICATION-v1.1.json) remains separate. Keep the earlier binaries and evidence unchanged. A new source snapshot or passing consistency check does not inherit gameplay results from another artifact.
+The accepted, synchronized 1.2 distribution is deployed as Sites version 5 at the existing custom origin. The [hosted receipt](HOSTED-VERIFICATION.json) records movement, brake, pulse and pause checks; preservation of the existing 1.1 M01 Bay 1 H3 checkpoint; and ordinary reload/Continue. The live ZIP and PDF downloads match their canonical bytes, and all eight ZIP entries passed the archive CRC check. Owner-only access was reverified with one owner, no groups and no external visitors. This delivery check does not expand the targeted browser gameplay coverage above.
+
+Keep the earlier binaries and the [historical 1.1 hosted receipt](HOSTED-VERIFICATION-v1.1.json) unchanged. Future deployments require their own delivery and persistence checks at the intended origin. A new source snapshot or passing consistency check does not inherit gameplay results from another artifact.
 
 ## Gates before broader claims or public release
 

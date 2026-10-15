@@ -1,44 +1,133 @@
 {
-  "recordedAt": "2026-10-14T22:31:37.805665+00:00",
+  "schemaVersion": 1,
+  "gameVersion": "1.2",
+  "recordedAt": "2026-10-15T00:56:01.716285+00:00",
   "result": "passed",
-  "url": "https://starfall-salvage.steph4n1.chatgpt.site",
+  "url": "https://starfall.steph4n.dev",
   "gameRoute": "/play/",
-  "testedSiteVersion": 3,
-  "testedDeploymentId": "appgdep_6ad001e756d0819182f8f6359faa1663",
-  "runtime": "Codex in-app browser on the owner account",
+  "siteProjectId": "appgprj_6acfbff5dc048191910402f2d5d131c7",
+  "testedSiteVersion": 5,
+  "testedSiteVersionId": "appgprj_6acfbff5dc048191910402f2d5d131c7~appgver_fd02baf595a0819182f835ab37b56bbe",
+  "testedDeploymentId": "appgdep_6ad0230ba38c819189fc685b4fb24320",
+  "siteSourceCommit": "68b8ca284d581d777c64a662046556dbb9078470",
+  "runtime": "Desktop Google Chrome, existing owner profile",
   "identity": {
-    "romSha256": "3d47ad53fc3fd75e80092df7f7ac1f45f6a6275d89d5c67794d862aecfda29da",
+    "romSha256": "19d4488b34ee87d329aa72400e8e7cdb5322ecd07b3759add818809f36f92eeb",
     "runtimeWasmSha256": "69aa17be45fec5fde585af4f39ed850b5d64107ec094a6482f316fef2fe7c945",
-    "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650"
+    "runtimeScriptSha256": "b6e02a156d6f3e72090063118c611617413827cd0fd437a474c441bf65416650",
+    "basis": "Exact nine-file official export copied into synchronized site; all 26 dist files byte-compared with the pushed Sites source before deployment. Hosted UI confirms 1.2; live downloads independently byte-compared."
   },
   "checks": {
     "landingPageAndPlayButton": "passed",
-    "gameInitialLoad": "passed",
+    "titleVersion": "1.2",
     "ordinaryKeyboardMovementBrakePulseAndPause": "passed",
-    "ordinaryReloadContinueEarnedM01Checkpoint": "passed",
-    "consoleWarningsAndErrors": 0
+    "sameOriginUpgradeFrom1_1": "passed; actual pre-update M01 Bay 1/4 H3 checkpoint restored after deploying 1.2",
+    "ordinaryReloadContinue": "passed; same Freight Spine M01 Bay 1/4 H3 checkpoint restored",
+    "playerZip": "byte-identical to canonical; all eight ZIP members passed CRC",
+    "manualPdf": "byte-identical to reviewed 14-page canonical PDF",
+    "console": "No game-origin warnings/errors observed in the captured Play-button tab logs. Two duplicate custom-element errors came from a Chrome extension."
   },
+  "downloads": [
+    {
+      "url": "https://starfall.steph4n.dev/downloads/starfall-salvage-1.2-player.zip",
+      "canonicalFile": "release/starfall-salvage-1.2-player.zip",
+      "sha256": "3d23acec15f6539f0f2aa88a8e360d1828d5bf6dc4e7946df9b7966b63d3afce",
+      "bytes": 4339023,
+      "result": "byte-identical",
+      "method": "Download through the authenticated owner browser using the published link."
+    },
+    {
+      "url": "https://starfall.steph4n.dev/downloads/INSTRUCTIONS.pdf",
+      "canonicalFile": "release/player-v1.2/INSTRUCTIONS.pdf",
+      "sha256": "d3f8e6e54473b2b2b0532df1a33d54948408d7434c7c37d814d47512bc6e47fb",
+      "bytes": 5168094,
+      "result": "byte-identical",
+      "method": "Download through the authenticated owner browser using the published link."
+    }
+  ],
   "accessVerification": {
-    "basis": "Sites get_site and successful deploy_private_site_version enforce owner-only access. Re-read after deployment confirmed only one owner, no groups and no external visitors.",
+    "mode": "custom",
     "allowedOwnerCount": 1,
     "allowedGroupCount": 0,
     "externalVisitorCount": 0,
-    "anonymousHttpProbe": "Unauthenticated Python requests to landing page, player, ROM and WASM returned Cloudflare 403 code 1010. This is client-blocking evidence, not an independent authentication check."
+    "policyRevision": 1,
+    "basis": "Successful owner-private deployment followed by get_site: active, version 5, one owner, no groups or external visitors. No access change."
   },
-  "saveScope": "Each browser and site origin keeps its own progress; login does not synchronize saves across devices. Wait at least two seconds after CHECKPOINT SAVED before leaving.",
   "screenshots": [
     {
-      "file": "docs/browser-evidence/hosted-reload-title.jpg",
-      "sha256": "914c7200103a57e16031c5a9fafdceb0de5afaae810458036f135a7365bbfb37",
-      "caption": "Fresh hosted title after ordinary reload shows CONTINUE M01.",
+      "file": "docs/site-evidence-v1.2/hosted-hero.jpg",
+      "sha256": "50a3ed63ace1d8adf9d007faed4c77db1cf10568166b3f4e6a07c7fbfceac598",
+      "caption": "Published owner-private version 1.2 landing page.",
       "processing": "Unmodified full-viewport browser capture."
     },
     {
-      "file": "docs/browser-evidence/hosted-reload-continue.jpg",
-      "sha256": "d821248db0811c2bfb1d343039c19e7abb49708f475dccb877a4c791eaa5773a",
-      "caption": "Continue restores the earned Freight Spine M01 Bay 1/4 H3 briefing with CHECKPOINT SAVED.",
+      "file": "docs/site-evidence-v1.2/hosted-landing.jpg",
+      "sha256": "6eb2b3873275087f960fe9a11a6a7b1049f6e306b3b2899ac7ad27b78a6355e2",
+      "caption": "Published 1.2 download section with player ZIP and manual links.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-upgrade-title.jpg",
+      "sha256": "effb710b58849ac66b72d96e4e2980a3ce4e91e9c3cf39648ee93663a2ae114b",
+      "caption": "After replacing the hosted 1.1 build with 1.2, title retains CONTINUE M01.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-upgrade-continue.jpg",
+      "sha256": "13ba561117a6ed10b322b969f9d569b1e2ec4167d7f47d34111bf8e8dabcfb05",
+      "caption": "Hosted upgrade restores Freight Spine M01 Bay 1/4 H3, CHECKPOINT SAVED.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-pause.jpg",
+      "sha256": "21024f2603be631daf45420fcc5ff1585b50e51cef042171c8f6b505088a77f8",
+      "caption": "Ordinary Enter opens the new Pause menu with the current objective.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-flight-before.jpg",
+      "sha256": "9cd70d942b3f219570e1c15e86b71aed47d6a4017a1d461d0e7c56dfd6b2133c",
+      "caption": "Hosted M01 gameplay before the bounded rightward movement check.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-flight-after.jpg",
+      "sha256": "a55976eb364c79cb2c0d04612215311bc69f8f16a2fb7ed381fc4a20fb0ee9e6",
+      "caption": "Pilot visibly moved right after ordinary thrust/brake/pulse input; A WAIT shows pulse cooldown.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-reload-title.jpg",
+      "sha256": "eedc30eec337a29b72c74f0e515fa67bac2f59dd2ffa231c3064eacb387a44af",
+      "caption": "Ordinary hosted page reload retains CONTINUE M01.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-reload-continue.jpg",
+      "sha256": "13ba561117a6ed10b322b969f9d569b1e2ec4167d7f47d34111bf8e8dabcfb05",
+      "caption": "After reload, Continue restores the same Freight Spine M01 Bay 1/4 H3 checkpoint.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/hosted-play-button-title.jpg",
+      "sha256": "8a58480564c68682bae726f0fde06d1efaef1b2e2496c52c92b4d69e47349dce",
+      "caption": "Published Play in Browser button opens the 1.2 title.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/v1.1-title-before-update.jpg",
+      "sha256": "0246bf4f2aa7b6b8a54bfe663f3d0895c4887c21fd021f212ceaf5e8ee1e2273",
+      "caption": "Same custom origin before upgrade: actual hosted 1.1 title or Freight Spine M01 Bay 1/4 H3 checkpoint.",
+      "processing": "Unmodified full-viewport browser capture."
+    },
+    {
+      "file": "docs/site-evidence-v1.2/v1.1-continue-before-update.jpg",
+      "sha256": "fc22059216cfc6c4c6903c768f35a55acbff58e51cd8fa6ed67000aacfcdb9a7",
+      "caption": "Same custom origin before upgrade: actual hosted 1.1 title or Freight Spine M01 Bay 1/4 H3 checkpoint.",
       "processing": "Unmodified full-viewport browser capture."
     }
   ],
-  "scope": "Deployment smoke and earned room-entry checkpoint recovery at the stable private origin using ordinary input. No injected save or emulator snapshot. Full campaign qualification remains the earlier local run on identical game files. No second-device, mobile, other-browser, heard-audio, browser-process shutdown or physical-device qualification."
+  "saveScope": "Ordinary page reload at this same browser and origin. No save injection or snapshot restore. Browser storage does not synchronize across origins or devices. Native same-session Continue is recorded separately.",
+  "scope": "Hosted delivery, launch, bounded controls and same-origin checkpoint upgrade/reload. Full 72-room Story and 12-sector Arcade qualification is native; browser gameplay qualification remains the separately recorded eight Story rooms and one Arcade sector. No new full browser campaign, native cold-boot, browser-process shutdown, other-device/browser, heard-audio or physical-device coverage.",
+  "historicalReceipt": "docs/HOSTED-VERIFICATION-v1.1.json"
 }
